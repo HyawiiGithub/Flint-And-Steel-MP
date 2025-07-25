@@ -486,9 +486,9 @@ opium = {
 	cost = 50
 	category = luxury
 	
-	obsession_chance = 2.0
+	obsession_chance = 3.0
 	prestige_factor = 4
-	convoy_cost_multiplier = 0.25
+	convoy_cost_multiplier = 0.20
 }
 
 automobiles = {
