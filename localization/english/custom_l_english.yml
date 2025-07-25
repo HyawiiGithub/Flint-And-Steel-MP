@@ -1,0 +1,14 @@
+﻿l_english:
+ mil_tech_lock_3:0 "Era 3 Military Tech Lock"
+ mil_tech_lock_3_desc:0 "With this tech, you can research military techs from era 3."
+ mil_tech_lock_4:0 "Era 4 Military Tech Lock"
+ mil_tech_lock_4_desc:0 "With this tech, you can research military techs from era 4."
+ mil_tech_lock_5:0 "Era 5 Military Tech Lock"
+ mil_tech_lock_5_desc:0 "With this tech, you can research military techs from era 5."
+
+ je_mil_tech_lock_era_3:0 "Era 3 Military Tech Date Lock"
+ je_mil_tech_lock_era_3_reason:0 "You cannot research era 3 military tech until this journal entry finishes."
+ je_mil_tech_lock_era_4:0 "Era 4 Military Tech Date Lock"
+ je_mil_tech_lock_era_4_reason:0 "You cannot research era 4 military tech until this journal entry finishes."
+ je_mil_tech_lock_era_5:0 "Era 5 Military Tech Date Lock"
+ je_mil_tech_lock_era_5_reason:0 "You cannot research era 5 military tech until this journal entry finishes."

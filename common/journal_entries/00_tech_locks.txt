@@ -1,0 +1,60 @@
+﻿je_mil_tech_lock_era_3 = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		always = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	complete = {
+		game_date >= 1845.2.1
+	}
+
+	on_complete = {
+		add_technology_researched = mil_tech_lock_4
+	}
+
+	invalid = {
+	}
+
+	on_monthly_pulse = {
+	}
+	
+	weight = 100
+}
+
+je_mil_tech_lock_era_4= {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		always = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	complete = {
+		game_date >= 1865.1.1
+	}
+
+	on_complete = {
+		add_technology_researched = mil_tech_lock_5
+	}
+
+	invalid = {
+	}
+
+	on_monthly_pulse = {
+	}
+	
+	weight = 100
+}
+
