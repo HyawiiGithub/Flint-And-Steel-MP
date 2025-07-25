@@ -1,0 +1,60 @@
+journalentry_polish_territories = {
+    picture = "gfx/interface/icons/journal_entries/eastern_europe.dds"
+    position = { x = 10 y = 120 }
+    
+    trigger = {
+        OR = {
+            any_state = { is_core = POL }
+            exists = POL
+        }
+    }
+
+    name = {
+        trigger = { exists = POL }
+        text = "journal_polish_territories.independent"
+    }
+    name = {
+        trigger = { NOT = { exists = POL } }
+        text = "journal_polish_territories.partitioned"
+    }
+
+    desc = {
+        trigger = { exists = POL }
+        text = "journal_polish_territories.desc.independent"
+    }
+    desc = {
+        trigger = { 
+            NOT = { exists = POL }
+            any_country = {
+                tag = PRU
+                OR = {
+                    owns_state = 156
+                    owns_state = 157
+                    owns_state = 154
+                }
+            }
+        }
+        text = "journal_polish_territories.desc.prussian_control"
+    }
+    desc = {
+        trigger = {
+            NOT = { exists = POL }
+            any_country = {
+                tag = RUS
+                OR = {
+                    owns_state = 156
+                    owns_state = 157
+                    owns_state = 154
+                }
+            }
+        }
+        text = "journal_polish_territories.desc.russian_control"
+    }
+
+    on_created = {
+        effect = { log = "Polish Territories Journal Created" }
+    }
+    on_destroyed = {
+        effect = { log = "Polish Territories Journal Removed" }
+    }
+}
