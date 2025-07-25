@@ -27,6 +27,8 @@
 		
 		add_taxed_goods = g:liquor
 
+        add_modifier = modifier_russian_military_incompetence
+
 		if = {
 			limit = {
 				has_dlc_feature = ep1_content

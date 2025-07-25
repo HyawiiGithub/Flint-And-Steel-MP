@@ -1,5 +1,68 @@
 ﻿### ERA 1
 
+
+
+mil_tech_lock_4 = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/standing_army.dds"
+	category = military
+	can_research = no
+	
+unlocking_technologies = {	
+	rifling
+	triage
+	}
+
+	ai_weight = {
+		value = 3 # Very important tech in general
+	}
+}
+
+mil_tech_lock_5 = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/standing_army.dds"
+	category = military
+	can_research = no
+
+	unlocking_technologies = {
+		repeaters
+		modern_nursing
+		enlistment_offices
+		breech_loading_artillery
+		electric_telegraph
+		mil_tech_lock_4
+	}
+	}
+
+mil_tech_Lock_6 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/standing_army.dds"
+	category = military
+	can_research = no
+
+	unlocking_technologies = {
+		mil_tech_lock_5
+		handcranked_machine_gun
+		military_statistics
+	}
+}
+
+mil_tech_Lock_7 = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/standing_army.dds"
+	category = military
+	can_research = no
+
+	unlocking_technologies = {
+		mil_tech_lock_6
+		bolt_action_rifles
+		trench_works
+		wargaming
+		war_propaganda
+	}
+}
+
+
 standing_army = {
 	# Unlocks Barracks building
 	era = era_1
