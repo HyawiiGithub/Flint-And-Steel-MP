@@ -6,28 +6,22 @@
 		add_technology_researched = academia
 		add_technology_researched = law_enforcement
 		
-		set_market_capital = STATE_BEIJING	
+		set_market_capital = STATE_GUANGDONG	
 		
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_autocracy 
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_heredetary_bureaucrats
-		activate_law = law_type:law_ethno_state
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_censorship	
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_canton_system
 		activate_law = law_type:law_freedom_of_conscience
 
-
-		set_tax_level = high # chineese tax
-
-
-
-		add_modifier = modifier_china_bye_bye
-
-
+					add_modifier = modifier_china_bye_bye			  
+		set_tax_level = high
 
 		set_variable = {
 			name = china_warlord_explosion

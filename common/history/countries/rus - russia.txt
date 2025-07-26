@@ -24,10 +24,8 @@
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_women_own_property
-		
+		add_modifier = modifier_russian_military_incompetence
 		add_taxed_goods = g:liquor
-
-        add_modifier = modifier_russian_military_incompetence
 
 		if = {
 			limit = {
