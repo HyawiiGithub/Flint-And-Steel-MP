@@ -388,21 +388,21 @@ german_unification.4 = {
 
 	duration = 3
 
-immediate = {
-	if = {
-		limit = {
-			has_global_variable = bismarck_variable
-		}
-		s:STATE_NORTH_DAKOTA = {
-			random_scope_state = {
-		        set_hub_name = {
-		            type = city
-		            name = HUB_NAME_STATE_NORTH_DAKOTA_city_bismarck
+	immediate = {
+		if = {
+			limit = {
+				has_global_variable = bismarck_variable
+			}
+			s:STATE_NORTH_DAKOTA = {
+				random_scope_state = {
+			        set_hub_name = {
+			            type = city
+			            name = HUB_NAME_STATE_NORTH_DAKOTA_city_bismarck
+			        }
 		        }
-	        }
+			}
 		}
 	}
-}
 
 	trigger = {
 	}
@@ -416,6 +416,13 @@ immediate = {
 				name = german_unifier_ruler
 			}
 		}
+		GER = {
+			add_modifier = {
+				name = modifier_baby_boom
+				years = 10
+				decaying = yes
+			}
+		}
 	}
 	option = {
 		name = german_unification.4.b
@@ -427,6 +434,13 @@ immediate = {
 		add_loyalists = {
 			value = 0.1
 			culture = cu:south_german
+		}
+		GER = {
+			add_modifier = {
+				name = modifier_baby_boom
+				years = 10
+				decaying = yes
+			}
 		}
 	}
 }

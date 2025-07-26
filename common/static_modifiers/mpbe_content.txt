@@ -259,3 +259,11 @@ modifier_china_bye_bye = {
 	country_loan_interest_rate_mult = -0.05
 	state_birth_rate_mult = 0.05
 }
+
+
+
+# German Baby boom
+
+modifier_baby_boom = {
+	state_birth_rate_mult = 0.15
+}
