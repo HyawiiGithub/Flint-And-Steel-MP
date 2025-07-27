@@ -7,19 +7,46 @@
 
 ### Light ship group
 
+combat_unit_type_frigate = {
+    group = combat_unit_group_light_ship
+	max_manpower = 1000
+
+    upkeep_modifier = {
+        goods_input_manowars_add = 1
+    }
+
+    battle_modifier = {
+        unit_offense_add = 10
+        unit_defense_add = 15
+		unit_blockade_add = 10
+        unit_morale_loss_add = 10
+    }
+
+	unlocking_technologies = { navigation }
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/light_ships_frigate.dds"
+    }
+
+	upgrades = {
+		combat_unit_type_monitor
+	}
+}
+
 combat_unit_type_monitor = {
     group = combat_unit_group_light_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 1
         goods_input_artillery_add = 1
         goods_input_ammunition_add = 1
-        goods_input_coal_add = 1 # GGGG
     }
 
     battle_modifier = {
         unit_offense_add = 20
         unit_defense_add = 30
+        unit_blockade_add = 20
         unit_morale_loss_add = 8
 	    unit_convoy_defense_mult = 0.20
     }
@@ -33,29 +60,29 @@ combat_unit_type_monitor = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_monitor.dds"
     }
-    
-    upgrades = {
-        combat_unit_type_destroyer
+
+	upgrades = {
+		combat_unit_type_destroyer
 		combat_unit_type_torpedo_boat
-		combat_unit_type_scout_cruiser						
 	}
 }
 
 combat_unit_type_destroyer = {
     group = combat_unit_group_light_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
         goods_input_artillery_add = 2
         goods_input_ammunition_add = 2
-        goods_input_coal_add = 2 # GGGG
     }
 
     battle_modifier = {
         unit_offense_add = 30
         unit_defense_add = 40
+        unit_blockade_add = 30
         unit_morale_loss_add = 6
-        unit_convoy_defense_mult = 0.35
+		unit_convoy_defense_mult = 0.35
     }
 
     formation_modifier = {
@@ -66,25 +93,25 @@ combat_unit_type_destroyer = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/light_ships_destroyer.dds"
     }
-	
+
 	upgrades = {
-		combat_unit_type_torpedo_boat
-        combat_unit_type_scout_cruiser
+		combat_unit_type_scout_cruiser
 	}
 }
 
 combat_unit_type_torpedo_boat = {
     group = combat_unit_group_light_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
         goods_input_explosives_add = 4
-        goods_input_coal_add = 1 # GGGG
     }
 
     battle_modifier = {
         unit_offense_add = 40
         unit_defense_add = 30
+        unit_blockade_add = 30
         unit_morale_loss_add = 8
         unit_convoy_raiding_mult = 0.25
     }
@@ -98,27 +125,27 @@ combat_unit_type_torpedo_boat = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/light_ships_torpedo_boat.dds"
     }
-	
+
 	upgrades = {
-		combat_unit_type_destroyer
-        combat_unit_type_scout_cruiser
+		combat_unit_type_scout_cruiser
 	}
 }
 
 combat_unit_type_scout_cruiser = {
     group = combat_unit_group_light_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 3
         goods_input_ammunition_add = 3
         goods_input_artillery_add = 3
         goods_input_radios_add = 1
-        goods_input_coal_add = 3 # GGGG
     }
 
     battle_modifier = {
         unit_offense_add = 50
         unit_defense_add = 50
+        unit_blockade_add = 40
         unit_morale_loss_add = 6
 		unit_convoy_defense_mult = 0.5
     }
@@ -136,21 +163,49 @@ combat_unit_type_scout_cruiser = {
 
 ### Flagship group
 
+combat_unit_type_man_o_war = {
+    group = combat_unit_group_capital_ship
+	max_manpower = 1000
+
+    upkeep_modifier = {
+        goods_input_manowars_add = 3
+    }
+
+    battle_modifier = {
+        unit_offense_add = 25
+        unit_defense_add = 25
+        unit_blockade_add = 100
+        unit_morale_loss_add = 10
+        unit_convoy_raiding_mult = -0.9
+    }
+
+	unlocking_technologies = { drydocks }
+
+    combat_unit_image = {
+        texture = "gfx/unit_illustrations/capital_ships_manowar.dds"
+    }
+
+	upgrades = {
+		combat_unit_type_ironclad
+	}
+}
+
 combat_unit_type_ironclad = {
     group = combat_unit_group_capital_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 3
         goods_input_artillery_add = 3
         goods_input_ammunition_add = 3
-        goods_input_coal_add = 2 # GGGG
     }
 
     battle_modifier = {
         unit_offense_add = 50
         unit_defense_add = 50
+		unit_blockade_add = 200
         unit_morale_loss_add = 8
-		unit_convoy_raiding_mult = -0.5
+		unit_convoy_raiding_mult = -0.9
     }
 
     formation_modifier = {
@@ -162,29 +217,29 @@ combat_unit_type_ironclad = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_ironclad.dds"
     }
-    
-    upgrades = {
+
+	upgrades = {
 		combat_unit_type_dreadnought
-        combat_unit_type_battleship
 	}
 }
 
 combat_unit_type_dreadnought = {
     group = combat_unit_group_capital_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 6
 		goods_input_artillery_add = 6
         goods_input_ammunition_add = 6
-        goods_input_radios_add = 2    
-        goods_input_coal_add = 4 # GGGG
+        goods_input_radios_add = 2
     }
 
     battle_modifier = {
         unit_offense_add = 80
         unit_defense_add = 80
+        unit_blockade_add = 400
         unit_morale_loss_add = 6
-		unit_convoy_raiding_mult = -0.5
+		unit_convoy_raiding_mult = -0.9
     }
 
     formation_modifier = {
@@ -196,28 +251,29 @@ combat_unit_type_dreadnought = {
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_dreadnought.dds"
     }
-    
-    upgrades = {
-        combat_unit_type_battleship
+
+	upgrades = {
+		combat_unit_type_battleship
 	}
 }
 
 combat_unit_type_battleship = {
     group = combat_unit_group_capital_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 8
 		goods_input_artillery_add = 8
         goods_input_ammunition_add = 8
         goods_input_radios_add = 3
-        goods_input_oil_add = 2 # GGGG
     }
 
     battle_modifier = {
         unit_offense_add = 100
         unit_defense_add = 100
+        unit_blockade_add = 500
         unit_morale_loss_add = 4
-		unit_convoy_raiding_mult = -0.5
+		unit_convoy_raiding_mult = -0.9
     }
 
     formation_modifier = {
@@ -235,18 +291,19 @@ combat_unit_type_battleship = {
 
 combat_unit_type_submarine = {
     group = combat_unit_group_support_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
         goods_input_artillery_add = 2
         goods_input_ammunition_add = 2
 		goods_input_radios_add = 1
-        goods_input_oil_add = 0.5 # GGGG
     }
 
     battle_modifier = {
         unit_offense_add = 60
         unit_defense_add = 20
+        unit_blockade_add = 10
         unit_morale_loss_add = 8
         unit_convoy_raiding_mult = 1.0
     }
@@ -264,18 +321,19 @@ combat_unit_type_submarine = {
 
 combat_unit_type_carrier = {
     group = combat_unit_group_support_ship
+	max_manpower = 1000
 
     upkeep_modifier = {
         goods_input_ironclads_add = 8
         goods_input_ammunition_add = 8
         goods_input_radios_add = 4
         goods_input_aeroplanes_add = 8
-        goods_input_oil_add = 4 # GGGG
     }
 
     battle_modifier = {
         unit_offense_add = 120
         unit_defense_add = 60
+        unit_blockade_add = 500
         unit_morale_loss_add = 6
 		unit_convoy_defense_mult = 0.25
     }
