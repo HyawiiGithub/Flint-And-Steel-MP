@@ -13,7 +13,6 @@
 types country_panel_types
 {
 	type country_panel_information_content = flowcontainer {
-		visible = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 		margin_top = 10
 		minimumsize = { @panel_width_plus_14 -1 }
 		using = default_list_position
