@@ -2200,8 +2200,6 @@ reform_obshchina = {#改革村社制
 		 every_state = {
 			limit = {
 				OR = {
-					region = sr:region_russia
-					region = sr:region_belarus
 					region = sr:region_dnieper
 				}
 				owner = ROOT
@@ -2259,66 +2257,6 @@ reform_obshchina = {#改革村社制
 					level >= 50
 				}
 		}
-		any_scope_state = {	
-			state_region = s:STATE_BREST
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 35
-				}
-		}
-		any_scope_state = {	
-			state_region = s:STATE_MINSK
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 35
-				}
-		}
-		any_scope_state = {	
-			state_region = s:STATE_SMOLENSK
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-			}
-					level >= 35
-				}
-			}
-		any_scope_state = {	
-			state_region = s:STATE_MOSCOW
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 35
-				}
-		}
-		any_scope_state = {	
-			state_region = s:STATE_TARTARIA
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 35
-				}
-		}
-		any_scope_state = {	
-			state_region = s:STATE_ROSTOV
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 35
-				}
-		}
 	}
 
 	on_complete = {
@@ -2326,8 +2264,6 @@ reform_obshchina = {#改革村社制
 		every_state = {
 			limit = {
 				OR = {
-					region = sr:region_russia
-					region = sr:region_belarus
 					region = sr:region_dnieper
 				}
 				owner = ROOT
