@@ -2216,66 +2216,24 @@ reform_obshchina = {#改革村社制
 	}
 
 	complete = {
-		NOT = { has_law = law_type:law_serfdom }
-		any_scope_state = {	
-			state_region = s:STATE_KIEV
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 50
-				}
-		}
-		any_scope_state = {	
-			state_region = s:STATE_CHERSON
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 50
-				}
-		}
-		any_scope_state = {	
-			state_region = s:STATE_KHARKOV
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 50
-				}
-		}
-		any_scope_state = {	
-			state_region = s:STATE_KURSK
-			any_scope_building = {
-					is_building_group = bg_agriculture
-					NOT = {
-				is_building_group = bg_subsistence_agriculture
-				}
-					level >= 50
-				}
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = joi_flavor_rus.33 }
-		every_state = {
-			limit = {
-				OR = {
-					region = sr:region_dnieper
-				}
-				owner = ROOT
-			}
-			add_modifier = {
-				name = reformed_obshchina
-				months = -1
-			}
-			remove_modifier = is_reforming_obshchina
-		}
-	}
-
+    NOT = { has_law = law_type:law_serfdom }
+    any_scope_state = {    
+        state_region = s:STATE_KIEV
+        has_building = building_railway
+    }
+    any_scope_state = {    
+        state_region = s:STATE_CHERSON
+        has_building = building_railway
+    }
+    any_scope_state = {    
+        state_region = s:STATE_KHARKOV
+        has_building = building_railway
+    }
+    any_scope_state = {    
+        state_region = s:STATE_KURSK
+        has_building = building_railway
+    }
+}
 	fail = {
 		NOT = { has_law = law_type:law_monarchy }
 	}
