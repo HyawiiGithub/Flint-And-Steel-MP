@@ -1,0 +1,19 @@
+﻿l_braz_por:
+IMP:0 "Federação Imperial"
+IMP_ADJ:0 "Federação Imperial"
+dyn_c_imp_socialist_republic:0 "República Socialista Imperial"
+dyn_c_imp_socialist_republic_ADJ:0 "República Socialista Imperial"
+dyn_c_imp_republic:0 "Federação Britânica"
+dyn_c_imp_republic_ADJ:0 "Federação Britânica"
+#Índia
+dyn_c_british_raj_domination:0 "Domínio Autônomo Britânico na Índia"
+dyn_c_british_raj_domination_adj:0 "Índia Britânica"
+#Canadá
+dyn_c_british_canada:0 "Domínio Autônomo Britânico no Canadá"
+dyn_c_british_canada_adj:0 "Canadá Britânico"
+#Austrália
+dyn_c_british_australia:0 "Domínio Autônomo Britânico na Austrália"
+dyn_c_british_australia_adj:0 "Austrália Britânica"
+#África do Sul
+dyn_c_british_south_africa:0 "Domínio Autônomo Britânico na África do Sul"
+dyn_c_british_south_africa_adj:0 "África do Sul Britânica"

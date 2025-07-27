@@ -1,0 +1,49 @@
+﻿l_english:
+    ai_unique_buff_decision: "Strengthen AI Nations"
+    ai_unique_buff_decision_desc: "This decision allows you (if you wish) to attempt stronger and historically accurate AI nations. Under this decision, AI nations will gain powerful modifiers for economic development, technological research, and warfare based on their national ranks, while reducing the likelihood of civil wars.\nThis significantly enhances your international competition and trade experience but #variable may cause lag in late-game (if device performance is poor)#!.\nIf you're playing multiplayer, consult the host before making this decision!"
+    ai_unique_buff_decision_tt: "AI nations have not yet been strengthened"
+    ai_unique_buff_decision_tt_2: "Strengthening will apply to all AI nations.\nIf you switch to another AI nation, the nation you play afterward will lose this strengthening.\nStrengthening will not apply to loose regimes."
+    ai_unique_buff_get_again_decision: "Regain Strengthening"
+    ai_unique_buff_get_again_decision_desc: "This decision grants log modifiers corresponding to the national rank if AI has not currently received strengthening."
+    ai_unique_buff_get_again_decision_tt: "Strengthening has been approved by the player but has not yet been applied."
+    ai_gbr_annex_india: "Annex Rule over India"
+    ai_gbr_annex_india_desc: "The power of the East India Company has undoubtedly been weakened by mutinies. To ensure Britain's authority in India, we need to bring India under direct rule of the empire."
+    delete_private_investment_decision: "Delete Private Investment"
+    delete_private_investment_decision_desc: "This decision confiscates the money in the investment pool and converts all construction capacity into direct control."
+    rebuild_private_investment_decision: "Rebuild Private Investment"
+    rebuild_private_investment_decision_desc: "This decision rebuilds private investment in your game to align with the original version."
+    joi_force_privatization: "Enforce Privatization"
+    joi_force_privatization_desc: "This decision will switch all buildings to a privatized ownership model."
+    joi_stop_force_privatization: "Cease Privatization"
+    joi_stop_force_privatization_desc: "This decision will stop all buildings from operating under enforced privatization."
+
+
+    # Naval Treaty
+    deutsch_abrogation_of_the_naval_treaty: "Revisiting the Anglo-German Naval Agreement"
+    deutsch_abrogation_of_the_naval_treaty_desc: "The 1935 Naval Agreement that limited our fleet to 35% of Britain's strength was always a temporary measure. Now, as the Kriegsmarine's new Bismarck-class battleships take shape in Wilhelmshaven's docks, we must negotiate from strength. A new maritime understanding could secure British neutrality while allowing our rightful naval expansion."
+    deutsch_abrogation_of_the_naval_treaty_tt: "London may accept revised ratios if we offer economic concessions in return."
+    deutsch_abrogation_of_the_naval_treaty_single: "Denounce the Naval Restrictions"
+    deutsch_abrogation_of_the_naval_treaty_single_desc: "The time for compromise has passed. As the Führer declared at the launch of Tirpitz: 'No power on earth can dictate what weapons Germany may possess!' We will build what we need to secure our Lebensraum, regardless of London's protests."
+    deutsch_abrogation_of_the_naval_treaty_single_tt: "This bold action will trigger international condemnation but free our naval construction."
+
+    # Territorial Expansion
+    expand_deutsche_reich_states_to_poland: "Incorporate the Polish Corridor"
+    expand_deutsche_reich_states_to_poland_desc: "Danzig and the Vistula lands have been German in culture and commerce for centuries, despite Warsaw's claims. By granting Reichsprotektorat status to West Prussia and Posen, we can begin the process of Heim ins Reich - bringing these lost territories back into the German fold through careful settlement policies and economic integration."
+    expand_deutsche_reich_states_to_aus: "Anschluss: Complete German Unification"
+    expand_deutsche_reich_states_to_aus_desc: "The Austrian Germans have waited twenty years to rejoin their fatherland. As the birthplace of our Führer and the cultural heart of Greater Germany, these Alpine provinces must be fully integrated as Reichsgaue, with their citizens granted full rights under the Nuremberg Laws."
+
+    # Private Investment
+    joi_disable_private_investment: "Disable Private Investment"
+    joi_disable_private_investment_desc: "This decision disables the private investment functionality of the investment pool (meaning financial sectors cannot be privatized, only company privatization will be available)."
+    joi_second_disable_private_investment: "Disable Private Investment Allocation"
+    joi_second_disable_private_investment_desc: "This decision cancels private investment allocation (though the investment pool continues privately constructing when you aren't building)."
+    joi_enable_private_investment: "Enable Private Investment"
+    joi_enable_private_investment_desc: "This decision enables the private investment functionality of the investment pool and normal private investment allocation."
+
+    # Holy City Crisis
+    claiming_the_right_of_holy_places: "Claim Guardianship of the Holy City"
+    claiming_the_right_of_holy_places_desc: "The power of the Ottoman Empire has greatly diminished, and the Holy City of Jerusalem — sacred not only to Orthodoxy but to all of Christendom — now calls out to us. As the protector of all Orthodox Christians, His Majesty the Tsar has a duty to send forces against this wicked heathen realm and reclaim the glorious Holy City of Jerusalem! Moreover, by controlling the ports of Palestine, we gain a precious opportunity to extend our influence throughout the Mediterranean."
+
+    # National Guide
+    joi_french_guide_decision: "French Gameplay Guide"
+    joi_french_guide_decision_desc: "This decision provides a set of gameplay suggestions and guidance for playing as France. It can only be used once."

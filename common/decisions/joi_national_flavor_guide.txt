@@ -1,0 +1,20 @@
+﻿joi_french_guide_decision = {#法国路线
+	is_shown = {
+		c:FRA = THIS
+		is_player = yes
+	}
+
+	possible = {
+		NOT = { has_variable = joi_french_guide_decision_var }
+		always = yes
+	}
+
+	when_taken = {
+		set_variable = joi_french_guide_decision_var
+		trigger_event = { id = joi_flavor_guide.1 }
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}

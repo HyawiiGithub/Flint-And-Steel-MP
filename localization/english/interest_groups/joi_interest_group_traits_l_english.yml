@@ -1,0 +1,337 @@
+﻿l_english:
+    #United Kingdom
+    ig_trait_frs: "Royal Society"
+    ig_trait_frs_desc: "Our research into natural philosophy is world-leading, thanks to the distinguished fellows of the Royal Society: the brightest minds from all nations within the British Empire gather at the Society in London, exploring the truths of the world through hypotheses and experiments. The spirit of science is to believe nothing except data and validation!"
+
+    ig_trait_godrights: "My Rights Are God-given"
+    ig_trait_godrights_desc: "The sole meaning of law and morality is to uphold the sacred freedom rights of the citizens. We never acknowledge anyone as inherently superior to us; in this world, no one has the right to override others' freedoms except God above—Heaven has God, and we have rights!"
+
+    ig_trait_journalist: "King Without a Crown"
+    ig_trait_journalist_desc: "The bureaucrats in Whitehall and the blockheads in Parliament seem not to take our opinions seriously. Do they think they can bully us just because we're few in numbers? Then let's dig out all the nonsense they've done and publish it in the newspapers to expose their corruption and incompetence to the citizens and the world!"
+
+    ig_trait_heart_of_oak: "Heart of Oak"
+    ig_trait_heart_of_oak_desc: "Britannia has triumphed, her warships rule the seas; her slogan is 'Justice,' her glory is 'Freedom.' So cheer up, lads, and let's sing together: God bless our soldiers and sailors, as well as our MPs and our King!"
+
+    ig_trait_do_his_duty: "Do His Duty"
+    ig_trait_do_his_duty_desc: "For centuries, we have nearly conquered the entire world, from the Far East to North America, all submitting to our military might. These achievements are owed to the honor and discipline of our army; soldiers who truly love their country always fulfill their pledge to serve the Empire: England expects everyone to do their duty!"
+
+    ig_trait_refuse_imperialism: "Imperialism"
+    ig_trait_refuse_imperialism_desc: "We are a civilized nation, supposed to bear moral responsibilities for the uncivilized peoples around the world. Yet, the current government apparently fails to realize this and indulges in unjust imperialism. While we might not be able to disobey their war orders, we can still do things that are true to our conscience."
+
+    ig_trait_textile_monopoly: "Textile Monopoly"
+    ig_trait_textile_monopoly_desc: "The textile industry is the pride of our nation; continuous export of textiles has made our diligent workers and advanced technologies world-renowned, achieving a leading monopoly position. The government understands the importance of textiles to the nation and works hard to help businesses maintain and expand their textile empire. With such promising prospects, what reason do we have not to devote our all to it?"
+
+    ig_trait_free_trade_policy: "Free Trade"
+    ig_trait_free_trade_policy_desc: "Some people condemn dumping trade as immoral, to them I say: Who do you think you are to hinder free trade and consumer choices? Wherever there is demand, we will supply—even if it is not us, other nations will earn handsomely due to their market demands. Shall every household be deprived of the wealth flowing into their hands thanks to free trade?"
+
+    ig_trait_technological_laziness: "Technological Laziness"
+    ig_trait_technological_laziness_desc: "We are the birthplace of the Industrial Revolution and modern civilization; our remarkable achievements and advanced technologies have been enough to consolidate our unprecedented prosperity. So why should we bother learning the so-called new stuff introduced by unknown fellows who are not even worthy of comparison to us?"
+
+    ig_trait_land_deeds: "Land Deeds"
+    ig_trait_land_deeds_desc: "Greedy city folks always try to stretch their claws into our honest countryside, dreaming of turning our beautiful blue skies and white clouds into ugly smokey skies like theirs. This is ridiculous! Britain is a lawful place—do not think you can use coercion and inducement to seize the private lands passed down by our ancestors."
+
+    ig_trait_workers_community: "Workers' Community"
+    ig_trait_workers_community_desc: "The responsibility of trade unions is to gather scattered workers together, enabling these honest individuals to help each other and work collectively. Through community and union organization, not only can we achieve increased output, but also establish places to provide basic education for workers' children, paving the way for their greater future."
+
+    ig_trait_labor_value: "Labor Value"
+    ig_trait_labor_value_desc: "No matter how rich the capitalists are or how advanced scientists' technologies may be, without the diligent work of laborers, all economic prosperity would merely be an illusion. We are the source of all wealth, and our labor adds value to products. Therefore, society ought to ensure even the lowest-tier workers can enjoy the fruits of their labor, receiving fair wages and a stable life."
+
+    #France
+    ig_trait_citizen_salon: "Citizen Salon"
+    ig_trait_citizen_salon_desc: "Participating in the political life of the nation is the duty of every citizen. As the sovereign rulers of the country, we should contribute our talents and loyalty to our great motherland. Although the government may not address all aspects of governance, through the political groups we establish, the authorities can more easily hear our voices."
+
+    ig_trait_romanticism: "Romanticism"
+    ig_trait_romanticism_desc: "In ethics, politics, and aesthetics, the sincerity of pursuing intrinsic goals is paramount—this applies to both individuals and groups such as nations, movements, and cultures. Our artists aim to express this ideal beauty through canvases or sounds, where any imperfections are replaced with passionate belief in spiritual freedom and romantic creativity."
+
+    ig_trait_defamation_expert: "Defamation Expert"
+    ig_trait_defamation_expert_desc: "Criticizing every policy of the government is our rightful duty. The government merely acts as a servant representing us in managing the nation; can it not tolerate a bit of mockery? Verbal criticism is our way of expressing patriotism—who can deny it?"
+
+    ig_trait_advanced_finance: "Advanced Finance"
+    ig_trait_advanced_finance_desc: "The financial games of bonds and equities are our paths to profit. Lending and investing not only benefit our great nation but also contribute to the growth of our wealth: in the continental financial competition, the early bird gets the worm, and we aim to be the victors."
+
+    ig_trait_revolution: "Revolution Vanguard"
+    ig_trait_revolution_desc: "March forward, children of the nation, rise up and claim the glorious day that awaits you! The flag stained with blood has been raised against the tyranny and despotism that oppress us. Arm yourselves, citizens, organize your ranks; tremble, tyrants and traitors, you shameless cabal of dogs and foxes—forward! Forward! Let the foul blood of our enemies water our fields!"
+
+    ig_trait_daughter_of_god: "Daughter of God"
+    ig_trait_daughter_of_god_desc: "Our Catholic Church's connection with the Roman Catholicism has historically been less tight compared to other nations. We practically hold power over deciding the dioceses within our territory, surpassing even the authority of His Holiness. For our clergy, serving the joy of the faithful and the policies of the government comes first."
+
+    ig_trait_secularism: "Secularism"
+    ig_trait_secularism_desc: "The old ways are long gone. Though Catholicism has been a cornerstone of French culture, we now face a new era with a significant shift in people's attitudes toward religion. It is time to consciously step aside and focus on practical matters."
+
+    ig_trait_moral_blasphemy: "Moral Blasphemy"
+    ig_trait_moral_blasphemy_desc: "Look at what society has become! The traditional morals once upheld by the older generation have faded into decline. Social order is no longer organized, and people even sneer at the spiritual virtues that our nation used to be most proud of. Rather than conforming to these degenerates, let us try to educate the next generation about what true morality really is."
+
+    ig_trait_farmers_allies: "Farmers' Alliance"
+    ig_trait_farmers_allies_desc: "Farmers across the nation deserve a unified organization. Although we may not have the same influence as unions, this alliance can still coordinate the losses caused by past communication gaps and keep market revenues stable—which will benefit our country as well."
+
+    ig_trait_bordeaux_wine: "Bordeaux Wine"
+    ig_trait_bordeaux_wine_desc: "The best wines in the world are produced by our terroir: from the vast amounts of everyday table wines to the most expensive and prestigious luxury wines from top châteaus in Bordeaux and Languedoc. Nothing is more recognized on the global market than the trademarks of our wineries."
+
+    ig_trait_against_imports: "Price Speculation"
+    ig_trait_against_imports_desc: "Why should we pay for others' so-called low-cost grains? Unless the government compensates us for our losses, we will not abide by any price caps that undermine our interests."
+
+    #Prussia/Germany
+    ig_trait_leopoldina: "National Academy of Sciences"
+    ig_trait_leopoldina_desc: "We are both poets and professors; we are the rational mind of the nation. In Berlin, Göttingen, Leipzig, Jena... between state-funded academies and lecture halls, we have established a new institution: a scientific temple integrating natural philosophy with astronomy and geography. The purpose of research is not to pile up knowledge but to grasp the universe and reveal the inner connections of nature—and this is our goal."
+
+    ig_trait_rationalismus: "Rationalismus"
+    ig_trait_rationalismus_desc: "Two things continuously invoke admiration and awe in our hearts, the more we think about them, the deeper they become: the starry sky above us, and the moral law within us. They are neither beyond our vision nor hidden in darkness—we see them with our own eyes and connect them closely with our consciousness."
+
+    ig_trait_revolutionsfuhrer: "Revolution Leader"
+    ig_trait_revolutionsfuhrer_desc: "We once whispered debates in lecture halls, attempting persuasion in newspapers, but the government turned a deaf ear; so we took to the streets, picked up flags, and stopped debating—there is no road to freedom except through blood—because it is not the tyrants who fear death, but the slaves who fear living!"
+
+    ig_trait_reactionary_enthusiasm: "Reactionary Enthusiasm"
+    ig_trait_reactionary_enthusiasm_desc: "This country belongs to the Junkers. Since the current government dares to defy the will of our nobility, we will show them the consequences."
+
+    ig_trait_offizierskorps: "Junker Offizierskorps"
+    ig_trait_offizierskorps_desc: "The Prussian officer corps traditionally consists of Junker nobles who have received excellent military training and is passed down hereditarily. We are the core of the efficient operation of the nation's military machine, with qualities far superior to the officers of other countries. As long as the government remains loyal to Junker interests, we pledge to lead our motherland to victory after victory with blood and loyalty."
+
+    ig_trait_army_hasastate: "An Army with a State"
+    ig_trait_army_hasastate_desc: "Other nations have an army, but here, the army has a nation."
+
+    ig_trait_ironcross: "Iron Cross"
+    ig_trait_ironcross_desc: "First awarded in 1813, the Iron Cross is the highest honor for our soldiers, symbolizing their passion, loyalty, achievements, and iron discipline. Every soldier regards earning the Iron Cross as the ultimate goal of military service. This honor constantly inspires us to fight for the interests of our homeland."
+
+    ig_trait_shadow_government: "Shadow Government"
+    ig_trait_shadow_government_desc: "In reality, the civilian government in the capital cannot decide anything for our nation. If they cannot secure the loyalty of our military, all so-called policies and laws are meaningless. The General Staff is the true cabinet of the government; everything in this country must prioritize the interests of the military."
+
+    ig_trait_made_in_germany: "Made in Germany"
+    ig_trait_made_in_germany_desc: "German industrial products are by no means synonymous with poor quality and low cost: they must become a quality label representing the craftsmanship spirit of our nation and even the world's most prestigious origin mark. We will spare no effort—even at the expense of profits and costs—to achieve this."
+
+    ig_trait_national_enterprise: "National Enterprise"
+    ig_trait_national_enterprise_desc: "Our enterprises are closely linked with national interests. The government issues preferential policies and subsidies for us, while we return the favor with taxes and profits. As long as the government maintains this close relationship with us, we are always willing to serve not just ourselves but the interests of the entire society."
+
+    ig_trait_social_justice: "Social Justice"
+    ig_trait_social_justice_desc: "Workers should first receive treatment proportional to their labor and, secondly, enjoy equal relations. We passionately believe that the motherland will establish a fair system of cooperation in society and factories, which will be passed down from this generation to the next over time."
+
+    ig_trait_rigorous_work: "Rigorous Work"
+    ig_trait_rigorous_work_desc: "Whatever work we engage in, we always produce it seriously and meticulously. Although we may lack inherited master craftsmanship or perfection, we dedicate ourselves wholeheartedly to create satisfying products."
+
+    ig_trait_organize_strike: "Strike"
+    ig_trait_organize_strike_desc: "A strike is always the most powerful weapon of the working class. If employers cannot pay appropriate wages for our labor, we will unite and refuse to work, showing these arrogant business owners the strength of our unions."
+
+    #Russia
+    ig_trait_third_and_last_rome: "Third Rome"
+    ig_trait_third_and_last_rome_desc: "And I saw another angel ascending from the east, holding the seal of the living God... These are the ones who have come out of great tribulation, having washed their robes white in the blood of the Lamb; therefore, they serve God day and night before His throne."
+
+    ig_trait_icon_in_the_snow: "Icon in the Snow"
+    ig_trait_icon_in_the_snow_desc: "The Lord is my shepherd; I shall not want... Though I walk through the valley of the shadow of death, I will fear no evil, for You are with me... You prepare a table before me in the presence of my enemies; You anoint my head with oil, my cup overflows. Surely goodness and mercy shall follow me all the days of my life, and I will dwell in the house of the Lord forever."
+
+    ig_trait_fire_upon: "Rising Flames"
+    ig_trait_fire_upon_desc: "Then the glory of the Lord departed from the temple... The Lord said to me: Son of man, do you see what detestable things the house of Judah is doing to drive me away from my sanctuary? Behold, I will bring fire upon them and burn their cities!"
+
+    ig_trait_war_frenzy: "Expansion Frenzy"
+    ig_trait_war_frenzy_desc: "Our territory spans the continent, from sunrise to sunset. There has never been a rightful boundary that could constrain our ambition: everything belongs to Mother Russia!"
+
+    ig_trait_register_for_army: "Military Registration"
+    ig_trait_register_for_army_desc: "Every Russian citizen is responsible for annually registering for military service and undergoing training. These measures ensure our great army can rapidly expand whenever needed. Once the order is given, we can recruit every able-bodied man in the nation to the battlefield!"
+
+    ig_trait_gray_cattle: "Gray Cattle"
+    ig_trait_gray_cattle_desc: "In this dark country, we who fight hard on the frontlines are often mocked as gray cattle by those who fancy themselves elegant and noble. Since these elites and officers don't treat us as humans, we have no obligation to faithfully follow their orders."
+
+    ig_trait_owner_of_land: "Landowner"
+    ig_trait_owner_of_land_desc: "Our wealth comes from hereditary estates. These lands hold immense power, and whatever we choose, the government must comply. However, if profits allow, we are also obliged to generously contribute to the nation's prosperity—which can also be a worthwhile investment."
+
+    ig_trait_adm_expert: "Little Father"
+    ig_trait_adm_expert_desc: "Our great leader is the little father of all Russian peoples, and his authority and laws depend on us to implement them across the nation. As long as he wields his scepter to command us, we will follow without fail."
+
+    ig_trait_master_of_city: "Master of the City"
+    ig_trait_master_of_city_desc: "The buildings and factories in the city are first ours, then the nation's, and lastly anyone else's. Some may say our cities are inferior to those of many European nations, but this won't last, as we are always developing our cities to be more beautiful and orderly than theirs."
+
+    ig_trait_rus_westernlism: "Westernization"
+    ig_trait_rus_westernlism_desc: "Look at this rapidly changing world! It cannot be denied that our motherland has fallen behind in many aspects compared to those fast-progressing nations. Yet, we still have many windows and opportunities to catch up—if we are allowed to make the effort."
+
+    ig_trait_spread_of_dissent: "Spread of Dissent"
+    ig_trait_spread_of_dissent_desc: "Look at the people in the government now! Foolish old bureaucrats, decayed leaders, colluding with greedy elites to harm the motherland! We have absolutely no obligation to sing praises for these scoundrels—we will only drive them out!"
+
+    ig_trait_worker_soviet: "Soviet"
+    ig_trait_worker_soviet_desc: "In the Soviets organized by our workers, committees are managed by temporary and replaceable representatives elected by the worker groups. Workers can decide their schedules and needs through the Soviets or authorize temporary representatives to issue schedules and supervise progress, boosting labor enthusiasm and productivity."
+
+    ig_trait_worker_forces: "Worker Self-Defense Forces"
+    ig_trait_worker_forces_desc: "If the government recognizes that workers can have their own armed forces, they can not only be used to defend the factories where we work but also rise to defend our motherland in critical moments."
+
+    ig_trait_worker_revolution: "Armed Revolution"
+    ig_trait_worker_revolution_desc: "Arise, slaves who hunger and suffer! Arise, all oppressed people of the world! The boiling blood is ready to fight for truth! Let the old world crumble to dust. Don't say we have nothing; we will be the masters of the world! We will reclaim the fruits of labor and let ideas break free from their chains!"
+
+    #United States
+    ig_trait_philanthropy: "Philanthropy"
+    ig_trait_philanthropy_desc: "Earn as much as you can, save as much as you can, and donate as much as you can: our wealth far exceeds that of ordinary people, and for us, it is an immense, inexhaustible fortune. Given this, why shouldn't we donate a portion of our wealth to researchers and the hardworking people in need of investment, to contribute to society?"
+
+    ig_trait_innovative_spirit: "Innovative Spirit"
+    ig_trait_innovative_spirit_desc: "In the United States, our passion for technological innovation far surpasses that of other places. Technology represents products, and products represent profits! We are more than happy to give profits to inventors because they always create even more profits for us, don't they?"
+
+    ig_trait_legal_monopoly: "Legal Monopoly"
+    ig_trait_legal_monopoly_desc: "Our country is a free country. Who can find any legal basis to claim that our legitimate businesses are monopolies or illegal? It's merely the result of our hard work achieving a modest scale. Don't try to slander our honesty and reliability!"
+
+    ig_trait_loyalty_to_constitution: "Loyalty to the Constitution"
+    ig_trait_loyalty_to_constitution_desc: "Our military is unique in the world: we do not swear allegiance to a king or queen, tyrant or dictator; we do not swear to any individual; we do not swear to a nation, tribe, or religion. We swear only to the Constitution of the United States, and our duty is always to protect and defend it, regardless of personal cost."
+
+    ig_trait_sea_power: "Sea Power"
+    ig_trait_sea_power_desc: "If our nation can fully control the high seas, it can control the world's wealth and, in turn, the entire world. Therefore, to become a world power, we must have a well-equipped and well-trained navy with bases worldwide and capable of supporting a vast merchant fleet. This is the duty of our military."
+
+    ig_trait_enemies_in_congress: "Enemies in Congress"
+    ig_trait_enemies_in_congress_desc: "Why do the gentlemen in Congress always doubt the loyalty of us passionate and honest soldiers to the nation?! Why does Congress always reject all our necessary and reliable requests?! We shed blood and sacrifice on the frontlines, yet the real obstacles to our fight for the nation are these despicable legislators!"
+
+    ig_trait_frontier_pioneers: "Frontier Pioneers"
+    ig_trait_frontier_pioneers_desc: "This is a great era of exploration for our nation. The western frontier holds infinite wealth and opportunities, and everyone who ventures there can become a millionaire. Go west, young man, to the free frontier!"
+
+    ig_trait_master_of_farm: "Master of the Farm"
+    ig_trait_master_of_farm_desc: "We own vast lands and farms, which are our property and the source of our livelihood and prosperity. Since the nation faithfully protects our private property, we can confidently manage these lands, ensuring they prosper alongside us for generations."
+
+    ig_trait_racism: "Racism"
+    ig_trait_racism_desc: "Why should these detestable black people share the same country with us? This is our country, not theirs. Let them go back to where they came from!"
+
+    ig_trait_humanity_beacon: "Beacon of Freedom"
+    ig_trait_humanity_beacon_desc: "Oh, say can you see, by the dawn's early light: What so proudly we hailed at the twilight's last gleaming; Whose broad stripes and bright stars, through the perilous fight, O'er the ramparts we watched, were so gallantly streaming? And the rocket's red glare, the bombs bursting in air, Gave proof through the night that our flag was still there; O say does that star-spangled banner yet wave, O'er the land of the free and the home of the brave!"
+
+    ig_trait_freedom_of_speech: "Freedom of Speech"
+    ig_trait_freedom_of_speech_desc: "The Constitution grants us the freedom to know and speak, and to argue freely according to conscience, as the freedom to express thoughts and opinions is one of the most precious rights of humanity. In our country, every citizen can freely speak, write, and publish: freedom is thinking what you want and saying it out loud!"
+
+    ig_trait_tyranny_of_majority: "Tyranny of the Majority"
+    ig_trait_tyranny_of_majority_desc: "The people are prone to tyranny and cruelty, and the majority always and invariably deprives the minority of their rights. Individual rights should override the group and become the sole noble moral standard of our society, without compromise for joining or leaving any group or being under any rule."
+
+    #Austria
+    ig_trait_holy_blood: "Holy Bloodline"
+    ig_trait_holy_blood_desc: "Our lineage is long and glorious, serving as Caesar's right-hand since the Holy Roman Empire and ruling Vienna's court. As long as Caesar is willing to heed our advice, we will do our utmost to help him implement generous and benevolent governance."
+
+    ig_trait_statutory_privilege: "Statutory Privilege"
+    ig_trait_statutory_privilege_desc: "Who granted you the power to tax us? We are the nation's tax contractors and the protectors of farmers. Apart from what is promised to Caesar, we will not hand over even a silver shield!"
+
+    ig_trait_universalism: "Universalism"
+    ig_trait_universalism_desc: "All ethnic groups in Austria should enjoy equal rights. Each group has an inalienable right to preserve and use its own culture and language. We must recognize the equality of all traditional languages to promote equality across the nation."
+
+    ig_trait_wiener_kreis: "Vienna Circle"
+    ig_trait_wiener_kreis_desc: "A source of metaphysics stems from logical errors, particularly the ambiguity of natural language. The root of people's mistakes lies in the belief that thinking can either derive knowledge from its own resources without any empirical input or infer new content from given circumstances. Though not every adherent of a scientific worldview may be a warrior, what we need now is to embrace modernity, reject these traditional views, and stand firmly on the ground of empirical science."
+
+    ig_trait_if_for_freedom: "For Freedom"
+    ig_trait_if_for_freedom_desc: "Life is precious, love is more valuable; but if for the sake of freedom, both can be sacrificed!"
+
+    ig_trait_industrial_giants: "Industrial Giants"
+    ig_trait_industrial_giants_desc: "New modes of transportation are reshaping daily life and broadening horizons. In such a pioneering era, we were born to transform enthusiasm into enterprise. The nation's industry depends on our innovation and progress, and we will continue to do so forever."
+
+    ig_trait_language_barrier: "Language Barrier"
+    ig_trait_language_barrier_desc: "Our officers are Austrian and German, but our soldiers come from all backgrounds—Magyars, Czechs, Poles, and even Croatians. They don't understand what we're saying, so how can they follow orders from their superiors?"
+
+    ig_trait_local_richarmy: "Local Armed Forces"
+    ig_trait_local_richarmy_desc: "Every province and state in the nation has its own army. As long as they remain loyal to Vienna, they can bravely accept government conscription when needed and step onto the battlefield to defend the empire."
+
+    ig_trait_national_ties: "National Bonds"
+    ig_trait_national_ties_desc: "In an empire composed of countless ethnicities and religions, national conflicts and political divisions among the people are particularly severe. The military is the only true bond between the citizens of the nation and the sole instrument to express patriotic zeal. The army is therefore duty-bound to uphold this responsibility."
+
+    #Qing Dynasty
+    ig_trait_benevolence_and_righteousness: "The Way of Benevolence and Righteousness"
+    ig_trait_benevolence_and_righteousness_desc: "Grace is benevolence, reason is righteousness, decorum is propriety, and discretion is wisdom. Benevolence, righteousness, propriety, and wisdom together complete the virtues of humanity. Therefore, the emperor governs the world through benevolence and righteousness, bringing peace with love and benefit, guiding with loyalty and trustworthiness, eradicating disasters, and bringing blessings. Only then can the world find stability."
+
+    ig_trait_wise_ruler: "Virtuous Sovereign and Loyal Ministers"
+    ig_trait_wise_ruler_desc: "When the Way is followed in all things, plans are flawless, rulers are virtuous, ministers are wise, and the times are prosperous and peaceful. We live in an era of Yao and Shun, where the sovereign is virtuous, the ministers are capable, and governance is clear and upright. Thus, the four seas submit, and we fulfill the sacred will."
+
+    ig_trait_local_emperor: "Local Tyrants"
+    ig_trait_local_emperor_desc: "The mountains are high and the emperor is far away—what use is the wisdom of a ruler? The land is filled with our people. If a ruler, no matter how powerful, refuses to humbly heed our advice, let him stay in his broken capital issuing his commands for his own satisfaction. If he doesn't listen to us, why should we feel obligated to obey him?"
+
+    ig_trait_be_confucian_teach: "Moral Cultivation"
+    ig_trait_be_confucian_teach_desc: "Confucianism is rooted in moral cultivation. Therefore, exemplary moral conduct reforms customs. The subtle moral teachings prevent evil before it takes shape. Hence, rulers establish schools and promote moral education to guide their citizens. Our duty is to cultivate the morality of all people so that the principles of human relationships deeply take root, bringing about the ideal world of great harmony."
+
+    ig_trait_mandate_of_heaven: "Mandate of Heaven"
+    ig_trait_mandate_of_heaven_desc: "A virtuous ruler governs the world by the mandate of Heaven. The nature of this divine mandate does not arise from human will but aligns with the essence of all things. When one fulfills their nature, the nature of all things is complete, and Heaven's mandate is achieved, beyond human understanding yet universally effective. Our rulers derive sacred authority from this divine mission; how could we not comply?"
+
+    ig_trait_confucian_ethics: "Ancestors' Laws"
+    ig_trait_confucian_ethics_desc: "The laws of our ancestors are family principles, established to prevent transgressions and impose regulations. We must follow them faithfully, never overstepping the bounds. A wise emperor governs through filial piety, and the laws passed down by previous rulers embody their wisdom. How could current rulers have the right to violate them?"
+
+    ig_trait_social_research: "Investigation of Things and Attainment of Knowledge"
+    ig_trait_social_research_desc: "The ancients who wished to manifest their bright virtue to the world first governed their nations. To govern their nations, they first regulated their families. To regulate their families, they first cultivated their persons. To cultivate their persons, they first rectified their minds. To rectify their minds, they first made their intentions sincere. To make their intentions sincere, they first extended their knowledge. Knowledge is attained through the investigation of things. The wise analyze and judge their surroundings using learned knowledge, distinguishing truth from falsehood by their own conscience."
+
+    ig_trait_useless_speech: "Empty Talk"
+    ig_trait_useless_speech_desc: "Some say we are full of empty talk, others label us as pedantic scholars. What do they understand? It's just sour grapes because they can't achieve what we do. We are here to promote ideas with the pen; if we don't talk, then what else could we do?"
+
+    #Ottoman Empire
+    ig_trait_law_and_civilization: "Law and Civilization"
+    ig_trait_law_and_civilization_desc: "The world is changing, and the empire cannot remain stagnant forever. We are neither heretics nor servants of the West; we are the rational part of the empire. By replacing bloodlines with codes, guns with schools, and palace violence with free debate, we seek to restore the glory of this ancient state."
+
+    ig_trait_tanzimat: "Tanzimat"
+    ig_trait_tanzimat_desc: "The empire's survival is at stake—the ledgers must be clear, the courts must be reasonable, and officials must be literate. Our great motherland is in peril, and we are the ones to save her."
+
+    ig_trait_forbidden_books: "Forbidden Books"
+    ig_trait_forbidden_books_desc: "Rulers can burn papers but cannot destroy thoughts; they may ban publications but cannot suppress truth. Once whispered in study rooms, we now print leaflets in dark alleys. If ignorance is sold as loyalty, we will ignite rational flames to tear off the mask of this decaying empire."
+
+    ig_trait_jihad: "Jihad"
+    ig_trait_jihad_desc: "Allah has purchased paradise from the lives and wealth of believers in exchange—they fight in the way of Allah, killing and being killed. This is the promised paradise from Allah—who is more faithful in keeping promises than Allah? Therefore, rejoice in your trade with Allah; indeed, this is the greatest success."
+
+    ig_trait_words_remain: "People of the Book"
+    ig_trait_words_remain_desc: "He caused water to descend from the heavens, giving life to plants for you to eat; do not spread corruption on earth. Messengers have been sent to every nation, proclaiming: Worship Allah and shun evil."
+
+    ig_trait_faith_in_chains: "Unbelievers"
+    ig_trait_faith_in_chains_desc: "Allah is the protector of the believers, guiding them from darkness into light; the protectors of the disbelievers are devils, leading them from light into layers of darkness."
+
+    ig_trait_arm_of_sultan: "The Sultan's Iron Grip"
+    ig_trait_arm_of_sultan_desc: "The Sultan needs not only supporters but also enforcers; we are the iron arm of the law—asking not why but where to strike. Where there is rebellion, there are our cavalry; where there is dissent, there are our spies. Order is not naturally formed but forged with iron and fire. As long as the throne remains, we are its weight of stability."
+
+    ig_trait_local_pashas: "Local Pashas"
+    ig_trait_local_pashas_desc: "We never oppose reforms—as long as the land remains under governance and order prevails, what do reformers do? Let them be, it's none of our concern. A wise bey knows how to maintain stability within his jurisdiction—gripping tightly or letting go smartly, the land must always be guarded."
+
+    ig_trait_corruption_and_privilege: "Corruption and Privilege"
+    ig_trait_corruption_and_privilege_desc: "What do these foolish officials know? Long before they were born, we mastered manipulating tax ledgers, stirring city defenses, and playing the government—our land is ours, our judges eat from our hand, and even the Sultan relies on us for security. If the empire refuses to adhere to the old families' rules, then prepare to see his nation fragmented into countless bey states!"
+
+    ig_trait_modernists_of_sublime: "Eastern Modernists"
+    ig_trait_modernists_of_sublime_desc: "We believe in trains, telegraphs, banks, and joint-stock companies; we are not servants of the aristocracy but the source of wealth and masters of the nation. If the Sultan wants the empire not to fall behind the West, he must recognize that true greatness lies in our constant investment and consumption."
+
+    ig_trait_forges_of_tigris: "Forges of Tigris"
+    ig_trait_forges_of_tigris_desc: "Copper wires stretch, machines roar; we are not politicians nor reformers: as long as markets are open, funds circulate, and order persists, we will continue to reshape this old empire into a new world of metal and chimneys."
+
+    ig_trait_capital_in_chains: "Capital in Chains"
+    ig_trait_capital_in_chains_desc: "We invest, build roads, and establish factories, only to face tariff barriers, bureaucratic delays, and disdainful aristocrats? If capital is restrained, the nation cannot move forward—deny us profit, and we deny you a future."
+
+    #Italy
+    ig_trait_engines_of_risorgimento: "Engines of Risorgimento"
+    ig_trait_engines_of_risorgimento_desc: "They say armies can unify Italy; we say factories can: railways connect not just cities but the destiny of society. Machines forge not just steel but the shape of the homeland. Let Italy's glory be reborn in the boiler rooms—industry can unite the vibrant arteries of the entire peninsula!"
+
+    ig_trait_land_of_chimneys: "Land of Chimneys"
+    ig_trait_land_of_chimneys_desc: "Factories don't care about the color of the flag; they care about whether fuel is sufficient and orders are stable. Industry is indifferent to who governs, as long as railways reach ports and taxes don't hinder profits—any place can become our market."
+
+    ig_trait_civic_watchmen: "Civic Watchmen"
+    ig_trait_civic_watchmen_desc: "While nobles bask in the glory of bygone days and revolutionaries shatter palace ornaments, we raise keys and folders. A nation is not a dream; it is a system. If we are relied upon, citizens are the most dependable gears in Italy's machine."
+
+    ig_trait_people_of_procedure: "People of Procedure"
+    ig_trait_people_of_procedure_desc: "Balanced ledgers, steady streetlights, punctual officials—that's enough. We neither expect innovation nor desire turmoil. Let us pay taxes, process paperwork, and live methodically. Society is not a romantic drama; it's a script of balanced revenues and expenditures."
+
+    ig_trait_stabbed_in_the_back: "Stabbed in the Back"
+    ig_trait_stabbed_in_the_back_desc: "These radicals, socialists, atheists—these damned scoundrels! They wave the flag of the people, yet bring chaos to the streets. They shout for freedom, but humiliate our ancestral churches and legal codes. We are neither nobles nor generals, but we remember where that dagger in our back came from."
+
+    ig_trait_land_of_peace: "Land of Peace"
+    ig_trait_land_of_peace_desc: "Jesus said to them: 'Truly I tell you, at the renewal of all things, when the Son of Man sits on his glorious throne, you who have followed me will also sit on twelve thrones, judging the twelve tribes of Israel. And everyone who has left houses, brothers, sisters, fathers, mothers, wives, children, or fields for my name will receive a hundredfold and inherit eternal life.'"
+
+    ig_trait_sancti_et_dilecti: "Holy and Beloved"
+    ig_trait_sancti_et_dilecti_desc: "Therefore, as God’s chosen ones, holy and beloved, clothe yourselves with compassion, kindness, humility, gentleness, and patience. If anyone has grievances against another, forgive each other as the Lord has forgiven you. And above all, clothe yourselves with love, which binds everything together in perfect harmony."
+
+    ig_trait_supplication_prayer: "Supplication and Prayer"
+    ig_trait_supplication_prayer_desc: "I cry aloud to the Lord; I plead fervently with the Lord. I pour out my troubles before Him and reveal my anguish. When my spirit faints within me, You know my path; they have laid traps for me on the road I walk."
+
+    #Japan
+    ig_trait_railway_bonds: "Railway Bonds"
+    ig_trait_railway_bonds_desc: "With the release of railway policies, our financing groups across the nation have begun utilizing secured notes and government bonds to raise railway capital, introducing British track gauge standards and low-pressure technology. While the central government may hesitate in administrative support, we widely endorse the railway system's strategic value in linking ports and inland resource transportation."
+
+    ig_trait_kazoku_system: "Kazoku System"
+    ig_trait_kazoku_system_desc: "We, the Kazoku, are the nation's loyal ministers and should cultivate virtue, maintain dignity, and serve as examples for all citizens. Those of us in the Kazoku must not rely solely on titles but instead embrace our duties to the nation and society, bravely leading the way in advancing civilization."
+
+    ig_trait_taisei_hokan: "Restoration of Imperial Rule"
+    ig_trait_taisei_hokan_desc: "Keiki humbly presents, with utmost sincerity, a commitment to ensure the nation's peace and stability; considering the world and the people, we hereby return governance to the Imperial Court, requesting the Court to manage all affairs and glorify the imperial foundation."
+
+    ig_trait_sonno_joi: "Revere the Emperor, Expel the Barbarians"
+    ig_trait_sonno_joi_desc: "The Emperor, eternal in lineage, founded the nation during Jinmu's reign and is Japan's sole legitimate authority. Western ships and cannons rampage due to the moral decay, doctrinal confusion, and loss of virtue among vile individuals. We must not betray our national essence, our lineage, or divine will—the ruler remains in Kyoto, and we vow to fight for legitimacy!"
+
+    ig_trait_divided_troops: "Divided Military"
+    ig_trait_divided_troops_desc: "Given the government's lack of action, the army and navy operate independently, with no unified guidance. This often leads to conflicting military strategies, disrupting morale. Is this the fault of us soldiers? Certainly not; it is caused by those accursed bureaucrats meddling behind the scenes!"
+
+    ig_trait_bushido: "Bushido"
+    ig_trait_bushido_desc: "We soldiers must fulfill our duty with loyalty and follow orders from superiors without doubt. Dedication is our obligation, propriety is our morality, valor is our spirit, trustworthiness is our creed, and simplicity is our style: the world shall recognize the righteousness of soldiers through our genuine loyalty!"
+
+    ig_trait_gyokusai_charge: "Gyokusai Charge"
+    ig_trait_gyokusai_charge_desc: "From the moment we enlisted and marched to the battlefield, we accepted the resolve to die. To break through enemy fire and enter the battlefield, only those like us with the determination to die can succeed—those who cling to life will perish; those who embrace death will survive!"
+
+    ig_trait_flower_of_free: "Flower of Freedom"
+    ig_trait_flower_of_free_desc: "We live for love, for life, and for poetry. Every time we hear the word 'freedom,' our hearts surge with warmth, yearning as though it were an unseen lover. We eagerly hope that one day Japan can become such a free nation, and we will work toward that dream."
+
+    ig_trait_bunmei_kaika: "Civilization and Enlightenment"
+    ig_trait_bunmei_kaika_desc: "What is enlightenment? It is the development of individualism. Its meaning lies in humans possessing will, becoming the responsible subject, and acting according to their own thoughts. This is the true essence of enlightenment."
+
+    ig_trait_light_not_reach: "Patriotism"
+    ig_trait_light_not_reach_desc: "This nation seems more obsessed with monumental stones than with countless lives. Such a nation, such an existence, at times feels like a cold and terrifying monster. Yet despite this, we cannot bring ourselves to hate the nation. Precisely for this reason, our grief grows heavier: to act for justice by disobeying orders and following one's conscience is the true act of loyalty."

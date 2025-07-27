@@ -1,0 +1,53 @@
+﻿l_simp_chinese:
+ #总参谋部
+ general_staff:0 "总参谋部"
+ general_staff_reason:0 "#bold 指挥点#!的数值由多个#tooltippable;tooltip:[Country.GetTooltipTag],general_staff_tooltip_advance 正面#!或#tooltippable;tooltip:[Country.GetTooltipTag],general_staff_tooltip_delete 负面#!条件决定。\n\n#variable 总参谋部#!是[ROOT.GetCountry.GetName][GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]中对[concept_war]进行#bold 规划和决策的高级军事机构#!，是当代所有军队总参谋部的样板。#bold 总参谋部#!的#bold 崛起#!和#bold 发展#!是我军与其对手相比最大的#bold 优势#!，也是我军在战场上#variable 令人生畏的主因。#!\n\n#bold 1806年#!由#bold 沙恩霍斯特将军#!和#bold 格奈森瑙元帅#!建立的#bold 参谋本部#!被设计为[concept_army]的中枢，负责对[concept_war]各方面的研究，制定部队机动方案及战役实施方案，拟定作战和[concept_mobilize_army]的计划，而#bold 1821年#!首任#bold 总参谋长卡尔·冯·米夫林男爵#!的上任则标志着#bold 总参谋部#!的正式成立。\n\n#bold 总参谋部#!的培训机制并不只为了培养出合格的参谋人员，更为了为[ROOT.GetCountry.GetName]的战争机器开足马力，使军队长胜不败。\n\n吾乃普鲁士人，汝可知我颜色？\n普鲁士的旗帜在猎猎飘扬，\n普鲁士的雄鹰在云端翱翔；\n普鲁士的旗挥向的是无上荣耀，\n普鲁士的剑指向的是胜利之路；\n而在普鲁士的光辉之上，\n我将如磐石和橡树般守望！"
+ general_staff_status:0 "#V #P #B 总参谋长和军需总监负责指挥总参谋部。#!#!#!"
+ general_staff_1_button:0 "轮换军官"
+ general_staff_1_button_desc:0 "尽管参谋人员理论上终身服役，但若是只靠参谋部内的军官并不足以保证我们的军队能够及时得到最新的战术革新和实战经验。当然，在我们的体制中，参谋人员可以在一线部队和参谋部之间轮换工作，而被他们替换的基层军官则会提拔到总参谋部中历练，最终成为杰出的前线指挥官。通过提高这一行动的频率，我们可以更好地锻炼我们的军队。"
+ general_staff_1_button_tt:0 "花费25#bold 指挥点数#!\n1次#bold 轮换军官#!将持续1年\n只有在当前未进行#bold 轮换军官#!时执行该行动。"
+ general_staff_2_button:0 "参谋计划"
+ general_staff_2_button_desc:0 "宏观上的战争计划对我们的胜利起到至关重要的作用，而总参谋部的各级部门拥有充足的地理资料和作战数据，可以命令他们综合这些制定一份针对当前局势行之有效且能够应对任何突发情况的计划。根据计划的需要，总参谋部将全权调配国家资源以确保其执行到位。同时，总参谋部还可以对前线指挥官提交的战役计划作细节上的修改。"
+ general_staff_2_button_tt:0 "花费50#bold 指挥点数#!\n1次#bold 参谋计划#!将持续1年\n只有在当前未进行#bold 参谋计划#!时执行该行动。"
+ general_staff_3_button:0 "坚定防御"
+ general_staff_3_button_desc:0 "战争局势需要我们的军队顽强地把守住前线的阵地，总参谋部应当起草一份可行的防御计划下发给前线的所有指挥官和士兵，使他们能够领会到指挥部的战略意图以执行坚守的命令；同时，总参谋部也将调拨大量的资源给前线的军队来确保士兵能够保持战线的稳定。"
+ general_staff_3_button_tt:0 "花费50#bold 指挥点数#!\n1次#bold 坚定防御#!将持续1年\n只有在当前未命令#bold 坚定防御#!时执行该行动。"
+ general_staff_4_button:0 "强行进攻"
+ general_staff_4_button_desc:0 "战争局势需要我们的军队快速向前突进以夺取前线的优势，总参谋部应当起草一份可行的进攻计划下发给前线的所有指挥官和士兵，使他们能够领会到指挥部的战略意图以执行突击的命令；同时，总参谋部也将调拨大量的资源给前线的军队来确保士兵能够发起连续的冲锋。"
+ general_staff_4_button_tt:0 "花费50#bold 指挥点数#!\n1次#bold 强行进攻#!将持续1年\n只有在当前未命令#bold 强行进攻#!时执行该行动。"
+ general_staff_5_button:0 "全国动员"
+ general_staff_5_button_desc:0 "战争已经进行到了最关键的时候，任何手下留情或保留都会导致我们伟大国家的利益遭受损失。为了战争的胜利，总参谋部将得到指示，允许他们动员全国的力量为军队服务，不论投入地倾尽全部的力量只为追逐胜利！"
+ general_staff_5_button_tt:0 "花费50#bold 指挥点数#!\n1次#bold 全国动员#!令将持续5年\n只有在当前未下发#bold 全国动员#!令时执行该行动。\n过度的全国总动员将破坏我国的经济秩序！"
+ general_staff_6_button:0 "战争授权"
+ general_staff_6_button_desc:0 "当前的战争局势不容乐观，总参谋部已经向政府提交了一份文件，里面全面阐述了对敌我双方实力对比的忧虑，并请求内阁临时通过特殊授权法，将政治权力转交给总参谋长和军需总监，以便以最大的可能发挥整个国家的潜力夺取胜利。"
+ general_staff_6_button_tt:0 "花费100#bold 指挥点数#!\n1次#bold 战争授权#!将持续5年\n只有在当前未#bold 战争授权#!给总参谋部时执行该行动。\n过度的军事化授权将破坏我国的政治稳定！"
+ general_staff_tt_1:0 "总参谋部是我国陆军的灵魂与核心，而维持强大的陆军则是我国确保利益的关键。"
+ general_staff_tt_2:0 "#bold 轮换军官#!将花费25#bold 指挥点数#!\n#bold 参谋计划#!将花费25#bold 指挥点数#!\n#bold 坚定防御#!和#bold 强行进攻#!都将花费50#bold 指挥点数#!\n#bold 全国动员#!将花费50#bold 指挥点数#!\n#bold 战争授权#!将花费100#bold 指挥点数#!。"
+ general_staff_unlock_button_tt:0 "完成#bold 毛奇军事改革#!日志"
+ general_staff_tooltip_advance:0 "#bold 以下情况每个月会增加1指挥点#!：\n•#variable 处在战争中#!\n•#variable 拥有[GetLawType('law_professional_army').GetName]#!\n•#variable [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant][concept_approval]大于等于5#!\n•#variable [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant][concept_clout]是[concept_powerful]#!\n•#variable [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]正在执政#!\n•#variable 已研究#bold 电报#!#!\n•#variable 正在进行轮换军官#!"
+ general_staff_tooltip_delete:0 "#bold 以下情况每个月会减少5指挥点#!：\n•#variable [concept_rank]小于[concept_great_power]#!\n•#variable 未拥有[GetLawType('law_professional_army').GetName]或[GetLawType('law_mass_conscription').GetName]#!\n•#variable [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant][concept_clout]是[concept_marginalized]#!\n•#variable [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant][concept_approval]小于等于-5#!\n•#variable [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]未在执政#!"
+ #莱茵兰工业化
+ rhineland_industrialize:0 "莱茵兰工业化"
+ rhineland_industrialize_status:0 "将资源丰富的莱茵兰变成真正的工业区。"
+ rhineland_industrialize_reason:0 "莱茵兰，这片在维也纳会议后被划归[ROOT.GetCountry.GetName]所拥有的领土，尽管这里和我国的核心并不接壤，但随着技术的发展，当地陆续开采出的自然资源却为那里的工业发展提供了极大的便利。\n\n以#bold 阿尔弗雷德·克虏伯#!为首的企业已经向柏林政府提交了一份方案，计划将这里建成我们国家的一个新工业区：不过这需要来自中央的支持。\n\n[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]已经指示政府以这份方案为最优先事项，将其描绘的莱茵兰工业区变成现实，缓缓流淌的莱茵河将成为我国的一个新的主要经济支柱。"
+ rhineland_indu_tt_1:0 "在莱茵兰的建设将为我们提供许多好处..."
+ #普鲁士的教育体系
+ peussia_education:0 "普鲁士教育法"
+ peussia_education_reason:0 "“每个学生没有证明自己成为优秀的工匠，商人，军人，政治家，但仍然是一个诚实的人和一个好公民，他们不考虑他自己的工作而寻求必要的培训，通过此将很容易地获得工作的特殊能力，并始终保持自由。”\n\n普鲁士的教育体制在目前的欧洲和世界都是最为先进的一批之一，这都归功于#bold 威廉·冯·洪堡#!在#bold 1810年#!所推动的教育改革。\n\n实施了十几年的#bold 《普鲁士教育法》#!规定所有公民必须接受基础的小学教育以为他们将来的职业提供便利：技术教育开始被推行，文理中学则提供以古典教育为主的中等教育；高中和大学中间设立了毕业考试；#variable 柏林大学#!更是从国家财政中获得了一大笔拨款来进行她的学术研究，从而使得杰出的教授和学者前来为她服务。\n\n不过，现有的教育体系也有所缺憾，诸如欠缺职业技术培训和学生升学的财政保证等问题正限制着我们国家人才的涌现。相信进一步推进教育改革，以建立一个人人都能接受，且人人都能进一步深造的#variable 平等的，义务的#!教育系统将对我们的国家产生巨大的好处。"
+ peussia_education_tt_1:0 "新的教育法将被颁布。"
+ #毛奇军事改革
+ peussia_army_reform:0 "毛奇军事改革"
+ peussia_army_reform_status:0 "由#bold 赫尔穆特·冯·毛奇#!推进的军事改革旨在对军队进行全面改革来增强作战能力。"
+ peussia_army_reform_reason:0 "#variable 赫尔穆特·冯·毛奇#!，#variable 克劳塞维茨将军#!的弟子，为[ROOT.GetCountry.GetName]的军队提出了一份全面的改革意见：\n一：#bold 改革总参谋部#!，极大扩张其权职范围，使得总参谋部在战争时期应当成为总司令“唯一的顾问”，由它#bold 制订战略和策略，协调军力和物力#!，统一军事行动的指挥。\n\n二：#bold 引入新的战争技术#!。大规模更新军队的装备，#bold 发展新的强力火炮，把铁路和电报用于战争之中#!，大规模地建造铁路来能加快军队的动员和部署，保证部队的调动和接应。他认为：“铁路和电报不仅克服了以往的给养，季节和传递限制，而且有可能在短期内把大量的兵力和装备投入某个战场，形成优势兵力，完成战略部署”。　\n\n三：#bold 对总参谋部军官进行训练#!以执行新的战争计划。统帅部只给各军领导规定战略目标，而达到目标的执行方式由各军领导自己决定，要求他们充分发挥主动性。\n\n四：#bold 强化进攻主义#!，“先思而后行地把政治，地理和国家的各个方面考虑在内”，在战前极其周密地规划作战计划，而一当战争开始，就采取猛烈的攻势。\n\n为了实现我们的野心，[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName]已经下定决定采纳#bold 毛奇#!的意见，按照他的方案实行改革。
+ peussia_army_reform_tt_1:0 "军事改革的成功将为我们解锁新的#bold 总参谋部#!可用行动！\n同时，我们的军队也将得到强化。"
+ #德意志之路
+ way_to_germany:0 "德意志之路"
+ way_to_germany_reason:0 "“[ROOT.GetCountry.GetName]在德意志的地位不取决于它的自由主义，而是取决于它的力量...普鲁士必须集中力量，而且维持力量以待适当时机，这时机来临了好几次，也离开好几次了。自从维也纳诸条约以来，我们的边界划分得太差了，不利于健全政治。当代的重大问题不是通过演说和多数派决议所能解决的，而是要用#variable 铁和血#!来解决！”\n\n德意志统一的理想目前看来似乎已经不在遥远：只要夺取[concept_war]的胜利，击败我们最大的挡路石[SCOPE.sCountry('AUS_scope').GetName]，就能成为唯一的[concept_unification_candidate]，终结德意志邦联来真正将德意志统一为一个整体。\n\n然而，德意志并非一片固定不变的疆土——有人宣称德意志只需要从马斯到梅梅尔就足够了，也有人坚持通过军事手段彻底#variable 统一整个德意志邦联#!。\n\n摆在[ROOT.GetCountry.GetName]的道路未来晦涩难明，我们究竟应该踏上哪一条道路？"
+ big_germany_tt:0 "我们将获得整个德意志邦联的宣称。\n但这将断送我们未来和奥地利的联盟可能。"
+ little_germany_tt_1:0 "我们将获得奥地利以外的德意志邦联宣称。"
+ little_germany_tt_2:0 "德奥同盟将在我们建立德意志帝国后可用。"
+ way_to_germany_1_tt:0 "必须没有[GetPlayer.GetName]以外的德意志[Concept('concept_unification_candidate', '$concept_unification_candidates$')]"
+ way_to_germany_complete_tt:0 "奥地利不存在"
+ #
+
+ 

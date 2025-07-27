@@ -1,16 +1,14 @@
 ﻿COUNTRIES = {
-	c:RUS ?= {
+	c:RUS? = {
 		effect_starting_technology_tier_3_tech = yes
 		add_technology_researched = napoleonic_warfare
 		add_technology_researched = stock_exchange
 		add_technology_researched = corporate_charters
-		
-		set_tax_level = low # pre-Kankrin reform tax system
-		
-		# --- Buffs ---
+	# --- Buffs ---
 		add_technology_researched = mass_communication
 		# add_technology_researched = banking
 		# -------------
+		set_tax_level = low # pre-Kankrin reform tax system
 		
 		# Laws 
 		activate_law = law_type:law_monarchy
@@ -24,14 +22,66 @@
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_frontier_colonization
 		add_modifier = modifier_russian_military_incompetence
 		add_taxed_goods = g:liquor
+
+		set_variable = {
+			name = alexander_reform_var
+			value = 0
+		}
+
+		set_variable = {
+            name = rus_alliance_var
+            value = 0
+        }
 
 		if = {
 			limit = {
 				has_dlc_feature = ep1_content
 			}
 			add_journal_entry = { type = je_caucasian_war }
+		}
+		add_journal_entry = { 
+			type = peter_instruction 
+		}
+		add_journal_entry = { 
+			type = siberian_penal_land
+		}
+		add_journal_entry = {
+			type = holy_league
+		}
+		add_journal_entry = {
+			type = moscow_patriarchate
+		}
+		add_journal_entry = {
+			type = reform_obshchina
+		}
+		add_journal_entry = {
+			type = russia_company_vodka_monopoly_character
+		}
+
+		add_modifier = {
+			name = influence_of_decembrists
+			years = 4 # 4 Years
+			is_decaying = yes
+		}
+
+		add_modifier = {
+			name = illegal_occupation_of_poland
+			years = 10 # 10 Years
+			is_decaying = yes
+		}
+
+		every_scope_state = {
+			limit = {
+				state_region = s:STATE_INGRIA
+			}
+			add_modifier = russian_academy_of_sciences_modifier
+		}
+
+		trigger_event = { 
+			id = joi_flavor_rus.1
 		}
 
 		add_company = company_type:company_russian_american_company

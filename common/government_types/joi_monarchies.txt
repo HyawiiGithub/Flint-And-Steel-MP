@@ -1,0 +1,547 @@
+﻿gov_hm_gov = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		OR = {
+		c:GBR = ROOT
+		c:IMP ?= ROOT
+		has_journal_entry = her_majestys_government
+		has_journal_entry = her_majestys_indian_government
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_frankfurter_kaiserreich = {#帝国政府
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_KAISER"
+	female_ruler = "RULER_TITLE_KAISERINE"
+
+	male_heir = "RULER_TITLE_ARCHDUKE"
+	female_heir = "RULER_TITLE_ARCHDESS"
+	
+	possible = {
+		OR = {
+			country_tier = hegemony
+			country_tier = empire
+		}
+		has_law = law_type:law_monarchy
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
+		has_modifier = paulskirchenverfassung_modifier
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_second_napolean_empire = {#法兰西帝国
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_EMPEROR"
+	female_ruler = "RULER_TITLE_EMPRESS"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		OR = {
+			country_tier = hegemony
+			country_tier = empire
+			country_tier = kingdom
+		}
+		has_law = law_type:law_monarchy
+		country_has_primary_culture = cu:french
+		has_variable = bonapartist_restoration_var
+		has_variable = one_true_french_dynasty
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_lander_der_krone = {#王冠领地
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		is_subject = yes
+		has_law = law_type:law_monarchy
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
+		has_journal_entry = lander_der_krone_government
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_absolute_empire = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_EMPEROR"
+	female_ruler = "RULER_TITLE_EMPRESS"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		has_law = law_type:law_autocracy 
+		OR = {
+			country_tier = hegemony
+			country_tier = empire
+		}
+		NOR = {
+			has_variable = orleanist_restoration_var
+			has_variable = legitimist_restoration_var
+		}
+		NOR = { 
+			has_modifier = paulskirchenverfassung_modifier 
+			has_variable = bonapartist_restoration_var
+		}
+		NOT = {
+			has_journal_entry = her_majestys_indian_government
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_empire = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_EMPEROR"
+	female_ruler = "RULER_TITLE_EMPRESS"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = no
+		OR = {
+			country_tier = hegemony
+			country_tier = empire
+		}
+		NOR = {
+			has_variable = orleanist_restoration_var
+			has_variable = legitimist_restoration_var
+		}
+		NOR = { 
+			has_modifier = paulskirchenverfassung_modifier 
+			has_variable = bonapartist_restoration_var
+		}
+		NOT = {
+			has_journal_entry = her_majestys_indian_government
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+
+gov_constitutional_empire = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_EMPEROR"
+	female_ruler = "RULER_TITLE_EMPRESS"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = yes
+		OR = {
+			country_tier = hegemony
+			country_tier = empire
+		}
+		NOR = {
+			has_variable = orleanist_restoration_var
+			has_variable = legitimist_restoration_var
+		}
+		NOR = { 
+			has_modifier = paulskirchenverfassung_modifier 
+			has_variable = bonapartist_restoration_var
+		}
+		NOT = {
+			has_journal_entry = her_majestys_indian_government
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_kaiser = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_KAISER"
+	female_ruler = "RULER_TITLE_KAISERINE"
+
+	male_heir = "RULER_TITLE_ARCHDUKE"
+	female_heir = "RULER_TITLE_ARCHDESS"
+	
+	possible = {
+		OR = {
+			country_tier = hegemony
+			country_tier = empire
+		}
+		has_law = law_type:law_monarchy
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
+		NOT = { has_modifier = paulskirchenverfassung_modifier }
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_absolute_kingdom = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		has_law = law_type:law_autocracy 
+		country_tier = kingdom
+		NOR = { 
+			has_journal_entry = lander_der_krone_government
+			has_variable = bonapartist_restoration_var
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_feudal_kingdom = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = no
+		has_law = law_type:law_serfdom
+		country_tier = kingdom
+		NOR = { 
+			has_journal_entry = lander_der_krone_government
+			has_variable = bonapartist_restoration_var
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_kingdom = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = no
+		country_tier = kingdom
+		NOR = { 
+			has_journal_entry = lander_der_krone_government 
+			has_variable = bonapartist_restoration_var
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_constitutional_kingdom = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = yes
+		country_tier = kingdom
+		NOR = { 
+			has_journal_entry = lander_der_krone_government 
+			has_variable = bonapartist_restoration_var
+		}
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_absolute_duchy = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_DUKE"
+	female_ruler = "RULER_TITLE_DUCHESS"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		has_law = law_type:law_autocracy 
+		country_tier = principality
+		country_is_in_europe = yes
+		NOT = { has_journal_entry = lander_der_krone_government }	
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_constitutional_duchy = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_DUKE"
+	female_ruler = "RULER_TITLE_DUCHESS"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = yes
+		country_tier = principality
+	
+		country_is_in_europe = yes
+		NOT = { has_journal_entry = lander_der_krone_government }	
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_duchy = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_DUKE"
+	female_ruler = "RULER_TITLE_DUCHESS"
+
+	male_heir = "" # Empty on purpose
+	female_heir = "" # Empty on purpose
+	
+	
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = no
+		country_tier = principality
+
+		country_is_in_europe = yes
+		NOT = { has_journal_entry = lander_der_krone_government }	
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_fra_constitutional_monarchy_orleanist = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE_ROYAL"
+	female_heir = "RULER_TITLE_PRINCESS_ROYAL"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = yes
+		has_variable = orleanist_restoration_var
+		NOT = { has_variable = bonapartist_restoration_var }
+		country_has_primary_culture = cu:french
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_fra_constitutional_monarchy_legitimist = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_DAUPHIN"
+	female_heir = "RULER_TITLE_DAUPHINE"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = yes
+		has_variable = legitimist_restoration_var
+		NOT = { has_variable = bonapartist_restoration_var }
+		country_has_primary_culture = cu:french
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_fra_absolute_monarchy_orleanist = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_PRINCE_ROYAL"
+	female_heir = "RULER_TITLE_PRINCESS_ROYAL"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = no
+		has_variable = orleanist_restoration_var
+		NOT = { has_variable = bonapartist_restoration_var }
+		country_has_primary_culture = cu:french
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_fra_absolute_monarchy_legitimist = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
+	
+	male_heir = "RULER_TITLE_DAUPHIN"
+	female_heir = "RULER_TITLE_DAUPHINE"
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		country_has_voting_franchise = no
+		has_variable = legitimist_restoration_var
+		NOT = { has_variable = bonapartist_restoration_var }
+		country_has_primary_culture = cu:french
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+

@@ -12,27 +12,50 @@
 		activate_law = law_type:law_autocracy 
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_heredetary_bureaucrats
+		activate_law = law_type:law_ethnostate
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_censorship	
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_canton_system
 		activate_law = law_type:law_freedom_of_conscience
-
-					add_modifier = modifier_china_bye_bye			  
+		
+add_modifier = modifier_china_bye_bye	
+add_modifier = modifier_high_pop_authority
 		set_tax_level = high
+
+		set_import_tariff_level = { 
+			goods = g:opium
+			level = no_tariffs_or_subventions
+		}
 
 		set_variable = {
 			name = china_warlord_explosion
 			value = 0
 		}
-		set_import_tariff_level = { 
-			goods = g:opium
-			level = no_tariffs_or_subventions
+
+		set_variable = {
+			name = hundred_days_reform_var
+			value = 0
 		}
-		add_journal_entry = { type = je_warlord_china }
+
+		set_variable = {
+			name = western_affairs_movement_var
+			value = 0
+		}
+
+		add_modifier = {
+			name = qing_1728_land_tax
+			years = 12
+		}
 		
-		add_modifier = modifier_high_pop_authority
+		add_journal_entry = { type = je_warlord_china }
+		add_journal_entry = { type = imperial_examination_system }
+		add_journal_entry = { type = grand_council }
+		add_journal_entry = { type = isolationist_policies }
+		add_journal_entry = { type = chinsese_royal_court }
+		add_journal_entry = { type = beijing_and_state }
+		add_journal_entry = { type = way_of_neisheng }
+		add_journal_entry = { type = china_company_jingdezhen_character }
 	}
 }

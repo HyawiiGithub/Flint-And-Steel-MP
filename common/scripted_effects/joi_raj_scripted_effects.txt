@@ -1,0 +1,171 @@
+bic_monthly_pulse_equity_progress = { #公司月股权进度
+	set_variable = { name = gbr_equity_progress_from_debts value = 0 }
+	set_variable = { name = gbr_equity_progress_from_buttons value = 0 }
+	set_variable = { name = bic_equity_progress_from_buttons value = 0 }
+	set_variable = { name = bic_equity_progress_from_debts value = 0 }
+	set_variable = { name = bic_equity_progress_next value = 0 }
+	set_variable = { name = gbr_equity_progress_next value = 0 }
+	#股权
+	if = {
+			limit = {
+				c:BIC = {
+					has_modifier = huge_british_debt
+				}
+			}
+			change_variable = { name = gbr_equity_progress_from_debts add = 2 }
+			change_variable = { name = bic_equity_progress_from_debts add = -2 }
+		}
+	if = {
+			limit = {
+				c:BIC = {
+					has_modifier = medium_british_debt
+				}
+			}
+			change_variable = { name = gbr_equity_progress_from_debts add = 1 }
+			change_variable = { name = bic_equity_progress_from_debts add = -1 }
+		}
+	if = {
+			limit = {
+				c:BIC = {
+					has_modifier = little_british_debt
+				}
+			}
+			change_variable = { name = gbr_equity_progress_from_debts add = 0.5 }
+			change_variable = { name = bic_equity_progress_from_debts add = -0.5 }
+		}
+	if = {
+			limit = {
+				c:GBR = {
+					has_modifier = gbr_nationalize_payment
+				}
+			}
+			change_variable = { name = gbr_equity_progress_from_buttons add = 1 }
+			change_variable = { name = bic_equity_progress_from_buttons add = -1 }
+		}
+	if = {
+			limit = {
+				c:BIC = {
+					has_modifier = bic_selling_shares_payment
+				}
+			}
+			change_variable = { name = gbr_equity_progress_from_buttons add = 1 }
+			change_variable = { name = bic_equity_progress_from_buttons add = -1 }
+		}
+	if = {
+			limit = {
+				c:GBR = {
+					has_modifier = raj_payment_to_gbr
+				}
+			}
+			change_variable = { name = bic_equity_progress_from_buttons add = 2 }
+			change_variable = { name = gbr_equity_progress_from_buttons add = -2 }
+		}
+
+	#核算
+	change_variable = { name = bic_equity_progress_next add = var:bic_equity_progress_from_buttons }
+	change_variable = { name = gbr_equity_progress_next add = var:gbr_equity_progress_from_buttons }
+	change_variable = { name = gbr_equity_progress_next add = var:gbr_equity_progress_from_debts }
+	change_variable = { name = bic_equity_progress_next add = var:bic_equity_progress_from_debts }
+}
+
+indian_homerule_ig_effects = {#印度自治重置ig
+	show_as_tooltip = {
+		ig:ig_industrialists = {
+			set_interest_group_name = ig_industrialists
+		}
+	}
+	custom_tooltip = {
+		text = indian_igs_change_ideologies_tt
+		ig:ig_industrialists = {
+			set_interest_group_name = ig_industrialists
+			if = {
+				limit = {
+					has_ideology = ideology:ideology_colonialist
+				}
+				remove_ideology = ideology_colonialist
+				add_ideology = ideology_laissez_faire
+			}
+			if = {
+				limit = {
+					has_ideology = ideology:ideology_malthusian
+				}
+				remove_ideology = ideology_malthusian
+				add_ideology = ideology_individualist
+			}
+			if = {
+				limit = {
+					has_ideology = ideology:ideology_enclavist
+				}
+				remove_ideology = ideology_enclavist
+				add_ideology = ideology_plutocratic
+			}
+		}
+		ig:ig_petty_bourgeoisie = {
+			if = {
+				limit = {
+					has_ideology = ideology:ideology_sovereignist
+				}
+				remove_ideology = ideology_sovereignist
+				add_ideology = ideology_patriotic
+			}
+		}
+		ig:ig_devout = {
+			if = {
+				limit = {
+					owner = {
+						country_has_state_religion = rel:sunni
+					}
+				}
+				set_interest_group_name = ig_sunni_madrasahs
+				if = {
+					limit = {
+						has_ideology = ideology:ideology_hindu_moralist
+					}
+					remove_ideology = ideology_hindu_moralist
+				}
+				if = {
+					limit = {
+						has_ideology = ideology:ideology_hindu_moralist_british_india
+					}
+					remove_ideology = ideology_hindu_moralist_british_india
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_ideology = ideology:ideology_moralist
+						}
+					}
+					add_ideology = ideology_moralist
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						country_has_state_religion = rel:hindu
+					}
+				}
+				if = {
+					limit = {
+						has_ideology = ideology:ideology_moralist
+					}
+					remove_ideology = ideology_moralist
+				}
+				if = {
+					limit = {
+						has_ideology = ideology:ideology_hindu_moralist_british_india
+					}
+					remove_ideology = ideology_hindu_moralist_british_india
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_ideology = ideology:ideology_hindu_moralist
+						}
+					}
+					add_ideology = ideology_hindu_moralist
+				}
+			}
+		}
+		state_religion_switch_effect = yes
+	}
+}

@@ -5,8 +5,6 @@
 
 	is_shown_when_inactive = {
 		has_technology_researched = egalitarianism
-		year >= 1841
-		year <= 1865
 		capital = {
 			OR = {
 				region = sr:region_england
@@ -33,8 +31,15 @@
 			text = peoples_springtime_underway_tt
 			has_global_variable = peoples_springtime_happening
 		}
-		radical_fraction = {
+		has_technology_researched = nationalism
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+			country_has_primary_culture = cu:north_italian
+			country_has_primary_culture = cu:south_italian
+			radical_fraction = {
 			value >= 0.05
+			}
 		}
 	}
 
@@ -70,7 +75,7 @@
 				has_law = law_type:law_census_voting
 				has_law = law_type:law_universal_suffrage
 			}
-		}		
+		}
 	}
 
 	on_complete = {
@@ -79,7 +84,7 @@
 		}
 		set_variable = {
 			name = completed_peoples_stringtime_recent
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		trigger_event = { id = peoples_springtime.7 }
 	}
@@ -89,13 +94,13 @@
 			limit = {
 				exists = var:springtime_timer_var
 			}
-			custom_tooltip = { 
+			custom_tooltip = {
 				text = springtime_of_the_peoples_timer_tt
 				var:springtime_timer_var >= 12
 			}
 		}
 		trigger_else = {
-			custom_tooltip = { 
+			custom_tooltip = {
 				text = springtime_of_the_peoples_timer_dummy_tt
 				always = no
 			}
@@ -124,7 +129,7 @@
 		}
 		set_variable = {
 			name = completed_peoples_stringtime_recent
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 		trigger_event = { id = peoples_springtime.8 }
 	}
@@ -183,3 +188,4 @@
 
 	timeout = 1825
 }
+

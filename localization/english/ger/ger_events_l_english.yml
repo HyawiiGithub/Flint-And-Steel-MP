@@ -1,0 +1,97 @@
+﻿l_english:
+    # The Constitutional Question of the Empire
+    joi_flavor_ger.1.t: "The Reichsgründung Constitution"
+    joi_flavor_ger.1.d: "As the dust settles on the Franco-Prussian War, the fundamental question of governance looms over the newly proclaimed German Empire."
+    joi_flavor_ger.1.f: "In the echoing halls of Berlin's Reichstag, delegates from across Germany debate the foundational laws of our nascent Reich. Three visions compete for dominance:\n\n1: #bold The Divine Right Proposal#! - Championed by Prussian traditionalists, this would establish an absolute monarchy where the Kaiser appoints ministers without parliamentary oversight. While politically untenable for most, it finds favor among East Elbian Junkers who whisper 'Against democracy, God has graciously preserved us the Kingship.'\n\n2: #bold Bismarck's Federal Solution#! - The Iron Chancellor's masterstroke creates a complex balance: \n- A Bundesrat (Federal Council) where Prussia holds 17 of 58 votes, giving Berlin veto power\n- A Reichstag elected through universal male suffrage, its 382 members enjoying parliamentary immunity\n- Royal prerogative preserved in military and foreign affairs\nAs Bismarck declares: 'The great questions of the day will not be settled by speeches... but by blood and iron!'\n\n3: #bold The Liberal Vision#! - Inspired by the 1848 Frankfurt Parliament, this would establish:\n- Proportional representation in the Bundesrat\n- Full parliamentary sovereignty\n- Annual automatic Reichstag sessions\nSupported by industrialists and academics, its advocates quote Humboldt: 'The true end of man... is the highest and most proportional development of his powers.'\n\nThe political calculus is delicate - #bold a discreet word from the Kaiserliche Kabinett#! might tip the scales."
+    joi_flavor_ger.1.a: "Gottesgnadentum! The monarch's will is law!"
+    joi_flavor_ger.1.b: "Accept Bismarck's ingenious compromise"
+    joi_flavor_ger.1.c: "For a free and united Volksstaat!"
+
+    # German Foreign Policy
+    joi_flavor_ger.2.t: "The Great Dilemma"
+    joi_flavor_ger.2.d: "The newly unified German Reich stands at a crossroads - will we become a continental power or a global empire?"
+    joi_flavor_ger.2.f: "For centuries, the German question haunted Europe. From Wallenstein's failed ambitions to Napoleon's dissolution of the Holy Roman Empire at Austerlitz, foreign powers consistently blocked German unification. Yet Prussia's phoenix-like rise after Jena-Auerstädt culminated in our glorious Reichsgründung.\n\nNow Bismarck warns of a nightmare coalition - the 'Nightmare of Coalitions' where [SCOPE.sCountry('GBR_scope').GetName], [SCOPE.sCountry('RUS_scope').GetName], and [SCOPE.sCountry('FRA_scope').GetName] might unite against the 'German colossus.' His solution? A delicate web of alliances maintaining continental balance, avoiding overseas entanglements that might provoke Britain.\n\nBut the industrialists and navalists roar back! Men like Alfred von Tirpitz argue we must have our 'place in the sun' - colonies for resources, coaling stations for our growing fleet, and global prestige to match our continental might. The debate rages in the Reichstag between:\n1. Bismarck's conservative Kontinentalpolitik\n2. The ambitious Weltpolitik of the new imperialists\n\nThe Kaiser's decision will shape Germany's destiny..."
+    joi_flavor_ger.2.a: "Bismarck's wisdom shall guide us - focus on Europe!"
+    joi_flavor_ger.2.b: "Forward to world power - build our colonial empire!"
+
+    # Permanent Imperial Parliament
+    joi_flavor_ger.3.t: "The Reichstag Constitution"
+    joi_flavor_ger.3.d: "The Imperial Constitution establishes the Reichstag as a permanent institution"
+    joi_flavor_ger.3.f: "§2: Imperial law supersedes state legislation\n§4: The Reich's exclusive competencies include:\n- Uniform citizenship and migration laws\n- Imperial taxation and customs union\n- Standardized currency and measurements\n- Consular services and maritime law\n- National rail network\n- Imperial post and telegraph\n- Unified legal codes\n- Army and navy matters\n\nMost crucially: #bold All legislation requires Reichstag approval#! This transforms Germany from a loose confederation into a federal state with genuine popular representation, though the Kaiser retains control over military and foreign affairs."
+    joi_flavor_ger.3.a: "Einigkeit und Recht und Freiheit!"
+    ger_event_2_1_tt: "Reichstag elections will commence regularly"
+
+    # Imperial Colonial Office
+    joi_flavor_ger.4.t: "Reichskolonialamt Established"
+    joi_flavor_ger.4.d: "The new Colonial Office centralizes administration of our growing empire"
+    joi_flavor_ger.4.f: "No longer shall we watch enviously as [SCOPE.sCountry('GBR_scope').GetName] and [SCOPE.sCountry('FRA_scope').GetName] divide the world! Our colonial portfolio grows daily:\n- #bold Kamerun#!'s rubber flows to Hamburg's factories\n- #bold Deutsch-Südwest#!'s diamonds glitter in Berlin's shops\n- #bold Ostafrika#!'s coffee perfumes Bremen's trading houses\n- Pacific plantations swell with tropical bounty\n\nThe Reichskolonialamt will professionalize administration, sending trained governors rather than mercenary companies. As the Kaiser proclaims: 'Germany has great tasks to accomplish outside Europe!'"
+    joi_flavor_ger.4.a: "Deutschland über alles - in der ganzen Welt!"
+
+    # West Africa
+    joi_flavor_ger.5.t: "Establishment of Deutsch-Westafrika"
+    joi_flavor_ger.5.d: "The newly conquered territories of Kamerun and Togoland are consolidated under a single colonial administration."
+    joi_flavor_ger.5.f: "In the stifling heat of Douala's governor's mansion, General von Zimmerer fans himself while briefing Berlin:\n\n'Mein Gott, this infernal climate! Our troops suffered terribly from malaria and heatstroke during the campaign. The natives endure it somehow, but I cannot recommend large-scale German settlement here. Still, the rubber plantations show promise - with proper... motivation.'\n\nThe colonial secretary nods knowingly: 'The Kaiserliche Schutztruppe will maintain order. As for labor, I've authorized the use of the Prügelstrafe corporal punishment system. These primitive lands require firm German guidance.'\n\nOutside, the whips crack as African porters haul imperial cargo to waiting ships."
+    joi_flavor_ger.5.a: "Für Deutschlands kolonialen Ruhm!" 
+
+    # Namibia
+    joi_flavor_ger.6.t: "Kolonialverwaltung Deutsch-Südwestafrika"
+    joi_flavor_ger.6.d: "The mineral-rich lands of Namibia are formally incorporated into the German colonial empire."
+    joi_flavor_ger.6.f: "Governor Leutwein's office in Windhoek overflows with prospecting permits:\n\n'Diamonds! Copper! Even traces of gold! Berlin's industrialists clamor for mining concessions. I've established the Siedlungskommission to parcel out native lands to good German farmers at ten pfennig per hectare!'\n\nHis aide hesitates: 'But the Herero and Nama peoples...'\n\nLeutwein waves dismissively: 'Their tribal claims are irrelevant. We'll confine them to reservations if they resist progress. Now, about my vacation home in the Harz mountains...'"
+    joi_flavor_ger.6.a: "Deutsche Wissenschaft und Arbeit über alles!"
+
+    # East Africa
+    joi_flavor_ger.7.t: "Kaiserliche Kolonialregierung Ostafrika"
+    joi_flavor_ger.7.d: "German East Africa is established as a model colony under direct imperial administration."
+    joi_flavor_ger.7.f: "Governor von Wissmann stands stiffly at attention in Dar es Salaam's government house, swearing his oath before the imperial banner:\n\n'I solemnly pledge to uphold the Kaiser's authority, implement the Kulturkampf policies, and develop this land for Germany's glory! The sisal plantations will flourish, the railway will reach Lake Tanganyika, and any native resistance will be met with maximal force!'\n\nAs the ceremony concludes, askari soldiers march past bearing the severed heads of rebellious chiefs on pikes - a warning to all who would challenge German rule."
+    joi_flavor_ger.7.a: "Ordnung muss sein!"
+
+    # New Guinea
+    joi_flavor_ger.8.t: "Deutsche Südsee-Protektorat"
+    joi_flavor_ger.8.d: "New Guinea becomes the cornerstone of Germany's Pacific empire."
+    joi_flavor_ger.8.f: "From the newly built naval base at Rabaul, Admiral von Spee surveys his domain:\n\n'These islands may be remote, but they're vital coaling stations for our Ostasiengeschwader. The plantations produce copra, rubber, and yes - bananas for the homeland!'\n\nA merchant interjects: 'Exzellenz, the natives keep dying in our mines...'\n\n'Then import more coolies from China!' barks the admiral. 'The Kaiserliche Marine needs its Südsee bastion!'"
+    joi_flavor_ger.8.a: "Pflanzungen und Kanonen!"
+
+    # German East Asia
+    joi_flavor_ger.9.t: "Ernennung des Gouverneurs von Deutsch-Ostasien"
+    joi_flavor_ger.9.d: "The newly conquered Asian territories are consolidated under a single colonial administration."
+    joi_flavor_ger.9.f: "In Singapore's Government House, Governor-General von Tirpitz unfurls his ambitious plans:\n\n'Our Ostasien territory stretches from Indochina's rubber plantations to Malaya's tin mines! The natives will learn German, the ports will host our fleet, and Berlin will reap the profits!'\n\nHis staff officer whispers: 'The French and British still claim these lands...'\n\nTirpitz smiles grimly: 'Let them try. Our new naval base here makes this the Gibraltar of the East!'"
+    joi_flavor_ger.9.a: "Deutschlands Sonne scheint auch im Osten!"
+
+    # Silesian Textile Union
+    joi_flavor_ger.10.t: "The Silesian Weavers' Revolt"
+    joi_flavor_ger.10.d: "Industrial unrest erupts in Germany's textile heartland as workers demand better conditions."
+    joi_flavor_ger.10.f: "In the smoke-filled halls of the Reichskanzlei, Chancellor von Bülow confers with industrialist Krupp:\n\n'Mein Kanzler, these socialist agitators in Breslau demand - imagine! - a 10-hour workday and Sunday rest! If we concede, how will we compete with British textiles?'\n\nBismarck's ghost seems to whisper from the portraits: 'Carrot and stick, gentlemen. Pass the Arbeiterschutzgesetz to ban child labor - it will split the unions. Then send the Gardekorps to crush any remaining strikers.'\n\nKrupp nods: 'We'll placate the moderates with sickness funds while blacklisting the radicals. Divide et impera - just like dealing with the Reichstag!'"
+    joi_flavor_ger.10.a: "Adopt Bismarck's 'Iron and Rye' tactic - concessions for some, repression for others!"
+    joi_flavor_ger.10.b: "These demands reek of foreign agitation! Deploy the Schutzpolizei!"
+
+    # Bavarian Locomotive
+    joi_flavor_ger.11.t: "Maffei's Mechanical Marvels"
+    joi_flavor_ger.11.d: "Munich's locomotive works set new standards for German engineering excellence."
+    joi_flavor_ger.11.f: "At the 1900 Paris Exposition, Bavarian S3/6 locomotive No. 3201 draws crowds:\n\n'Herr Direktor, even the Americans marvel at our precision! Their Pennsylvanian iron horses rattle like tin cans compared to our Swiss-watch craftsmanship!'\n\nThe factory tour reveals the secret: content workers in well-lit halls, profit-sharing schemes, and on-site medical care. 'See how we treat our machinists like artists? That's why each cylinder fits perfect as a Stradivarius!' \n\nRail magnate Strousberg declares: 'I'll take twenty for my Ostbahn - no more Yankee junk derailing my expresses!'"
+    joi_flavor_ger.11.a: "Deutsche Wertarbeit triumphs again!"
+
+    # German Command of the Seas
+    joi_flavor_ger.12.t: "Tirpitz's Hochseeflotte Triumphant"
+    joi_flavor_ger.12.d: "The Kaiserliche Marine now rules the waves, surpassing even Britain's Royal Navy."
+    joi_flavor_ger.12.f: "At the Kieler Woche naval review, Admiral von Tirpitz beams beside SMS Helgoland:\n\n'Mein Kaiser, our Riskflotte has achieved its purpose - 42 dreadnoughts to Britain's 38! See how their delegation scowls at our 30.5cm guns!'\n\nWilhelm II's eyes glisten: 'As a boy at Osborne House, I dreamed of this day! Now the world shall know - wherever German trade sails, German cannon follow!'\n\nBelow decks, engineers polish the revolutionary Zeiss rangefinders that give our gunners unmatched accuracy. The balance of naval power has shifted irrevocably."
+    joi_flavor_ger.12.a: "Weltmacht oder Niedergang - we choose power!"
+
+    # German-Austrian Alliance
+    joi_flavor_ger.13.t: "The Dual Alliance"
+    joi_flavor_ger.13.d: "Berlin extends an offer that could reshape Central Europe's balance of power."
+    joi_flavor_ger.13.f: "The Habsburg Foreign Ministry buzzes with activity as Count Kalnoky reviews the German proposal. The stark reality confronts Vienna: while Franz Joseph's empire stumbles through Balkan crises and Italian irredentism, Wilhelm's Germany surges ahead with Krupp steel and Moltke's armies.\n\nProponents argue: 'This alliance would modernize our antiquated industries through German investment, revitalize our officer corps with Prussian discipline, and deter Russian adventurism in the Balkans.'\n\nYet Metternich's ghost whispers warnings: 'Tie ourselves to Berlin's reckless Weltpolitik? When Germany clashes with Britain and France - as it surely will - our polyglot empire will be torn apart in their war!' \n\nThe aged Emperor muses: 'Shall we anchor ourselves to this rising power, or maintain our precarious independence?'"
+    joi_flavor_ger.13.a: "Nein! We remain the arbiter of our fate!"
+    joi_flavor_ger.13.b: "Ja! The Zweibund shall preserve our empires!"
+
+    # German-Italian Alliance
+    joi_flavor_ger.14.t: "The Steel Pact"
+    joi_flavor_ger.14.d: "A secret treaty that could either secure Italy's future or chain it to German ambitions."
+    joi_flavor_ger.14.f: "Article 1: Mutual non-aggression and consultation on all matters of mutual interest\nArticle 2: Automatic military assistance if France attacks either signatory\nArticle 3: Benevolent neutrality if either becomes embroiled in defensive war\nArticle 4: Joint military planning and no separate peace agreements\nArticle 5: Absolute secrecy regarding treaty terms\n\nAs Foreign Minister Ciano pores over the document in Palazzo Chigi, he weighs the consequences: 'Allying with Germany could give us dominance in the Mediterranean and African colonies... but at what cost? Their reckless ambitions might drag us into a war we cannot win.'\n\nMussolini pounds the table: 'With German steel, we can finally avvenge Adowa and make Mare Nostrum a reality!' \n\nYet wiser heads recall Cavour's wisdom: 'Italy's interest lies in playing all sides against each other.'"
+    joi_flavor_ger.14.a: "Italy stands alone - Per noi soltanto!"
+    joi_flavor_ger.14.b: "Sign the Patto d'Acciaio - our fates are joined!"
+    
+    #Silesian Textile Workers' Uprising
+    joi_flavor_ger.15.t: "The Silesian Weavers' Revolt"
+    joi_flavor_ger.15.d: "The industrialization of Silesia was marked by brutal exploitation. Driven to desperation, textile workers rose up against government indifference and factory owners' cruelty, transforming their looms into instruments of protest."
+    joi_flavor_ger.15.f: "#bold No tears in hollow eyes, they sit at looms, teeth clenched:#!\n'Germany, we weave your death-shroud,\nThreaded with triple curses—\n#bold We weave, we weave!#!'\n'A curse for the God we pleaded to,\nWho ignored our starving prayers,\nLeft hopes to wither unheard,\nMocking our suffering—\n#bold We weave, we weave!#!'\n'A curse for the rich man's king,\nDeaf to our dying breaths,\nWho wrings the last coin from our palms,\nThen orders us shot like strays—\n#bold We weave, we weave!#!'\n'A curse for this false fatherland,\nWhere shame blooms instead of justice,\nWhere young shoots are crushed unborn,\nWhere maggots feast on our corpses—\n#bold We weave, we weave!#!'\n'The shuttle flies, the loom groans,\nNight and day without rest—\n#bold Old Germany, we weave your death-shroud,#!\nThreaded with triple curses,\n#bold We weave, we weave!#!'"
+    joi_flavor_ger.15.a: "Work or be replaced!"

@@ -1,0 +1,118 @@
+﻿l_english:
+    # Opening of the Berlin Conference
+    joi_flavor_colony.1.t: "The Berlin Conference"
+    joi_flavor_colony.1.d: "To determine a reasonable division of African borders and interests, the world's most powerful colonial empires have gathered in Berlin: [SCOPE.sCountry('berlin_conference_gbr_power').GetName], [SCOPE.sCountry('berlin_conference_fra_power').GetName], [SCOPE.sCountry('berlin_conference_bel_power').GetName], [SCOPE.sCountry('berlin_conference_ger_power').GetName], [SCOPE.sCountry('berlin_conference_por_power').GetName], [SCOPE.sCountry('berlin_conference_spa_power').GetName], [SCOPE.sCountry('berlin_conference_1_power').GetName], [SCOPE.sCountry('berlin_conference_2_power').GetName], [SCOPE.sCountry('berlin_conference_3_power').GetName], [SCOPE.sCountry('berlin_conference_4_power').GetName], [SCOPE.sCountry('berlin_conference_5_power').GetName], [SCOPE.sCountry('berlin_conference_6_power').GetName], [SCOPE.sCountry('berlin_conference_8_power').GetName], [SCOPE.sCountry('berlin_conference_7_power').GetName], and [SCOPE.sCountry('berlin_conference_9_power').GetName] convened for a grand international conference to facilitate peace concerning African affairs."
+    joi_flavor_colony.1.f: "\"The interest of civilized nations in the material development of Africa ensures their collaboration in regulating African trade relations—a method proven effective in Asia to curb commercial conflicts on the basis of fair competition.\"\n\n\"We trust that all invited governments share a common aspiration: to integrate indigenous African peoples into the path of civilization, open up the African interior for international commerce, and provide Africans with the means for education and enlightenment.\"\n\n\"Through consultation among governments, we are confident in recommending to the powers a cooperative framework based on equal rights and interests, to be applied to Africa as deemed appropriate. All powers holding sovereignty or influence in the Congo Basin are tasked with protecting and supporting missionary activities and all endeavors aimed at enlightening indigenous peoples, enabling them to understand and appreciate the benefits of civilization.\"\n\n\"The attention devoted by nations to the development of African civilization, demonstrated through bold exploration, commercial activities, and sacrifices for the goals above, guarantees the success of our mission to bring enlightenment.\""
+    joi_flavor_colony.1.a: "Africa is a magnificent cake, and we must all have a slice."
+    joi_flavor_colony.1.b: "With just a stroke of a pen, a new border is born!"
+
+    # Closing of the Berlin Conference
+    joi_flavor_colony.2.t: "The General Act of Berlin signed!"
+    joi_flavor_colony.2.d: "[SCOPE.sCountry('berlin_conference_gbr_power').GetName], [SCOPE.sCountry('berlin_conference_fra_power').GetName], [SCOPE.sCountry('berlin_conference_bel_power').GetName], [SCOPE.sCountry('berlin_conference_ger_power').GetName], [SCOPE.sCountry('berlin_conference_por_power').GetName], [SCOPE.sCountry('berlin_conference_spa_power').GetName], [SCOPE.sCountry('berlin_conference_1_power').GetName], [SCOPE.sCountry('berlin_conference_2_power').GetName], [SCOPE.sCountry('berlin_conference_3_power').GetName], [SCOPE.sCountry('berlin_conference_4_power').GetName], [SCOPE.sCountry('berlin_conference_5_power').GetName], [SCOPE.sCountry('berlin_conference_6_power').GetName], [SCOPE.sCountry('berlin_conference_8_power').GetName], [SCOPE.sCountry('berlin_conference_7_power').GetName], and [SCOPE.sCountry('berlin_conference_9_power').GetName] examined and passed a joint treaty codifying international law, sovereign commitments, trade equality, and anti-slavery obligations in Africa."
+    joi_flavor_colony.2.f: "\"In the name of the Almighty, plenipotentiaries of Their Majesties and Excellencies sign this agreement, aiming in the spirit of mutual consultation to create the most favorable conditions for the trade and civilization of Africa, to ensure free navigation for all peoples along the two major African rivers flowing into the Atlantic, and to prevent future misunderstandings and disputes over new territorial acquisitions in Africa:\n\nThe principle of free trade, extended to eastern territories, binds only those states exercising or intending to exercise sovereignty within the designated territory and requires the consent of any sovereign nation involved.\n\nNo state holding or intending to hold sovereignty over the designated areas may grant monopolies or privileges related to trade. Foreigners are to enjoy equal rights and protections of person, property, and trade as nationals, without discrimination.\n\nTo provide new securities for commerce and industry and ensure the peaceful development of the countries under the regime of free trade, the signatory high contracting parties respect the sovereignty and neutrality of the territories described above. They unanimously agree to uphold the legitimate territorial rights of all states.\""
+    joi_flavor_colony.2.a: "The sun of the [ROOT.GetCountry.GetName] Empire shines upon the Dark Continent and shall never set!"
+
+    # Berlin Conference Partition Agreements
+    joi_flavor_colony.3.t: "Algiers Protocol"
+    joi_flavor_colony.3.d: "Following the deliberations of the Berlin Conference, the borders of Algiers provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.3.f: "\"The Algiers divisions defined by the terms of this agreement include the line starting from the Mediterranean coast at latitude 36°45'N, proceeding eastward along the northern slopes of the Atlas Mountains west of Oran to the Bougzoul Valley east of Algiers City. The eastern boundary stretches eastward from latitude 36°30'N along the Djurdjura Mountains through Tizi Ouzou to 35°10'N and longitude 7°20'E at the Tunisia Range. The southern boundary follows the Oued Oures and Ahaggar Highlands from latitude 33°20'N to the northern edge of the Sahara, ending between Touggourt and Ouargla.\""
+    joi_flavor_colony.3.a: "A fitting treaty."
+    joi_flavor_colony.3.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    #Western Africa Protocol
+    joi_flavor_colony.4.t: "Western Africa Protocol"
+    joi_flavor_colony.4.d: "Following the deliberations of the Berlin Conference, the borders of West African provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.4.f: "\"The terms aim to demarcate the boundaries of the West African coastal regions: The western boundary begins at longitude 1°00'E on the northern Guinea Gulf coastline, extending eastward along the shore to longitude 3°15'E, then northward following the main course and watershed of the Volta River to latitude 10°10'N. The northern boundary traces southward highlands along the tributaries of the Bimbola River to the Béntou valley. The eastern boundary starts at highlands near the confluence of the Koffi and Niger rivers, following the watershed of longitude 5°30'E back to the coast. The southern boundary is defined by the Atlantic coastline.\""
+    joi_flavor_colony.4.a: "A fitting treaty."
+    joi_flavor_colony.4.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Central Africa Protocol
+    joi_flavor_colony.5.t: "Central Africa Protocol"
+    joi_flavor_colony.5.d: "Following the deliberations of the Berlin Conference, the borders of Central African provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.5.f: "\"The terms aim to define the boundaries of central Equatorial Africa: The northern boundary begins at latitude 8°20'N, following the Chari River's main course and tributaries westward to the Logone Valley. The eastern boundary is marked by the watershed between the upper Uele River and the sources of the Nile, reaching longitude 28°10'E. The southern boundary starts at the confluence of the Ubangi and Mbomou Rivers, along their southern banks to longitude 16°30'E. The western boundary follows the watershed between the Sangha and Ngoko Valleys back to the northern boundary.\""
+    joi_flavor_colony.5.a: "A fitting treaty."
+    joi_flavor_colony.5.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Cameroon Protocol
+    joi_flavor_colony.6.t: "Cameroon Protocol"
+    joi_flavor_colony.6.d: "Following the deliberations of the Berlin Conference, the borders of Cameroonian provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.6.f: "\"The terms define the boundaries of the Cameroon region: The western boundary starts at longitude 8°50'E on the Guinea Gulf coastline, extending northward to Victoria Bay. The northern boundary follows the southern slopes of the Adamawa Plateau to latitude 9°20'N. The eastern boundary is defined by the watersheds of the Mbé River tributaries, the Ngomba Mountains, and the hilly regions of the upper Mbomou River. The southern boundary begins at the uplands between the Nyong River's upper reaches and the Wouri River basin, returning to the coast.\""
+    joi_flavor_colony.6.a: "A fitting treaty."
+    joi_flavor_colony.6.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Niger Protocol
+    joi_flavor_colony.7.t: "Niger Protocol"
+    joi_flavor_colony.7.d: "Following the deliberations of the Berlin Conference, the borders of Niger provinces and Ghana were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.7.f: "\"The terms defining the Niger divisions are as follows: The northern boundary starts at latitude 14°20'N, along the southern slope watershed of the Aïr Mountains eastward to the edge of the Bilma Plateau. The eastern boundary follows longitude 10°10'E to 10°50'E, defined by the highlands on the upper east bank of the Niger River. The southern boundary starts at latitude 10°00'N along the mid-course of the Niger River, winding southwest along its southern tributaries to the headwaters of Volta tributaries. The western boundary traces longitude 1°20'E through the watershed between the Masséna Basin and Gouda Plateau back to the northern boundary.\""
+    joi_flavor_colony.7.a: "A fitting treaty."
+    joi_flavor_colony.7.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Togo Protocol
+    joi_flavor_colony.8.t: "Togo Protocol"
+    joi_flavor_colony.8.d: "Following the deliberations of the Berlin Conference, the borders of the Togolese region were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.8.f: "\"The terms aim to define the boundaries of the Togolese coastal area and its inland hilly regions: The southern boundary follows the Guinea Gulf coastline from longitude 0°30'E eastward to longitude 1°50'E. The western boundary is delineated by the Monro River's mid and lower reaches, stretching north from latitude 6°00'N to the southern slopes of Atakora Mountains. The northern boundary is set at latitude 10°30'N, crossing the Pan Plateau and Oti Valley from west to east. The eastern boundary follows the watersheds of Oti River upper tributaries, stretching south to the Ani River estuary ending at longitude 1°50'E coastline.\""
+    joi_flavor_colony.8.a: "A fitting treaty."
+    joi_flavor_colony.8.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Congo Protocol
+    joi_flavor_colony.9.t: "Congo Protocol"
+    joi_flavor_colony.9.d: "Following the deliberations of the Berlin Conference, the borders of Congolese provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.9.f: "\"The regions defined by the Congo River Basin and its tributaries are outlined by neighboring basin mountain ranges, particularly those of the Niairi, Ogooué, Chari, and Nile River basins to the north; the eastern watersheds of Tanganyika Lake tributaries; and the southern mountain ranges of the Zambezi and Logé River basins. The northern boundary follows latitude 2°30'N from the coast to the geographical boundary of the Congo Basin without intersecting the Ogooué Basin. The southern boundary traces the Logé River course to its source, turning eastward to meet the Congo Basin. Thus, it includes all areas drained by the Congo River and its tributaries, encompassing Tanganyika Lake and its eastern tributaries.\""
+    joi_flavor_colony.9.a: "A fitting treaty."
+    joi_flavor_colony.9.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Angola Protocol
+    joi_flavor_colony.10.t: "Angola Protocol"
+    joi_flavor_colony.10.d: "Following the deliberations of the Berlin Conference, the borders of Angolan provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.10.f: "\"The terms aim to define the boundaries of southwestern Angola: The western boundary is the Atlantic coastline, stretching from latitude 5°30'S southward to latitude 17°40'S at the northern edge of the Namib Desert mouth. The northern boundary follows the Congo River and its tributary Cuango River, from longitude 13°20'E to longitude 16°00'E. The eastern boundary traces the watershed of the Bié Plateau, from the upper Cuango River southward to the source of the Cunene River. The southern boundary follows the Cunene River from its source to its intersection with the northern boundary of the Namib Desert, returning to the coastal terminus.\""
+    joi_flavor_colony.10.a: "A fitting treaty."
+    joi_flavor_colony.10.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Mozambique Protocol
+    joi_flavor_colony.11.t: "Mozambique Protocol"
+    joi_flavor_colony.11.d: "Following the deliberations of the Berlin Conference, the borders of Mozambican provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.11.f: "\"The terms aim to define the boundaries of Mozambique's East African coastal and Zambezi River basin regions. The eastern boundary is the Indian Ocean coastline, stretching from latitude 10°40'S southward to latitude 23°10'S at Delagoa Bay. The northern boundary starts at the mouth of the Rovuma River, following its main course to latitude 11°00'S. The western boundary is defined by the eastern highlands watershed of Lake Nyasa, the Shire River, and Zambezi River tributaries. The southern boundary follows the hilly region north of the Limpopo River to longitude 33°00'E, returning to the coast.\""
+    joi_flavor_colony.11.a: "A fitting treaty."
+    joi_flavor_colony.11.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Southwestern Africa Protocol
+    joi_flavor_colony.12.t: "Southwestern Africa Protocol"
+    joi_flavor_colony.12.d: "Following the deliberations of the Berlin Conference, the borders of Namibian provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.12.f: "\"The terms defining the boundaries of Southwest Africa are as follows: The western boundary is the Atlantic coastline, stretching between latitude 17°40'S and latitude 29°30'S. The northern boundary traces the upper Cunene River to the watershed source of Okavango River tributaries. The eastern boundary is delineated by the hilly region along the western edge of the Kalahari Desert, from latitude 20°00'S southward to latitude 27°00'S. The southern boundary starts at the mouth of the Orange River, following its main course to longitude 18°50'E, turning inland to connect with the Kalahari highlands.\""
+    joi_flavor_colony.12.a: "A fitting treaty."
+    joi_flavor_colony.12.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Eastern Africa Protocol
+    joi_flavor_colony.13.t: "Eastern Africa Protocol"
+    joi_flavor_colony.13.d: "Following the deliberations of the Berlin Conference, the borders of East African provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.13.f: "\"The terms aim to define the boundaries of East Africa to the Indian Ocean coastline and the Tanganyika Lake region. The eastern boundary stretches from latitude 4°50'S along the Indian Ocean coastline southward to latitude 10°20'S. The northern boundary follows the watershed of the Uluguru Mountains and Kilimanjaro foothills from latitude 4°40'S to the northern shore of Lake Victoria. The western boundary is defined by the eastern shore of Tanganyika Lake and the watershed of the Rufiji River's sources. The southern boundary follows the Rovuma River and its southern tributaries to the Mozambique ranges.\""
+    joi_flavor_colony.13.a: "A fitting treaty."
+    joi_flavor_colony.13.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Kenya Protocol
+    joi_flavor_colony.14.t: "Kenya Protocol"
+    joi_flavor_colony.14.d: "Following the deliberations of the Berlin Conference, the borders of Kenyan provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.14.f: "\"The terms aim to define the boundaries of Kenya and the Uganda region: The eastern boundary is the Indian Ocean coastline, stretching from latitude 3°50'S northward to latitude 5°20'S. The northern boundary begins at longitude 36°00'E, following the eastern shore of Lake Turkana and the mountainous watershed of the northern section of the East African Rift to latitude 5°00'S. The western boundary is defined by the northeastern shore of Lake Victoria to the highlands near the upper reaches of the Nzoia River. The southern boundary traces the Ngorongoro Plateau and Chyulu Mountains, returning to the coastline.\""
+    joi_flavor_colony.14.a: "A fitting treaty."
+    joi_flavor_colony.14.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Southern Africa Protocol
+    joi_flavor_colony.15.t: "Southern Africa Protocol"
+    joi_flavor_colony.15.d: "Following the deliberations of the Berlin Conference, the borders of South African provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.15.f: "\"The terms defining the coastal and plateau regions of South Africa are as follows: The southern boundary is the coastline between the Atlantic Ocean and the Indian Ocean's southern tip, stretching from longitude 17°00'E to longitude 33°30'E. The western boundary follows the upper reaches of the Orange River and its northern plateau watershed. The northern boundary is delineated by the southeastern edge of the Kalahari Plateau and the Mafeking Highlands. The eastern boundary traces the main ridge of the Drakensberg Mountains to the Natal coastline.\""
+    joi_flavor_colony.15.a: "A fitting treaty."
+    joi_flavor_colony.15.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Northern Rhodesia Protocol
+    joi_flavor_colony.16.t: "Northern Rhodesia Protocol"
+    joi_flavor_colony.16.d: "Following the deliberations of the Berlin Conference, the borders of Zambian provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.16.f: "\"The terms aim to define the boundaries of the Zambezi River's upper reaches and the Northern Rhodesian Plateau region: The northern boundary is marked by the southern shore of Lake Tanganyika, the Kaputa Basin, and the Mboko Mountains, stretching westward from longitude 30°00'E. The eastern boundary follows the watersheds of Luapula River tributaries and the Londa Highlands. The southern boundary traces the main course of the Zambezi River and its southern hilly region, spanning latitude 14°30'S to longitude 23°00'E. The western boundary connects the watershed of the Kabinda Basin and the sources of Kasai tributaries.\""
+    joi_flavor_colony.16.a: "A fitting treaty."
+    joi_flavor_colony.16.b: "This is a victory for [ROOT.GetCountry.GetName]!"
+
+    # Libya Protocol
+    joi_flavor_colony.17.t: "Libya Protocol"
+    joi_flavor_colony.17.d: "Following the deliberations of the Berlin Conference, the borders of Libyan provinces were clearly recorded in a memorandum, with the signing and sealing of all participating nations, affirming its inclusion as part of the final international treaty."
+    joi_flavor_colony.17.f: "\"The terms aim to define the boundaries of the Libyan region: The northern boundary is the southern shore of the Mediterranean Sea, stretching from longitude 10°10'E to longitude 25°30'E. The western boundary traces the Sahara dune region west of the Jufra Oasis, spanning latitude 30°40'N to latitude 25°00'N. The eastern boundary is defined by the Cyrenaica Highlands and the oasis line bordering Egypt. The southern boundary follows the Fezzan Plateau and the watershed of the southern Sahara, crossing the desert heartland eastward to the Kufra Oasis.\""
+    joi_flavor_colony.17.a: "A fitting treaty."
+    joi_flavor_colony.17.b: "This is a victory for [ROOT.GetCountry.GetName]!"

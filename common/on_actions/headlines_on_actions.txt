@@ -11,12 +11,685 @@ headlines_action = {
 				is_ai = no
 				is_revolutionary = no
 			}
+		#第八次反法同盟
+		if = {
+			limit = {
+				exists = c:FRA
+				has_global_variable = new_headlines_napoleonic_wars_news_var
+				NOT = {
+					has_variable = headlines_napoleonic_wars_headline_var
+				}
+			 }
+			 c:FRA = {
+				save_scope_as = FRA_scope
+				ruler = {
+					save_scope_as = little_napoleon_scope
+				}
+			}
+			set_variable = headlines_napoleonic_wars_headline_var
+			post_notification = headlines_napoleonic_wars_news
+		}
+		#巴黎公社
+		if = {
+			limit = {
+				exists = c:FRA
+				OR = {
+					c:FRA = { has_variable = joi_paris_commune_should_happen }
+					exists = c:PRC
+				}
+				NOT = {
+					has_variable = headlines_paris_commune_headline_var
+				}
+			 }
+			c:FRA ?= {
+			 		save_scope_as = FRA_scope
+			 	}
+			 c:PRC ?= {
+			 		save_scope_as = PRC_scope
+			 	}
+			 set_variable = headlines_paris_commune_headline_var
+			 post_notification = headlines_paris_commune_news
+		}
+		#英法协约
+		if = {
+			limit = {
+				exists = c:FRA
+				has_global_variable = entente_cordiale_headline_var
+				NOT = {
+					has_variable = headlines_entente_cordiale_headline_var
+				}
+			 }
+			c:FRA ?= {
+			 		save_scope_as = FRA_scope
+			 	}
+			c:GBR ?= {
+			 		save_scope_as = GBR_scope
+			 	}
+			set_variable = headlines_entente_cordiale_headline_var
+			post_notification = headlines_entente_cordiale_headline
+		}
+		#印度独立
+		if = {
+			limit = {
+				exists = c:BHT
+				c:BHT ?= {
+					has_variable = bic_indepedence_become_bht_var
+				}
+				NOT = {
+					has_variable = headlines_bic_indepedence_become_bht_var
+				}
+			 }
+			c:BHT ?= {
+			 		save_scope_as = BHT_scope
+			 	}
+			 set_variable = headlines_bic_indepedence_become_bht_var
+			 post_notification = headlines_bic_indepedence_become_bht
+		}
+		#印度宣布自治
+		if = {
+			limit = {
+				exists = c:BIC
+				c:BIC = {
+					has_variable = indian_home_rule_var
+				}
+				NOT = {
+					has_variable = headlines_indian_home_rule_var
+				}
+			 }
+			c:BIC = {
+			 		save_scope_as = BIC_scope
+			 		ruler = { save_scope_as = indian_home_rule_news_ruler }
+			 	}
+			 set_variable = headlines_indian_home_rule_var
+			 post_notification = headlines_indian_home_rule
+		}
+		#印度兵变
+		if = {
+			limit = {
+				exists = c:BIC
+				c:BIC = {
+					OR = {
+						has_variable = sepoy_mutiny_bengal_effect_critical
+						has_variable = sepoy_mutiny_bengal_effect_high
+						has_variable = sepoy_mutiny_bengal_effect_medium
+						has_variable = unified_subcontinent_news_var
+					}
+				}
+				NOT = {
+					has_variable = headlines_sepoy_mutiny_news_var
+				}
+			 }
+			c:BIC = {
+			 		save_scope_as = BIC_scope
+			 	}
+			 set_variable = headlines_sepoy_mutiny_news_var
+			 post_notification = headlines_sepoy_mutiny_news
+		}
+		#印度统一次大陆
+		if = {
+			limit = {
+				exists = c:BIC
+				c:BIC = {
+					has_variable = unified_subcontinent_news_var
+				}
+				NOT = {
+					has_variable = headlines_unified_subcontinent_news_var
+				}
+			 }
+			c:BIC = {
+			 		save_scope_as = BIC_scope
+			 	}
+			 set_variable = headlines_unified_subcontinent_news_var
+			 post_notification = headlines_unified_subcontinent_news
+		}
+		#法国进军叙利亚
+		if = {
+			limit = {
+				exists = c:FRA
+				c:FRA = {
+					has_variable = partant_pour_la_syrie_news_var
+				}
+				NOT = {
+					has_variable = headlines_partant_pour_la_syrie_news_var
+				}
+			 }
+			c:FRA = {
+			 		save_scope_as = FRA_scope
+			 	}
+			 set_variable = headlines_partant_pour_la_syrie_news_var
+			 post_notification = headlines_partant_pour_la_syrie_news
+		}
+		#法兰西联邦
+		if = {
+			limit = {
+				exists = c:FRA
+				c:FRA = {
+					has_variable = communaute_union_france_var
+				}
+				NOT = {
+					has_variable = headlines_communaute_union_france_var
+				}
+			 }
+			c:FRA = {
+			 		save_scope_as = FRA_scope
+			 	}
+			 set_variable = headlines_communaute_union_france_var
+			 post_notification = headlines_communaute_union_france
+		}
+		#北伐
+		if = {
+			limit = {
+				exists = c:CHI
+				c:CHI = {
+					has_variable = northern_expedition_news_var
+				}
+				NOT = {
+					has_variable = headlines_northern_expedition_news_var
+				}
+			 }
+			c:CHI = {
+			 		save_scope_as = CHI_scope
+			 		ruler = { save_scope_as = northern_expedition_president }
+			 	}
+			 set_variable = headlines_northern_expedition_news_var
+			 post_notification = headlines_northern_expedition_news
+		}
+		#辛亥革命
+		if = {
+			limit = {
+				exists = c:CHI
+				c:CHI = {
+					has_variable = xinhai_revolution_var
+				}
+				NOT = {
+					has_variable = headlines_xinhai_revolution_var
+				}
+			 }
+			c:CHI = {
+			 		save_scope_as = CHI_scope
+			 		ruler = { save_scope_as = xinhai_revolution_president }
+			 	}
+			 set_variable = headlines_xinhai_revolution_var
+			 post_notification = headlines_xinhai_revolution
+		}
+		#洋务运动
+		if = {
+			limit = {
+				exists = c:CHI
+				c:CHI = {
+					has_variable = western_affairs_movement_news_var
+				}
+				NOT = {
+					has_variable = headlines_western_affairs_movement_news_var
+				}
+			 }
+			c:CHI = {
+			 		save_scope_as = CHI_scope
+			 		ruler = { save_scope_as = chi_western_affairs_emperor }
+			 	}
+			 set_variable = headlines_western_affairs_movement_news_var
+			 post_notification = headlines_western_affairs_movement_news
+		}
+		#乌克兰大饥荒
+		if = {
+			limit = {
+				exists = c:RUS
+				c:RUS = {
+					has_variable = ukriane_great_famine_news_var
+				}
+				NOT = {
+					has_variable = headlines_ukriane_great_famine_news_var
+				}
+			 }
+			c:RUS = {
+			 		save_scope_as = RUS_scope
+			 		ruler = { save_scope_as = ruler_of_ukriane }
+			 	}
+			 set_variable = headlines_ukriane_great_famine_news_var
+			 post_notification = headlines_ukriane_great_famine_news
+		}
+		#赛艇大赛
+		if = {
+			limit = {
+				has_global_variable = rowing_of_united_kingdom_news_var
+				NOT = {
+					has_variable = headlines_rowing_of_united_kingdom_news_var
+				}
+			 }
+			 set_variable = headlines_rowing_of_united_kingdom_news_var
+			 post_notification = headlines_rowing_of_united_kingdom_news
+		}
+		#爱尔兰大饥荒
+		if = {
+			limit = {
+				exists = c:GBR
+				c:GBR = {
+					has_variable = irish_great_famine_news_var
+				}
+				NOT = {
+					has_variable = headlines_irish_great_famine_news_var
+				}
+			 }
+			c:GBR = {
+			 		save_scope_as = GBR_scope
+			 		ruler = { save_scope_as = king_of_ireland }
+			 	}
+			 set_variable = headlines_irish_great_famine_news_var
+			 post_notification = headlines_irish_great_famine_news
+		}
+		#威斯敏斯特法令
+		if = {
+			limit = {
+				exists = c:GBR
+				c:GBR = {
+					has_variable = act_of_westminister_news_var
+				}
+				NOT = {
+					has_variable = headlines_act_of_westminister_news_var
+				}
+			 }
+			c:GBR = {
+			 		save_scope_as = GBR_scope
+			 	}
+			 set_variable = headlines_act_of_westminister_news_var
+			 post_notification = headlines_act_of_westminister_news
+		}
+		#帝国会议
+		if = {
+			limit = {
+				exists = c:GBR
+				c:GBR = {
+					has_variable = first_emp_meeting_news_happen
+				}
+				NOT = {
+					has_variable = headlines_first_emp_meeting_news_happen_var
+				}
+			 }
+			 set_variable = headlines_first_emp_meeting_news_happen_var
+			 post_notification = headlines_first_emp_meeting_news_happen
+		}
+		#公海舰队
+		if = {
+			limit = {
+				OR = {
+					exists = c:GBR
+					exists = c:IMP
+				}
+				exists = c:GER
+				has_global_variable = deutsch_hochseeflotte_plab_declared_var
+				NOT = {
+					has_variable = headlines_deutsch_hochseeflotte_plab_declared_var
+				}
+			 }
+			c:GER = {
+			 		save_scope_as = GER_scope
+			 	}
+			 set_variable = headlines_deutsch_hochseeflotte_plab_declared_var
+			 post_notification = headlines_deutsch_hochseeflotte_plab_declared
+		}
+		#法兰克福失败
+		if = {
+			limit = {
+				has_global_variable = deutsch_frankfurter_nationalversammlung_fail_news_var
+				NOT = {
+					has_variable = headlines_deutsch_frankfurter_nationalversammlung_fail_news_var
+				}
+			 }
+			 set_variable = headlines_deutsch_frankfurter_nationalversammlung_fail_news_var
+			 post_notification = headlines_deutsch_frankfurter_nationalversammlung_fail_news
+		}
+		#法兰克福胜利
+		if = {
+			limit = {
+				exists = c:GER
+				has_global_variable = deutsch_frankfurter_nationalversammlung_victory_news_var
+				NOT = {
+					has_variable = headlines_deutsch_frankfurter_nationalversammlung_victory_news_var
+				}
+			 }
+			 c:GER = {
+				save_scope_as = GER_scope
+				ruler = { save_scope_as = deutsche_news_kaiser }
+			 }
+			 set_variable = headlines_deutsch_frankfurter_nationalversammlung_victory_news_var
+			 post_notification = headlines_deutsch_frankfurter_nationalversammlung_victory_news
+		}
+		#法兰克福议会召开
+		if = {
+			limit = {
+				exists = c:PRU
+				exists = c:AUS
+				c:PRU = {
+					has_variable = frankfurter_filter
+				}
+				NOT = {
+					has_variable = headlines_frankfurter_filter_var
+				}
+			 }
+			 c:PRU = {
+				save_scope_as = PRU_scope
+			 }
+			 c:AUS = {
+				save_scope_as = AUS_scope
+			 }
+			 set_variable = headlines_frankfurter_filter_var
+			 post_notification = headlines_frankfurter_filter
+		}
+		#德奥签署同盟
+		if = {
+			limit = {
+				exists = c:AUS
+				exists = c:GER
+				has_variable = dip_zweibund_news_global_var
+				NOT = {
+					has_variable = headlines_dip_zweibund_trust_var
+				}
+			 }
+			 c:AUS = {
+				save_scope_as = AUS_scope
+			 }
+			 c:GER ?= {
+				save_scope_as = GER_scope
+			 }
+			 set_variable = headlines_dip_zweibund_trust_var
+			 post_notification = headlines_dip_zweibund_trust
+		}
+		#奥地利联邦化
+		if = {
+			limit = {
+				exists = c:AUS
+				c:AUS = {
+					has_variable = aus_has_finish_fedration_reform
+				}
+				NOT = {
+					has_variable = headlines_aus_has_finish_fedration_reform_var
+				}
+			 }
+			 c:AUS = {
+				save_scope_as = AUS_scope
+				ruler = { save_scope_as = refomer_aus_kaiser }
+			 }
+			 set_variable = headlines_aus_has_finish_fedration_reform_var
+			 post_notification = headlines_aus_has_finish_fedration_reform
+		}
+		#奥地利首相出逃
+		if = {
+			limit = {
+				exists = c:AUS
+				c:AUS = {
+					has_variable = wind_of_liberalism_var
+				}
+				NOT = {
+					has_variable = headlines_wind_of_liberalism_var
+				}
+			 }
+			 c:AUS = {
+				save_scope_as = AUS_scope
+				ig:ig_landowners = {
+					leader = {
+						save_scope_as = aus_running_pm
+					}	
+				}
+			 }
+			 set_variable = headlines_wind_of_liberalism_var
+			 post_notification = headlines_wind_of_liberalism_happen
+		}
+		#奥地利二元化
+		if = {
+			limit = {
+				exists = c:AUS
+				c:AUS = {
+					NOR = {
+						has_law = law_type:law_ethnostate
+						has_law = law_type:law_national_supremacy
+					}
+				}
+				NOT = {
+					has_variable = headlines_aus_reich_start_to_reform_var
+				}
+			 }
+			 c:AUS = {
+				save_scope_as = AUS_scope
+				ruler = {
+					save_scope_as = aus_kaiser_refomer
+				}
+			 }
+			 set_variable = headlines_aus_reich_start_to_reform_var
+			 post_notification = headlines_aus_reich_start_to_reform
+		}
+		#征服中亚
+		if = {
+			limit = {
+				exists = c:RUS
+				c:RUS = {
+					has_variable = c_asia_conquerored_by_russians_var
+				}
+				NOT = {
+					has_variable = headlines_c_asia_conquerored_by_russians_var
+				}
+			 }
+			 c:RUS = {
+				save_scope_as = RUS_scope
+			 }
+			 set_variable = headlines_c_asia_conquerored_by_russians_var
+			 post_notification = headlines_c_asia_conquerored_by_russians
+		}
+		#法俄同盟签署
+		if = {
+			limit = {
+				exists = c:RUS
+				exists = c:FRA
+				has_variable = rus_alliance_news_global_var
+				NOT = {
+					has_variable = headlines_rus_fra_alliance_var
+				}
+			 }
+			 c:RUS = {
+				save_scope_as = RUS_scope
+			 }
+			 c:FRA = {
+				save_scope_as = FRA_scope
+			 }
+			 set_variable = headlines_rus_fra_alliance_var
+			 post_notification = headlines_rus_fra_alliance
+		}
+		#彼得大帝的遗嘱
+		if = {
+			limit = {
+				exists = c:RUS
+				c:RUS = {
+					has_variable = peter_instruction_victory_var
+				}
+				NOT = {
+					has_variable = headlines_peter_instruction_victory_var
+				}
+			 }
+			 c:RUS = {
+				save_scope_as = RUS_scope
+				ruler = {
+					save_scope_as = peter_instruction_scar
+				}
+			 }
+			 set_variable = headlines_peter_instruction_victory_var
+			 post_notification = headlines_headlines_peter_instruction_victory
+		}
+		#亚历山大二世即位
+		if = {
+			limit = {
+				exists = c:RUS
+				c:RUS = {
+					has_modifier = modifier_alexander_ii
+				}
+				NOT = {
+					has_variable = headlines_alexander_reform_var
+				}
+			 }
+			 c:RUS = {
+				save_scope_as = RUS_scope
+				ruler = {
+					save_scope_as = russian_scar_refomer
+				}
+			 }
+			 set_variable = headlines_alexander_reform_var
+			 post_notification = headlines_alexander_reform_start
+		}
+		#收复君士坦丁堡
+		if = {
+			limit = {
+				exists = c:RUS
+				exists = c:TUR
+				c:RUS = {
+					has_variable = constantinople_conquerored_by_russians
+				}
+				NOT = {
+					has_variable = headlines_constantinople_conquerored_by_russians_var
+				}
+			 }
+			 c:RUS = {
+				save_scope_as = RUS_scope
+				ruler = {
+					save_scope_as = russian_scar_constanin
+				}
+			 }
+
+			 c:TUR = {
+				save_scope_as = TUR_scope
+			 }
+			 set_variable = headlines_constantinople_conquerored_by_russians_var
+			 post_notification = headlines_constantinople_conquerored_by_russians
+		}
+		#北京条约
+		if = {
+			limit = {
+				exists = c:RUS
+				exists = c:CHI
+				c:RUS = {
+					has_variable = treaty_of_peking_signed_now_var
+				}
+				NOT = {
+					has_variable = headlines_treaty_of_peking_signed_now_var
+				}
+			 }
+			 c:RUS = {
+				save_scope_as = RUS_scope
+			 }
+			 c:CHI = {
+				save_scope_as = CHI_scope
+			 }
+			 set_variable = headlines_treaty_of_peking_signed_now_var
+			 post_notification = headlines_treaty_of_peking_signed_now
+		}
+		#英美结盟
+		if = {
+			limit = {
+				exists = c:GBR
+				exists = c:USA
+				has_global_variable = us_uk_special_relations_both_agree_var
+				NOT = {
+					has_variable = headlines_us_uk_special_relations_var
+				}
+			 }
+			 c:USA = {
+				save_scope_as = USA_scope
+			 }
+			 c:GBR = {
+				save_scope_as = USA_scope
+			 }
+			 set_variable = headlines_us_uk_special_relations_var
+			 post_notification = headlines_us_uk_special_relations
+		}
+		#美国民权运动大获全胜
+		if = {
+			limit = {
+				exists = c:USA
+				c:USA = {
+					has_variable = civil_rights_victory
+				}
+				NOT = {
+					has_variable = headlines_civil_rights_victory_var
+				}
+			 }
+			 c:USA = {
+				save_scope_as = USA_scope
+			 }
+			 set_variable = headlines_civil_rights_victory_var
+			 post_notification = headlines_civil_rights_victory
+		}
+		#美国废除了第二银行
+		if = {
+			limit = {
+				exists = c:USA
+				c:USA = {
+					has_variable = sbus_was_abolished_var
+				}
+				NOT = {
+					has_variable = headlines_sbus_was_abolished_var
+				}
+			 }
+			 c:USA = {
+			 	ruler = {
+			 		save_scope_as = usa_headlines_ruler
+			 	}
+			 }
+			 set_variable = headlines_sbus_was_abolished_var
+			 post_notification = headlines_sbus_was_abolished
+		}
+		#美国宣告昭昭天命
+		if = {
+			limit = {
+				exists = c:USA
+				c:USA = {
+					has_journal_entry = manifest_destiny
+				}
+				NOT = {
+					has_variable = headlines_usa_declares_manifest_destiny
+				}
+			 }
+			 c:USA = {
+				save_scope_as = USA_scope
+			 }
+			 set_variable = headlines_usa_declares_manifest_destiny
+			 post_notification = headlines_usa_declares_manifest_destiny
+		}
+		#卡尔大公的葬礼
+		if = {
+			limit = {
+				c:AUS = {
+					has_variable = duke_of_karl_dead_var
+				}
+				NOT = {
+					has_variable = headlines_funeral_of_archduke_karl_seen
+				}
+			 }
+			 c:AUS = {
+				save_scope_as = AUS_scope
+			 }
+			 set_variable = headlines_funeral_of_archduke_karl_seen
+			 post_notification = headlines_funeral_of_archduke_karl
+		}
+		#帝国联邦
+		if = {
+			limit = {
+				exists = c:IMP
+				NOT = {
+					exists = c:GBR
+				}
+				NOT = {
+					has_variable = headlines_rise_of_imp_seen
+				}
+			 }
+			 c:IMP = {
+				save_scope_as = IMP_scope
+			 }
+			 set_variable = headlines_rise_of_imp_seen
+			 post_notification = headlines_rise_of_imp
+		}
 		##Civil Wars##
 		#ACW Starts
 		if = {
 			limit = {
-				c:USA ?= {
-					has_journal_entry = je_acw_war
+				c:USA = {
+					has_journal_entry = american_civil_war	#美国内战
 				}
 				OR = {
 					exists = c:FSA 
@@ -47,7 +720,7 @@ headlines_action = {
 		if = {
 			limit = {
 				c:USA ?= {
-					has_journal_entry = je_acw_reconstruction
+					has_journal_entry = american_reconstraction	#重建时期
 				}
 				NOR = {
 					exists = c:FSA 
@@ -182,77 +855,6 @@ headlines_action = {
 			 set_variable = headlines_taiping_defeat_seen
 			 post_notification = headlines_taiping_defeat
 		}
-		#Sepoy Mutiny
-		if = {
-			limit = {
-				exists = c:BIC
-				any_diplomatic_play = {
-					is_diplomatic_play_type = dp_sepoy_mutiny
-				}
-				NOT = {
-					has_variable = headlines_sepoy_mutiny_seen
-				}
-			 }
-			 c:BIC = {
-				save_scope_as = bic_scope
-			 }
-			 set_variable = headlines_sepoy_mutiny_seen
-			 post_notification = headlines_sepoy_mutiny
-		}
-		#Successful Sepoy Mutiny
-		if = {
-			limit = {
-				exists = c:MUG
-				c:MUG = {
-					is_subject = no
-				}
-				OR = {
-					NOT = {
-						exists = c:BIC
-					}
-					c:BIC = {
-						has_truce_with = c:MUG
-					}
-				}
-				has_variable = headlines_sepoy_mutiny_seen
-				NOT = {
-					has_variable = headlines_sepoy_mutiny_success_seen
-				}
-			 }
-			 c:BIC = {
-				save_scope_as = bic_scope
-			 }
-			 set_variable = headlines_sepoy_mutiny_success_seen
-			 post_notification = headlines_sepoy_mutiny_success
-		}
-		#Failed Sepoy Mutiny
-		if = {
-			limit = {
-				exists = c:BIC
-				c:BIC = {
-					is_at_war = no
-					is_diplomatic_play_committed_participant = no
-				}
-				OR = {
-					NOT = {
-						exists = c:MUG
-					}
-					c:MUG = {
-						is_subject_of = c:BIC
-						has_truce_with = c:BIC
-					}
-				}
-				has_variable = headlines_sepoy_mutiny_seen
-				NOT = {
-					has_variable = headlines_sepoy_mutiny_crushed_seen
-				}
-			 }
-			 c:BIC = {
-				save_scope_as = bic_scope
-			 }
-			 set_variable = headlines_sepoy_mutiny_crushed_seen
-			 post_notification = headlines_sepoy_mutiny_crushed
-		}
 		##Collapses##
 		#Qing Collapse
 		if = {
@@ -271,29 +873,11 @@ headlines_action = {
 		#BIC Collapse
 		if = {
 			limit = {
-				exists = c:GBR
 				NOT = {
 					has_variable = headlines_bic_collapse_seen
-				}
-				OR = {
-					NOT = {
-						exists = c:BIC
-					}
-					c:BIC = {
-						NOT = {
-							is_subject_of = c:GBR
-						}
-					}
-				}
-				NAND = {
+					exists = c:BIC
 					exists = c:BHT
-					c:BHT = {
-						is_subject_of = c:GBR
-					}
 				}
-			}
-			c:GBR = {
-				save_scope_as = britain_scope
 			}
 			post_notification = headlines_bic_collapse
 			set_variable = headlines_bic_collapse_seen
@@ -427,25 +1011,6 @@ headlines_action = {
 			set_variable = headlines_yugoslavia_formed_seen
 			post_notification = headlines_yugoslavia_formed
 		}
-		#India Formed
-		if = {
-			limit = { 
-				exists = c:BHT
-				c:BHT = {
-					is_subject = no
-					is_diplomatic_play_committed_participant = no
-					is_revolutionary = no
-				}
-				NOT = {
-					has_variable = headlines_india_formed_seen
-				}
-			}
-			c:BHT = {
-				save_scope_as = india_scope
-			}
-			set_variable = headlines_india_formed_seen
-			post_notification = headlines_india_formed
-		}
 		##Regime Changes##
 		#British Republic
 		if = {
@@ -489,7 +1054,6 @@ headlines_action = {
 		#British Raj
 		if = {
 			limit = {
-				exists = c:BIC
 				NOT = {
 					has_game_rule = headlines_no_minor_events
 				}
@@ -500,15 +1064,12 @@ headlines_action = {
 				NOT = {
 					has_variable = headlines_british_raj_seen
 				} 
+				exists = c:BIC
 				c:BIC = {
-					OR = {
-						has_diplomatic_pact = {
-							who = c:GBR
-							type = colony
-						}
-						has_modifier = modifier_india_crown_rule
+					has_diplomatic_pact = {
+						who = c:GBR
+						type = puppet
 					}
-
 				}
 			}
 			c:BIC ?= {
@@ -649,180 +1210,6 @@ headlines_action = {
 			}
 			set_variable = headlines_french_empire_seen
 			post_notification = headlines_french_empire
-		}
-		#Communist Germany
-		if = {
-			limit = { 
-				exists = c:GER
-				c:GER = {
-					has_law = law_type:law_council_republic
-				}
-				NOT = {
-					has_variable = headlines_communist_germany_seen
-				}
-			}
-			c:GER = {
-				save_scope_as = germany_scope
-			}
-			set_variable = headlines_communist_germany_seen
-			post_notification = headlines_communist_germany
-		}
-		#Communist USA
-		if = {
-			limit = { 
-				exists = c:USA
-				c:USA = {
-					has_law = law_type:law_council_republic
-				}
-				NOT = {
-					has_variable = headlines_communist_usa_seen
-				}
-			}
-			c:USA = {
-				save_scope_as = usa_scope
-			}
-			set_variable = headlines_communist_usa_seen
-			post_notification = headlines_communist_usa
-		}
-		#Monarchy USA
-		if = {
-			limit = { 
-				exists = c:USA
-				c:USA = {
-					has_law = law_type:law_monarchy
-				}
-				NOT = {
-					has_variable = headlines_monarchy_usa_seen
-				}
-			}
-			c:USA = {
-				save_scope_as = usa_scope
-			}
-			set_variable = headlines_monarchy_usa_seen
-			post_notification = headlines_monarchy_usa
-		}
-		#Technocracy USA
-		if = {
-			limit = { 
-				exists = c:USA
-				c:USA = {
-					OR = {
-						has_law = law_type:law_parliamentary_republic
-						has_law = law_type:law_presidential_republic
-					}
-					has_law = law_type:law_technocracy
-				}
-				NOT = {
-					has_variable = headlines_technocracy_usa_seen
-				}
-			}
-			c:USA = {
-				save_scope_as = usa_scope
-			}
-			set_variable = headlines_technocracy_usa_seen
-			post_notification = headlines_technocracy_usa
-		}
-		#Austria-Hungary
-		if = {
-			limit = {
-				exists = c:AUS
-				c:AUS = {
-					has_law = law_type:law_monarchy
-					country_has_primary_culture = cu:hungarian
-				}
-				NOT = {
-					has_variable = headlines_austria_hungary_seen
-				}
-			 }
-			 c:AUS = {
-				save_scope_as = austria_scope
-			 }
-			 set_variable = headlines_austria_hungary_seen
-			 post_notification = headlines_austria_hungary
-		}
-		#Democratic Russia
-		if = {
-			limit = { 
-				exists = c:RUS
-				c:RUS = {
-					OR = {
-						has_law = law_type:law_parliamentary_republic
-						has_law = law_type:law_presidential_republic
-					}
-					country_has_voting_franchise = yes
-				}
-				NOT = {
-					has_variable = headlines_democratic_russia_seen
-				}
-			}
-			c:RUS = {
-				save_scope_as = russia_scope
-			 }
-			set_variable = headlines_democratic_russia_seen
-			post_notification = headlines_democratic_russia
-		}
-		#Soviet Russia
-		if = {
-			limit = { 
-				exists = c:RUS
-				c:RUS = {
-					has_law = law_type:law_council_republic
-				}
-				NOT = {
-					has_variable = headlines_soviet_russia_seen
-				}
-			}
-			c:RUS = {
-				save_scope_as = russia_scope
-			 }
-			set_variable = headlines_soviet_russia_seen
-			post_notification = headlines_soviet_russia
-		}
-		#President Pedro
-		if = {
-			limit = { 
-				exists = c:BRZ
-				c:BRZ = {
-					has_law = law_type:law_presidential_republic
-					ruler = {
-						has_variable = is_pedro
-					}
-				}
-				NOT = {
-					has_variable = headlines_pedro_president_seen
-				}
-			}
-			c:BRZ = {
-				save_scope_as = brazil_scope
-			}
-			set_variable = headlines_pedro_president_seen
-			post_notification = headlines_pedro_president
-		}
-		#Pedro Dies
-		if = {
-			limit = {
-				exists = c:BRZ
-				c:BRZ = {
-					has_law = law_type:law_monarchy
-					ruler = {
-						NOT = {
-							has_variable = is_pedro
-						}
-						has_variable = isabel_var
-					}
-				}
-				NOT = {
-					has_variable = headlines_pedro_death_seen
-				}
-				NOT = {
-					has_interest_marker_in_region = region_brazil
-				}
-			}
-			c:BRZ = {
-				save_scope_as = brazil_scope
-			}
-			set_variable = headlines_pedro_death_seen
-			post_notification = brz_isabel_accession
 		}
 		##Constructions
 		#Suez Canal Built
@@ -1146,7 +1533,7 @@ headlines_action = {
 				}
 				exists = c:FRA 
 				c:FRA = {
-					has_journal_entry = je_the_algerian_departements
+					has_journal_entry = fra_aferican_empire	#黑暗到来的征途
 				}
 				NOT = {
 					has_variable = headlines_french_algeria_seen

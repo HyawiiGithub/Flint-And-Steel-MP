@@ -1,9 +1,6 @@
 ﻿l_braz_por:
-  pmg_base_building_synthetic_oil_plants:0 "Óleo Sintético"
- pmg_base_building_synthetic_rubber_plants:0 "Borracha Sintética"
- pm_synth_oil_production:0 "Produção de Óleo Sintético"
- pm_improved_synth_oil_production:0 "Produção de Óleo Sintético Melhorado"
- pm_synth_rubber_production:0 "Produção de Borracha Sintética"
-
- pmg_ownership_capital_building_synthetic_oil_plants:0 "Propriedade Privada"
- pmg_ownership_capital_building_synthetic_rubber_plants:0 "Propriedade Privada"
+pm_government_run_building_steel_industry: "Construção da indústria siderúrgica operada pelo governo"
+pm_government_run_building_motor_industries: "Construção das indústrias de motores operada pelo governo"
+pm_government_run_building_munition_plants: "Construção de fábricas de munições operada pelo governo"
+pmg_ownership_capital_building_steel_mills: "Propriedade pública"
+pmg_ownership_capital_building_motor_industry: "Propriedade pública"

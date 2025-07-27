@@ -1,0 +1,84 @@
+ai_unique_buff_decision = {
+	is_shown = {
+		NOT = { has_global_variable = has_add_buff_to_ai }
+		is_ai = no
+		game_date <= 1837.1.1
+	}
+
+	possible = {
+		custom_tooltip = {
+		text = ai_unique_buff_decision_tt
+		NOT = { has_global_variable = has_add_buff_to_ai }
+		}
+		game_date <= 1837.1.1
+	}
+
+	when_taken = {
+		custom_tooltip = {
+		text = ai_unique_buff_decision_tt_2
+		set_global_variable = has_add_buff_to_ai
+		}
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}
+
+ai_unique_buff_get_again_decision = {
+	is_shown = {
+		has_global_variable = has_add_buff_to_ai 
+		NOT = { country_rank <= rank_value:decentralized_power }
+		is_ai = yes
+	}
+
+	possible = {
+		custom_tooltip = {
+		text = ai_unique_buff_get_again_decision_tt
+		NOT = { has_variable = ai_buff_enable }
+		}
+	}
+
+	when_taken = {
+		if = {
+			limit = {
+				country_rank = rank_value:great_power
+			}
+			add_journal_entry = { type = ai_great_power_buff }
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:major_power
+			}
+			add_journal_entry = { type = ai_major_power_buff }
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:minor_power
+			}
+			add_journal_entry = { type = ai_minor_power_buff }
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:insignificant_power
+			}
+			add_journal_entry = { type = ai_insignificant_power_buff }
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_major_power
+			}
+			add_journal_entry = { type = ai_unrecognized_major_power_buff }
+		}
+		else_if = {
+			limit = {
+				country_rank = rank_value:unrecognized_regional_power
+			}
+			add_journal_entry = { type = ai_unrecognized_regional_power_buff }
+		}
+	}
+
+	ai_chance = {
+		value = 100		
+	}
+}

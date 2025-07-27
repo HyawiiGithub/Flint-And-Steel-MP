@@ -1,0 +1,414 @@
+#意识形态相关################################################################################################
+human_rights = { # 人权增加教会包容和小市民开明
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/human_rights.dds"
+	category = society
+	on_researched = {
+		if = {
+			limit = {
+				NOT = { has_variable = mutual_funds_researched }
+			}
+			set_variable = mutual_funds_researched
+		}
+
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_freedom_of_conscience
+						has_law = law_type:law_total_separation
+					}
+				}
+				ig:ig_devout = {
+					if = {
+						limit = { has_ideology = ideology:ideology_moralist }
+						remove_ideology = ideology_moralist
+						add_ideology = ideology_inclusiveness
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = need_ideology_english_enlightlism }
+					OR = {
+						has_law = law_type:law_wealth_voting
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage
+					}
+				}
+				ig:ig_petty_bourgeoisie = {
+					if = {
+						limit = { has_ideology = ideology:ideology_reactionary }
+						remove_ideology = ideology_reactionary
+						add_ideology = ideology_enlightlism
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_right_of_assembly
+						has_law = law_type:law_protected_speech
+					}
+				}
+				ig:ig_petty_bourgeoisie = {
+					if = {
+						limit = { has_ideology = ideology:ideology_patriotic }
+						remove_ideology = ideology_patriotic
+						add_ideology = ideology_patriotism
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_law = law_type:law_wealth_voting
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage
+					}
+				}
+				ig:ig_petty_bourgeoisie = {
+					if = {
+						limit = { has_ideology = ideology:ideology_reactionary }
+						remove_ideology = ideology_reactionary
+						add_ideology = ideology_english_enlightlism
+					}
+				}
+			}
+	}
+	
+	modifier = {
+		country_institution_social_security_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {
+		egalitarianism
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_progressive_agenda
+			}
+			add = 0.5
+		}		
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = 1
+		}
+		if = {
+			limit = { 
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+					has_strategy = ai_strategy_maintain_mandate_of_heaven
+				}			
+			}
+			add = -0.5
+		}			
+	}
+ }
+
+ corporatism = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/corporatism.dds"
+	category = society
+
+	on_researched = {
+		if = {
+			limit = {
+				NOT = { has_variable = corporatism_researched }
+			}
+			set_variable = corporatism_researched
+		}
+		ig:ig_devout = {
+				if = {
+					limit = { has_ideology = ideology:ideology_pious }
+					remove_ideology = ideology_pious
+					add_ideology = ideology_corporatist
+				}
+			}
+	}
+	
+	modifier = {
+		state_radicals_from_political_movements_mult = -0.1
+	}
+	
+	unlocking_technologies = {
+		labor_movement
+		nationalism
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = -0.5
+		}	
+		if = {
+			limit = { 
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+				}			
+			}
+			add = 1.5
+		}
+	}
+}
+
+socialism = {	# 社会主义增加资本家资产阶级主义，地主守旧主义
+	# Unlocks Council Republic - Governance Principles Law
+	# Unlocks Graduated Taxation - Income Taxation Law
+	# New leaders may spawn with the Social Democrat, Communist Ideologies
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/socialism.dds"
+	category = society
+	
+	modifier = {
+		state_expected_sol_from_literacy = 1
+		country_institution_workplace_safety_max_investment_add = 2
+	}
+
+	on_researched = {
+		if = {
+			limit = {
+				NOT = { has_variable = socialism_researched }
+			}
+			set_variable = socialism_researched
+			ig:ig_trade_unions = {
+				add_ideology = ideology_socialist
+				}
+			}
+			ig:ig_industrialists = {
+				if = {
+					limit = { has_ideology = ideology:ideology_plutocratic }
+					remove_ideology = ideology_plutocratic
+					add_ideology = ideology_bourgeoisie_capitalism
+				}
+			}
+			ig:ig_landowners = {
+				if = {
+					limit = { has_ideology = ideology:ideology_stratocratic }
+					remove_ideology = ideology_stratocratic
+					add_ideology = ideology_misoneism
+				}
+			}
+	}
+	
+	unlocking_technologies = {
+		labor_movement
+		dialectics
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = -0.5
+		}	
+		if = {
+			limit = { 
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+				}			
+			}
+			add = 1
+		}
+	}
+}
+
+nationalism = {#民族主义增加农民扩张主义
+	# Unlocks the Immigration Controls Law in Migration
+	# New leaders may spawn with the Ethno-Nationalist Ideology
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = society
+	
+	modifier = {
+		country_authority_mult = 0.1
+	}
+	
+	unlocking_technologies = {
+		mass_communication
+		international_relations
+	}
+
+	on_researched = {
+		if = {
+			limit = {
+				NOT = { has_variable = nationalism_researched }
+			}
+			custom_tooltip = {
+				text = unlock_national_agitation_tt
+				set_variable = nationalism_researched
+			}
+		}
+		if = {
+			limit = { country_rank >= rank_value:major_power }
+			ig:ig_rural_folk = {
+				if = {
+					limit = { has_ideology = ideology:ideology_isolationist }
+					remove_ideology = ideology_isolationist
+					add_ideology = ideology_expansionism
+				}
+			}
+		}
+	}
+	ai_weight = {
+		value = 1 # Important in general
+		
+		# Extra-important for major unifications
+		if = {
+			limit = { 
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+					country_has_primary_culture = cu:yankee
+				}			
+			}
+			add = 5
+		}	
+		
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}
+				any_country = {
+					has_journal_entry = je_risorgimento
+				}
+			}
+			multiply = 5
+		}
+	}
+}
+
+civilizing_mission = {#开化使命增加军队帝国主义
+	# Unlocks Panama Canal survey expedition decision
+	# Unlocks the Panama Canal
+
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/civilizing_mission.dds"
+	category = society
+
+	modifier = {
+		country_institution_colonial_affairs_max_investment_add = 1
+		country_infamy_generation_against_unrecognized_mult = -0.25
+	}
+	
+	on_researched = {
+		if = {
+			limit = { country_rank >= rank_value:great_power }
+			ig:ig_armed_forces = {
+				if = {
+					limit = { has_ideology = ideology:ideology_jingoist }
+					remove_ideology = ideology_jingoist
+					add_ideology = ideology_imperialism
+				}
+			}
+		}
+	}
+
+	unlocking_technologies = {
+		quinine
+		nationalism
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		# Important for colonizers
+		if = {
+			limit = { 
+				navy_size >= 25
+				is_country_type = recognized
+			}
+			add = 1
+		}
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_colonial_expansion
+			}
+			add = 1
+		}
+	}
+}
+
+organized_sports = {#组织运动加影响力和权威
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/organized_sports.dds"
+	category = society
+	
+	modifier = {
+		country_prestige_mult = 0.1
+		country_authority_mult = 0.1
+		country_influence_mult = 0.1 
+		building_group_bg_service_employee_mult = -0.05
+	}
+	
+	unlocking_technologies = {
+		nationalism
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+#城镇中心和农业需要加强
+elevator = {
+	# Unlocks Arcades PM in Urban Center
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/elevator.dds"
+	category = society
+	
+	modifier = {
+		state_infrastructure_from_population_add = 1
+		state_infrastructure_from_population_max_add = 20
+		state_building_construction_sector_max_level_add = 5
+		country_max_weekly_construction_progress_add = 5
+		building_group_bg_service_employee_mult = -0.1
+	}	
+	
+	unlocking_technologies = {
+		steel_frame_buildings
+	}
+	
+	ai_weight = {
+		value = 1.5 # Important in general
+	}
+}
+
+paved_roads = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
+	category = society
+	
+	modifier = {
+		state_infrastructure_from_automobiles_consumption_add = 0.25
+		building_group_bg_service_employee_mult = -0.1
+		building_group_bg_agriculture_employee_mult = -0.05
+	}
+	
+	unlocking_technologies = {	
+		elevator
+	}
+	
+	ai_weight = {
+		value = 2 # Important for those nice-looking roads!
+	}
+}

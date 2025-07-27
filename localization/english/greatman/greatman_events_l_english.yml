@@ -1,0 +1,126 @@
+﻿l_english:
+# Great Figures
+    joi_great_man.1.t: "Lord Kelvin"
+    joi_great_man.1.d: "A scientist named #variable William Thomson#!, a natural philosophy professor at the University of Glasgow, recently gained fame for his outstanding thermodynamic achievements."
+    joi_great_man.1.f: "“I believe the trend of the material world is toward increasing dispersion of motion, while overall, the trend of motion concentration is gradually reversing.\n\nI think that no physical activity can restore the heat emitted by the sun, and this energy source is neither inexhaustible nor unlimited; the movements of Earth and other planets are losing vitality, converting this vitality into heat.\n\nAlthough Earth can recover some vitality through heat received from the sun or other means, this loss cannot be precisely compensated, and I believe it is likely insufficient.”"
+    joi_great_man.1.a: "We need him in a government scientific position!"
+    joi_great_man.1.b: "Invest in his focused thermodynamics research."
+
+    joi_great_man.2.t: "Michael Faraday"
+    joi_great_man.2.d: "A humble-born scientist named #variable Michael Faraday#! has recently gained recognition for his outstanding achievements in electricity."
+    joi_great_man.2.f: "“I have finally succeeded in illuminating magnetic curves or lines of force and magnetized a beam of light... The division between various kinds of electricity is false; there is only one electricity, and variations in quantity and intensity produce different phenomena groups.”"
+    joi_great_man.2.a: "He deserves a promotion for this!"
+    joi_great_man.2.b: "Invest in his focused electricity research!"
+
+    joi_great_man.3.t: "Darwin and Evolution Theory"
+    joi_great_man.3.d: "A biology book titled #variable On the Origin of Species#! written by #variable Charles Darwin#! introduces the theory of evolution as a replacement for Biblical content, shocking [ROOT.GetCountry.GetName]'s society."
+    joi_great_man.3.f: "“As the number of individuals born in each species exceeds the number that can survive, struggle for existence occurs repeatedly, and any being undergoing slight favorable variation under complex and sometimes changing living conditions will have a better chance of survival, thus naturally selected. By the powerful principle of inheritance, any selected variant tends to propagate its new and improved forms.\n\nThis view of life is great, as life’s diverse powers were initially infused into a few or one form; and while this planet rotates according to fixed gravitational laws, from such a simple beginning, countless beautiful and wonderful forms have evolved and are evolving.”"
+    joi_great_man.3.a: "Utter nonsense!"
+    joi_great_man.3.b: "A groundbreaking discovery!"
+
+    joi_great_man.4.t: "David Livingstone's Great Expedition"
+    joi_great_man.4.d: "An explorer named #variable David Livingstone#! successfully crossed East Africa's wild gorges, reaching a vast lake he named #variable Lake Victoria#!."
+    joi_great_man.4.f: "“We passed a female slave who had been shot or pierced and lay on the road: groups of men on one side and women on the other, about 100 yards apart, watched; they said an Arab had done this earlier in the morning, enraged because he lost the money she paid, as she could no longer walk.\n\nWe also encountered a man dying of starvation, extremely emaciated. One of our men wandered and found many slaves abandoned with slave sticks due to food shortages; too weak to speak or tell where they came from; some were still young.”"
+    joi_great_man.4.a: "An outstanding exploration achievement!"
+
+    joi_great_man.5.t: "Luke Howard"
+    joi_great_man.5.d: "A scholar named #variable Luke Howard#! published a book titled #variable The Climate of London#!, making his previous work #variable On the Modifications of Clouds#! famous, earning him the title 'Father of Meteorology.'"
+    joi_great_man.5.f: "“Clouds are affected by certain distinct changes caused by the general reasons influencing all atmospheric changes; they usually serve as good visible indicators of these reasons at work, much like a person’s face reflects their mental or physical state.”"
+    joi_great_man.5.a: "London's fog is worsening; perhaps his findings could help."
+
+    joi_great_man.6.t: "Alexander Fleming and Penicillin"
+    joi_great_man.6.d: "A great biologist named #variable Alexander Fleming#! has developed a new drug called #variable penicillin#!, which is considered a potential cure for diseases that have plagued humanity for millennia!"
+    joi_great_man.6.f: "“Sometimes, people discover things they didn’t intend; when dawn broke that day, I certainly didn’t expect to revolutionize medicine with the first antibiotic or bacteria killer: but I believe that’s exactly what I did.”\n\n“Eventually, anyone could buy penicillin in stores; but the danger lies in ignorant individuals easily consuming insufficient doses of the drug, exposing microbes to non-lethal doses, causing them to develop resistance.”"
+    joi_great_man.6.a: "He will undoubtedly be recognized as one of humanity’s greatest figures!"
+
+    joi_great_man.7.t: "Joule and the Mechanical Equivalent of Heat"
+    joi_great_man.7.d: "A young scientist named #variable James Prescott Joule#! presented a paper titled #variable The Mechanical Equivalent of Heat#! at the Thermodynamics Association meeting, drawing wide academic attention."
+    joi_great_man.7.f: "“I believe this theory... contradicts established philosophical principles, concluding that vitality could be destroyed if equipment is improperly configured: hence, Mr. Clapeyron inferred: ‘The temperature of fire is 1000°C to 2000°C higher than boilers; during heat transfer from the furnace to the boiler, vitality is heavily lost.’\n\nI believe the power of destruction solely belongs to the Creator, and I assert that any theory demanding the annihilation of power during implementation must be incorrect.”"
+    joi_great_man.7.a: "Let him continue thermodynamics research with Lord Kelvin."
+    joi_great_man.7.b: "His findings should be applied to dynamics."
+
+    joi_great_man.8.t: "Jane Eyre"
+    joi_great_man.8.d: "A novel titled #variable Jane Eyre#! has gained immense popularity in [ROOT.GetCountry.GetName]'s society, with readers marveling at its author #variable Charlotte Brontë#!’s exceptional talent and praising its romanticism."
+    joi_great_man.8.f: "“Do you think I am an automaton? A machine without feelings? ... Do you think, because I am poor, obscure, plain, and little, I am soulless and heartless? You are wrong—I have as much soul as you, and full as much heart... I am not speaking to you through custom, convention, even mortal flesh—it is my soul that addresses yours, just as if both had passed through the grave and stood at God’s feet, equal—as we are!”"
+    joi_great_man.8.a: "The book is good but somewhat crude."
+    joi_great_man.8.b: "Reader, I married him..."
+
+    joi_great_man.9.t: "Marian Evans"
+    joi_great_man.9.d: "Under the pen name #variable George Eliot#!, a female author #variable Marian Evans#! has published several works such as #variable Middlemarch#!, prompting broad social reflection on realism and rural life."
+    joi_great_man.9.f: "“Her complete character, like the river dammed for Cyrus, divided into many streams, no longer enjoys fame in the world. Yet her influence on those around her is continuous and significant; the world’s growth in goodness partly depends on humble deeds by those who quietly live faithful lives, later resting in unvisited graves. Our lives being less tragic owes half to their silent fidelity.”"
+    joi_great_man.9.a: "The most meaningful life is one of dignity and simplicity."
+    joi_great_man.9.b: "Eliot-esque moralizing women."
+
+    joi_great_man.10.t: "Thomas Carlyle"
+    joi_great_man.10.d: "A series of promotional novels titled #variable Latter-Day Pamphlets#! has spread widely in [ROOT.GetCountry.GetName]'s society, sparking criticism and ridicule of governmental foolishness."
+    joi_great_man.10.f: "“What is democracy?\n\nThis immense, inevitable product of destiny, now part of our Europe: that is our question. Whence arises this universal, gigantic, dark democracy, and where does it lead? What does it mean? It must mean something; otherwise, it would not exist.\n\nIf we can find its true meaning, perhaps we might wisely submit or wisely resist and control, still hoping to live within it; if we cannot, if we only discern false meaning or none at all, life will become impossible!”"
+
+    joi_great_man.10.a: "Perhaps they've been too well-fed!"
+    joi_great_man.10.b: "Let them criticize; criticism fosters progress."
+
+    joi_great_man.11.t: "Ralph Waldo Emerson"
+    joi_great_man.11.d: "A series of transcendentalist literary works authored by #variable Ralph Waldo Emerson#! has inspired a literary trend in [ROOT.GetCountry.GetName] that pursues liberalism and the beauty of nature."
+    joi_great_man.11.f: "“We live amid surfaces, and the true art of life lies in traversing them as symbols to eternal and universal truths.\n\nWithin humankind is a higher soul, wisdom's silence, and universal beauty, each part inherently connected to the greater whole—eternal and indivisible.\n\nThis profound force within us is both self-sustaining and perfect. The observer and the observed—the act and the thing seen—are one. We perceive bits of the world: the sun, the moon, animals, and trees; but as a whole, these are radiant reflections of the soul!”"
+    joi_great_man.11.a: "Inner peace and simplicity are the true Christ within us."
+    joi_great_man.11.b: "Gentlemen, onward! Onward!"
+
+    joi_great_man.12.t: "Walden"
+    joi_great_man.12.d: "A seminal book titled #variable Walden#! has begun to gain popularity in literary circles, expressing its author #variable Henry David Thoreau#!'s idealistic pursuit of individual freedom."
+    joi_great_man.12.f: "“I went to the woods because I wished to live deliberately, to confront only the essential facts of life, and see if I could learn what it had to teach, and not, when I came to die, discover that I had not lived.\n\nI did not wish to live what was not life, living is so dear; nor did I wish to practice resignation unless it was quite necessary.\n\nI wanted to live deeply, suck out all the marrow of life, live so sturdily and Spartan-like as to put to rout all that was not life, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms, and if it proved mean, then to get the whole and genuine meanness of it, and publish its meanness to the world; or if it were sublime, to know it by experience, and be able to give a true account of it in my next excursion.”"
+    joi_great_man.12.a: "An eccentric book by an eccentric man."
+
+    joi_great_man.13.t: "Civil Disobedience"
+    joi_great_man.13.d: "An essay titled #variable Civil Disobedience#! posits that individuals should not permit governments to override or diminish their conscience, advocating the responsibility to resist tacitly becoming agents of injustice. Liberal thinkers in [ROOT.GetCountry.GetName] regard it as a groundbreaking masterpiece."
+    joi_great_man.13.f: "“Under a government that unjustly imprisons anyone, the true place for the just man is also a prison... A minority is powerless while conforming to the majority; it is not even a minority then; but it is irresistible when it throws its whole weight into its opposition.\n\nBut even if bloodshed arises. Is there not already blood when the conscience is wounded? True bravery and immortal strength flow from this wound, bleeding to eternal death. I see this blood flowing now.”"
+    joi_great_man.13.a: "I firmly believe that refusing to cooperate with evil is a moral obligation."
+
+    joi_great_man.14.t: "Principles of Economics"
+    joi_great_man.14.d: "A macroeconomic work titled #variable Principles of Economics#! by #variable Alfred Marshall#! has garnered widespread acclaim in [ROOT.GetCountry.GetName]'s economic circles."
+    joi_great_man.14.f: "“Almost every category of labor is constantly weighed in terms of its efficiency versus cost, balanced between one or more production sectors and others, with these sectors in turn balancing against additional ones. This competition is primarily ‘vertical’: a struggle among different grades of labor confined within the same vertical walls of production sectors for employment fields.\n\nAlthough no liquid may flow directly between tanks at opposite ends; if several tanks are connected by pipes, all tanks will tend toward the same level, even if some tanks are not directly connected to others. Similarly, substitution principles continuously allocate benefits across industries, even among grades that appear unrelated at first glance.”"
+    joi_great_man.14.a: "The government needs such talent in charge of the economy!"
+    joi_great_man.14.b: "Fund further research in this field."
+
+    joi_great_man.15.t: "On Liberty"
+    joi_great_man.15.d: "A liberal essay titled #variable On Liberty#! by #variable John Stuart Mill#! was published today in [ROOT.GetCountry.GetName]'
+    joi_great_man.15.f: "“First, if any opinion is compelled to silence, then, for all we can know, it may be true... To deny this is to assume our own infallibility.\n\nSecond, though the silenced opinion be an error, it may, and very commonly does, contain a portion of truth; and since the general or prevailing opinion on any subject is rarely or never the whole truth, it is only by the collision of adverse opinions that the remainder of the truth has any chance of being supplied.\n\nThird, even if the received opinion be not only true but the whole truth; unless it is vigorously and earnestly contested, and unless, in fact, it is also disputed, most of those who receive it will hold it in the manner of a prejudice, with little comprehension or feeling of its rational grounds.\n\nNot only this, but the meaning of the doctrine itself will be in danger of being lost or enfeebled, and deprived of its vital effect on character and conduct: #bold the dogma will become a mere formal profession, inefficacious for good, but cumbering the ground, and preventing the growth of any real and heartfelt conviction, resting on personal experience or reason.#!”"
+    joi_great_man.15.a: "A remarkable classic of liberal thought!"
+    joi_great_man.16.t: "Nietzsche and the Will to Power"
+    joi_great_man.16.d: "The Head of the Philosophy Department at Basel University, #variable Friedrich Nietzsche#!, proposed the argument that 'God is dead,' sparking wide attention to his philosophical ideas in [ROOT.GetCountry.GetName]'s society."
+    joi_great_man.16.f: "“Man is something that must be overcome. What have you done to overcome him? All creatures so far have created something beyond themselves: and you want to be the ebb of this great tide, and rather go back to the beast than overcome man? What is the ape to man? A laughing-stock or a painful embarrassment.\n\nAnd man shall be just that for the Superman: a laughing-stock or a painful embarrassment. You have made your way from worm to man, and much within you is still worm. Once you were apes, and even now, too, man is more of an ape than any of the apes.\n\nEven the wisest among you is only a conflict and crossing of plant and ghost. But do I bid you become ghosts or plants? Behold, I teach you the Superman! The Superman is the meaning of the earth. Let your will say: the Superman shall be the meaning of the earth... Man is a rope, tied between beast and Superman—a rope over an abyss... What is great in man is that he is a bridge and not a goal: what is lovable in man is that he is an over-going and a down-going.”"
+    joi_great_man.16.a: "What the heck?"
+    joi_great_man.16.b: "Spiritual evolution of self-consciousness."
+
+    joi_great_man.17.t: "Carl Friedrich Gauss and Arithmetic Research"
+    joi_great_man.17.d: "A scholar named #variable Carl Friedrich Gauss#! published a masterpiece in 1801 titled #variable 'Disquisitiones Arithmeticae'#!, which today is widely acknowledged in the mathematics community. Gauss himself is praised as one of the greatest mathematicians of this era."
+    joi_great_man.17.f: "“The topics of this volume deal with parts of mathematics concerning integers... In the face of many difficulties, derivations have been suppressed for brevity in reference to this book for readers; however, among numerous challenging problems, synthetic arguments are summative, and analytical results must be suppressed, written briefly, processes are possible, and results can determine the range of proofs.\n\nThe greatest delight is not in knowing, but in learning; not in possessing, but in arriving there; when I have solved and exhausted a subject, I turn away from it, to plunge again into darkness.”"
+    joi_great_man.17.a: "A legend in the mathematics community!"
+    joi_great_man.17.b: "That was from his younger years; now he should continue his research on telegraphs."
+
+    joi_great_man.18.t: "Georg Ohm"
+    joi_great_man.18.d: "A teacher named #variable Georg Ohm#! proposed and validated a new law for electrodynamics, which he named #variable 'Ohm's Law'#!."
+    joi_great_man.18.f: "“The current through a conductor between two points is directly proportional to the voltage across the two points; introducing the proportionality constant, the resistance... where I is the current through the conductor, V is the voltage measured across the conductor, and R is the resistance of the conductor. More specifically, Ohm's Law states that R in this relation is constant, independent of the current... The interchangeability of the equation can be illustrated using a triangle.”"
+    joi_great_man.18.a: "A monumental achievement."
+    joi_great_man.18.b: "The doors to electricity beckon [ROOT.GetCountry.GetName]!"
+
+    joi_great_man.19.t: "Joseph König's Analytical Method"
+    joi_great_man.19.d: "A professor named #variable Joseph König#! developed a new method of food chemical analysis, proven to be highly beneficial for food production."
+    joi_great_man.19.f: "“The newly founded agricultural research station in Münster recruited him, where he continued his research; Göttingen's Georg-August University takes pride in his achievements.”"
+    joi_great_man.19.a: "Very promising!"
+    joi_great_man.19.b: "Acquire his patents."
+
+    joi_great_man.20.t: "Siemens Cycle"
+    joi_great_man.20.d: "An electrician named #variable Karl Wilhelm Siemens#! proposed a cycle mode for internal combustion engines, naming it the 'Siemens Cycle.'"
+    joi_great_man.20.f: "“Heating—by compressing gas—adds external energy to the gas, providing the energy required for the cycle... Cooling—by immersing the gas in a cooler environment, losing some heat... cooling through a heat exchanger, using returned gas from the next stage, which is also the final stage... further cooling through gas expansion and work done, removing heat and energy.\n\nIn each cycle, the net cooling is greater than the heat added at the start of the cycle, as the gas goes through more cycles and becomes cooler.”"
+    joi_great_man.20.a: "Let him lead continued research in this field."
+    joi_great_man.20.b: "Internal combustion engines are the future of [ROOT.GetCountry.GetName]!"
+
+    joi_great_man.21.t: "Alfred Krupp"
+    joi_great_man.21.d: "A factory owner named #variable Alfred Krupp#! invented an entirely new breech-loading cannon process, which has been submitted to [ROOT.GetCountry.GetName]'s War Department for review."
+    joi_great_man.21.f: "“Splitting a forged slender steel sheet in the middle, separating it in a ring-like manner, stretching and finally rolling it... Arms sales are growing rapidly; our factory provides cannons to all major European countries; we developed a round wedge breech-loading cannon, perfecting the breech-loader, which offers double the range of bronze cannons, exhibiting excellent accuracy. Ultimately, all enterprises in the Ruhr district benefiting from this have become wealthy.”"
+    joi_great_man.21.a: "Recruit him to assist with continued development."
+    joi_great_man.21.b: "Heavily invest in purchasing his research results!"
+
+    joi_great_man.22.t: "Amanda Jones and Vacuum Canning"
+    joi_great_man.22.d: "A female writer named #variable Amanda Jones#! invented a vacuum canning process for food preservation, greatly enhancing the freshness of canned goods."
+    joi_great_man.22.f: "“Placing sealed jars filled with fruits and vegetables into light sugar syrup, juice, or water and steaming them to an internal temperature of 120°F to expel air from the jars, forming an airtight seal that protects the food from oxygen—which fosters bacterial growth; using glass jars with vacuum-sealed lids instead of seam-sealed tin cans allows people to enjoy fresh fruits and vegetables later in the season.”"
+    joi_great_man.22.a: "Let's have some canned fruits!"

@@ -1,0 +1,109 @@
+﻿railways = {
+	# Unlocks Railways
+	# Unlocks Rail Transport PM in Coal, Iron, Lead, Sulfur Mines
+	# Unlocks Rail Transport PM in Coffee, Cotton, Dye, Opium, Tea, Tobacco, Sugar, Rubber, Banana Plantations
+	# Unlocks Rail Transport PM in Logging Camp
+	# Unlocks Rail Transport PM in Oil Rig
+	# Unlocks Public Trams in Urban Centers
+	# Increases Railway max level by 1
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/railways.dds"
+	category = production
+	
+	modifier = {
+		state_market_access_price_impact = 0.05
+	}
+
+	unlocking_technologies = {
+		mechanical_tools
+		atmospheric_engine
+	}
+	
+	ai_weight = {
+		value = 2 # Important tech for everyone
+		
+		if = {
+			limit = { 
+				OR = {
+					 has_strategy = ai_strategy_industrial_expansion
+					 has_strategy = ai_strategy_resource_expansion
+				}
+			}
+			add = 2
+		}		
+	}
+}
+
+dough_rollers = {#压面机改时代
+	# Unlocks the Automated Bakery PM in Food Industries
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/rollers.dds"
+	category = production
+	
+	unlocking_technologies = {
+		conveyors
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+threshing_machine = {#手法农业需要加强
+	# Unlocks Steam Threshers PM on Rye, Wheat, Rice, Maize, Millet Farms
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/threshing_machine.dds"
+	category = production
+
+	unlocking_technologies = {
+		steam_donkey
+	}
+
+	modifier = {
+		building_group_bg_agriculture_employee_mult = -0.1
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_agricultural_expansion
+					has_strategy = ai_strategy_plantation_economy
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+mechanized_farming = {
+	# Unlocks Tractors PM in Rye Farms, Wheat Farms, Millet Farms
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/mechanized_farming.dds"
+	category = production
+
+	unlocking_technologies = {
+		threshing_machine
+	}
+
+	modifier = {
+		building_group_bg_agriculture_employee_mult = -0.1
+	}
+
+	ai_weight = {
+		value = 1
+
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_agricultural_expansion
+					has_strategy = ai_strategy_plantation_economy
+				}
+			}
+			add = 1
+		}
+	}
+}
+

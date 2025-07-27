@@ -1,0 +1,4 @@
+﻿NAI = {
+	# Chance for ai to do privatization instead of building a new building level when evaluating an existing building
+	BUILDING_PRIVATIZATION_CHANCE = 1000.0
+}

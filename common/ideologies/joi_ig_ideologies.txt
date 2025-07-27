@@ -1,0 +1,1169 @@
+ideology_inclusiveness = { #教会包容主义，人权后取代道德主义和虔信徒
+	icon = "gfx/interface/icons/ideology_icons/pious.dds"
+
+	lawgroup_church_and_state = {
+		law_state_religion = neutral
+		law_freedom_of_conscience = approve
+		law_total_separation = neutral
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = neutral
+		law_cultural_exclusion = neutral
+		law_multicultural = approve
+	}
+
+	lawgroup_slavery = {
+		law_slavery_banned = approve
+		law_legacy_slavery = strongly_disapprove
+		law_debt_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+	}
+}
+
+ideology_corporatist = {#修改原版的法团主义
+	icon = "gfx/interface/icons/ideology_icons/corporatist.dds"
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = approve
+		law_worker_protections = approve
+	}
+	
+	lawgroup_welfare = {
+		law_poor_laws = neutral
+		law_no_social_security = disapprove
+		law_wage_subsidies = approve
+		law_old_age_pension = approve
+	}
+
+	lawgroup_policing = {
+		law_local_police = neutral
+		law_dedicated_police = approve
+		law_militarized_police = disapprove
+		law_no_police = disapprove
+	}
+}
+
+ideology_bourgeoisie_capitalism = { #实业家资产阶级主义，社会主义后取代财阀主义
+	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
+	
+	lawgroup_distribution_of_power = {
+		law_oligarchy = disapprove
+		law_wealth_voting = strongly_approve
+		law_technocracy = neutral
+		law_landed_voting = disapprove
+		law_census_voting = strongly_approve
+		law_single_party_state = neutral
+		law_autocracy = strongly_disapprove
+		law_universal_suffrage = neutral
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = approve			
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_theocracy = disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = neutral
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_consumption_based_taxation = strongly_disapprove
+		law_land_based_taxation = disapprove
+		law_proportional_taxation = neutral
+		law_graduated_taxation = disapprove
+	}	
+	
+	lawgroup_colonization = {
+		law_colonial_exploitation = approve
+		law_no_colonial_affairs = disapprove
+		law_colonial_resettlement = neutral
+		law_frontier_colonization = neutral
+	}
+}
+
+ideology_enlightlism = {#小市民 开明主义，人权后取代反动主义
+	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = approve
+		law_theocracy = strongly_disapprove		
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_corporate_state = approve
+		law_council_republic = strongly_disapprove
+	}		
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_national_supremacy = neutral
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = approve
+		law_census_voting = approve
+		law_wealth_voting = neutral
+		law_landed_voting = neutral
+		law_single_party_state = disapprove
+		law_technocracy = strongly_disapprove
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_migration = {
+		law_no_migration_controls = neutral
+		law_migration_controls = approve
+		law_closed_borders = disapprove
+	}
+
+	lawgroup_slavery = {
+		law_slavery_banned = approve
+		law_legacy_slavery = strongly_disapprove
+		law_debt_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+	}
+}
+
+ideology_english_enlightlism = {#小市民 英国 美国 法国版开明主义，人权后取代反动主义，防止和英式保守，温和共和冲突
+	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"	
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_national_supremacy = neutral
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = approve
+		law_census_voting = approve
+		law_wealth_voting = neutral
+		law_landed_voting = neutral
+		law_single_party_state = disapprove
+		law_technocracy = strongly_disapprove
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_migration = {
+		law_no_migration_controls = neutral
+		law_migration_controls = approve
+		law_closed_borders = disapprove
+	}
+
+	lawgroup_slavery = {
+		law_slavery_banned = approve
+		law_legacy_slavery = strongly_disapprove
+		law_debt_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+	}
+}
+
+ideology_authoritarianism = {#贵族 威权主义，无政府后取代家长式主义
+	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_theocracy = strongly_disapprove		
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = neutral
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_single_party_state = strongly_approve
+		law_landed_voting = approve
+		law_autocracy = neutral
+		law_oligarchy = approve
+		law_wealth_voting = neutral
+		law_census_voting = disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_technocracy = strongly_disapprove
+	}
+	
+	lawgroup_bureaucracy = {
+		law_hereditary_bureaucrats = approve
+		law_appointed_bureaucrats = neutral
+		law_elected_bureaucrats = disapprove
+	}
+
+	lawgroup_policing = {
+		law_local_police = neutral
+		law_dedicated_police = approve
+		law_militarized_police = strongly_approve
+		law_no_police = disapprove
+	}
+	
+	lawgroup_economic_system = {		
+		law_traditionalism = disapprove
+		law_agrarianism = approve
+		law_interventionism = approve
+		law_industry_banned = neutral
+		law_laissez_faire = strongly_disapprove
+		law_cooperative_ownership = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_command_economy = disapprove
+	}
+	
+	lawgroup_trade_policy = {		
+		law_isolationism = disapprove
+		law_mercantilism = neutral
+		law_protectionism = neutral
+		law_free_trade = neutral
+	}	
+}
+
+ideology_misoneism = {#贵族 守旧主义，社会主义后替代阶层主义
+	icon = "gfx/interface/icons/ideology_icons/stratocratic.dds"
+	
+	lawgroup_army_model = {
+		law_peasant_levies = neutral
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_mass_conscription = disapprove
+	}
+	
+	lawgroup_land_reform = {
+		law_serfdom = approve
+		law_tenant_farmers = approve
+		law_commercialized_agriculture = neutral
+		law_homesteading = disapprove
+		law_collectivized_agriculture = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_consumption_based_taxation = approve
+		law_land_based_taxation = approve
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = disapprove
+		law_graduated_taxation = disapprove
+	}
+
+	lawgroup_welfare = {
+		law_no_social_security = neutral
+		law_poor_laws = approve
+		law_wage_subsidies = disapprove
+		law_old_age_pension = disapprove
+	}
+}
+
+ideology_expansionism = {#农民 扩张主义，民族主义后替换孤立主义
+	icon = "gfx/interface/icons/ideology_icons/isolationist.dds"
+	
+	lawgroup_colonization = {
+		law_frontier_colonization = approve
+		law_no_colonial_affairs = disapprove
+		law_colonial_resettlement = approve
+		law_colonial_exploitation = strongly_approve
+	}
+	
+	lawgroup_migration = {
+		law_closed_borders = neutral
+		law_migration_controls = approve
+		law_no_migration_controls = neutral
+	}
+
+	lawgroup_trade_policy = {		
+		law_isolationism = disapprove
+		law_protectionism = strongly_approve
+		law_mercantilism = strongly_approve
+		law_free_trade = approve
+	}
+	
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_approve
+		law_national_supremacy = approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = neutral
+		law_multicultural = disapprove	
+	}
+}
+
+ideology_imperialism = {#军队 帝国主义，开化使命后替换沙文主义
+	icon = "gfx/interface/icons/ideology_icons/jingoist.dds"
+	
+	lawgroup_army_model = {
+		law_professional_army = approve
+		law_mass_conscription = strongly_approve
+		law_national_militia = disapprove
+		law_peasant_levies = disapprove
+	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = approve
+		law_colonial_exploitation = strongly_approve
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = disapprove
+	}
+}
+
+ideology_british_conservatism = {#英式保守主义 英国知识分子小市民贵族农民专属 替换精英主义 共和主义 家长式主义 农本主义
+	icon = "gfx/interface/icons/ideology_icons/moralist.dds"
+	
+	lawgroup_governance_principles = {	
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_monarchy = strongly_approve	
+		law_theocracy = disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = strongly_approve
+		law_census_voting = strongly_approve
+		law_wealth_voting = approve
+		law_landed_voting = neutral
+		law_single_party_state = disapprove
+		law_technocracy = neutral
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_taxation = {
+		law_consumption_based_taxation = strongly_disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = neutral
+	}	
+
+	lawgroup_bureaucracy = {
+		law_appointed_bureaucrats = strongly_approve
+		law_elected_bureaucrats = approve	
+		law_hereditary_bureaucrats = disapprove
+	}
+
+	lawgroup_economic_system = {		
+		law_agrarianism = disapprove
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_traditionalism = disapprove
+		law_interventionism = approve
+		law_cooperative_ownership = strongly_disapprove
+		law_laissez_faire = approve
+		law_command_economy = strongly_disapprove
+	}
+}
+
+ideology_revolutionism = {#激进共和主义者，法国知识分子和小市民专属，替换共和主义，特殊主义
+	icon = "gfx/interface/icons/ideology_icons/republican.dds"
+	
+	lawgroup_governance_principles = {	
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = strongly_approve
+		law_monarchy = disapprove	
+		law_theocracy = strongly_disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = strongly_approve
+		law_census_voting = approve
+		law_wealth_voting = neutral
+		law_landed_voting = neutral
+		law_single_party_state = disapprove
+		law_technocracy = disapprove
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove
+		law_anarchy = disapprove
+	}	
+
+	lawgroup_taxation = {
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = approve
+	}
+
+	lawgroup_economic_system = {	
+		law_laissez_faire = approve
+		law_interventionism = approve
+		law_agrarianism = disapprove
+		law_traditionalism = strongly_disapprove	
+		law_cooperative_ownership = disapprove	
+		law_command_economy = strongly_disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+		law_commercialized_agriculture = approve
+		law_collectivized_agriculture = disapprove
+		law_homesteading = neutral
+	}
+
+}
+
+ideology_junker_militarism = {#容克军官团 替换原版普鲁士贵族容克主义和军队沙文
+	icon = "gfx/interface/icons/ideology_icons/junker_paternalistic.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_theocracy = strongly_disapprove			
+		law_presidential_republic = neutral
+		law_parliamentary_republic = disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = neutral
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_single_party_state = strongly_approve
+		law_landed_voting = approve
+		law_autocracy = approve
+		law_oligarchy = strongly_approve
+		law_wealth_voting = neutral
+		law_census_voting = neutral
+		law_universal_suffrage = disapprove
+		law_anarchy = strongly_disapprove
+		law_technocracy = approve
+	}
+
+	lawgroup_policing = {
+		law_local_police = neutral
+		law_dedicated_police = approve
+		law_militarized_police = strongly_approve
+		law_no_police = disapprove
+	}
+
+	lawgroup_army_model = {
+		law_professional_army = strongly_approve
+		law_mass_conscription = strongly_approve
+		law_national_militia = disapprove
+		law_peasant_levies = strongly_disapprove
+	}
+	
+	lawgroup_colonization = {
+		law_colonial_resettlement = approve
+		law_colonial_exploitation = approve
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = disapprove
+	}
+
+}
+
+ideology_puritan = {#清教徒，取代原版美国道德主义者
+	icon = "gfx/interface/icons/ideology_icons/moralist.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = neutral	
+		law_theocracy = neutral	
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
+		law_council_republic = strongly_disapprove
+		law_corporate_state = strongly_disapprove
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = approve
+		law_total_separation = approve
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral
+	}
+
+	lawgroup_health_system = {
+		law_charitable_health_system = strongly_approve
+		law_public_health_insurance = approve
+		law_no_health_system = disapprove
+		law_private_health_insurance = approve
+	}	
+
+	lawgroup_education_system = {
+		law_private_schools = approve
+		law_public_schools = approve
+		law_religious_schools = strongly_approve
+		law_no_schools = disapprove
+	}
+}
+
+ideology_innovationist = {#改革派，取代原版俄国军队效忠派
+	icon = "gfx/interface/icons/ideology_icons/loyalist.dds"
+
+	lawgroup_bureaucracy = {
+		law_elected_bureaucrats = disapprove
+		law_appointed_bureaucrats = approve		
+		law_hereditary_bureaucrats = neutral
+	}
+
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = strongly_disapprove
+		law_serfdom = disapprove
+		law_tenant_farmers = approve
+		law_homesteading = disapprove
+		law_commercialized_agriculture = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_single_party_state = approve
+		law_landed_voting = neutral
+		law_autocracy = disapprove
+		law_oligarchy = neutral
+		law_wealth_voting = strongly_approve
+		law_census_voting = strongly_approve
+		law_universal_suffrage = disapprove
+		law_anarchy = strongly_disapprove
+		law_technocracy = approve
+	}
+
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_consumption_based_taxation = strongly_disapprove
+		law_land_based_taxation = disapprove
+		law_proportional_taxation = neutral
+		law_graduated_taxation = neutral
+	}	
+}
+
+ideology_westernlism = {#洋务派，原版大清文人日志激活后拥有
+	icon = "gfx/interface/icons/ideology_icons/utilitarian.dds"
+
+	lawgroup_economic_system = {	
+		law_laissez_faire = neutral
+		law_interventionism = approve
+		law_agrarianism = neutral
+		law_traditionalism = disapprove	
+		law_cooperative_ownership = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_industry_banned = disapprove
+	}
+
+	lawgroup_army_model = {
+		law_peasant_levies = disapprove
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_mass_conscription = approve
+	}
+
+	lawgroup_trade_policy = {		
+		law_isolationism = strongly_disapprove
+		law_mercantilism = disapprove
+		law_protectionism = approve
+		law_free_trade = neutral
+	}
+}
+
+ideology_revivalism = {#复兴主义，替代意大利小市民爱国主义
+	icon = "gfx/interface/icons/ideology_icons/patriotic.dds"
+
+	lawgroup_policing = {
+		law_militarized_police = strongly_approve
+		law_dedicated_police = approve
+		law_local_police = neutral
+		law_no_police = disapprove
+	}	
+
+	lawgroup_internal_security = {
+		law_secret_police = approve
+		law_national_guard = approve
+		law_no_home_affairs = disapprove
+		law_guaranteed_liberties = neutral
+	}	
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = disapprove
+		law_censorship = neutral
+		law_right_of_assembly = approve
+		law_protected_speech = disapprove
+	}	
+
+	lawgroup_army_model = {
+		law_peasant_levies = disapprove
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_mass_conscription = approve
+	}
+
+	lawgroup_colonization = {
+		law_colonial_resettlement = approve
+		law_colonial_exploitation = approve
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = disapprove
+	}
+}
+
+ideology_tanzimatism = {#坦齐马特派，替换原版奥斯曼知识分子共和主义
+	icon = "gfx/interface/icons/ideology_icons/caudillismo.dds"
+
+	lawgroup_governance_principles = {	
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_monarchy = strongly_approve
+		law_theocracy = disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = neutral
+		law_census_voting = strongly_approve
+		law_wealth_voting = strongly_approve
+		law_landed_voting = neutral
+		law_single_party_state = approve
+		law_technocracy = approve
+		law_oligarchy = neutral
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_economic_system = {	
+		law_laissez_faire = approve
+		law_interventionism = strongly_approve
+		law_agrarianism = disapprove
+		law_traditionalism = strongly_disapprove	
+		law_cooperative_ownership = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+		law_command_economy = disapprove
+		law_industry_banned = strongly_disapprove
+	}
+
+	lawgroup_trade_policy = {		
+		law_isolationism = disapprove
+		law_mercantilism = approve
+		law_protectionism = strongly_approve
+		law_free_trade = neutral
+	}
+}
+
+ideology_shariah = { #逊尼教法
+	icon = "gfx/interface/icons/ideology_icons/patriarchal.dds"
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = approve
+		law_censorship = neutral
+		law_right_of_assembly = approve
+		law_protected_speech = disapprove
+	}
+
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = approve
+		law_women_own_property = approve
+		law_women_in_the_workplace = strongly_disapprove
+		law_womens_suffrage = disapprove
+	}
+}
+
+ideology_anti_shogunate = {#倒幕派
+	icon = "gfx/interface/icons/ideology_icons/bakufu.dds"
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_presidential_republic = neutral
+		law_theocracy = disapprove
+		law_parliamentary_republic = disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = strongly_disapprove
+	}
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = disapprove
+		law_landed_voting = neutral
+		law_oligarchy = neutral
+		law_wealth_voting = approve
+		law_census_voting = approve
+		law_universal_suffrage = neutral
+		law_anarchy = strongly_disapprove
+		law_single_party_state = strongly_approve
+		law_technocracy = strongly_disapprove
+	}
+
+	lawgroup_migration = {
+		law_closed_borders = approve
+		law_migration_controls = strongly_approve
+		law_no_migration_controls = disapprove
+	}
+}
+
+ideology_austria_centraliser = { #奥地利集权
+	icon = "gfx/interface/icons/ideology_icons/caudillismo.dds"
+	
+	lawgroup_citizenship = {
+		law_ethnostate = disapprove
+		law_national_supremacy = neutral
+		law_racial_segregation = approve
+		law_cultural_exclusion = neutral
+		law_multicultural = strongly_disapprove	
+	}
+}
+
+ideology_austria_federalist = { #奥地利联邦
+	icon = "gfx/interface/icons/ideology_icons/utilitarian.dds"
+	
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve	
+		law_multicultural = neutral
+	}
+}
+
+ideology_agrarian_russian = { #村社主义
+	icon = "gfx/interface/icons/ideology_icons/agrarian.dds"
+	
+	lawgroup_economic_system = {		
+		law_agrarianism = strongly_approve
+		law_industry_banned = neutral
+		law_traditionalism = disapprove
+		law_interventionism = neutral
+		law_cooperative_ownership = approve
+		law_extraction_economy = strongly_disapprove
+		law_laissez_faire = disapprove
+		law_command_economy = disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+		law_commercialized_agriculture = neutral
+		law_collectivized_agriculture = approve
+		law_homesteading = approve
+	}		
+
+	lawgroup_taxation = {
+		law_consumption_based_taxation = approve
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = neutral
+		law_graduated_taxation = approve
+		law_land_based_taxation = disapprove
+	}
+}
+
+ideology_progressivism = {#进步主义者
+	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
+	
+	lawgroup_distribution_of_power = {
+		law_oligarchy = strongly_disapprove
+		law_wealth_voting = neutral
+		law_technocracy = disapprove
+		law_landed_voting = disapprove
+		law_census_voting = approve
+		law_single_party_state = strongly_disapprove
+		law_autocracy = strongly_disapprove
+		law_universal_suffrage = strongly_approve
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = disapprove			
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
+		law_theocracy = strongly_disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = disapprove
+		law_consumption_based_taxation = strongly_disapprove
+		law_land_based_taxation = strongly_disapprove
+		law_proportional_taxation = strongly_approve
+		law_graduated_taxation = disapprove
+	}	
+	
+	lawgroup_colonization = {
+		law_colonial_exploitation = strongly_approve
+		law_no_colonial_affairs = disapprove
+		law_colonial_resettlement = approve
+		law_frontier_colonization = approve
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_disapprove
+		law_national_supremacy = strongly_disapprove
+		law_racial_segregation = disapprove
+		law_cultural_exclusion = approve	
+		law_multicultural = approve
+	}
+}
+
+ideology_protestant_church = {#基督新教会
+	icon = "gfx/interface/icons/ideology_icons/pious.dds"
+
+	lawgroup_health_system = {
+		law_charitable_health_system = approve
+		law_public_health_insurance = approve
+		law_no_health_system = neutral
+		law_private_health_insurance = approve
+	}
+	
+	lawgroup_education_system = {
+		law_religious_schools = neutral
+		law_no_schools = disapprove
+		law_public_schools = neutral
+		law_private_schools = neutral		
+	}	
+}
+
+ideology_catholic_church = {#罗马天主教
+	icon = "gfx/interface/icons/ideology_icons/pious.dds"
+
+	lawgroup_health_system = {
+		law_charitable_health_system = approve
+		law_public_health_insurance = approve
+		law_no_health_system = disapprove
+		law_private_health_insurance = neutral
+	}
+	
+	lawgroup_education_system = {
+		law_religious_schools = approve
+		law_no_schools = disapprove
+		law_public_schools = neutral
+		law_private_schools = neutral		
+	}	
+}
+
+ideology_german_nobles = {#德意志贵族
+	icon = "gfx/interface/icons/ideology_icons/stratocratic.dds"
+	
+	lawgroup_land_reform = {
+		law_serfdom = approve
+		law_tenant_farmers = approve
+		law_commercialized_agriculture = neutral
+		law_homesteading = disapprove
+		law_collectivized_agriculture = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = approve
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = strongly_disapprove
+	}
+
+	lawgroup_welfare = {
+		law_no_social_security = neutral
+		law_poor_laws = approve
+		law_wage_subsidies = disapprove
+		law_old_age_pension = disapprove
+	}
+}
+
+ideology_western_confucian = {#维新派
+	icon = "gfx/interface/icons/ideology_icons/confucian.dds"
+	
+	lawgroup_church_and_state = {
+		law_state_religion = disapprove
+		law_freedom_of_conscience = approve
+		law_total_separation = approve
+		law_state_atheism = strongly_disapprove
+	}
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve	
+		law_theocracy = neutral
+		law_presidential_republic = approve	
+		law_parliamentary_republic = approve	
+		law_council_republic = strongly_disapprove
+		law_corporate_state = strongly_disapprove
+	}
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_disapprove
+		law_censorship = disapprove
+		law_right_of_assembly = approve
+		law_protected_speech = approve
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_approve
+		law_national_supremacy = strongly_approve
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral
+	}
+}
+
+ideology_bonapartiste = {#波拿巴主义者
+	icon = "gfx/interface/icons/ideology_icons/caudillismo.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_presidential_republic = approve
+		law_parliamentary_republic = neutral
+		law_corporate_state = neutral
+		law_theocracy = disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_approve
+		law_oligarchy = disapprove
+		law_landed_voting = neutral	
+		law_wealth_voting = neutral	
+		law_single_party_state = approve
+		law_census_voting = approve		
+		law_universal_suffrage = strongly_approve
+		law_anarchy = strongly_disapprove
+		law_technocracy = disapprove
+	}
+
+	lawgroup_economic_system = {	
+		law_laissez_faire = approve
+		law_interventionism = strongly_approve
+		law_agrarianism = neutral
+		law_traditionalism = disapprove	
+		law_cooperative_ownership = neutral	
+		law_command_economy = strongly_disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+		law_commercialized_agriculture = approve
+		law_collectivized_agriculture = neutral
+		law_homesteading = approve
+	}
+
+	lawgroup_taxation = {
+		law_consumption_based_taxation = approve
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = strongly_approve
+		law_graduated_taxation = neutral
+		law_land_based_taxation = disapprove
+	}
+}
+
+ideology_opportunistes = {#温和共和主义者
+	icon = "gfx/interface/icons/ideology_icons/modernizer.dds"
+	
+	lawgroup_governance_principles = {	
+		law_presidential_republic = approve
+		law_parliamentary_republic = strongly_approve
+		law_monarchy = neutral	
+		law_theocracy = strongly_disapprove
+		law_council_republic = strongly_disapprove
+		law_corporate_state = disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = approve
+		law_census_voting = approve
+		law_wealth_voting = neutral
+		law_landed_voting = neutral
+		law_single_party_state = disapprove
+		law_technocracy = strongly_disapprove
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+	}	
+
+	lawgroup_taxation = {
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = neutral
+	}
+
+	lawgroup_economic_system = {	
+		law_laissez_faire = strongly_approve
+		law_interventionism = approve
+		law_agrarianism = disapprove
+		law_traditionalism = strongly_disapprove	
+		law_cooperative_ownership = disapprove	
+		law_command_economy = strongly_disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+		law_commercialized_agriculture = approve
+		law_collectivized_agriculture = disapprove
+		law_homesteading = neutral
+	}
+
+}
+
+ideology_catholicisme_social = {#天主教社会主义
+	icon = "gfx/interface/icons/ideology_icons/corporatist.dds"
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = approve
+		law_worker_protections = strongly_approve
+	}
+	
+	lawgroup_welfare = {
+		law_poor_laws = neutral
+		law_no_social_security = disapprove
+		law_wage_subsidies = approve
+		law_old_age_pension = strongly_approve
+	}
+
+	lawgroup_policing = {
+		law_local_police = neutral
+		law_dedicated_police = approve
+		law_militarized_police = disapprove
+		law_no_police = disapprove
+	}
+
+	lawgroup_taxation = {
+		law_consumption_based_taxation = strongly_disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = approve
+	}
+}
+
+ideology_us_federalism = {#小市民 联邦主义
+	icon = "gfx/interface/icons/ideology_icons/republican.dds"	
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_theocracy = approvestrongly_disapprove
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
+		law_corporate_state = strongly_disapprove
+		law_council_republic = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_national_supremacy = neutral
+		law_racial_segregation = approve
+		law_cultural_exclusion = approve
+		law_multicultural = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = approve
+		law_census_voting = strongly_approve
+		law_wealth_voting = neutral
+		law_landed_voting = neutral
+		law_single_party_state = strongly_disapprove
+		law_technocracy = disapprove
+		law_oligarchy = disapprove
+		law_autocracy = strongly_disapprove
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_migration = {
+		law_no_migration_controls = neutral
+		law_migration_controls = approve
+		law_closed_borders = disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+		law_commercialized_agriculture = neutral
+		law_collectivized_agriculture = strongly_disapprove
+		law_homesteading = neutral
+	}
+
+	lawgroup_slavery = {
+		law_slavery_banned = approve
+		law_legacy_slavery = strongly_disapprove
+		law_debt_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+	}
+}
+
+ideology_patriotism = {#新版爱国主义
+	icon = "gfx/interface/icons/ideology_icons/patriotic.dds"
+
+	lawgroup_policing = {
+		law_militarized_police = neutral
+		law_dedicated_police = approve
+		law_local_police = neutral
+		law_no_police = strongly_disapprove
+	}	
+
+	lawgroup_internal_security = {
+		law_secret_police = disapprove
+		law_national_guard = approve
+		law_no_home_affairs = neutral
+		law_guaranteed_liberties = approve
+	}	
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_disapprove
+		law_censorship = disapprove
+		law_right_of_assembly = approve
+		law_protected_speech = strongly_approve
+	}	
+
+	lawgroup_army_model = {
+		law_professional_army = approve
+		law_mass_conscription = approve
+		law_national_militia = neutral
+		law_peasant_levies = disapprove
+	}
+}
+
+ideology_united_states_constitution = {#美国宪法
+	icon = "gfx/interface/icons/ideology_icons/patriotic.dds"
+
+	lawgroup_policing = {
+		law_militarized_police = neutral
+		law_dedicated_police = approve
+		law_local_police = neutral
+		law_no_police = strongly_disapprove
+	}	
+
+	lawgroup_internal_security = {
+		law_secret_police = disapprove
+		law_national_guard = approve
+		law_no_home_affairs = neutral
+		law_guaranteed_liberties = approve
+	}	
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_disapprove
+		law_censorship = disapprove
+		law_right_of_assembly = approve
+		law_protected_speech = strongly_approve
+	}	
+
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = approve
+		law_census_voting = approve
+		law_wealth_voting = disapprove
+		law_landed_voting = disapprove
+		law_single_party_state = strongly_disapprove
+		law_technocracy = strongly_disapprove
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove
+		law_anarchy = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_theocracy = approvestrongly_disapprove
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
+		law_corporate_state = strongly_disapprove
+		law_council_republic = strongly_disapprove
+	}
+}
+
+

@@ -1,0 +1,159 @@
+ger_define_leading_party = { #定义最大议席
+	if = {
+		limit = {
+			var:liberalism_progress > var:conservatism_progress
+			var:liberalism_progress > var:socialism_progress
+		}
+		set_variable = { name = ger_leading_party_progress value = var:liberalism_progress }
+	}
+	else_if = {
+		limit = {
+			var:conservatism_progress > var:liberalism_progress
+			var:conservatism_progress > var:socialism_progress
+		}
+		set_variable = { name = ger_leading_party_progress value = var:conservatism_progress }
+	}
+	else_if = {
+		limit = {
+			var:socialism_progress > var:liberalism_progress
+			var:socialism_progress > var:conservatism_progress
+		}
+		set_variable = { name = ger_leading_party_progress value = var:socialism_progress }
+	}
+	clamp_variable = { name = ger_leading_party_progress max = 382 min = 0 }
+	clamp_variable = { name = liberalism_progress max = 382 min = 0 }
+	clamp_variable = { name = conservatism_progress max = 382 min = 0 }
+	clamp_variable = { name = socialism_progress max = 382 min = 0 }
+}
+
+ger_set_der_reichstag_variables = {
+	set_variable = { name = liberalism_progress value = 0 }
+	set_variable = { name = socialism_progress value = 0 }
+	set_variable = { name = conservatism_progress value = 0 }
+}
+
+ger_der_reichstag_progress_influence = { #帝国议会议席影响
+	if = {
+		limit = {
+			var:liberalism_progress > var:conservatism_progress
+			var:liberalism_progress > var:socialism_progress
+		}
+		every_state = {
+			limit = {
+				OR = {
+					region = sr:region_south_germany
+					region = sr:region_north_germany
+					state_region = s:STATE_WEST_PRUSSIA
+					state_region = s:STATE_EAST_PRUSSIA
+					state_region = s:STATE_POSEN
+					state_region = s:STATE_SILESIA
+					state_region = s:STATE_GREATER_POLAND
+					state_region = s:STATE_MAZOVIA
+					state_region = s:STATE_LESSER_POLAND
+					state_region = s:STATE_WEST_GALICIA
+					state_region = s:STATE_WEST_SLOVAKIA
+					state_region = s:STATE_EAST_SLOVAKIA
+					state_region = s:STATE_WESTPHALIA
+					state_region = s:STATE_RUHR
+					state_region = s:STATE_NORTH_RHINE
+					state_region = s:STATE_RHINELAND
+					state_region = s:STATE_ALSACE_LORRAINE
+					state_region = s:STATE_SOUTH_TYROL
+					state_region = s:STATE_SLOVENIA
+					state_region = s:STATE_ISTRIA
+						}
+						is_incorporated = yes
+						owner = ROOT
+					}
+					remove_modifier = liberalism_occupy_der_reichstag
+					remove_modifier = conservatism_occupy_der_reichstag
+					remove_modifier = socialism_occupy_der_reichstag
+            		add_modifier = {
+               			name = liberalism_occupy_der_reichstag
+               			multiplier = var:liberalism_progress
+        			}
+        	}
+	}
+	else_if = {
+		limit = {
+			var:conservatism_progress > var:liberalism_progress
+			var:conservatism_progress > var:socialism_progress
+		}
+		every_state = {
+			limit = {
+				OR = {
+					region = sr:region_south_germany
+					region = sr:region_north_germany
+					state_region = s:STATE_WEST_PRUSSIA
+					state_region = s:STATE_EAST_PRUSSIA
+					state_region = s:STATE_POSEN
+					state_region = s:STATE_SILESIA
+					state_region = s:STATE_GREATER_POLAND
+					state_region = s:STATE_MAZOVIA
+					state_region = s:STATE_LESSER_POLAND
+					state_region = s:STATE_WEST_GALICIA
+					state_region = s:STATE_WEST_SLOVAKIA
+					state_region = s:STATE_EAST_SLOVAKIA
+					state_region = s:STATE_WESTPHALIA
+					state_region = s:STATE_RUHR
+					state_region = s:STATE_NORTH_RHINE
+					state_region = s:STATE_RHINELAND
+					state_region = s:STATE_ALSACE_LORRAINE
+					state_region = s:STATE_SOUTH_TYROL
+					state_region = s:STATE_SLOVENIA
+					state_region = s:STATE_ISTRIA
+						}
+						is_incorporated = yes
+						owner = ROOT
+					}
+					remove_modifier = liberalism_occupy_der_reichstag
+					remove_modifier = conservatism_occupy_der_reichstag
+					remove_modifier = socialism_occupy_der_reichstag
+            		add_modifier = {
+               			name = conservatism_occupy_der_reichstag
+               			multiplier = var:conservatism_progress
+        	}
+        }
+	}
+	else_if = {
+		limit = {
+			var:socialism_progress > var:liberalism_progress
+			var:socialism_progress > var:conservatism_progress
+		}
+		every_state = {
+			limit = {
+				OR = {
+					region = sr:region_south_germany
+					region = sr:region_north_germany
+					state_region = s:STATE_WEST_PRUSSIA
+					state_region = s:STATE_EAST_PRUSSIA
+					state_region = s:STATE_POSEN
+					state_region = s:STATE_SILESIA
+					state_region = s:STATE_GREATER_POLAND
+					state_region = s:STATE_MAZOVIA
+					state_region = s:STATE_LESSER_POLAND
+					state_region = s:STATE_WEST_GALICIA
+					state_region = s:STATE_WEST_SLOVAKIA
+					state_region = s:STATE_EAST_SLOVAKIA
+					state_region = s:STATE_WESTPHALIA
+					state_region = s:STATE_RUHR
+					state_region = s:STATE_NORTH_RHINE
+					state_region = s:STATE_RHINELAND
+					state_region = s:STATE_ALSACE_LORRAINE
+					state_region = s:STATE_SOUTH_TYROL
+					state_region = s:STATE_SLOVENIA
+					state_region = s:STATE_ISTRIA
+						}
+						is_incorporated = yes
+						owner = ROOT
+					}
+					remove_modifier = liberalism_occupy_der_reichstag
+					remove_modifier = conservatism_occupy_der_reichstag
+					remove_modifier = socialism_occupy_der_reichstag
+            		add_modifier = {
+               			name = socialism_occupy_der_reichstag
+               			multiplier = var:socialism_progress
+        	}
+        }
+	}
+}

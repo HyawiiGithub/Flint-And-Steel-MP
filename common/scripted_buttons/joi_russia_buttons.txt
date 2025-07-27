@@ -1,0 +1,1741 @@
+#北京条约
+treaty_of_beijing = {
+	name = "je_the_eastern_border_treaty_of_beijing"
+	desc = "je_the_eastern_border_treaty_of_beijing_desc"
+
+	visible = { 
+		NOR = { 
+			owns_entire_state_region = STATE_OUTER_MANCHURIA 
+			has_global_variable = rus_bought_outer_manchuria
+		}
+		AND = {
+			any_scope_state = {
+				state_region = s:STATE_TRANS_BAIKAL
+			}
+			any_scope_state = {
+				state_region = s:STATE_OKHOTSK
+			}
+		}
+		exists = c:CHI
+		c:CHI = {
+			any_scope_state = {
+				state_region = s:STATE_OUTER_MANCHURIA
+				is_split_state = no
+				is_capital = no
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+
+		c:CHI = {
+			trigger_if = {
+					limit = {
+						has_journal_entry = je_warlord_china
+					}
+					custom_tooltip = {
+						text = china_explosion_point_2_tt
+						var:china_warlord_explosion <= 3
+					}
+				}
+			NOT = {
+				has_truce_with = c:RUS
+			}
+			OR = {
+				custom_tooltip = {
+					text = war_with_china_not_russia_tt
+					any_country = {
+						NOT = {
+							c:RUS ?= this
+						}
+						has_war_with = c:CHI
+					}
+				}
+				c:RUS = {
+					is_owed_obligation_by = c:CHI
+				}
+			}	
+		}
+		c:RUS = {
+			country_rank >= rank_value:great_power
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				c:CHI = {
+					owes_obligation_to = ROOT
+				}
+			}
+			custom_tooltip = obligation_for_outer_manchuria_tt
+		}
+		else_if = {
+			limit = {
+				c:CHI = {
+					is_subject_of = ROOT
+				}
+			}
+			custom_tooltip = transfer_of_outer_manchuria_tt
+		}
+		else = {
+			c:RUS = {
+				create_incident = {
+					country = c:CHI
+					value = 10
+				}
+			}		
+		}
+		custom_tooltip = {
+		text = transfer_of_outer_manchuria_tt
+		s:STATE_AMUR = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						c:CHI = THIS
+					}
+				}
+				set_state_owner = ROOT
+				}
+			}
+		}	
+		set_global_variable = rus_bought_outer_manchuria
+		trigger_event = { id = russo_chinese.1 popup = yes }
+	}
+}
+
+je_the_eastern_border_treaty_of_aigun = {#瑷珲条约
+	name = "je_the_eastern_border_treaty_of_aigun"
+	desc = "je_the_eastern_border_treaty_of_aigun_desc"
+
+	visible = {
+		NOR = { 
+			owns_entire_state_region = STATE_AMUR 
+			has_global_variable = rus_bought_amur
+		}
+		AND = {
+			any_scope_state = {
+				state_region = s:STATE_TRANS_BAIKAL
+			}
+			any_scope_state = {
+				state_region = s:STATE_OKHOTSK
+			}
+		}
+		s:STATE_AMUR = {
+			any_scope_state = {
+				is_split_state = no
+				is_capital = no
+				owner = {
+					is_player = no
+					is_country_type = unrecognized
+			OR = {
+				country_has_primary_culture = cu:manchu
+				country_has_primary_culture = cu:han
+			}
+			}
+		}
+	}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		sr:region_east_siberia = {
+			save_temporary_scope_as = east_siberia_region
+		}
+		c:CHI = {
+		trigger_if = {
+					limit = {
+						has_journal_entry = je_warlord_china
+					}
+					custom_tooltip = {
+						text = china_explosion_point_2_tt
+						var:china_warlord_explosion <= 4
+					}
+				}
+				OR = {
+				is_subject = no
+				is_subject_of = ROOT
+				}
+				OR = {
+						custom_tooltip = {
+						text = war_with_china_not_russia_tt
+						any_enemy_in_war = {
+							NOT = {
+								c:RUS ?= this
+							}
+						}
+					}
+					custom_tooltip = {
+						text = owes_russia_obligation_tt
+						c:RUS = {
+							is_owed_obligation_by = PREV
+						}
+					}
+					country_rank < rank_value:unrecognized_major_power
+				}
+			}
+		c:RUS = {
+			country_rank >= rank_value:great_power
+		}
+	}
+
+	effect = {
+		random_country = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:manchu
+					country_has_primary_culture = cu:han
+				}
+				any_scope_state = {
+					state_region = s:STATE_AMUR
+					is_split_state = no
+					is_capital = no
+				}
+				is_country_type = unrecognized
+				is_player = no
+			}
+			save_scope_as = donor_scope
+		}
+		if = {
+			limit = {
+				scope:donor_scope = {
+					owes_obligation_to = ROOT
+				}
+			}
+			custom_tooltip = obligation_for_amur_tt
+		}
+		else_if = {
+			limit = {
+				scope:donor_scope = {
+					is_subject_of = ROOT
+				}
+			}
+			custom_tooltip = transfer_of_amur_tt
+		}
+		else = {
+			c:RUS = {
+				create_incident = {
+					country = scope:donor_scope
+					value = 10
+				}
+			}		
+			custom_tooltip = transfer_of_amur_tt
+		}
+		set_global_variable = rus_bought_amur
+		trigger_event = { id = russo_chinese.4 popup = yes }
+	}
+}
+
+russia_chuguchak_protocol = {
+	name = "je_the_eastern_border_russia_chuguchak_protocol"
+	desc = "je_the_eastern_border_russia_chuguchak_protocol_desc"
+
+	visible = { 
+		exists = c:RUS 
+		c:RUS = ROOT
+		is_subject = no
+		NOT = {	
+			has_global_variable = rus_chuguchak_protocol
+		}	
+		c:CHI = {
+			OR = {
+				any_scope_state = {
+					state_region = s:STATE_TOMSK
+					is_capital = no
+				}
+				any_scope_state = {
+					state_region = s:STATE_JETISY
+					is_capital = no
+				}
+				any_scope_state = {
+					state_region = s:STATE_KIRGHIZIA
+					is_capital = no
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		NOT = { 
+			owns_entire_state_region = STATE_JETISY 
+			owns_entire_state_region = STATE_KIRGHIZIA
+			owns_entire_state_region = STATE_ALTAI   
+			}
+			owns_entire_state_region = STATE_SEMIRECHE
+			owns_entire_state_region = STATE_AKMOLINSK	
+		c:CHI = {
+			custom_tooltip = {
+				text = china_explosion_point_2_tt
+				var:china_warlord_explosion <= 4
+			}
+			NOT = {
+				has_truce_with = c:RUS
+			}
+			OR = {
+				custom_tooltip = {
+					text = war_with_china_not_russia_tt
+					any_country = {
+						NOT = {
+							c:RUS ?= this
+						}
+						has_war_with = c:CHI
+					}
+				}
+				c:RUS = {
+					is_owed_obligation_by = c:CHI
+				}
+			}	
+		}
+		c:RUS = {
+			country_rank >= rank_value:great_power
+		}
+		custom_tooltip = {
+			text = russia_chuguchak_protocol_req_tt
+			c:RUS = {
+				OR = {
+					AND = {
+						owns_entire_state_region = STATE_SEMIRECHE
+						owns_entire_state_region = STATE_AKMOLINSK	
+					}
+					any_country = {
+						is_subject_of = c:RUS
+						owns_entire_state_region = STATE_SEMIRECHE	
+						owns_entire_state_region = STATE_AKMOLINSK	
+					}
+				}
+			}	
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				c:CHI = {
+					owes_obligation_to = ROOT
+				}
+			}
+			custom_tooltip = obligation_for_central_asia_tt
+		}
+		else_if = {
+			limit = {
+				c:CHI = {
+					is_subject_of = ROOT
+				}
+			}
+			custom_tooltip = transfer_of_central_asia_tt
+		}
+		else = {
+			c:RUS = {
+				create_incident = {
+					country = c:CHI
+					value = 15
+				}
+			}		
+		}
+		custom_tooltip = {
+		text = transfer_of_central_asia_tt
+		s:STATE_ALTAI = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						c:CHI = THIS
+					}
+				}
+				set_state_owner = ROOT
+				}
+			}
+		}
+		set_global_variable = rus_chuguchak_protocol
+		trigger_event = { id = russo_chinese.2 popup = yes }
+	}
+}
+
+#西伯利亚流放地按钮
+siberian_1_button = {#流放至矿业区
+	name = "siberian_1_button"
+	desc = "siberian_1_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { months = 36 }
+
+	possible = {
+		custom_tooltip = {
+			text = siberian_1_button_tt
+			NOT = { 
+				has_variable = has_siberian_mining
+			}
+		}
+		custom_tooltip = {
+			text = siberian_need_25_tt
+			var:siberian_panal_var >= 25
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	effect = {
+		change_variable = {
+			name = siberian_panal_var
+			add = -25
+		}
+		set_variable = {
+			name = has_siberian_mining
+			months = 36
+		}
+		custom_tooltip = {
+					text = panal_russia_tt
+		s:STATE_NOVGOROD = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOT = {
+								culture = cu:russian
+								}
+							}
+							move_pop = s:STATE_TOBOLSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_GALICH = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOT = {
+								culture = cu:russian
+								}
+							}
+							move_pop = s:STATE_URAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_KAUNAS = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:latvian
+								}
+							}
+							move_pop = s:STATE_IRKUTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_TALINN = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:estonian
+								}
+							}
+							move_pop = s:STATE_OKHOTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_RIGA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:lithuanian
+								}
+							}
+							move_pop = s:STATE_OB.region_state:RUS
+					}
+				}
+			}
+			s:STATE_KAZAN = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_TRANS_BAIKAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_INGRIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_PERM.region_state:RUS
+					}
+				}
+			}
+			s:STATE_TARTARIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_URAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_SAMARA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_IRKUTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_ROSTOV = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:ukrainian
+								}
+							}
+							move_pop = s:STATE_TRANS_BAIKAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_VOLHYNIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:ukrainian
+								}
+							}
+							move_pop = s:STATE_PERM.region_state:RUS
+					}
+				}
+			}
+		}
+		every_scope_state = {
+			       limit = {
+			       	OR = {
+					region = sr:region_west_siberia
+					region = sr:region_east_siberia
+					region = sr:region_urals 
+				}
+			}
+			add_modifier = {
+				name = siberian_mining
+				months = 36
+			}
+		}
+	}
+}
+
+siberian_2_button = {#流放至土豆田
+	name = "siberian_2_button"
+	desc = "siberian_2_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { months = 36 }
+
+	possible = {
+		custom_tooltip = {
+			text = siberian_2_button_tt
+			NOT = { 
+				has_variable = has_siberian_agro
+			}
+		}
+		custom_tooltip = {
+			text = siberian_need_25_tt
+			var:siberian_panal_var >= 25
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_variable = {
+			name = siberian_panal_var
+			add = -25
+		}
+		set_variable = {
+			name = has_siberian_agro
+			months = 36
+		}
+		custom_tooltip = {
+					text = panal_russia_tt
+		s:STATE_NOVGOROD = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOT = {
+								culture = cu:russian
+								}
+							}
+							move_pop = s:STATE_TOBOLSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_GALICH = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOT = {
+								culture = cu:russian
+								}
+							}
+							move_pop = s:STATE_URAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_KAUNAS = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:latvian
+								}
+							}
+							move_pop = s:STATE_IRKUTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_TALINN = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:estonian
+								}
+							}
+							move_pop = s:STATE_OKHOTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_RIGA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:lithuanian
+								}
+							}
+							move_pop = s:STATE_OB.region_state:RUS
+					}
+				}
+			}
+			s:STATE_KAZAN = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_TRANS_BAIKAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_INGRIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_PERM.region_state:RUS
+					}
+				}
+			}
+			s:STATE_TARTARIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_URAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_SAMARA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_IRKUTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_ROSTOV = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:ukrainian
+								}
+							}
+							move_pop = s:STATE_TRANS_BAIKAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_VOLHYNIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:ukrainian
+								}
+							}
+							move_pop = s:STATE_PERM.region_state:RUS
+					}
+				}
+			}
+		}
+		every_scope_state = {
+			       limit = {
+			       OR = {
+					region = sr:region_west_siberia
+					region = sr:region_east_siberia
+					region = sr:region_urals 
+				}
+			}
+			add_modifier = {
+				name = siberian_agro
+				months = 36
+			}
+		}
+	}
+}
+
+siberian_3_button = {#流放至制造厂
+	name = "siberian_3_button"
+	desc = "siberian_3_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { months = 36 }
+
+	possible = {
+		custom_tooltip = {
+			text = siberian_3_button_tt
+			NOT = { 
+				has_variable = has_siberian_indu
+			}
+		}
+		custom_tooltip = {
+			text = siberian_need_25_tt
+			var:siberian_panal_var >= 25
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_variable = {
+			name = siberian_panal_var
+			add = -25
+		}
+		set_variable = {
+			name = has_siberian_indu
+			months = 36
+		}
+		custom_tooltip = {
+					text = panal_russia_tt
+		s:STATE_NOVGOROD = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOT = {
+								culture = cu:russian
+								}
+							}
+							move_pop = s:STATE_TOBOLSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_GALICH = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOT = {
+								culture = cu:russian
+								}
+							}
+							move_pop = s:STATE_URAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_KAUNAS = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:latvian
+								}
+							}
+							move_pop = s:STATE_IRKUTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_TALINN = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:estonian
+								}
+							}
+							move_pop = s:STATE_OKHOTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_RIGA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:lithuanian
+								}
+							}
+							move_pop = s:STATE_OB.region_state:RUS
+					}
+				}
+			}
+			s:STATE_KAZAN = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_TRANS_BAIKAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_INGRIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_PERM.region_state:RUS
+					}
+				}
+			}
+			s:STATE_TARTARIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_URAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_SAMARA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_IRKUTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_ROSTOV = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:ukrainian
+								}
+							}
+							move_pop = s:STATE_TRANS_BAIKAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_VOLHYNIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:ukrainian
+								}
+							}
+							move_pop = s:STATE_PERM.region_state:RUS
+					}
+				}
+			}
+		}
+		every_scope_state = {
+			       limit = {
+			       	OR = {
+					region = sr:region_west_siberia
+					region = sr:region_east_siberia
+					region = sr:region_urals 
+				}
+			}
+			add_modifier = {
+				name = siberian_indu
+				months = 36
+			}
+		}
+	}
+}
+
+siberian_4_button = {#流放至伐木场
+	name = "siberian_4_button"
+	desc = "siberian_4_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { months = 36 }
+
+	possible = {
+		custom_tooltip = {
+			text = siberian_4_button_tt
+			NOT = { 
+				has_variable = has_siberian_logging
+			}
+		}
+		custom_tooltip = {
+			text = siberian_need_25_tt
+			var:siberian_panal_var >= 25
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_variable = {
+			name = siberian_panal_var
+			add = -25
+		}
+		set_variable = {
+			name = has_siberian_logging
+			months = 36
+		}
+		custom_tooltip = {
+					text = panal_russia_tt
+		s:STATE_NOVGOROD = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOT = {
+								culture = cu:russian
+								}
+							}
+							move_pop = s:STATE_TOBOLSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_GALICH = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOT = {
+								culture = cu:russian
+								}
+							}
+							move_pop = s:STATE_URAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_KAUNAS = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:latvian
+								}
+							}
+							move_pop = s:STATE_IRKUTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_TALINN = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:estonian
+								}
+							}
+							move_pop = s:STATE_OKHOTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_RIGA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:lithuanian
+								}
+							}
+							move_pop = s:STATE_OB.region_state:RUS
+					}
+				}
+			}
+			s:STATE_KAZAN = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_TRANS_BAIKAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_INGRIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_PERM.region_state:RUS
+					}
+				}
+			}
+			s:STATE_TARTARIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_URAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_SAMARA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:tatar
+								}
+							}
+							move_pop = s:STATE_IRKUTSK.region_state:RUS
+					}
+				}
+			}
+			s:STATE_ROSTOV = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:ukrainian
+								}
+							}
+							move_pop = s:STATE_TRANS_BAIKAL.region_state:RUS
+					}
+				}
+			}
+			s:STATE_VOLHYNIA = {
+					every_scope_state = {
+						every_scope_pop = {
+							limit = {
+								NOR = {
+								culture = cu:russian
+								culture = cu:ukrainian
+								}
+							}
+							move_pop = s:STATE_PERM.region_state:RUS
+					}
+				}
+			}
+		}
+		every_scope_state = {
+			       limit = {
+			       	OR = {
+					region = sr:region_west_siberia
+					region = sr:region_east_siberia
+					region = sr:region_urals 
+				}
+			}
+			add_modifier = {
+				name = siberian_logging
+				months = 36
+			}
+		}
+	}
+}
+
+siberian_5_button = {#制定严苛法律
+	name = "siberian_5_button"
+	desc = "siberian_5_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = siberian_5_button_tt
+			NOT = { 
+				has_variable = has_draconian_law
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		change_variable = {
+			name = siberian_panal_var
+			add = 100
+		}
+		set_variable = {
+			name = has_draconian_law
+			months = 60
+		}
+			add_modifier = {
+				name = siberian_draconian_law
+				months = 30
+		}
+	}
+}
+
+siberian_6_button = {#出售沙皇特赦
+	name = "siberian_6_button"
+	desc = "siberian_6_button_desc"
+
+	visible = {
+		has_law = law_type:law_monarchy
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = siberian_6_button_tt
+			var:siberian_panal_var >= 50
+			NOT = { 
+				has_variable = has_tsarist_pardon
+			}
+		}
+		custom_tooltip = {
+			text = siberian_need_50_tt
+			var:siberian_panal_var >= 50
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		change_variable = {
+			name = siberian_panal_var
+			add = -50
+		}
+		set_variable = {
+			name = has_tsarist_pardon
+			months = 60
+		}
+			add_modifier = {
+				name = sell_tsarist_pardon
+				months = 60
+		}
+	}
+}
+
+#法俄同盟按钮
+rus_alliance_1_button = {#给予法国外交支持
+	name = "rus_alliance_1_button"
+	desc = "rus_alliance_1_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		country_rank >= rank_value:great_power
+		custom_tooltip = {
+			text = rus_alliance_1_button_tt
+			NOT = { 
+				has_variable = give_fra_support_1
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		change_variable = {
+			name = rus_alliance_var
+			add = 25
+		}
+		set_variable = {
+			name = give_fra_support_1
+			months = 60
+		}
+			add_modifier = {
+				name = give_fra_dip_support
+				months = 30
+		}
+		c:FRA = {
+				add_modifier = {
+					name = dip_support_from_rus
+					months = 30
+			}
+		}
+		change_relations = { 
+				country = c:FRA
+				value = 10 
+		}
+	}
+}
+
+rus_alliance_2_button = {#给予法国军事支持
+	name = "rus_alliance_2_button"
+	desc = "rus_alliance_2_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = rus_alliance_2_button_tt
+			NOR = {
+			has_law = law_type:law_peasant_levies
+			has_law = law_type:law_national_militia
+		}
+			NOT = { 
+				has_variable = give_fra_support_2
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		change_variable = {
+			name = rus_alliance_var
+			add = 25
+		}
+		set_variable = {
+			name = give_fra_support_2
+			months = 60
+		}
+			add_modifier = {
+				name = give_fra_mil_support
+				months = 30
+		}
+		c:FRA = {
+				add_modifier = {
+					name = mil_support_from_rus
+					months = 30
+			}
+		}
+		change_relations = { 
+				country = c:FRA
+				value = 10 
+		}
+	}
+}
+
+rus_alliance_3_button = {#请求法国金融贷款
+	name = "rus_alliance_3_button"
+	desc = "rus_alliance_3_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = rus_alliance_3_button_tt
+			NOT = { 
+				has_variable = require_fra_support_1
+			}
+		}
+		custom_tooltip = {
+		text = rus_alliance_button_need_50_tt
+		var:rus_alliance_var >= 50		
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		change_variable = {
+			name = rus_alliance_var
+			add = -25
+		}
+		set_variable = {
+			name = require_fra_support_1
+			months = 60
+		}
+			add_modifier = {
+				name = loan_from_fra
+				months = 60
+		}
+	}
+}
+
+rus_alliance_4_button = {#请求法国技术交流
+	name = "rus_alliance_4_button"
+	desc = "rus_alliance_4_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = rus_alliance_4_button_tt
+			NOT = { 
+				has_variable = require_fra_support_2
+			}
+		}
+		custom_tooltip = {
+		text = rus_alliance_button_need_50_tt
+		var:rus_alliance_var >= 50		
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_variable = {
+			name = rus_alliance_var
+			add = -50
+		}
+		set_variable = {
+			name = require_fra_support_2
+			months = 60
+		}
+			add_modifier = {
+				name = tech_from_fra
+				months = 60
+		}
+	}
+}
+
+rus_alliance_5_button = {#签署《联合同盟条约》
+	name = "rus_alliance_5_button"
+	desc = "rus_alliance_5_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 10 }
+
+	possible = {
+		c:FRA.relations:root >= 0
+		custom_tooltip = {
+			text = rus_alliance_5_button_tt
+		    NOT = {
+			has_variable = sign_rus_alliance_5_var
+			}
+		}
+	}
+
+
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_relations = {
+			country = c:FRA
+			value = 25
+		}
+		create_treaty = {
+			name = treaty_name_franco_russian_alliance
+			first_country = c:FRA
+			second_country = c:RUS
+
+			is_draft = no
+			binding_period = { years = 25 }
+
+			articles_to_create = {
+				{ # 法俄同盟
+					article = alliance
+				}
+				{ # 
+					article = military_assistance
+					source_country = c:FRA
+					target_country = c:RUS
+				}
+				{ #
+					article = military_assistance
+					source_country = c:RUS
+					target_country = c:FRA
+				}
+				{ # 
+					article = trade_privilege
+					source_country = c:FRA
+					target_country = c:RUS
+				}
+				{ 
+					article = trade_privilege
+					source_country = c:RUS
+					target_country = c:FRA
+				}
+				}
+			}
+		set_variable = {
+			name = sign_rus_alliance_5_var
+			months = 120
+			}
+		}
+}
+
+rus_alliance_6_button = {#撕毁法俄同盟条约
+	name = "rus_alliance_6_button"
+	desc = "rus_alliance_6_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		c:FRA.relations:root <= -20 
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_relations = {
+			country = c:FRA
+			value = -20
+		}
+		set_variable = break_frarus_alliance
+		}
+}
+
+abolition_of_kazakh_khanate_button = {#废除哈萨克汗国
+	name = "abolition_of_kazakh_khanate_button"
+	desc = "abolition_of_kazakh_khanate_button_desc"
+
+	visible = {
+		AND = {
+			exists = c:KZH
+			c:KZH = { is_subject_of = root }
+		}
+		AND = {
+			exists = c:UZH
+			c:UZH = { is_subject_of = root }
+		}
+		AND = {
+			exists = c:OZH
+			c:OZH = { is_subject_of = root }
+		}
+	}
+
+	possible = {
+		AND = {
+			exists = c:KZH
+			c:KZH.relations:root >= 40
+		}
+		AND = {
+			exists = c:UZH
+			c:UZH.relations:root >= 40
+		}
+		AND = {
+			exists = c:OZH
+			c:OZH.relations:root >= 40
+		}
+		has_technology_researched = napoleonic_warfare
+		custom_tooltip = {
+		text = abolition_of_kazakh_khanate_button_possible_tt
+		NOT = { has_variable = abolition_of_kazakh_khanate_var }
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		trigger_event = { id = russian_central_asia.1 }
+		change_infamy = 10
+		add_loyalists = {
+			culture = cu:russian
+			value = 0.02
+		}
+		annex = c:KZH
+		annex = c:UZH
+		annex = c:OZH
+		add_modifier = { name = abolition_of_kazakh_khanate_modifier years = 5 }
+		set_variable = abolition_of_kazakh_khanate_var
+	}
+}
+
+march_into_turkestan_button = {#进军突厥斯坦
+	name = "march_into_turkestan_button"
+	desc = "march_into_turkestan_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		custom_tooltip = {
+		text = march_into_turkestan_button_possible_1_tt
+		NOT = {
+			exists = c:KZH
+			exists = c:UZH
+			exists = c:OZH
+			}
+		}
+		custom_tooltip = {
+		text = march_into_turkestan_button_possible_2_tt
+		NOT = { has_variable = march_into_turkestan_var }
+		}
+		has_technology_researched = logistics
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		add_loyalists = {
+			culture = cu:russian
+			value = 0.03
+		}
+		ROOT = {
+			create_diplomatic_play = {
+				name = rus_march_into_turkestan
+
+				escalation = 80
+
+				target_state = s:STATE_KHIVA.region_state:KHI
+			
+				war = no
+			
+				type = dp_return_state
+			}			
+		}
+		ROOT = {
+			create_diplomatic_play = {
+				name = rus_march_into_turkestan
+
+				escalation = 80
+
+				target_state = s:STATE_UZBEKIA.region_state:BUK
+			
+				war = no
+			
+				type = dp_return_state
+			}			
+		}
+		ROOT = {
+			create_diplomatic_play = {
+				name = rus_march_into_turkestan
+
+				escalation = 80
+
+				target_state = s:STATE_SYRDARYA.region_state:KOK
+			
+				war = no
+			
+				type = dp_return_state
+			}			
+		}
+		custom_tooltip = {
+		text = march_into_turkestan_button_effect_tt
+		random_diplomatic_play = {#希瓦
+			limit = {
+				is_diplomatic_play_type = dp_return_state
+				target = {
+					c:KHI ?= this
+				}
+			}
+			add_war_goal = {
+				holder = root
+				type = return_state
+				primary_demand = yes
+				target_state = s:STATE_MERZ.region_state:KHI
+				}
+			}
+		random_diplomatic_play = {
+			limit = {
+				is_diplomatic_play_type = dp_return_state
+				target = {
+					c:KHI ?= this
+				}
+			}
+			add_war_goal = {
+				holder = root
+				type = return_state
+				primary_demand = yes
+				target_state = s:STATE_TURKMENIA.region_state:KHI
+				}
+			}
+		random_diplomatic_play = {#布哈拉
+			limit = {
+				is_diplomatic_play_type = dp_return_state
+				target = {
+					c:BUK ?= this
+				}
+			}
+			add_war_goal = {
+				holder = root
+				type = return_state
+				primary_demand = yes
+				target_state = s:STATE_MERZ.region_state:BUK
+				}
+			}
+		random_diplomatic_play = {
+			limit = {
+				is_diplomatic_play_type = dp_return_state
+				target = {
+					c:BUK ?= this
+				}
+			}
+			add_war_goal = {
+				holder = root
+				type = return_state
+				primary_demand = yes
+				target_state = s:STATE_TAJIKISTAN.region_state:BUK
+				}
+			}
+		random_diplomatic_play = {#浩罕
+			limit = {
+				is_diplomatic_play_type = dp_return_state
+				target = {
+					c:KOK ?= this
+				}
+			}
+			add_war_goal = {
+				holder = root
+				type = return_state
+				primary_demand = yes
+				target_state = s:STATE_TAJIKISTAN.region_state:KOK
+				}
+			}
+		random_diplomatic_play = {
+			limit = {
+				is_diplomatic_play_type = dp_return_state
+				target = {
+					c:KOK ?= this
+				}
+			}
+			add_war_goal = {
+				holder = root
+				type = return_state
+				primary_demand = yes
+				target_state = s:STATE_FERGANA.region_state:KOK
+				}
+			}
+		random_diplomatic_play = {
+			limit = {
+				is_diplomatic_play_type = dp_return_state
+				target = {
+					c:KOK ?= this
+				}
+			}
+			add_war_goal = {
+				holder = root
+				type = return_state
+				primary_demand = yes
+				target_state = s:STATE_KIRGHIZIA.region_state:KOK
+				}
+			}
+		}
+		add_modifier = { name = march_into_turkestan_modifier years = 5 }
+		set_variable = march_into_turkestan_var
+	}
+}

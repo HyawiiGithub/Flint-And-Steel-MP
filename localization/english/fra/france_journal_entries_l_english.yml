@@ -1,0 +1,253 @@
+﻿l_english:
+    #Paris Politics
+    paris_politic:0 "Parisian Politics"
+    paris_politic_reason:0 "The progress bar will display the political influence of the most dominant [concept_interest_group] in Paris.\n\n#variable Paris#!, the [concept_capital_state] of [ROOT.GetCountry.GetName], is not merely the most prosperous and renowned metropolis in the nation, but the undisputed political heart of [ROOT.GetCountry.GetNameNoFormatting].\n\nNestled along the banks of the #variable Seine River in Île-de-France#!, this city has symbolized France's supreme authority since #bold 987 AD#!, when Hugh Capet of the Capetian dynasty ascended as #bold King of the Franks#!. #bold The Tuileries, Versailles, Fontainebleau...#! Paris' splendor has endured through centuries of dynastic upheavals, standing as silent witness to France's grand historical narrative.\n\nParis' paramount influence stems from its #bold unrivaled#! political significance: even minor [concept_turmoil] or [concept_revolution] here can topple regimes. The #variable French Revolution of 1789#! saw Parisian [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant] overthrow the centuries-old Bourbon monarchy, executing Louis XVI and establishing the #bold First Republic#!. Though Napoleon's Empire supplanted the Republic, only to fall to the #bold Coalition Powers#!, Paris remained the crucible of political change. During the #variable July Revolution of 1830#!, the Orléanists exploited Parisian unrest to seize power, while provincial France could only acquiesce to #bold Parisian governance#! and #bold decrees from the capital#!.\n\nToday, Paris continues to dominate our national political theater, where competing [concept_interest_group]s maneuver relentlessly to shape #variable the destiny of [ROOT.GetCountry.GetName]...#!
+    #Paris Politics: Status
+    paris_politic_complete_tt:0 "When any [concept_interest_group] reaches 2000 influence, Paris politics will be dominated by a single faction!"
+    status_paris_politic_intelligentsia:0 "#V #P #B [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant] gains prominence.#!#!#!"
+    status_paris_politic_landowners:0 "#V #P #B [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant] regains influence.#!#!#!"
+    status_paris_politic_petty_bourgeoisie:0 "#V #U #B [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant] rises in power.#!#!#!"
+    status_paris_politic_industrialists:0 "#V #O #B [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant] expands its reach.#!#!#!"
+    status_paris_politic_trade_unions:0 "#V #N #B [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] strengthens its position.#!#!#!"
+    status_paris_politic_always:0 "#V #P #B No faction currently dominates Parisian politics.#!#!#!"
+    #Paris Politics: Interest Groups
+    paris_politic_intelligentsia_button:0 "[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant]: #variable [ROOT.GetCountry.MakeScope.Var('fra_paris_intelligentsia').GetValue|0]#!"
+    paris_politic_intelligentsia_button_desc:0 "As Parisian intellectuals gain influence, the government must accommodate their reformist ideas to maintain stability."
+    paris_politic_intelligentsia_button_tt:0 "Requires 500+ intelligentsia influence"
+    paris_politic_landowners_button:0 "[GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant]: #variable [ROOT.GetCountry.MakeScope.Var('fra_paris_landowners').GetValue|0]#!"
+    paris_politic_landowners_button_desc:0 "The aristocracy demands recognition of their traditional privileges as their Parisian presence grows."
+    paris_politic_landowners_button_1_tt:0 "Requires 500+ landowners influence"
+    paris_politic_petty_bourgeoisie_button:0 "[GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant]: #variable [ROOT.GetCountry.MakeScope.Var('fra_paris_petty_bourgeoisie').GetValue|0]#!"
+    paris_politic_petty_bourgeoisie_button_desc:0 "Parisian bourgeois factions require representation to placate the volatile citizenry."
+    paris_politic_petty_bourgeoisie_button_1_tt:0 "Requires 500+ petty bourgeoisie influence"
+    paris_politic_industrialists_button:0 "[GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant]: #variable [ROOT.GetCountry.MakeScope.Var('fra_paris_industrialists').GetValue|0]#!"
+    paris_politic_industrialists_button_desc:0 "Industrial magnates seek favorable policies as their economic power translates into political clout."
+    paris_politic_industrialists_button_1_tt:0 "Requires 500+ industrialists influence"
+    paris_politic_trade_unions_button:0 "[GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant]: #variable [ROOT.GetCountry.MakeScope.Var('fra_paris_trade_unions').GetValue|0]#!"
+    paris_politic_trade_unions_button_desc:0 "The growing workers' movement demands government attention to maintain social peace."
+    paris_politic_trade_unions_button_1_tt:0 "Requires 500+ trade unions influence"
+
+    #French National Birth Rate
+    french_birthrate:0 "French National Birth Rate"
+    french_birthrate_reason:0 "For centuries, the [ROOT.GetCountry.GetName] has boasted the largest population in Western Europe: no other country in the Christian world can match the conditions we enjoy—#bold a warm and pleasant climate#! and #bold fertile and vast lands#! that have nurtured the French people, while a #bold massive population base#! has contributed immense vitality to our nation.\n\nDuring the #bold Revolutionary Wars#!, the Gouvernement des Jacobins’s single #bold 'Levée en Masse'#! transformed an army of tens of thousands into a froce a million strong within months, shocking the [concept_great_power]s of the Anti-French Coalition. By the time Emperor Napoleon embarked on his Russian campaign, [ROOT.GetCountry.GetName]’s population had reached #bold over 30 million#!, dominating continental Europe. However, following the Napoleonic Wars, our #bold birth rate#! fell into a period of #bold prolonged stagnation#!. Leaving the elites of the [concept_government] deeply concerned about [ROOT.GetCountry.GetName]'s long-term demographic sustainability. Some attribute this to the decline of Catholicism as a firmly held belief, others point to the side effects of the Industrial Revolution and the sprawling urbanization it brings. Yet others believe it is the spread of liberal ideals and thinking from the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant] to the [GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant].\n\nWhatever the reasons, no foresighted individual can tolerate this situation continuing: Should we fail to correct our faltering birth rate, our [concept_building] will lack diligent young workers, and our [concept_arable_land] will lack strong farmers. Our once-invincible army, the 'Grande Armée', will lack loyal new recruits and our road to industrialization could turn into a bumpy trail. We could even face food shortages... and the proud French nation could lose its position as a permanent and dominant power of Western Europe due to demographic decline.\n\n[ROOT.GetCountry.GetName] needs children! As Napoleon once responded to Madame de Staël: 'The best women are those who breed the most offspring!'"
+
+    #National Assembly
+    franch_national_assembly:0 "The Assemblée nationale"
+    franch_national_assembly_reason:0 "The progress bar displays the number of seats currently held by the #bold majority ruling coalition#! in the assembly.\nRadical Coalition: #variable [ROOT.GetCountry.MakeScope.Var('radicals_seat').GetValue|0]#! seats; changes during [concept_election] due to various #tooltippable;tooltip:[Country.GetTooltipTag],franch_national_assembly_radicals_tooltip_conditions conditions#!.\nOrder Front: #variable [ROOT.GetCountry.MakeScope.Var('conservative_seat').GetValue|0]#! seats; changes during [concept_election] due to various #tooltippable;tooltip:[Country.GetTooltipTag],franch_national_assembly_conservative_tooltip_conditions conditions#!.\nPeople's Alliance: #variable [ROOT.GetCountry.MakeScope.Var('socialist_seat').GetValue|0]#! seats; changes during [concept_election] due to various #tooltippable;tooltip:[Country.GetTooltipTag],franch_national_assembly_socialist_tooltip_conditions conditions#!.\nCommunist Bloc: #variable [ROOT.GetCountry.MakeScope.Var('communist_seat').GetValue|0]#! seats; changes during [concept_election] due to the following #tooltippable;tooltip:[Country.GetTooltipTag],franch_national_assembly_communist_tooltip_conditions conditions#!.\n\nThe National Assembly lies at the heart of [ROOT.GetCountry.GetName]'s democratic system, born from the #variable Revolution of 1789#! in pursuit of liberty and democracy. The #bold Coup d'État du 18 Brumaire#! marked the end of [concept_revolution]. Though Napoleon's Empire achieved many feats, the Republic and its democracy were shelved for #bold half a century#!. The July [GetLawType('law_monarchy').GetName] proved illusory: #bold liberty was suppressed, while equality and fraternity became empty slogans#!. The so-called House of Representatives of French citizens served only a privileged minority, still far removed from the #variable ideals of 1789#!.\n\nYet France's liberal aspirations endured: despite monarchs consolidating power after the #bold Congress of Vienna#!, the reactionary #bold Charles X#! was overthrown in the July Revolution, the cautious #bold Orléans Monarchy#! was toppled, and the #bold Bonapartists#! faded into history. After decades of autocracy, the great principles of the #bold French Revolution#!—#bold Liberty, Equality, Fraternity#!—were restored to [ROOT.GetCountry.GetName]. The Republic's Assembly reclaimed the name of the #bold National Assembly#! established by the #bold Third Estate#!, empowering every citizen to [concept_election] representatives and form a true #bold embodiment of national sovereignty#!, exercising power over the nation.\n\n#variable Arise, children of the Fatherland#!: Though [ROOT.GetCountry.GetName]'s future may be turbulent and its path uncertain, these challenges matter little, for the ideals born of the #bold Enlightenment#! shall forever guide [ROOT.GetCountry.GetName]. We remain steadfast in our conviction that ahead lies the bright path of republican values; #variable Liberty Leading the People!#!"
+    franch_national_assembly_complete_tt:0 "Different ruling coalitions in the assembly will influence electoral provinces based on their seat distribution."
+    status_franch_national_assembly_radicals:0 "#U #B Radical Coalition Majority#!#!"
+    status_franch_national_assembly_conservatism:0 "#P #B Order Front Majority#!#!"
+    status_franch_national_assembly_socialism:0 "#O #B People's Alliance Majority#!#!"
+    status_franch_national_assembly_communlism:0 "#N #B Communist Bloc Majority#!#!"
+    status_franch_national_assembly_nobody:0 "#P #B Hung Assembly#!#!"
+    franch_national_assembly_untrust_button:0 "Motion of No Confidence"
+    franch_national_assembly_untrust_button_desc:0 "The National Assembly Charter grants deputies the power to remove governments that threaten republican values. The current administration has proven itself incompetent and dangerous to French democracy. We must exercise our constitutional right to dissolve this government and call fresh elections!"
+    franch_national_assembly_untrust_possible_tt:0 "No confidence motions may only be called every six months"
+    franch_national_assembly_election_button:0 "Call Legislative Elections"
+    franch_national_assembly_election_button_desc:0 "New elections will refresh the Assembly's composition. While deputies are technically barred from campaigning, a brief recess would allow them to support their parties' electoral efforts more effectively."
+    franch_national_assembly_testlaw_button:0 "Legislative Review Session"
+    franch_national_assembly_testlaw_button_desc:0 "The Assembly's constitutional duty is to scrutinize government legislation. With urgent bills pending, we must require deputies to work extended sessions to ensure proper democratic oversight."
+    franch_national_assembly_agro_button:0 "Farm Subsidies Bill"
+    franch_national_assembly_agro_button_desc:0 "The agrarian faction argues France's strength lies in its peasantry. Their proposed subsidies would protect small farmers from market fluctuations and foreign competition."
+    franch_national_assembly_help_button:0 "Social Welfare Expansion"
+    franch_national_assembly_help_button_desc:0 "Reformists demand greater public spending on education, healthcare and workers' rights. They believe only through social investment can France achieve true égalité."
+    franch_national_assembly_indu_button:0 "Deregulation Package"
+    franch_national_assembly_indu_button_desc:0 "Industrialists propose removing trade restrictions and bureaucratic red tape. They argue economic liberté will stimulate innovation and make French industry globally competitive."
+    #National Assembly: Tooltips
+    franch_national_assembly_radicals_tooltip_conditions:0 "#bold Radical gains (+30 seats monthly):#!\n• Radical IG leaders in government\n• Intelligentsia clout above 15%\n\n#bold Radical losses (-30 seats monthly):#!\n• Order Front gaining influence"
+    franch_national_assembly_conservative_tooltip_conditions:0 "#bold Conservative gains (+30 seats monthly):#!\n• Traditionalist IG leaders in government\n• Rural Folk clout above 15%\n\n#bold Conservative losses (-30 seats monthly):#!\n• Radical Coalition gaining influence"
+    franch_national_assembly_socialist_tooltip_conditions:0 "#bold Socialist gains (+30 seats monthly):#!\n• Social Democrat IG leaders in government\n• Trade Unions clout above 15%\n\n#bold Socialist losses (-30 seats monthly):#!\n• Communist Bloc gaining influence"
+    franch_national_assembly_communist_tooltip_conditions:0 "#bold Communist gains (+30 seats monthly):#!\n• Communist IG leaders in government\n\n#bold Communist losses (-30 seats monthly):#!\n• People's Alliance gaining influence"
+    #National Assembly: Effects
+    franch_national_assembly_untrust_effect_tt:0 "Triggers snap elections in 3 months"
+    franch_national_assembly_election_effect_tt:0 "Grants momentum to parties based on current majority"
+    franch_national_assembly_testlaw_possible_tt:0 "Requires 30 months since last review\nPending legislation must exist"
+    #National Assembly: Restrictions
+    franch_national_assembly_policy_possible_tt:0 "Only one Assembly policy may be active"
+    franch_national_assembly_agro_possible_tt:0 "5 year cooldown"
+    franch_national_assembly_help_possible_tt:0 "5 year cooldown" 
+    franch_national_assembly_indu_possible_tt:0 "5 year cooldown"
+    franch_national_assembly_indu_2_possible_tt:0 "Requires Radical majority"
+    franch_national_assembly_help_3_possible_tt:0 "Requires Socialist/Communist majority"
+    franch_national_assembly_agro_2_possible_tt:0 "Requires Conservative majority"
+    #National Assembly: Flavor
+    fra_untrust_argue_nothing_happen:0 "The President's diary entry:\n'Rien ne s'est passé aujourd'hui.'"
+    fra_untrust_argue_something_happen:0 "The President will retire from public life"
+    second_republic_national_assembly_open_1:0 "Conservatives gain initial advantage"
+    second_republic_national_assembly_open_2:0 "Liberals gain initial advantage"
+
+    #Conquest of Algiers
+    fra_conqueror_alg:0 "Conquest of Algiers"
+    fra_conqueror_alg_reason:0 "The coasts of Algeria once belonged to the mighty [SCOPE.sCountry('TUR_scope').GetName], but our ally from a bygone era has since weakened, losing its hold over the region.\n\nIn 1827, the so-called #bold 'Fan Incident'#! prompted the #bold Bourbon Monarchy#! to impose a naval blockade on the #bold Deylik of Algiers#!. Three years later, our forces launched a large-scale invasion of the Algerian coast, decisively defeating #bold Hussein Dey#! at the Battle of Staouéli. The Deylik collapsed after his defeat, but opportunists and rivals swiftly filled the power vacuum.\n\nOur conquest remains unfinished. We will not rest until [ROOT.GetCountry.GetName]'s flag flies over every village in Algeria and all resistance is crushed.\n\n#variable Vive la France!#!"
+    fra_conqueror_alg_complete_tt:0 "Victory in Algiers will unlock new opportunities to expand our influence in Africa!"
+    fra_conqueror_alg_status:0 "#P #B Complete the conquest of Algiers to advance further into Africa.#!#!"
+
+    #Journey Through the The Dark Continent
+    fra_aferican_empire:0 "Journey Through the Dark Continent"
+    fra_aferican_empire_reason:0 "The [ROOT.GetCountry.GetName] has not wielded a vast #bold colonial empire#! for generations. From Quebec to Haiti, the territories that once formed the #variable French Empire#! have faded into history, leaving only fragments of our former glory.\n\nYet our imperial aspirations remain undiminished by past setbacks. Our success in #bold Algiers#! has secured a strategic gateway for expansion across North Africa. Meanwhile, our trading posts in #bold Senegal#! and along the #bold Gambia River#! could serve as springboards for deeper penetration into #bold West Africa#!. With modern medical advances, we may eventually push into the #bold equatorial heartland#!, transforming its wilderness into a #bold beacon of civilization#!.\n\nRemarkably, our traditional rival, [SCOPE.sCountry('GBR_scope').GetName], has yet to challenge our African ambitions. This presents a rare opportunity for expansion with minimal diplomatic complications.\n\nWhile the path ahead is long, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] remains convinced that from Algeria's sunbaked plains to the Congo's endless savannas, from the Gulf of Guinea's shores to Lake Chad's waters, the banner of [ROOT.GetCountry.GetName] will one day fly over Africa's vast untamed territories. #variable Vive la France!#!"
+    fra_aferican_empire_complete_tt:0 "Complete all 9 #bold Dark Continent#! [Concept('concept_journal_entry', '$concept_journal_entries$')] objectives."
+    fra_conqueror_alg_complete_2_tt:0 "African dominance will cement our #bold système colonial#! and bring order to the continent."
+    fra_north_aferica_province_button_tt:0 "North African territories remain #bold unincorporated#! colonial possessions."
+    fra_west_aferica_province_button_tt:0 "West African territories remain #bold unincorporated#! colonial outposts."
+    fra_mid_aferica_province_button_tt:0 "Equatorial territories remain #bold unincorporated#! colonial holdings."
+    fra_conqueror_aferica_colony_button_possible:0 "30 month cooldown between expansion decrees."
+    fra_aferican_empire_status:0 "#V #O #B Establish a Permanent and Glorious French Africa.#!#!#!"
+    
+    #French Foreign Legion
+    fra_foreign_legion:0 "French Foreign Legion"
+    fra_foreign_legion_reason:0 "To #bold dominate Africa#!, we must maintain a #variable permanent military presence#! on the continent.\n\nOur forces there can only be sustained by recruiting both local inhabitants and determined foreign volunteers. Thus, a new legion—honoring the ancient mercenary tradition while serving as a formal branch of [ROOT.GetCountry.GetName]'s army—would prove invaluable. Furthermore, the #bold Foreign Legion#! will grant citizenship to its soldiers after service, ensuring their loyalty and courage in battle."
+
+    #Conquest of Tunisia
+    fra_conqueror_tun:0 "Conquest of Tunisia"
+    fra_conqueror_tun_reason:0 "Among the catalysts of the French Revolution was the #bold pre-Revolution famine#!, and [ROOT.GetCountry.GetName]'s limited arable land remains a persistent challenge. To fuel our industrial growth, we must secure overseas territories capable of supplying our nation's grain demands.\n\nAs [SCOPE.sCountry('SPA_scope').GetName]'s power waned, their North African influence dissipated. The nominal protection offered by [SCOPE.sCountry('TUR_scope').GetName]'s Sultan has proven utterly ineffectual, and with our #bold Algerian campaign#! achieving decisive victories, all of North Africa now lies open to our ambitions - Tunisia stands ripe for conquest.\n\nThese fertile lands, yielding three harvests annually, glitter like pirate's gold. The Tunisian Bey's substantial debts to our treasury provide both justification and opportunity to strike, allowing us to finally erase the last vestiges of the notorious #bold Barbary corsairs#! from history."
+
+    #Conquest of Morocco
+    fra_conqueror_mor:0 "Protecting Morocco"
+    fra_conqueror_mor_reason:0 "Centuries ago, fearsome #bold Berber#! warriors and #bold Arab#! conquerors crossed the #bold Strait of Gibraltar#!, establishing the mighty #bold Caliphate of Córdoba#!. Their raids reached as far as #bold Bordeaux#!, bringing Christendom to the brink of collapse. Now history's wheel has turned - the Islamic world's decline is evident, yet we must watch helplessly as [SCOPE.sCountry('GBR_scope').GetName] dominates the Mediterranean from Gibraltar.\n\n#bold Morocco#! stands as our prime objective to counter British influence. Its #bold fertile plains and strategic trade routes#! have long tempted our ambitions: now is the moment for righteous conquest - let us claim this land that once tormented Christian Europe."
+
+    #Crossing the Sahara
+    fra_conqueror_sahara:0 "Crossing the Sahara"
+    fra_conqueror_sahara_reason:0 "The #bold Sahara Desert#! is filled with seemingly valueless sand, yet it remains a #bold land bridge#! connecting West Africa and North Africa for our country. The tribes within the Sahara are feeble; once we overcome the harsh environment, our soldiers can easily bring this vast land under our control."
+    fra_conqueror_sahara_button:0 "Advance Sahara Expeditions"
+    fra_conqueror_sahara_button_desc:0 "The Sahara's harshness keeps lesser nations away. With the right investment and the right leaders, we can push beyond the dunes and extend French rule deep into the interior."
+    fra_conqueror_sahara_complete_tt:0 "Complete #bold Conquest of Tunisia#! [Concept('concept_journal_entry', '$concept_journal_entries$')]."
+    fra_conqueror_sahara_status:0 "Expand across the Sahara to forge a unified French North Africa."
+
+    # French North African Overseas Province
+    fra_north_aferica_province:0 "Algérie Française"
+    fra_north_aferica_province_reason:0 "Our conquest of North Africa stands nearly complete, yet true integration remains elusive. Though the tricolor flies from Algiers to Tunis, these lands remain colonial possessions rather than true extensions of [ROOT.GetCountry.GetName].\n\nThe Mediterranean, that #bold 'French lake'#!, separates peoples more effectively than any wall. To bridge this divide, we propose:\n• Systematic #bold settlement programs#! for mainland French\n• Establishment of #bold departmental administration#!\n• Cultural assimilation policies\n\nThrough concentrated [concept_migration] and development, we shall transform these sun-baked shores. Within a generation, the #bold pieds-noirs#! population will ensure these provinces become as French as Provence - where the call to prayer fades before the sound of church bells and the Marseillaise."
+    fra_north_aferica_province_complete:0 "Fully incorporate all North African territories as French departments."
+    fra_aferica_province_on_complete:0 "L'Afrique du Nord est française!"
+    fra_north_aferica_province_button:0 "Establish Departments of North Africa"
+    fra_north_aferica_province_button_desc:0 "Elevating our colonies to departmental status will grant them full integration into the Republic. This controversial measure will undoubtedly provoke resistance from both colonial traditionalists and indigenous populations."
+    fra_aferica_province_button_tt:0 "Requires 3 months between integration decrees."
+
+    #Conquest of West Africa
+    fra_conqueror_westaferica:0 "L'Afrique Occidentale"
+    fra_conqueror_westaferica_reason:0 "A story has long circulated in the Islamic world—a tale of pilgrims from Mali traveling to Mecca, casually scattering vast amounts of #bold gold and jewels#!, with every garment they wore and every saddle they used adorned in gold.\n\nWhile we cannot expect the story to be true, there are undoubtedly abundant #bold gold mines and arable lands#! near West Africa, treasures that must belong to [ROOT.GetCountry.GetName] and her people.\n\nFurthermore, the West African coast serves as a key node in Atlantic trade, significantly shortening our distance to other wealthy regions and enhancing our global influence to secure more favorable trade advantages. Additionally, the nearby territories are reportedly well-suited for plantations, making this an ideal #bold raw material production base#! for [ROOT.GetCountry.GetName], a proposal supported by many [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant]."
+    fra_conqueror_westaferica_button:0 "Initiate West African Expansion"
+    fra_conqueror_westaferica_button_desc:0 "Finding soldiers willing to campaign in West Africa's challenging terrain proves difficult, yet adequate funding will always secure willing recruits."
+
+    #Conquest of Mauritania
+    fra_conqueror_mauritania:0 "Conquest of Mauritania"
+    fra_conqueror_mauritania_reason:0 "#bold Mauritania#! is not a wealthy territory, home to a small population of #bold Berbers and indigenous African tribes#!. Despite its barren lands and arid climate, the sparse population makes it easier for our army to take control.\n\nHowever, there have been rumours growing that beneath its desolate deserts lie vast mineral riches.Whether true or not, we must stake our claim before [SCOPE.sCountry('GBR_scope').GetName] expands inland from their coastal holdings. Securing Mauritania would provide a crucial #bold staging ground#! for our African ambitions.\n\nMauritania belongs by right to [ROOT.GetCountry.GetName]!"
+    fra_conqueror_niger_complete_tt:0 "Complete #bold L'Afrique Occidentale#! [Concept('concept_journal_entry', '$concept_journal_entries$')]."
+    fra_conqueror_mauritania_button:0 "Start Colonial Effort"
+    fra_conqueror_mauritania_button_desc:0 "The Mauritanian desert presents formidable challenges to colonization - increased funding may ease our establishment there."
+    fra_conqueror_mauritania_status:0 "Secure Mauritania to enable the conquest of Niger."
+
+    #Conquest of Niger
+    fra_conqueror_niger:0 "Expand into Niger"
+    fra_conqueror_niger_reason:0 "Our victories in West Africa and Mauritania present a #bold gateway into Africa's heartland#!. The once-great #bold Mali#! and #bold Songhai Empires#! have faded, leaving behind #bold rumored diamond fields#! and abundant #bold rubber and mineral wealth#! - all awaiting [ROOT.GetCountry.GetName]'s claim.\n\nJust as Columbus' voyage brought [SCOPE.sCountry('SPA_scope').GetName] New World gold, Niger offers our generation's opportunity. Though malaria and harsh climate will test our forces, we cannot ignore this path to prosperity. We must cross the great desert and plant our flag in Niger.\n\nAll tribes shall submit, all wealth shall be ours, and all land shall fly the tricolor. Vive la France!"
+    fra_conqueror_niger_button:0 "Begin Niger Expedition"
+    fra_conqueror_niger_button_desc:0 "Niger's remote Sahel region deters most explorers, but proper funding will secure the bold souls needed to chart this territory."
+    fra_conqueror_niger_status:0 "Complete Niger's conquest to unify our West African holdings."
+
+    #French West African Overseas Province
+    fra_west_aferica_province:0 "Province d'Outre-Mer Africaine"
+    fra_west_aferica_province_reason:0 "The progress bar tracks incorporated provinces as [concept_incorporated_state].\n\nWest Africa forms a #bold distinct Islamic sphere#!, with dense [concept_pop] concentrations and vast separation from our homeland - making North African [concept_migration] policies ineffective here.\n\nYet fading religious ties create opportunity: the natives lack strong national identity. Through proper education, we can [concept_assimilation] these peoples into loyal, dark-skinned 'citoyens français'. Their alignment with [ROOT.GetCountry.GetName] will transform this colony into a true overseas province, addressing [concept_pop] shortages and [concept_working_adults] deficits."
+    fra_west_aferica_province_complete:0 "Complete incorporation of all French West African territories."
+    fra_west_aferica_province_button:0 "Start Colonial Integration"
+    fra_saferica_province_button_tt:0 "This action has a three-month cooldown period."
+    fra_west_aferica_province_button_desc:0 "While currently classified as colonies, some advocate redesignating our West African holdings as core territories - a controversial proposal likely to face significant opposition."
+
+    #Conquest of Chad
+    fra_conqueror_chad:0 "Conquer Chad"
+    fra_conqueror_chad_reason:0 "Chad represents a #bold strategic flashpoint#! between [ROOT.GetCountry.GetName] and [SCOPE.sCountry('GBR_scope').GetName], controlling vital #bold trans-Saharan trade routes#!. Though largely arid, its arable zones prompt our [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant] to declare it a potential #bold cotton production hub#!.\n\nRegardless of this claim's validity, controlling Chad is essential for securing [ROOT.GetCountry.GetName]'s African dominance. Forward, to conquest!"
+    fra_conqueror_chad_status:0 "Complete Chad's conquest to unify our Central African territories."
+
+    #Conquest of Cameroon
+    fra_conqueror_cameroon:0 "Secure Cameroon"
+    fra_conqueror_cameroon_reason:0 "#bold Cameroon#! occupies West Africa's most strategic position - a crossroads to Nigeria's north, Congo's south, and Chad's eastern deserts.\n\nIts #bold Gulf of Guinea#! proximity ensures favorable climate and rapid force deployment. Yet since the #bold Slave Trade#! era, European powers like [SCOPE.sCountry('SPA_scope').GetName] and [SCOPE.sCountry('GBR_scope').GetName] have entrenched coastal positions, making this a fiercely contested prize.\n\nFor [ROOT.GetCountry.GetName]'s glory, we must seize this linchpin of African empire."
+    fra_conqueror_cameroon_status:0 "Secure Cameroon to enable Chad's colonization."
+    fra_conqueror_cameroon_button:0 "Intensify Colonial Efforts"
+    fra_conqueror_cameroon_button_desc:0 "Central Africa's malaria-ridden rains challenge our expansion. Competitive salaries for skilled médecins coloniaux will safeguard our troops' health."
+
+    #Landing in Madagascar
+    fra_conqueror_madagascar:0 "Madagascar: The Red Island"
+    fra_conqueror_madagascar_reason:0 "The #bold Merina Kingdom#! of Madagascar has long been contested between [ROOT.GetCountry.GetName] and [SCOPE.sCountry('GBR_scope').GetName]. This strategic island boasts diverse landscapes - from fertile highlands to resource-rich tropical forests.\n\nMost crucially, its position astride Indian Ocean and Atlantic trade routes makes Madagascar a #bold geopolitical prize#! essential for securing [ROOT.GetCountry.GetName]'s African ambitions. Whoever controls this island commands the gateway to East Africa."
+
+    #French Central African Overseas Province
+    fra_mid_aferica_province:0 "Province d'Afrique Centrale"
+    fra_mid_aferica_province_reason:0 "The progress bar tracks incorporated provinces as [concept_incorporated_state].\n\nAs Africa's most undeveloped region with complex religious dynamics, Central Africa requires special measures: relocating [concept_pop] from mainland France and deploying #bold 'pieds-noirs'#! from Algiers. This addresses both demographic balance and religious tensions while adapting to the region's tribal fragmentation.\n\nWith limited resources for permanent garrisons, we must emulate British colonial methods: #bold penetrate tribal structures, dismantle their unity, and divide et impera#!.\n\nYet these are temporary measures. True [concept_assimilation] will only come when these peoples embrace French identity as their own."
+    fra_mid_aferica_province_complete:0 "Complete incorporation of all Central African territories."
+    fra_mid_aferica_province_button:0 "Integrate Central African Holdings"
+    fra_mid_aferica_province_button_desc:0 "While currently classified as colonies, redesignating these territories as integral provinces would yield long-term benefits - though met with fierce resistance from metropolitan nationalists."
+
+    #Advance into Vietnam
+    fra_conqueror_indochina:0 "Intervention in Indochina"
+    fra_conqueror_indochina_reason:0 "The mysterious East - while [SCOPE.sCountry('GBR_scope').GetName] established early commercial dominance, we cannot afford to neglect this wealthy continent. Though lacking Britain's established trade networks, Indochina presents a most attractive colonial prospect.\n\nRelying solely on African resources jeopardizes our national interests. Southeast Asia's #bold fertile rice lands#! and exotic goods command premium prices in Europe. With [SCOPE.sCountry('CHI_scope').GetName]'s weakening authority and the region's favorable climate (notably lacking Africa's malaria prevalence), Indochina offers ideal plantation conditions without costly [concept_colony] infrastructure - native labor will suffice.\n\nAfter our humiliation in India, we cannot permit another failure in #bold Indochina#!.\n #bold Vive la France!#!"
+
+    #French Federation
+    communaute_union_france:0 "La Communauté Française"
+    communaute_union_france_reason:0 "The progress bar displays the growing #bold independence movement#! in [ROOT.GetCountry.GetName]'s African territories.\n\nFollowing our #bold complete subjugation of Africa#! and #bold centralized governance#!, many African provinces have developed autonomous aspirations. Under our tutelage, their societies have modernized and their economies flourished.\n\nYet this #bold enlightenment carries unintended consequences#! - educated natives now espouse dangerous #bold separatist ideologies#!, forgetting how French civilization lifted them from barbarism. These ingrates wouldn't comprehend nationhood without our teachings of philosophy, science, and governance.\n\nThe British experience proves brute suppression is #bold ultimately futile#!. Instead, we must integrate these territories through representation - granting parliamentary seats and full #bold [ROOT.GetCountry.GetName] citizenship#! to all colonial subjects.\n\n#bold France must remain indivisible#!; we shall forge an unbreakable union - La [ROOT.GetCountry.GetName] ne sera jamais divisée!"
+    #French Federation: Tooltips/Status
+    fra_communaute_union_france_possible_1_tt:0 "Complete #bold French North African Overseas Province#! [Concept('concept_journal_entry', '$concept_journal_entries$')]."
+    fra_communaute_union_france_possible_2_tt:0 "Complete #bold French West African Overseas Province#! [Concept('concept_journal_entry', '$concept_journal_entries$')]."
+    fra_communaute_union_france_possible_3_tt:0 "Complete #bold French Central African Overseas Province#! [Concept('concept_journal_entry', '$concept_journal_entries$')]."
+    fra_communaute_union_france_tt:0 "If African independence movements reaches 1000, the French Union will dissolve!"
+    fra_communaute_union_france_complete_tt:0 "All #bold overseas provinces#! in Africa will revert to [concept_unincorporated_state] status."
+    #French Federation: Status levels
+    communaute_union_france_1_status:0 "#O #B Growing unrest in Union Française!#!#!"
+    communaute_union_france_2_status:0 "#N #B Separatist movements gaining momentum!#!#!"
+    communaute_union_france_3_status:0 "#N #B Union Françaisefaces existential crisis!#!#!"
+    communaute_union_france_status:0 "#P #B Union Française remains stable.#!#!"
+    #French Federation: Policy buttons
+    communaute_union_france_1_button:0 "Expand Colonial Welfare"
+    communaute_union_france_1_button_desc:0 "While poverty persists in our African territories, all French citizens deserve equal treatment. Extending metropolitan welfare programs may ease tensions."
+    communaute_union_france_1_button_effect_tt:0 "Reduces independence movement by 100."
+    communaute_union_france_1_button_possible_tt:0 "No welfare reforms enacted in past 5 years."
+    communaute_union_france_2_button:0 "Develop Colonial Agriculture"
+    communaute_union_france_2_button_desc:0 "Africa's untapped arable land could feed the empire. Targeted investments may increase production of cash crops and raw materials."
+    communaute_union_france_2_button_possible_tt:0 "No agricultural reforms enacted in past 5 years."
+    communaute_union_france_3_button:0 "Promote Colonial Industry"
+    communaute_union_france_3_button_desc:0 "Our African territories remain undeveloped industrially. Relaxing labor restrictions might attract metropolitan investors."
+    communaute_union_france_3_button_possible_tt:0 "No industrial reforms enacted in past 5 years."
+    communaute_union_france_4_button:0 "Accelerate Infrastructure Projects"
+    communaute_union_france_4_button_desc:0 "Modern roads, railways and ports are essential for binding the empire together. Massive public works may demonstrate French commitment."
+    communaute_union_france_4_button_possible_tt:0 "No construction initiatives enacted in past 5 years."
+    communaute_union_france_5_button:0 "Implement Colonial Conscription"
+    communaute_union_france_5_button_desc:0 "Metropolitan forces alone cannot defend our global interests. Mobilizing African troops would strengthen our military while deepening imperial ties."
+    communaute_union_france_5_button_possible_tt:0 "No conscription policies enacted in past 5 years."
+    #French Federation: Effects
+    communaute_union_france_button_50_effect_tt:0 "Increases independence movement by 50."
+    communaute_union_france_button_100_effect_tt:0 "Increases independence movement by 100."
+
+    #Franco-Russian Alliance
+    russian_franco_alliance:0 "The Dual Entente"
+    russian_franco_alliance_reason:0 "[ROOT.GetCountry.GetName] and [SCOPE.sCountry('RUS_scope').GetName] stand as Europe's most distant neighbors, separated by geography and political philosophy. Napoleon's disastrous invasion still lingers in Russian memory - the burning of Moscow under Alexander I remains a national trauma.\n\nYet in this new era of shifting alliances, #bold realpolitik#! triumphs over historical grievances. Facing growing threats from Central Europe, Russia now seeks our partnership. Their rapid industrialization creates desperate need for #bold French capital and technology#!, offering us a #bold mutually advantageous economic relationship#!.\n\nWhen our diplomatic mission - escorted by warships - called at Kronstadt, Tsar Nicholas himself hosted our ambassador at #bold Peterhof Palace#!. As our orchestra played #bold La Marseillaise#!, the imperial court stood in solemn respect - a symbolic thaw in Franco-Russian relations.\n\nThis fragile entente may yet blossom into an enduring alliance, counterbalancing the Germanic powers.\n\n#bold Together, our strength shall be unrivaled!#!"
+    franco_russian_alliance_possible_tt:0 "Germany is unified."
+    #Franco-Russian Alliance: Actions
+    fra_alliance_1_button:0 "Finance Russian Rail Expansion"
+    fra_alliance_1_button_desc:0 "Russia's ambitious railway projects strain their treasury. By providing loans for this strategic infrastructure, we may secure both influence and gratitude."
+    fra_alliance_1_button_tt:0 "No Russian rail investments made in past 5 years."
+    fra_alliance_2_button:0 "Send Technical Advisors"
+    fra_alliance_2_button_desc:0 "While Russian science lags behind ours, sending select engineers and academics could foster goodwill while discreetly advancing French interests."
+    fra_alliance_2_button_tt:0 "No technical exchanges in past 2 years."
+    fra_alliance_3_button:0 "Import Russian Workers"
+    fra_alliance_3_button_desc:0 "Our industries hunger for labor. Russia's peasantry offers a robust workforce - let us welcome these diligent hands to French factories."
+    fra_alliance_3_button_tt:0 "No worker import programs in past 3 years."
+    fra_alliance_4_button:0 "Secure Grain Agreements"
+    fra_alliance_4_button_desc:0 "Russia's fertile black soil produces abundant harvests. Establishing preferential trade terms would ensure affordable grain while freeing French farmers for other pursuits."
+    fra_alliance_4_button_tt:0 "No grain treaties signed in past 5 years."
+    fra_alliance_5_button:0 "Ratify Military Convention"
+    fra_alliance_5_button_desc:0 "With tensions rising, we must formalize our defensive pact - binding Russia to come to our aid should war erupt."
+    fra_alliance_5_button_tt:0 "Treaty can only be renewed every 10 years."
+    fra_alliance_6_button:0 "Dissolve the Alliance"
+    fra_alliance_6_button_desc:0 "This marriage of convenience has served its purpose. We shall inform St. Petersburg that France walks a separate path."
+    fra_alliance_6_button_tt:0 "Permanently ends the Franco-Russian entente."
+    #Franco-Russian Alliance: Tooltips
+    russian_franco_alliance_tt:0 "#bold Rail investments and technical exchanges#! increase cooperation by 25 points.\n#bold Worker imports and grain agreements#! cost 50 cooperation points each.\nThe #bold Military Convention#! activates mutual defense obligations.\nOr #bold dissolve the alliance#! entirely."
+    franco_russian_alliance_possible_2_tt:0 "Our government accepts the French alliance proposal."
+    franco_russian_alliance_refuse_tt:0 "We reject any Franco-Russian entente."
+    franco_russian_alliance_agree_tt:0 "We accept the French alliance!\nThis activates the Franco-Russian Alliance journal entry."
+    fra_alliance_button_need_50_tt:0 "Requires minimum 50 cooperation value."
+    
+    # Industrialization
+    paris_industrialize:0 "Haussmannization of Paris"
+    paris_industrialize_reason:0 "The eternal city of #variable Paris#!, beating heart of [ROOT.GetCountry.GetName] for centuries, now stands at a crossroads between its medieval past and industrial future.\n\nUnder [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName]'s vision, we shall undertake a #bold transformation sans précédent#! - replacing winding alleys with grand #bold boulevards#!, medieval hovels with #bold steel-framed monuments#!, and local workshops with #bold modern manufactories#!.\n\nThis #bold renovation urbaine#! will:\n• Eradicate disease-ridden slums\n• Showcase French engineering prowess\n• Dazzle Europe with our modernity\n\nLet us make Paris a city worthy of the 19th century - a beacon of progress where the smoke of industry mingles with the scent of chestnut blossoms."
+    paris_industrialize_status:0 "#bold Paris must shine!#!"
+
+    #Syria
+    partant_pour_la_syrie:0 "Vers la Syrie!"
+    partant_pour_la_syrie_reason:0 "The #bold Bonapartist expansionist faction#! has gained dominant influence in [ROOT.GetCountry.GetName], yearning for a return to the glory days when #bold Napoléon#! led his Grande Armée across Europe and through the Alps in triumph.\n\nTo maintain their support, the [concept_government] must provide an outlet for their ambitions. Syria - nominally under [SCOPE.sCountry('TUR_scope').GetName]'s weakening control - presents the perfect opportunity. Here, where #bold the Emperor's Oriental dreams went unfulfilled#!, we shall finally plant #bold the tricolor flag in victory#! and redeem France's Eastern ambitions!"

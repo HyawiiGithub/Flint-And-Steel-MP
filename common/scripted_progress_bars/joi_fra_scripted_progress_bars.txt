@@ -1,0 +1,63 @@
+﻿french_provisional_republic_republic_progress_bar = {#“昨日共和党人”
+	name = "french_provisional_republic_republic_progress_bar"
+	desc = "french_provisional_republic_republic_progress_bar_desc"
+
+	default_bad = yes
+
+	monthly_progress = {
+		if = {
+ 			limit = {
+ 				has_variable = french_provisional_republic_1_button_selected
+ 			}
+ 			add = {
+ 				desc = "french_provisional_republic_republic_progress_bar_change_button"
+			   	value = 2
+ 			}
+ 		}
+ 		if = {
+ 			limit = {
+ 				has_global_variable = french_provisional_republic_republican_event_support_var
+ 			}
+ 			add = {
+ 				desc = "french_provisional_republic_republic_progress_bar_change_event"
+			   	value = 10
+ 			}
+ 		}
+ 	}
+
+	start_value = 120
+	min_value = 0
+	max_value = 500
+ }
+
+ french_provisional_republic_monarchy_progress_bar = {#“明日共和党人”
+	name = "french_provisional_republic_monarchy_progress_bar"
+	desc = "french_provisional_republic_monarchy_progress_bar_desc"
+
+	default_green = yes
+
+	monthly_progress = {
+		if = {
+ 			limit = {
+ 				has_variable = french_provisional_republic_2_button_selected
+ 			}
+ 			add = {
+ 				desc = "french_provisional_republic_monarchy_progress_bar_change_button"
+			   	value = 2
+ 			}
+ 		}
+ 		if = {
+ 			limit = {
+ 				has_global_variable = french_provisional_republic_monarchy_event_support_var
+ 			}
+ 			add = {
+ 				desc = "french_provisional_republic_monarchy_progress_bar_change_event"
+			   	value = 10
+ 			}
+ 		}
+ 	}
+
+	start_value = 60
+	min_value = 0
+	max_value = 500
+ }

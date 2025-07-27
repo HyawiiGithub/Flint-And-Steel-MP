@@ -1,0 +1,215 @@
+﻿l_simp_chinese:
+    #Base IGs
+    ig_rural_folk: "Rural Folk"
+    ig_rural_folk_only_icon: "@rural_folk!"
+    ig_rural_folk_desc: "People living in rural areas whose political interests align primarily with their agricultural livelihoods."
+
+    ig_devout: "Devout"
+    ig_devout_only_icon: "@devout!"
+    ig_devout_desc: "The most pious believers view mainstream faith as the best source of moral and political wisdom."
+
+    ig_industrialists: "Industrialists"
+    ig_industrialists_only_icon: "@industrialists!"
+    ig_industrialists_desc: "Investors and shareholders interested in technological advancement and industrial growth."
+
+    ig_landowners: "Landowners"
+    ig_landowners_only_icon: "@landowners!"
+    ig_landowners_desc: "Owners of large estates and plantations, guardians of tradition and 'old money.'"
+
+    ig_intelligentsia: "Intelligentsia"
+    ig_intelligentsia_only_icon: "@intelligentsia!"
+    ig_intelligentsia_desc: "An educated group that leads national trends in literature, art, music, and drama."
+
+    ig_petty_bourgeoisie: "Petty Bourgeoisie"
+    ig_petty_bourgeoisie_only_icon: "@petty_bourgeoisie!"
+    ig_petty_bourgeoisie_desc: "Small shop owners, landlords with six tenants, frugal clerks with modest pensions, and others wealthier than the poor but poorer than the rich."
+
+    ig_armed_forces: "Armed Forces"
+    ig_armed_forces_only_icon: "@armed_forces!"
+    ig_armed_forces_desc: "Professional soldiers and others whose interests are closely tied to the nation's military."
+
+    ig_trade_unions: "Trade Unions"
+    ig_trade_unions_only_icon: "@trade_unions!"
+    ig_trade_unions_desc: "Labor organizations that seek to unite workers in mines, factories, and fields, merging diverse interests into one voice."
+
+    #Religious IGs
+    ig_catholic_church: "Catholic Church"
+    ig_catholic_church_desc: "Catholicism is the largest branch of Christianity. Believers hold that the Pope, as the Bishop of Rome, has unbroken authority inherited from Jesus Christ through Saint Peter. Other core tenets include veneration of saints and the Virgin Mary."
+
+    ig_orthodox_church: "Orthodox Church"
+    ig_orthodox_church_desc: "The Orthodox Church comprises Eastern churches not in communion with the Pope."
+
+    ig_oriental_orthodox_church: "Oriental Orthodox Church"
+    ig_oriental_orthodox_church_desc: "The Oriental Orthodox Church consists of Middle Eastern churches not in communion with the Pope."
+
+    ig_anglican_church: "Anglican Church"
+    ig_anglican_church_desc: "The Anglican Church was founded by King Henry VIII during the Protestant Reformation. It holds the Bible as the chief authority in Christian doctrine, rejects the Pope, but is less radical compared to Evangelical churches."
+
+    ig_evangelical_church: "Evangelical Church"
+    ig_evangelical_church_desc: "Evangelical churches, primarily established in Northern Europe during the Reformation, regard the Bible as the sole authority of Christian doctrine, reject the Pope, and view Catholic veneration of saints as idolatrous."
+
+    ig_rabbinical_council: "Rabbinical Council"
+    ig_rabbinical_council_desc: "Leaders of a nation's Jewish community are often well-educated rabbis with deep traditions in theological debate and scholarly pursuits."
+
+    ig_sunni_madrasahs: "Sunni Madrasahs"
+    ig_sunni_madrasahs_desc: "Sunni Islam is the largest branch of Islam. Followers believe that Muhammad's father-in-law, Abu Bakr, was the rightful successor as caliph, contrary to Shia beliefs favoring his son-in-law, Ali."
+
+    ig_shia_madrasahs: "Shia Madrasahs"
+    ig_shia_madrasahs_desc: "Shia Islam, the second-largest branch of Islam, holds that Muhammad's son-in-law, Ali, was the rightful successor as caliph, contrary to Sunni beliefs favoring his father-in-law, Abu Bakr."
+
+    ig_hindu_priesthood: "Hindu Priesthood"
+    ig_hindu_priesthood_desc: "Hinduism, potentially the oldest organized religion, posits that breaking the cycle of reincarnation and achieving nirvana requires adherence to the caste system, where everyone serves specific roles to improve their karma, much like Hindu deities perform different functions."
+
+    ig_vajrayana_monks: "Vajrayana Monks"
+    ig_vajrayana_monks_desc: "Vajrayana Buddhism prevails in Tibet and Mongolia, emphasizing meditation and discipline."
+
+    ig_mahayana_monks: "Mahayana Monks"
+    ig_mahayana_monks_desc: "Mahayana Buddhism is most prominent in China, Vietnam, and Korea, focusing on encouraging everyone in society to seek enlightenment through altruism. Mahayana Buddhism often views Buddha as a godlike figure."
+
+    ig_theravada_monks: "Theravada Monks"
+    ig_theravada_monks_desc: "Theravada Buddhism is most practiced in Burma, Siam, Cambodia, and Ceylon, emphasizing individual attainment of nirvana to break the cycle of reincarnation. Theravada Buddhism sees Buddha not as a god but as an enlightened human who showed the path to liberation."
+
+    ig_shinto_monks: "Shinto Monks"
+    ig_shinto_monks_desc: "Shintoism is a syncretic belief that merges Buddhist karma and reincarnation ideas with reverence for kami (deities), animism, and ancestor worship."
+
+    ig_pagan_shamans: "Pagan Shamans"
+    ig_pagan_shamans_desc: "Animism involves worship and appeasement of nature spirits through rituals like offering food and livestock as sacrifices, or embarking on introspective spiritual journeys aided by hallucinogenic substances."
+
+    #Taiping IGs
+    ig_taiping_god_worshippers: "God Worshippers of Taiping"
+    ig_taiping_god_worshippers_desc: "The God Worshippers are a syncretic Christian faith prevalent within the Taiping Heavenly Kingdom. It offers a unique interpretation of Christian doctrines that all believers worldwide are children of God."
+
+    #British IGs
+    ig_landed_gentry: "Landed Gentry"
+    ig_landed_gentry_desc: "The landed gentry are owners of large estates and plantations, guardians of tradition and 'old money.'"
+
+    #Prussian IGs
+    ig_junkers: "Junkers"
+    ig_junkers_desc: "Junkers, derived from 'jung herrs' (young lords), settled in Prussian territories after the Teutonic Order's conquest of the pagan Balts, spreading Christianity and eventually becoming Prussian nobles and large landowners. They tend to oppose democratic movements, viewing them as threats to elite rule."
+
+    #USA IGs
+    ig_southern_planters: "Southern Planters"
+    ig_southern_planters_desc: "Though many Founding Fathers regarded free farmers in the North as the republic's core citizens, the immense wealth held by Southern tobacco and cotton plantations also demands recognition. This wealth entitles Southern planters to influence the republic's governance."
+
+    ig_evangelicals: "Evangelicals"
+    ig_evangelicals_desc: "Passionate Christians from various Protestant denominations, Evangelicals share the belief that this nation must find its spiritual awakening to save itself."
+
+    ig_yeoman_farmers: "Yeoman Farmers"
+    ig_yeoman_farmers_desc: "A class of small landholders regarded by many Founding Fathers as the cornerstone of the nation. Yeoman farmers have long been pioneers of rural populism and the westward expansion."
+
+    #Ottoman IGs
+    ig_local_governors: "Local Governors"
+    ig_local_governors_desc: "The de facto rulers of provinces, capable of establishing patronage networks to amass significant influence. Clan powers can grow strong enough to effectively become independent states, though nominally still connected to the empire."
+
+    #Chinese IGs
+    ig_literati: "Literati"
+    ig_literati_desc: "Scholars play a key role in China, whether as supporters or critics of the government."
+
+    ig_scholar_officials: "Scholar-Officials"
+    ig_scholar_officials_desc: "China's landed gentry are not true nobility. Owning land serves as a means to preserve wealth, but their actual power stems from their positions within the government."
+
+    ig_confucian: "Confucian"
+    ig_confucian_desc: "Confucian thought functions more as a societal tradition that harmoniously coexists with various faiths. Nevertheless, it imposes strict standards for societal harmony and personal virtues among Confucian disciples."
+
+    #Papal IGs
+    ig_roman_landowners: "Roman Landowners"
+    ig_roman_landowners_desc: "Roman citizen nobles are titled by the Pope, comprising aristocratic families and landowning classes. They wield wealth, influence, and secular power within the Papal States."
+
+    ig_roman_curia: "Roman Curia"
+    ig_roman_curia_desc: "The Roman Curia serves as the administrative apparatus of the Holy See, exercising both ecclesiastical and secular authority."
+
+    #Japanese IGs
+    ig_samurai: "Samurai"
+    ig_samurai_desc: "The Samurai are Japan's hereditary military aristocracy, privileged retainers of daimyo, and executors of feudal lords' will."
+
+    ig_shogunate: "Shogunate"
+    ig_shogunate_desc: "The Shogunate refers to the military government that has ruled Japan in the Emperor's name since the 12th century. Supported by powerful feudal lords, it seeks to maintain Japan's traditional order."
+
+    ig_peasants: "Peasants"
+    ig_peasants_desc: "Peasants are Japan's commoner class born without social privileges, representing the political interests of rural farmers."
+
+    ig_buddhist_monks: "Buddhist Monks"
+    ig_buddhist_monks_desc: "By the 19th century, Buddhism had been present in Japan for over a millennium, coexisting and occasionally clashing with Japan's native Shinto beliefs. Throughout the Edo period, state-backed Buddhist sects emphasized syncretism between Shinto and Buddhism."
+
+    #Hawaiian IGs
+    ig_christian_missionaries: "Christian Missionaries"
+    ig_christian_missionaries_desc: "Christian missionaries arrived in Hawaii only decades ago but have already replaced the Kahuna as the dominant clerical class. They advocate trade with Western nations, attract Western immigrants, and encourage native Hawaiians to convert to Christianity."
+
+    ig_alii: "Alii"
+    ig_alii_desc: "The Alii represent Hawaii's lesser nobility who serve the reigning monarch, defending traditional values and the monarchy."
+
+    ig_maka_ainana: "Maka Ainana"
+    ig_maka_ainana_desc: "The Maka Ainana represent Hawaii's rural class, typically working in plantations and fishing grounds. They uphold traditional values and hope Hawaii continues to rely economically on agriculture."
+
+    ig_hawaiian_democrats: "Hawaiian Democrats"
+    ig_hawaiian_democrats_desc: "The Hawaiian Democrats represent liberal reformers in Hawaii. They advocate reducing the absolute power of the monarch, favoring democratic systems, and maintaining trade relations with Western nations."
+
+    #Swedish IGs
+    ig_church_of_sweden: "Church of Sweden"
+    ig_church_of_sweden_desc: "The Church of Sweden, initiated by King Gustav Vasa in the 16th century, is Sweden's official state church. As a Lutheran institution, it regards the Bible as the sole authority in Christian doctrine, rejecting the Pope and traditional veneration of saints."
+
+    #Finnish IGs
+    ig_church_of_finland: "Church of Finland"
+    ig_church_of_finland_desc: "Separated from Sweden in 1809, the Church of Finland became the nation's official state church. As a Lutheran institution, it regards the Bible as the sole authority in Christian doctrine, rejecting the Pope and traditional veneration of saints."
+
+    #Danish IGs
+    ig_church_of_denmark: "Church of Denmark"
+    ig_church_of_denmark_desc: "Established by King Christian III in the 16th century, the Church of Denmark is the country's official state church. As a Lutheran institution, it regards the Bible as the sole authority in Christian doctrine, rejecting the Pope and traditional veneration of saints."
+
+    #Norwegian IGs
+    ig_aristocracy_of_officials: "Aristocracy of Officials"
+    ig_aristocracy_of_officials_desc: "Due to the lack of a historical nobility and the formal abolition of nobility in 1821, Norway's upper class is composed of civil servants, with lawyers, clergy, and doctors replacing traditional aristocrats."
+
+    ig_church_of_norway: "Church of Norway"
+    ig_church_of_norway_desc: "The Church of Norway was established independently from the Roman Catholic Church and integrated with the Norwegian state during the Protestant Reformation in the 16th century. As a Lutheran institution, it regards the Bible as the sole authority in Christian doctrine, rejecting the Pope and traditional veneration of saints."
+
+    #Korean IGs
+    ig_yangban: "Yangban Officials"
+    ig_yangban_desc: "Yangban officials represent Korea's landed and landless gentry, whose titles and influence stem from positions within Korea's bureaucratic system. They embody the Confucian ideals of scholar-officials and are staunch defenders of Korea's traditional order."
+
+    #Russian IGs
+    ig_gentry_assembly: "Gentry Assembly"
+    ig_gentry_assembly_desc: "The Gentry Assembly is an autonomous body representing Russia's nobility. Officially recognized in 1785, the assembly advocates preserving or expanding the traditional rights and privileges of the aristocracy."
+
+    #Australian IGs
+    ig_squattocracy: "Squattocracy"
+    ig_squattocracy_desc: "The 'Squattocracy' represents Australia's class of white settlers who seized large tracts of unclaimed or minimally claimed land. Often the first settlers in a given area, they gained wealth and political influence through livestock farming on their holdings."
+
+    #Austrian IGs
+    austrian_aristocracy: "Austrian Aristocracy"
+    austrian_aristocracy_desc: "The Austrian aristocracy represents Austria's deeply rooted noble rule, historically granted titles by successive Holy Roman Emperors and Archdukes of Austria from the Habsburg family, wielding significant influence in the imperial court."
+
+    #Misc IGs
+    ig_red_army: "Red Army"
+    ig_red_army_desc: "The Red Army is dedicated to defending and spreading the revolution, combining traditional armed forces with proletarian and communist ideology."
+
+    ig_fellahin: "Fellahin"
+    ig_fellahin_desc: "The Fellahin are Egypt's peasants and farmers, nicknamed for the plows and fields they cultivate."
+
+    #Indian IGs
+    ig_zamindars: "Zamindars"
+    ig_zamindars_desc: "The Zamindars are typical hereditary landlords of large estates, often representing remnants of Mughal-era nobility, granted the right to collect land revenue on behalf of the rulers."
+
+    ig_east_india_company: "East India Company"
+    ig_east_india_company_desc: "The East India Company governed India as a private entity under British parliamentary oversight. After losing its commercial privileges in 1833, it became purely an administrative institution."
+
+    ig_presidency_armies: "Presidency Armies"
+    ig_presidency_armies_desc: "The Presidency Armies are colonial India's armed forces, composed primarily of native Indian soldiers commanded by European officers."
+
+    ig_indian_army: "Indian Army"
+    ig_indian_army_desc: "The Indian Army is the main armed force in colonial India, formed by consolidating the presidency armies into a single entity, predominantly composed of Indian troops led by European officers."
+
+    ig_ryots: "Ryots"
+    ig_ryots_desc: "Ryots are India's traditional farmers and subsistence agriculturalists, usually without land ownership. Their natural interests largely pertain to agricultural work."
+
+    ig_civil_servants: "Civil Servants"
+    ig_civil_servants_desc: "Civil servants include India's native intelligentsia, a class primarily developed from India's colonial bureaucratic apparatus. They often hold or have held positions as clerks or other mid-to-lower management roles."
+
+    ig_government_of_india: "Government of India"
+    ig_government_of_india_desc: "The Government of India refers to the colonial European administration tasked with protecting and expanding British royal interests in India."
+
+    ig_bhadralok: "Bhadralok"
+    ig_bhadralok_desc: "The Bhadralok, or 'gentlemen,' represent India's wealthy middle class. Originating in Bengal, this group consists of local merchants, industrialists, and financiers who allied with the East India Company during its rule of India."
+
+    ig_kisanharu: "Kisanharu"
+    ig_kisanharu_desc: "Kisanharu is a collective term for Nepal's traditional farmers and subsistence agriculturalists, typically landless. Their inherent interests align with agricultural work."

@@ -1,0 +1,173 @@
+﻿l_english:
+    # Constitution of the German Empire
+    verfassung_des_deutschen:0 "Forging the Imperial Constitution"
+    verfassung_des_deutschen_reason:0 "The unification of Germany under [ROOT.GetCountry.GetName]'s banner has brought the southern states nominally under the authority of #variable [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]#!. Yet these proud kingdoms - Bavaria, Württemberg, Saxony - are no vassal states. Their monarchs still hold court, their ministers still govern, merely paying lip service to our #bold 'German Emperor'#! [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName].\n\nThis half-measure cannot stand. To prevent [ROOT.GetCountry.GetName] from degenerating into another #bold impotent Holy Roman Empire#!, we must codify a new imperial constitution - one that clearly defines the powers of the central government versus the states while establishing the empire's #bold fundamental political order#!.\n\nThe Reichstag must act decisively to cement Berlin's authority before pursuing other reforms. Will we follow Bismarck's vision of authoritarian federalism, or embrace liberal parliamentary government?"
+    verfassung_des_deutschen_1_tt:0 "The constitution must be implemented without sparking revolutionary [concept_revolution] within a year."
+    verfassung_des_deutschen_2_tt:0 "Choosing either the #bold Bismarckian#! or #bold Liberal#! constitution will permanently establish the Reichstag."
+    verfassung_event_1_tt:0 "Will prevent the Reichstag from becoming a permanent institution."
+    verfassung_event_2_tt:0 "Will establish the Reichstag as a permanent legislative body."
+
+    # German Foreign Policy: Continental Policy
+    kontinentalpolitik_des_deutschen:0 "Bismarck's Continental System"
+    kontinentalpolitik_des_deutschen_reason:0 "\"The great questions of our time will not be decided by speeches and majority votes - but by iron and blood.\"\n\nSince unification, [ROOT.GetCountry.GetName] has become the continent's preeminent land power. Our position at Europe's geographic and economic heart compels even [SCOPE.sCountry('GBR_scope').GetName] and [SCOPE.sCountry('FRA_scope').GetName] to defer to Berlin in continental affairs.\n\nThe Reich must maintain this delicate balance through careful diplomacy - isolating potential rivals while avoiding overseas entanglements that might provoke British opposition. Let others chase colonial mirages; true German interests lie in consolidating our European dominance.\n\nAs Bismarck counsels: \"In a Europe of five powers, our policy must aim to be one of three.\""
+    change_ger_dip_1_tt:0 "Acquiring more than 17 overseas territories will force abandonment of Continental Policy.\nWe would adopt Weltpolitik!"
+    kontinentalpolitik_des_deutschen_status:0 "#V #O Deutsches reich focuses on maintaining European hegemony.#!#!"
+    ger_event_1_1_tt:0 "Failure to maintain continental focus will compel adoption of World Policy."
+
+    # German Foreign Policy: World Policy
+    weltpolitik_des_deutschen:0 "Weltpolitik: A Place in the Sun"
+    weltpolitik_des_deutschen_reason:0 "\"The days when Germany left the world's conquest to other nations are over! We demand our place in the sun!\"\n\nBismarck's cautious Continental Policy belongs to a bygone era. As Europe's industrial powerhouse, [ROOT.GetCountry.GetName] needs colonies to feed our factories with raw materials and absorb our manufactured goods. Our merchants demand protected markets, our navy craves coaling stations, our people yearn for national prestige.\n\nLet the British tremble at their watery dominion - we shall build a world empire to match our continental might. Though this may unite our enemies and risk #bold war on two fronts#!, Germany cannot shrink from its destiny.\n\nAs Admiral Tirpitz declares: \"For Germany, the most dangerous course is to remain a land power without world influence.\""
+    change_ger_dip_2_tt:0 "Losing colonial holdings (below 17 territories) will end Weltpolitik.\nWe would revert to Continental Policy!"
+    weltpolitik_des_deutschen_status:0 "#V #U Deutsches reich pursues global colonial expansion.#!#!"
+    ger_event_1_2_tt:0 "Insufficient colonial holdings will force return to Continental Policy."
+
+    # German-Austrian Alliance
+    dip_zweibund:0 "The Zweibund"
+    dip_zweibund_reason:0 "Though forged in the crucible of [concept_war] against [SCOPE.sCountry('AUS_scope').GetName] for German supremacy, Bismarck's statesmanship transformed our rival into a brother. By abandoning the #bold Großdeutschland#! vision at the Peace of Prague, we preserved Austria as a #bold valuable partner#! in Europe's shifting balance of power.\n\nAs the European chessboard realigns, [ROOT.GetCountry.GetName] faces encirclement - from revanchist [SCOPE.sCountry('FRA_scope').GetName] in the west to expansionist [SCOPE.sCountry('RUS_scope').GetName] in the east. A two-front war would be our undoing. Though diminished, the Habsburg realm still commands vast resources and manpower across the #bold Danube basin#!. With Prussian discipline and German industry, we can make this fractured empire a bulwark against our enemies.\n\nLet the #bold Main River#! divide our administrations, but never our peoples! When German cannons roared at Leipzig against Napoleon, Bavarians fought beside Austrians - so too shall we stand united again!"
+    # German-Austrian Alliance: Condition
+    dip_zweibund_possible_tt:0 "#bold Kleindeutschland#! chosen as solution in German Unification."
+    refuse_zweibund_tt:0 "Will terminate the Zweibund alliance permanently."
+    dip_zweibund_status:0 "#bold #P German-Austrian solidarity can counterbalance any continental threat.#!#!"
+    dip_zweibund_need_50_tt:0 "Minimum 50 trust required."
+    # German-Austrian Alliance: Alliance Actions
+    dip_zweibund_1_button:0 "Dispatch Prussian Military Mission"
+    dip_zweibund_1_button_desc:0 "Our General Staff reports the k.u.k. Army remains mired in medieval traditions - Magyar hussars shouting orders in a dozen languages while their artillery lacks proper rangefinders. Sending Moltke's proteges to modernize their command structure could transform these brave but disorganized troops into effective allies."
+    dip_zweibund_1_button_tt:0 "+25 trust\n5 year cooldown"
+    dip_zweibund_2_button:0 "Export Krupp Artillery & Machinery"
+    dip_zweibund_2_button_desc:0 "While Vienna's workshops still produce fine pianos, their industrial base lags decades behind. Our Ruhr industrialists propose selling discounted heavy industry equipment - from cannon foundries to electrical generators - to bind Austrian modernization to German technology."
+    dip_zweibund_2_button_tt:0 "+25 trust\n5 year cooldown"
+    dip_zweibund_3_button:0 "Imperial State Visit to Vienna"
+    dip_zweibund_3_button_desc:0 "Nothing strengthens bonds like royal pageantry. A grand procession down the Ringstraße, with [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] and Emperor Franz Joseph reviewing troops together, would demonstrate our fraternal unity to all Europe."
+    dip_zweibund_3_button_tt:0 "+5 trust\n1 year cooldown"
+    dip_zweibund_4_button:0 "Negotiate Zollverein Expansion"
+    dip_zweibund_4_button_desc:0 "The German Customs Union already links our economies. Extending preferential tariffs to Austria would create an economic bloc stretching from the Rhine to Transylvania, making our industries inseparable."
+    dip_zweibund_4_button_tt:0 "-50 trust\n5 year cooldown"
+    dip_zweibund_5_button:0 "Request Habsburg Gold Loan"
+    dip_zweibund_5_button_desc:0 "While our treasury funds army expansions, Vienna's coffers overflow with Hungarian grain revenues. A discreet loan from Rothschild's Viennese banks, guaranteed by imperial bonds, could finance our naval ambitions without Reichstag debates."
+    dip_zweibund_5_button_tt:0 "-50 trust\n5 year cooldown"
+    dip_zweibund_6_button:0 "Renew the Zweibund Treaty"
+    dip_zweibund_6_button_tt:0 "5 year cooldown"
+
+    # Imperial Parliament
+    der_reichstag:0 "The Reichstag"
+    der_reichstag_reason:0 "The progress bar tracks which party currently holds #bold parliamentary majority#! in the Reichstag.\n\nSeat allocation follows complex political dynamics:\n- #bold Liberals#! gain from #tooltippable;tooltip:[Country.GetTooltipTag],reichstag_liberalism_tooltip_advance civil liberties#!\n- #bold Conservatives#! thrive under #tooltippable;tooltip:[Country.GetTooltipTag],reichstag_conservatism_tooltip_advance traditional policies#!\n- #bold Social Democrats#! grow through #tooltippable;tooltip:[Country.GetTooltipTag],reichstag_socialism_tooltip_advance worker reforms#!\n\nThis #variable 382-member assembly#!, elected through #bold universal male suffrage#!, forms the democratic counterweight to the Bundesrat's federalism. Though the Kaiser appoints chancellors, no budget passes without Reichstag approval. Its hallowed halls in Berlin's #bold Reichstagsgebäude#! echo with debates that shape the empire's destiny.\n\nThree factions dominate:\n1) The #bold National Liberals#! - bourgeois champions of free trade and constitutionalism\n2) The #bold German Conservatives#! - Junker-backed defenders of monarchy and tradition\n3) The #bold SPD#! - rising socialist voice of the industrial working class\n\nWhichever faction prevails will steer [ROOT.GetCountry.GetName]'s legislative agenda."
+    # Imperial Parliament: Party Mechanics
+    reichstag_liberalism_tooltip_advance:0 "Liberal gains occur monthly when:\n• Officially endorsing #bold Liberal policies#!\n• Enacting [GetLawType('law_right_of_assembly').GetName]\n• Implementing [GetLawType('law_elected_bureaucrats').GetName]\n• Maintaining [GetLawType('law_laissez_faire').GetName]"
+    reichstag_liberalism_tooltip_delete:0 "Liberal declines occur monthly when:\n• Supporting #bold socialist rivals#!\n• Imposing [GetLawType('law_censorship').GetName]\n• Expanding [GetLawType('law_regulatory_bodies').GetName]\n• Creating [GetLawType('law_wage_subsidies').GetName]"
+    reichstag_conservatism_tooltip_advance:0 "Conservative gains occur monthly when:\n• Championing #bold traditional values#!\n• Maintaining [GetLawType('law_appointed_bureaucrats').GetName]\n• Enforcing [GetLawType('law_censorship').GetName]\n• Funding [GetLawType('law_militarized_police').GetName]"
+    reichstag_conservatism_tooltip_delete:0 "Conservative declines occur monthly when:\n• Adopting #bold liberal reforms#!\n• Implementing [GetLawType('law_interventionism').GetName]\n• Electing [GetLawType('law_elected_bureaucrats').GetName]\n• Protecting [GetLawType('law_right_of_assembly').GetName]"
+    reichstag_socialism_tooltip_advance:0 "SPD gains occur monthly when:\n• Backing #bold worker movements#!\n• Establishing [GetLawType('law_interventionism').GetName]\n• Creating [GetLawType('law_worker_protections').GetName]\n• Funding [GetLawType('law_old_age_pension').GetName]"
+    reichstag_socialism_tooltip_delete:0 "SPD declines occur monthly when:\n• Promoting #bold conservative policies#!\n• Appointing [GetLawType('law_appointed_bureaucrats').GetName]\n• Deploying [GetLawType('law_militarized_police').GetName]\n• Maintaining [GetLawType('law_laissez_faire').GetName]"
+    # Imperial Parliament: Status
+    der_reichstag_complete_tt:0 "The majority party will influence elections nationwide."
+    status_der_reichstag_liberalism:0 "#U #B National Liberals dominate the Reichstag#!#!"
+    status_der_reichstag_conservatism:0 "#O #B Conservatives control Reichstag#!#!"
+    status_der_reichstag_socialism:0 "#N #B SPD achieves Reichstag majority#!#!"
+    status_der_reichstag_nobody:0 "#P #B Hung Reichstag - no clear majority#!#!"
+    # Imperial Parliament: Support Actions
+    der_reichstag_encourage_liberalism_button:0 "Back National Liberals: #variable [ROOT.GetCountry.MakeScope.Var('liberalism_progress').GetValue|0]#! seats"
+    der_reichstag_encourage_liberalism_button_desc:0 "Support free trade, constitutional rights, and separation of church and state - the progressive path for Germany's future!"
+    liberalism_progress_increase_5_tt:0 "Monthly: +1 Liberal seats, -1 Conservative seats"
+    der_reichstag_encourage_conservatism_button:0 "Empower Conservatives: #variable [ROOT.GetCountry.MakeScope.Var('conservatism_progress').GetValue|0]#! seats"
+    der_reichstag_encourage_conservatism_button_desc:0 "Defend monarchical authority, agrarian interests, and Protestant values against radical challenges."
+    conservatism_progress_increase_5_tt:0 "Monthly: +1 Conservative seats, -1 SPD seats"
+    der_reichstag_encourage_socialism_button:0 "Support SPD: #variable [ROOT.GetCountry.MakeScope.Var('socialism_progress').GetValue|0]#! seats"
+    der_reichstag_encourage_socialism_button_desc:0 "Champion workers' rights, social welfare, and industrial democracy against capitalist exploitation."
+    socialism_progress_increase_5_tt:0 "Monthly: +1 SPD seats, -1 Liberal seats"
+    # Imperial Parliament: Legislature
+    der_reichstag_1_button:0 "Propose Free Trade Bill"
+    der_reichstag_1_button_desc:0 "The National Liberals demand tariff reductions and commercial treaties to stimulate economic growth through international trade."
+    der_reichstag_1_1_button_tt:0 "Requires Liberal majority"
+    der_reichstag_1_2_button_tt:0 "10-year legislative cooldown"
+    der_reichstag_2_button:0 "Enact Protectionist Measures"
+    der_reichstag_2_button_desc:0 "Conservatives push for agricultural tariffs and industrial protections to safeguard German producers."
+    der_reichstag_2_1_button_tt:0 "Requires Conservative majority"
+    der_reichstag_2_2_button_tt:0 "10-year legislative cooldown"
+    der_reichstag_3_button:0 "Establish Worker Protections"
+    der_reichstag_3_button_desc:0 "The SPD advocates for factory inspections, maximum hour laws, and accident insurance for industrial laborers."
+    der_reichstag_3_1_button_tt:0 "Requires SPD majority"
+    der_reichstag_3_2_button_tt:0 "10-year legislative cooldown"
+
+    # German World Empire
+    deutsch_reich:0 "Germany's Place in the Sun"
+    deutsch_reich_reason:0 "While #variable Bismarck#! cautioned against colonial adventures, his Realpolitik belongs to a bygone era. As Europe's industrial powerhouse, [ROOT.GetCountry.GetName] can no longer remain a continental spectator while other nations carve up the globe.\n\nThe time has come to claim our #bold Platz an der Sonne#! - no longer shall Germany be content with 'a place in the shade' while [SCOPE.sCountry('GBR_scope').GetName] and [SCOPE.sCountry('FRA_scope').GetName] divide continents between them. From the rubber plantations of #bold Kamerun#! to the coaling stations of the Pacific, we must plant the #bold Reichskriegsflagge#! where German merchants trade, German capital flows, and German settlers thrive.\n\nAdmiral Tirpitz's High Seas Fleet will ensure our #bold Weltpolitik#! is backed by steel and gunpowder. Let the world know: German industry demands markets, German workers need raw materials, and German prestige requires colonies worthy of our continental might!\n\nAs [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] Wilhelm II declares: 'The tricolor must wave over every sea, visible to friend and foe alike!'"
+    # German World Empire: Conditions
+    deutsch_reich_1_tt:0 "Requires active $weltpolitik_des_deutschen$[concept_journal_entry]"
+    deutsch_reich_2_tt:0 "Must secure all core German territorial claims"
+    deutsch_reich_3_tt:0 "Colonial expansion unlocks new national opportunities"
+    # German World Empire: Imperial Ambitions
+    deutsch_reich_status:0 "#bold German merchant fleets#! now rival Britain's in tonnage"
+    deutsch_reich_button:0 "Launch Colonial Expedition"
+    deutsch_reich_button_desc:0 "Dispatch gunboats and concession hunters to stake claims in unclaimed territories before our rivals"
+    deutsch_reich_button_tt:0 "Triggers colonial competition events"
+    # German World Empire: Colonies
+    deutsch_reich_admin_button:0 "Establish Schutzgebiet"
+    deutsch_reich_admin_button_desc:0 "Formalize provisional trading posts into official protectorates with colonial administrations"
+    deutsch_reich_admin_tt:0 "Requires 5 or more uncontrolled territories"
+    # German World Empire: Navy
+    deutsch_reich_navy_button:0 "Expand Kaiserliche Marine"
+    deutsch_reich_navy_button_desc:0 "Fund Tirpitz's risk theory fleet to protect our overseas interests"
+    deutsch_reich_navy_tt:0 "Increases naval budget by 15%"
+    
+    # Claim West Africa
+    claim_cameroon:0 "Plant the Flag in Kamerun"
+    claim_cameroon_reason:0 "As our factories hunger for raw materials, [ROOT.GetCountry.GetName] must stake its claim in Africa's scramble. While [SCOPE.sCountry('FRA_scope').GetName] and [SCOPE.sCountry('GBR_scope').GetName] squabble over the Niger Delta, the fertile lands of #bold Kamerun#! and #bold Togoland#! lie ripe for the taking - ideal for rubber plantations to feed our burgeoning tire industry and hardwood forests for shipbuilding.\n\nThough lacking gold or diamonds, these territories will become the #bold first stepping stones#! of our colonial empire. As Chancellor Bülow declared: 'We don't want to put anyone in the shade, but we demand our place in the sun!' Let merchant companies like Woermann-Linie establish trading posts along the Wouri River, while our Schutztruppe secures the hinterlands."
+    claim_cameroon_tt:0 "May provoke French ire... but since when have we feared Parisian tantrums?"
+
+    # Claim Namibia
+    claim_namibia:0 "Secure Deutsch-Südwestafrika"
+    claim_namibia_reason:0 "The sun-baked sands of #bold Namibia#! conceal untapped mineral wealth - copper, zinc, and potentially diamonds. This southwest coast offers more than just resources: it's a strategic foothold near Britain's Cape Colony, allowing us to monitor their vital sea lanes while establishing our own coaling stations.\n\nThough the #bold Namib Desert#! challenges settlement and malaria plagues the north, our colonial pioneers are undeterred. Lüderitz Bay already flies the Reichskriegsflagge, and with more settlers, we can transform this 'land of thirst' into a productive colony. As an added benefit, controlling Namibia pressures [SCOPE.sCountry('GBR_scope').GetName]'s dominance over southern African trade routes."
+    claim_namibia_tt:0 "London may protest... but their hands are full with the Boers."
+
+    # Claim Tanzania
+    claim_tanzania:0 "Establish Deutsch-Ostafrika"
+    claim_tanzania_reason:0 "The fertile highlands around #bold Kilimanjaro#! and the shores of #bold Lake Victoria#! offer everything a colonial power could desire: rich volcanic soil for sisal and cotton plantations, access to the Indian Ocean via Zanzibar, and untapped mineral deposits in the interior.\n\nCarl Peters' Society for German Colonization has already secured treaties with local chiefs. Now is the time to formalize our control before [SCOPE.sCountry('GBR_scope').GetName] expands north from Rhodesia. With proper investment, this could become the #bold crown jewel#! of our African possessions - a land where German settlers can thrive and our East Africa Company can extract valuable resources to fuel our industries back home."
+    claim_tanzania_tt:0 "A prosperous colony that will pay dividends for generations."
+
+    # Claim New Guinea
+    claim_new_guinea:0 "Annex Kaiser-Wilhelmsland"
+    claim_new_guinea_reason:0 "The vast island of New Guinea represents our gateway to the Pacific. Though steamy jungles and malaria make settlement difficult, the #bold Bismarck Archipelago#! offers excellent harbors while the interior holds potential for coconut plantations and mineral extraction.\n\nMost importantly, this territory positions us perfectly to challenge Dutch and British influence in the East Indies. From Rabaul's natural harbor, our ships can project power toward potential future acquisitions in the Carolines or Samoa. The Neu Guinea Kompagnie stands ready to develop these lands - we must simply provide the imperial protection needed to keep [SCOPE.sCountry('NET_scope').GetName] and [SCOPE.sCountry('GBR_scope').GetName] at bay."
+    claim_new_guinea_tt:0 "A strategic foothold for Pacific ambitions."
+
+    # Claim Southeast Asia
+    claim_malaya:0 "Vision of Deutsch-Asien"
+    claim_malaya_reason:0 "The riches of Southeast Asia tempt every imperial power: the teak forests of Siam, the rubber plantations of Malaya, the rice paddies of Tonkin. While [SCOPE.sCountry('FRA_scope').GetName] consolidates Indochina and [SCOPE.sCountry('GBR_scope').GetName] dominates the Malay states, we must secure our share.\n\nThe #bold Red River Delta#! could feed our empire, while controlling portions of the #bold Straits of Malacca#! would give us leverage over the most lucrative trade route in the Orient. Though challenging Britain and France simultaneously is dangerous, the potential rewards justify the risk. Imagine a network of coaling stations from Singapore to Saigon, all flying the black-white-red banner - this is the vision that drives our Ostasienpolitik!"
+    claim_malaya_tt:0 "Will provoke intense Anglo-French opposition... but glory favors the bold."
+
+    # Industrialization of Silesia
+    schlesien_industrialize:0 "The Silesian Industrial Miracle"
+    schlesien_industrialize_reason:0 "Once the jewel of #bold Habsburg Bohemia#!, Silesia became Prussia's eastern powerhouse after #bold Frederick the Great#! wrested it away in 1742. The textile mills of #bold Breslau#! and coal mines of #bold Waldenburg#! already hum with activity, fed by the Oder River's trade routes and the region's abundant mineral wealth.\n\nYet in this age of steam and steel, we must transform Silesia from a prosperous region into the #bold Ruhr of the East#!. The Upper Silesian coal basin - Europe's largest - can fuel blast furnaces to rival those in the Rhineland. With targeted investments in rail connections to Berlin and new chemical works along the Oder, Silesia could become the industrial dynamo driving [ROOT.GetCountry.GetName]'s eastern expansion.\n\nThe #bold Königshütte ironworks#! stand ready to triple production if provided with state subsidies. Let us make Silesia's factories the arsenal of German industry and its mines the furnace of our economic might!"
+    schlesien_industrialize_status:0 "Transforming Silesia into Germany's eastern industrial powerhouse"
+
+    # Industrialization of Bavaria
+    bavaria_industrialize:0 "Bavaria's Industrial Awakening"
+    bavaria_industrialize_reason:0 "While Munich's beer halls and Nuremberg's medieval charm delight tourists, Bavaria's economy remains shackled to tradition. The #bold Wittelsbach dynasty#! may have surrendered political power, but their conservative influence still slows modernization across this pastoral land.\n\nYet beneath Bavaria's rustic surface lies potential: the #bold Palatinate's#! nascent chemical industry, #bold Augsburg's#! mechanical workshops, and #bold Franconia's#! waterpower could form the nucleus of southern German industry. The key lies in breaking the nobility's stranglehold on land and capital.\n\nOur plan calls for:\n1) State-funded technical schools in Munich\n2) Rail expansion connecting Bavarian towns to the Rhine\n3) Tax incentives for machine tool manufacturers\n4) Hydroelectric projects on the Isar River\n\nWith proper investment, we can make Bavaria the #bold southern counterweight#! to Prussia's industrial dominance!"
+    bavaria_industrialize_status:0 "Modernizing Bavaria's economy beyond beer and agriculture"
+
+    # High Seas Fleet Shipbuilding Plan
+    deutsch_hochseeflotte:0 "The Hochseeflotte"
+    deutsch_hochseeflotte_reason:0 "Admiral Tirpitz's memorandum is clear: 'Without a fleet commensurate with our world interests, Germany remains a semi-sovereign nation.' As our merchant marine stretches from Qingdao to Dar es Salaam, we can no longer rely on Britain's grudging protection.\n\nThe #bold Flottengesetze#! will assist in constructing a fleet so powerful that even the Royal Navy would hesitate to attack - the famous 'Risk Theory'. At its core: \n\n• 38 battleships in two squadrons\n• 20 armored cruisers as commerce raiders\n• Modern docks at Wilhelmshaven and Kiel\n\nThough [SCOPE.sCountry('GBR_scope').GetName] responds with their own dreadnought program, our #bold Krupp-armored#! warships and superior optical rangefinders may yet give us the edge. As the Kaiser proclaims: 'Our future lies on the water!' Let London tremble as Germany claims her rightful place as a naval power!"
+    deutsch_hochseeflotte_tt:0 "A fleet strong enough to make Britain think twice before challenging us"
+
+    # German-Italian Alliance
+    dip_stahlpakt:0 "The Pact of Steel"
+    dip_stahlpakt_reason:0 "Though Italy remains the #bold least of the great powers#!, her strategic position astride the Mediterranean makes her a valuable counterweight against [SCOPE.sCountry('FRA_scope').GetName]. As Bismarck once remarked: 'Italy has a large appetite but poor teeth' - yet with German steel and Italian geography, we can forge an alliance to dominate Central Europe.\n\nThe #bold Drang nach Osten#! of [SCOPE.sCountry('RUS_scope').GetName] threatens both our interests - they stir Slavic unrest in Austria's Balkan backyard while coveting Constantinople's straits. A mutual defense pact would secure our southern flank, allowing [ROOT.GetCountry.GetName] to focus on continental affairs while Italy pursues Mediterranean ambitions.\n\nLet us formalize this #bold Axis partnership#! - not as equals, but as complementary forces. German industry can modernize Italy's military, while their Alpine divisions could pin down French forces in any future conflict. Together we can ensure the #bold Berlin-Rome Axis#! becomes the fulcrum of European power."
+    # German-Italian Alliance: Conditions
+    dip_stahlpakt_possible_tt:0 "Requires active $kontinentalpolitik_des_deutschen$[concept_journal_entry]"
+    dip_stahlpakt_fail_tt:0 "The Pact of Steel has been broken!"
+    dip_stahlpakt_fail_2_tt:0 "Active war with Italy nullifies the alliance"
+    dip_stahlpakt_fail_3_tt:0 "Active war with Germany nullifies the alliance"
+    refuse_stahlpakt_tt:0 "Will dissolve the German-Italian Alliance permanently"
+    # German-Italian Alliance: Alliance Actions
+    dip_stahlpakt_1_button:0 "Renew the Pact of Steel"
+    dip_stahlpakt_1_button_desc:0 "Extend the mutual defense treaty for another decade, reaffirming our commitment to the Berlin-Rome Axis."
+    stahlpakt_1_possibel_tt:0 "10 year cooldown between renewals"
+    dip_stahlpakt_2_button:0 "Conduct Alpine Maneuvers"
+    dip_stahlpakt_2_button_desc:0 "Joint war games in the Tyrolean mountains will improve coordination between our armies and demonstrate Axis solidarity to [SCOPE.sCountry('FRA_scope').GetName]."
+    stahlpakt_2_possibel_tt:0 "5 year cooldown between exercises"
+    dip_stahlpakt_3_button:0 "Abrogate the Pact"
+    dip_stahlpakt_3_button_desc:0 "The Italian alliance has become a liability rather than an asset. Invoke Article X to terminate this agreement."
+    stahlpakt_3_possibel_tt:0 "Permanently dissolves the alliance"
+    # German-Italian Alliance: Context
+    dip_stahlpakt_status:0 "#bold Axis solidarity#! strengthens our strategic position"
+    dip_stahlpakt_warning:0 "Italy's military reliability remains questionable"

@@ -1,0 +1,406 @@
+namespace = joi_flavor_pru
+
+joi_flavor_pru.1 = {#德意志统一方案
+	type = country_event
+	placement = root
+	title = joi_flavor_pru.1.t
+	desc = joi_flavor_pru.1.d
+	flavor = joi_flavor_pru.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "southamerica_election"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:AUS = {
+            save_scope_as = AUS_scope
+        }
+        c:GBR = {
+            save_scope_as = GBR_scope
+        }
+        c:RUS = {
+            save_scope_as = RUS_scope
+        }
+	}
+
+	option = {
+
+		name = joi_flavor_pru.1.a
+
+		custom_tooltip = {
+		text = big_germany_tt
+		give_claims_on_germany = yes
+		s:STATE_AUSTRIA = {
+            add_claim = ROOT
+        	}
+        s:STATE_STYRIA = {
+            add_claim = ROOT
+        	}
+        s:STATE_TYROL = {
+            add_claim = ROOT
+        	}
+        s:STATE_SOUTH_TYROL = {
+            add_claim = ROOT
+        	}
+        s:STATE_SLOVENIA = {
+            add_claim = ROOT
+        	}
+        s:STATE_ISTRIA = {
+            add_claim = ROOT
+        	}
+        s:STATE_BOHEMIA = {
+            add_claim = ROOT
+        	}
+        s:STATE_MORAVIA = {
+            add_claim = ROOT
+        	}
+        s:STATE_ALSACE_LORRAINE = {
+            add_claim = ROOT
+        	}
+    	}
+	}
+
+	option = {
+
+		name = joi_flavor_pru.1.b
+		default_option = yes
+
+		custom_tooltip = {
+		text = little_germany_tt_1
+		give_claims_on_germany = yes
+		s:STATE_ALSACE_LORRAINE = {
+            add_claim = c:PRU
+        	}
+    	}
+        custom_tooltip = {
+		text = little_germany_tt_2
+        set_variable = has_little_germany
+    	}
+	}
+}
+
+joi_flavor_pru.2 = {#莱茵兰的工业巨头
+	type = country_event
+	placement = root
+	title = joi_flavor_pru.2.t
+	desc = joi_flavor_pru.2.d
+	flavor = joi_flavor_pru.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "southamerica_factory_opening"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+        c:GBR = {
+            save_scope_as = GBR_scope
+        }
+        c:FRA = {
+            save_scope_as = FRA_scope
+        }
+        c:USA = {
+            save_scope_as = USA_scope
+        }
+	}
+
+	option = {
+
+		name = joi_flavor_pru.2.a
+
+		add_modifier = {
+				name = rhine_company
+				months = -1
+			}
+	}
+
+	option = {
+
+		name = joi_flavor_pru.2.b
+		default_option = yes
+		
+		add_modifier = {
+				name = rhine_company
+				months = -1
+			}
+		add_company = company_type:company_rheinmetall
+		company:company_rheinmetall ?= {
+					set_company_state_region = s:STATE_RUHR
+				}
+		hidden_effect = {
+			if = {
+				limit = { c:PRU ?= THIS }
+				s:STATE_RUHR = {
+					region_state:PRU = {
+					create_building = {
+						building = "building_munition_plants"
+						add_ownership = {
+							company = {
+								type = company_rheinmetall
+								country = "c:PRU"
+								levels = 5
+								}
+							}
+							reserves = 1
+							}
+						}
+					}
+				}
+				else_if = {
+				limit = { c:NGF ?= THIS }
+				s:STATE_RUHR = {
+					region_state:NGF = {
+					create_building = {
+						building = "building_munition_plants"
+						add_ownership = {
+							company = {
+								type = company_rheinmetall
+								country = "c:NGF"
+								levels = 5
+								}
+							}
+							reserves = 1
+							}
+						}
+					}
+				}
+				else_if = {
+				limit = { c:GER ?= THIS }
+				s:STATE_RUHR = {
+					region_state:GER = {
+					create_building = {
+						building = "building_munition_plants"
+						add_ownership = {
+							company = {
+								type = company_rheinmetall
+								country = "c:GER"
+								levels = 5
+								}
+							}
+							reserves = 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+joi_flavor_pru.3 = {#义务教育法
+	type = country_event
+	placement = root
+	title = joi_flavor_pru.3.t
+	desc = joi_flavor_pru.3.d
+	flavor = joi_flavor_pru.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_rich_and_poor"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+
+		name = joi_flavor_pru.3.a
+		default_option = yes
+
+		add_modifier = {
+				name = improved_prussia_education_system
+				months = -1
+			}
+		remove_modifier = prussia_education_system
+	}
+}
+
+joi_flavor_pru.4 = {#伟大的军事改革
+	type = country_event
+	placement = root
+	title = joi_flavor_pru.4.t
+	desc = joi_flavor_pru.4.d
+	flavor = joi_flavor_pru.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+
+		name = joi_flavor_pru.4.a
+		default_option = yes
+
+		add_modifier = {
+				name = prussia_superstrong_army
+				months = -1
+			}
+		remove_modifier = prussia_strong_army
+	}
+}
+
+joi_flavor_pru.5 = {#守望莱茵
+	type = country_event
+	placement = root
+	title = joi_flavor_pru.5.t
+	desc = joi_flavor_pru.5.d
+	flavor = joi_flavor_pru.5.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+		any_primary_culture = {
+			OR = { 
+				cu:south_german = this 
+				cu:north_german = this
+			}
+		}
+		NOT = {
+			c:AUS = THIS
+			}
+		c:FRA = {
+			has_modifier = france_natural_borders_pursuit
+		}
+	}
+
+	immediate = {
+		c:FRA = {
+            save_scope_as = FRA_scope
+        }
+	}
+
+	option = {
+
+		trigger = {
+			NOT = {
+			c:PRU ?= THIS
+			c:NGF ?= THIS
+			c:GER ?= THIS
+			}
+		}
+
+		name = joi_flavor_pru.5.a
+		default_option = yes
+
+		if = {
+			limit = {
+			exists = c:PRU
+			}
+			set_owes_obligation_to = {
+				country = c:PRU
+				setting = yes
+				}
+			}
+		if = {
+			limit = {
+			exists = c:NGF
+			}
+			set_owes_obligation_to = {
+				country = c:NGF
+				setting = yes
+				}
+			}
+		if = {
+			limit = {
+			exists = c:GER
+			}
+			set_owes_obligation_to = {
+				country = c:GER
+				setting = yes
+				}
+			}
+		add_modifier = {
+				name = defend_rhine
+				years = 5
+		}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_WALLONIA
+					state_region = s:STATE_FLANDERS
+					state_region = s:STATE_RHINELAND
+					state_region = s:STATE_NORTH_RHINE
+					state_region = s:STATE_SAVOY
+				}
+			}
+			add_modifier = {
+				name = rally_against_france
+				years = 5
+			}
+		}
+	}
+
+	option = {
+
+		trigger = {
+			OR = {
+			c:PRU ?= THIS
+			c:NGF ?= THIS
+			c:GER ?= THIS
+			}
+		}
+
+		name = joi_flavor_pru.5.b
+
+		add_modifier = {
+				name = defender_of_rhine
+				months = 120
+		}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_WALLONIA
+					state_region = s:STATE_FLANDERS
+					state_region = s:STATE_RHINELAND
+					state_region = s:STATE_NORTH_RHINE
+					state_region = s:STATE_SAVOY
+				}
+			}
+			add_modifier = {
+				name = rally_against_france
+				months = 120
+			}
+		}
+	}
+}

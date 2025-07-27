@@ -1,0 +1,212 @@
+﻿l_english:
+    # Peter the Great's Will
+    joi_flavor_rus.1.t: "Peter the Great's Will"
+    joi_flavor_rus.1.d: "A legacy from [ROOT.GetCountry.GetName]'s greatest emperor, Peter I, has now been passed down to [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName]..."
+    joi_flavor_rus.1.f: "1. Maintain [ROOT.GetCountry.GetName] in a constant state of war, keeping soldiers ever prepared, while continuously strengthening the nation's finances and improving the army. Seize the most favorable opportunities for aggression to ensure Russia's benefit, expansion, and growing prosperity.\n2. Use all possible means to recruit the brightest minds in Europe to aid Russians, harm other nations without self-damage.\n3. Engage in all possible European affairs and discussions, particularly those related to Germanic matters.\n4. Divide Poland to maintain perpetual turmoil and mutual distrust within the Polish kingdom; influence Polish court assemblies with gold, buying them to gain advantages in kingly elections.\n5. Seize as much land from [SCOPE.sCountry('SWE_scope').GetName] as possible and provoke its attack against us to justify conquering Sweden; isolate Denmark from Sweden and escalate conflicts between them.\n6. Always choose German princesses as spouses for our princes to enhance familial ties and secure German support for our expansion endeavors.\n7. Prioritize alliances and commerce with [SCOPE.sCountry('GBR_scope').GetName], establishing continuous exchanges of goods and sailors to benefit our navigation and trade.\n8. Expand northward along the Baltic Sea and southward along the Black Sea.\n9. Get as close as possible to Constantinople and India, as whoever rules there becomes the true master of the world; thus, initiate frontier wars not only in Turkey but also in Persia.\nAfter #bold dismantling Sweden, destroying Persia, subduing Poland, and conquering Turkey#!, our armies will have united, with ships guarding the Black Sea and Baltic Sea. Subsequently, we must secretly approach Versailles Palace and the Vienna Court with proposals to share a global empire.\n\nWe must #bold provoke disputes between them to weaken each other#!. Then, Russia must seize the decisive moment, invading France on one side and Germany on the other.\n#bold With these two nations subdued, the rest of Europe will be weak and easily conquered#!."
+    joi_flavor_rus.1.a: "Honoring the will of the late emperor, we will dominate the world!"
+
+    # Peter's Success
+    joi_flavor_rus.2.t: "The Third Rome"
+    joi_flavor_rus.2.d: "In AD 467, the great Roman Empire transitioned to Constantinople as its heir; now, the empire has shifted again, and the new supreme leader will be crowned in Tsargrad as Emperor of the Roman people and Senate."
+    joi_flavor_rus.2.f: "\"I would like to say a few words to the most outstanding and noble ruler of our Orthodox Empire...\nAll those who love Christ and God know that all Christian empires will ultimately fall, and our nation will inherit their legacy, as foretold in the prophecies: that is the Russian Empire.\"\n\"Two Romes have fallen, but the third stands unshaken, and there shall never be a fourth. This will be the eternal Rome... bringing an end to the disorderly competition among nations, establishing the Roman Peace of the New World.\""
+    joi_flavor_rus.2.a: "We are the true heirs of the Roman Empire!"
+
+    # Peter's Failure
+    joi_flavor_rus.3.t: "Burnt Will"
+    joi_flavor_rus.3.d: "The fireplace crackled as pages were thrown in, emitting faint black smoke..."
+    joi_flavor_rus.3.f: "#bold Since 1724#!, his health visibly declined as he worked tirelessly, burning the midnight oil, worsening his condition and hastening his demise.\nHis deteriorating physical state seemed to soon bring him to his end. He felt burning heat, plunging him into near-constant feverish delirium. Amid the brief respite from pain, he attempted to #bold write something#!, but his hands could only produce barely legible characters. Among them, the recognizable words in Russian: #bold 'All to...'#!\nHe called for #bold Princess Anna Petrovna#! to come to him for dictation, but by the time she arrived at his bedside, he was already unable to speak.\nHe lingered for 16 hours. #bold Empress Catherine#! stayed by his bedside for three days and nights without leaving for a moment. #bold Around 4 AM on January 28, he died in her arms#!."
+    joi_flavor_rus.3.a: "Will? What will?"
+
+    # Central Asia Success
+    joi_flavor_rus.4.t: "[ROOT.GetCountry.GetName]'s Steppe"
+    joi_flavor_rus.4.d: "With the conquest of Central Asian nations and the signing of a new border treaty with [SCOPE.sCountry('CHI_scope').GetName], our nation has completely eliminated the nomadic enemies of the past centuries..."
+    joi_flavor_rus.4.f: "Our border deployment made it clear to [SCOPE.sCountry('CHI_scope').GetName] that we could use armed force to meet our demands at any time. This deployment could be considered a violation of international law or friendly relations under any circumstances: all troops are stationed on Kyrgyz land, subjects of [ROOT.GetCountry.GetName], and... strictly ordered to cross the patrol line when needed."
+    joi_flavor_rus.4.a: "The steppe will accept the empire's direct rule."
+    joi_flavor_rus.4.b: "Perhaps appointing a reliable governor to rule Central Asia would be better."
+
+    # Central Asia Failure
+    joi_flavor_rus.5.t: "Rise of the Tartars"
+    joi_flavor_rus.5.d: "The Tartars have occupied Kazakhstan, formerly belonging to [ROOT.GetCountry.GetName], stirring great fear in the people about the past..."
+    joi_flavor_rus.5.f: "\"Then he sent fierce Dorbei to attack Merv and continued to conquer the peoples between Iraq and the Indus. He dispatched the brave Subotai to fight in the north, defeating eleven kingdoms and tribes, crossing the Volga and Ural Rivers, and finally waging war on Kyiv...\"\n\"As before, those wicked vampire envoys came saying: 'Make peace with us.' He did not wish for this, as the prophet said: 'Glorious war is better than shameful peace.' These impious people and their deceitful peace will bring great terror to our lands, for they have done much evil here...\""
+    joi_flavor_rus.5.a: "Here we go again?!"
+
+    # Near East Success
+    joi_flavor_rus.6.t: "[ROOT.GetCountry.GetName]'s Anatolia"
+    joi_flavor_rus.6.d: "With [ROOT.GetCountry.GetName]'s conquest of Anatolia, the Black Sea has become [ROOT.GetCountry.GetName]'s inland sea."
+    joi_flavor_rus.6.f: "Our great Slavic nation has successfully repelled the interventions of [SCOPE.sCountry('GBR_scope').GetName] and [SCOPE.sCountry('FRA_scope').GetName]. Through the bravery, loyalty, and discipline of our soldiers, we have continuously conquered vast Turkish territories. Next, we shall purify this land, driving out the inferior Turkic infidels from this fertile land.\nBut more importantly, we continue the mission to restore Orthodox Rome, while taking the final step in making the Black Sea our inland sea: the next stop is Tsargrad!"
+    joi_flavor_rus.6.a: "The land of Turkey belongs to us!"
+
+    # Near East Failure
+    joi_flavor_rus.7.t: "Treaty of Paris"
+    joi_flavor_rus.7.d: "The sovereigns of the belligerent nations... out of desire to end the disasters of war... have decided to reach an agreement with His Majesty... the foundation laid by [SCOPE.sCountry('GBR_scope').GetName]'s monarch rebuilds and consolidates peace, ensuring the independence and integrity of [SCOPE.sCountry('TUR_scope').GetName]..."
+    joi_flavor_rus.7.f: "7. Announce the Sublime Porte’s recognition of the advantages of public law and European coordination, each party pledging to respect the independence and territorial integrity of [SCOPE.sCountry('TUR_scope').GetName]...\n11. The Black Sea is neutral: open to merchant ships of all nations; its waters and ports are officially and permanently prohibited from hosting warships of coastal or any other states...\n13. As per Article 11, the neutrality of the Black Sea renders coastal military arsenals unnecessary; thus, [ROOT.GetCountry.GetName] and the Sultan pledge not to establish or maintain any naval arsenals along the coast...\n30. [ROOT.GetCountry.GetName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] and the Sultan maintain their Asian territories intact as legally existed before the rupture...\n34. This treaty shall be ratified within four weeks, or earlier if possible, and approval exchanged in Paris.\nPlenipotentiaries have signed and sealed to certify, dated in Paris."
+    joi_flavor_rus.7.a: "Lord above!"
+
+    # Persian Success
+    joi_flavor_rus.8.t: "Victory in Persia"
+    joi_flavor_rus.8.d: "Through successive campaigns launched by [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] in Persia, this fertile region has been incorporated into our great [ROOT.GetCountry.GetName] motherland."
+    joi_flavor_rus.8.f: "Since the beginning of the Persian campaigns, countless brave [ROOT.GetCountry.GetName] citizens have shed their blood on Persia’s fertile lands, nourishing it with their sacrifices. Next, we will send our courageous soldiers to Mashriq, further solidifying our influence in the Middle East. Moreover, conquering Persia poses a real threat to the crown jewel in the East—India.\nOnce we strengthen our military and advance towards India, we shall liberate the Indian people, enslaved by the duplicitous rule of [SCOPE.sCountry('GBR_scope').GetName]."
+    joi_flavor_rus.8.a: "First to climb the Zagros Mountains shall be titled count!"
+
+    # Persian Failure
+    joi_flavor_rus.9.t: "Catastrophic Defeat in Persia"
+    joi_flavor_rus.9.d: "Faced with threats from European powers, [ROOT.GetCountry.GetName] withdrew its troops from Persia, redirecting resources to European warfare..."
+    joi_flavor_rus.9.f: "Peter’s tomb weeps with fury! How could such a weak enemy easily crush the great Russian army? What disgrace, what shame! Once our forces are reorganized, we shall return, and the Cossack cavalry will ride across the Iranian plateau again!"
+    joi_flavor_rus.9.a: "Oh Persia, you are so beautiful..."
+
+    # Far East Success
+    joi_flavor_rus.10.t: "Conquest of the East"
+    joi_flavor_rus.10.d: "After arduous battles, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] led his people to seize long-desired northern territories of China."
+    joi_flavor_rus.10.f: "\"I, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName], proudly declare to Peter the Great and Empress Catherine: \nI have fulfilled the will of the late emperor. As for the shameful treaty of 1689—it is now nothing but scrap paper!\nFrom now on, Russian vessels shall sail freely on the Amur River, and the Russian Navy shall look eastward from Vladivostok, finally toward the world!\""
+    joi_flavor_rus.10.a: "The dragon's crown shall be ours!"
+
+    # Far East Failure
+    joi_flavor_rus.11.t: "Treaty of Outer Baikal"
+    joi_flavor_rus.11.d: "As [ROOT.GetCountry.GetName] gradually declined on the world stage, its interests in the Far East were progressively taken over by other nations..."
+    joi_flavor_rus.11.f: "Due to our defeat in war, territories in the Far East have slipped out of our control. Reports of Chinese soldiers wandering nearby have flooded [ROOT.GetCountry.GetRuler.GetFirstName], while the Siberian governor, fearing for his safety, has tendered his resignation, leaving all of Siberia in a state of panic."
+    joi_flavor_rus.11.a: "I, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName], shall return!"
+
+    # Eastern Europe Success
+    joi_flavor_rus.12.t: "Victory Parade in Kraków"
+    joi_flavor_rus.12.d: "In the name of the most sacred and indivisible Trinity, I, [ROOT.GetCountry.GetRuler.GetFirstName], ruler and autocrat of all Russia, salute our successors and the Russian national government."
+    joi_flavor_rus.12.f: "The army paraded through the streets of Kraków, celebrating their tremendous victory; the former restrictions imposed by the Vienna Conference on [ROOT.GetCountry.GetName] have now been broken, and the Polish territories once seized by Empress Theresa have been integrated into their true homeland: the [ROOT.GetCountry.GetName] motherland.\n[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName] vowed to use this as a starting point to realize the dream of countless past Russian rulers: the Greater Slavic Empire..."
+    joi_flavor_rus.12.a: "Long live the [ROOT.GetCountry.GetName] motherland!"
+
+    # Eastern Europe Failure
+    joi_flavor_rus.13.t: "Kyiv Agreement"
+    joi_flavor_rus.13.d: "Militarily indefensible and economically unsustainable... this agreement brought nothing but disgrace."
+    joi_flavor_rus.13.f: "1. [ROOT.GetCountry.GetRuler.GetFirstName] relinquishes all rights and claims to territories west of the boundary defined in Article II of this treaty...\n4. On the other hand, renounces all rights and claims to territories east of the boundary in Ukraine and Belarus...\n9. Both parties pledge to respect each other’s political sovereignty, refrain from internal interference, particularly avoiding incitement, propaganda, or intervention, and not encourage any such actions.\nThe plenipotentiaries have signed and sealed to certify, dated in Kyiv."
+    joi_flavor_rus.13.a: "Damn imperialist eastward expansion—ruining my Eastern European homeland!"
+
+    # Northern Europe Success
+    joi_flavor_rus.14.t: "Throne of Northern Europe"
+    joi_flavor_rus.14.d: "As a continuation of the Great Northern War, [ROOT.GetCountry.GetName] replicated Peter the Great's victory and even went further, achieving dominance over all of Northern Europe."
+    joi_flavor_rus.14.f: "When we raise our voices, Northern Europeans might submit. If they resist, we shall fire a shot, and they will surely surrender... We thought this way. We did not expect war; we believed they would accept our demands without forcing war...\n#bold People often ask#! whether we are legally or morally entitled to act against Northern Europe. Legally, we certainly have no authority, but morally, from our standpoint, our desire to protect ourselves justifies our actions."
+    joi_flavor_rus.14.a: "Another great victory for the motherland!"
+
+    # Northern Europe Failure
+    joi_flavor_rus.15.t: "Treaty of Moscow"
+    joi_flavor_rus.15.d: "The Northern war ended in defeat, and the warring parties eventually signed a peace treaty in Moscow..."
+    joi_flavor_rus.15.f: "The governments of Northern European nations and [ROOT.GetCountry.GetName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] sought to end hostilities between the two countries, create lasting peace, and establish clear conditions for mutual security...\nThe safety of St. Petersburg, Murmansk, and the Murmansk Railway aligns with the interests of both parties. For this purpose, a peace treaty was deemed necessary, and representatives were appointed to fulfill this goal...\nHostilities between the countries and [ROOT.GetCountry.GetName] shall cease immediately as per the protocol attached to this treaty...\nFurther border delineations and specifications shall be undertaken by a mixed committee of representatives from the contracting parties, appointed within ten days of the treaty's signing."
+    joi_flavor_rus.15.a: "Who cares about Finland?"
+
+    # Tsargrad
+    joi_flavor_rus.16.t: "Tsargrad"
+    joi_flavor_rus.16.d: "The once-coveted city of the world, Constantinople, has now become Tsargrad, belonging to [ROOT.GetCountry.GetName]."
+    joi_flavor_rus.16.f: "You will return like lightning, the nation will feast in celebration,\nThe seas, land, and skies, under your lightning,\nI will wear white garments and touch you again,\nYour radiance with my heart, how I love you!\nKing of kings, aid our sovereign,\nShow mercy, show mercy, O God of heaven,\n[ROOT.GetCountry.GetRuler.GetFirstName], by the grace of God, Emperor of the Romans,\nUnder the mantle of Saint Romanus, queen of all cities,\nA city of sabers, a city of spears,\nThis city is the key to the entire Roman Empire!\nThe silent fall of the Holy Mother, without much wailing,\nHow many years will pass until this city belongs to you once again..."
+    joi_flavor_rus.16.a: "One crown, one [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], one Rome!"
+
+    # Conquering Basra
+    joi_flavor_rus.17.t: "Babylonian Gardens"
+    joi_flavor_rus.17.d: "The conquest of Babylon has made [ROOT.GetCountry.GetName]'s archaeologists ecstatic..."
+    joi_flavor_rus.17.f: "He has concealed treasures, uncovered mysteries,\nHe fortified the walls of Uruk with encircling city walls,\nThe treasures of the sacred temple of Eanna are none other:\nLook at the exterior walls, shiny as bronze;\nObserve the interior walls, incomparable to anything else.\nStep over the threshold and behold its ancient charm;\nVisit Eanna, home of Ishtar,\nUnparalleled by any later ruler's endeavors!\nClimb the walls of Uruk, walk forward,\nInspect the foundations and examine the bricks,\nWere these bricks not forged in fire?\nWere these foundations not laid by the Seven Sages?"
+    joi_flavor_rus.17.a: "I think the myths might be a bit exaggerated."
+
+    # Approaching India
+    joi_flavor_rus.18.t: "On the Brink of India"
+    joi_flavor_rus.18.d: "With our brave soldiers triumphing in Afghanistan and Persia, India is soon to be incorporated into [ROOT.GetCountry.GetName]'s domain."
+    joi_flavor_rus.18.f: "Ah, India... you are the jewel in the crown: fertile lands, cheap labor, and an abundance of gems and spices... all of you captivate the heart of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] day and night.\nNext, our valiant Cossack cavalry shall cross the Indus River, plundering all wealth under British control. With our blood and flesh, we shall seize the crown jewel of the British Empire!"
+    joi_flavor_rus.18.a: "Advance, advance!"
+
+    # Chinese Administration
+    joi_flavor_rus.19.t: "Chinese Administration"
+    joi_flavor_rus.19.d: "Crossing the Amur River and traversing the Great Khingan Mountains, through successive conquests, we have finally reached the warm land we've long yearned for—China."
+    joi_flavor_rus.19.f: "For centuries, since our venture across the frozen Ural Mountains, the ancient and distant realm of China has grown closer through our courageous expeditions.\nNow, we finally have the opportunity to incorporate much of northern China's cities into our administrative domain; we Russians will impose the harshest governance in Northern China, much like the Mongols once treated us centuries ago, extracting the utmost value from this land!"
+    joi_flavor_rus.19.a: "Let us directly rule China!"
+    joi_flavor_rus.19.b: "Perhaps appointing a governor in Beiping would be better."
+
+    # Pacific Port
+    joi_flavor_rus.20.t: "Pacific Port"
+    joi_flavor_rus.20.d: "Through the labor of generations, Outer Manchuria has finally transformed into a decent place."
+    joi_flavor_rus.20.f: "When we first arrived, it was nothing but a desolate fishing village—no proper port, no usable shipyards, and certainly not a single warship ready for naval battles.\nBut now, behold: under our development, this place boasts the Far East's leading sea port, the highest number of warships in the region, and Northeast Asia's largest trading hub. What a magnificent achievement!\n[ROOT.GetCountry.GetName] shall use this as a starting point to conquer Asia. And one day, we shall undoubtedly use it as a starting point to conquer the world!"
+    joi_flavor_rus.20.a: "Its name shall be Vladivostok—Conqueror of the East!"
+
+    # Alexander II's Reforms: Success
+    joi_flavor_rus.21.t: "The Greatest Reformer"
+    joi_flavor_rus.21.d: "Through modernization led by [ROOT.GetCountry.GetRuler.GetFirstName], [ROOT.GetCountry.GetName]'s national strength has increased daily, allowing Russia to reassert leadership in the world order."
+    joi_flavor_rus.21.f: "Before the arrival of [ROOT.GetCountry.GetRuler.GetFirstName], [ROOT.GetCountry.GetName] was merely a hollow giant: \nIn the army, equipment was outdated, and many soldiers were illiterate; on the farmlands, serfs of the empire were heavily exploited, shackled by oppressive chains and suffering unbearably; within the government, a decaying system brought the administrative apparatus to the brink of collapse, leaving the empire on the verge of disintegration.\nHowever, following decisive reforms, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s military was revitalized, capable of serving as the 'policeman of Europe'; serfs of [ROOT.GetCountry.GetName] were largely emancipated, entering labor-intensive factories to propel industrialization; and the government was streamlined, now executing [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s will with fewer yet more efficient personnel."
+    joi_flavor_rus.21.a: "May God bless [ROOT.GetCountry.GetName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]!"
+
+    # Increased Russian Threat
+    joi_flavor_rus.22.t: "Increased Russian Threat"
+    joi_flavor_rus.22.d: "Faced with Russia's aggressive invasions, Britain's Indian interests are under threat..."
+    joi_flavor_rus.22.f: "\"If Russia sincerely and wholeheartedly accepts our intention to maintain peaceful possession of our Asian territories, I am very certain that within this country, no government would adopt obstructive policies toward Russia's actions in Europe. Instead, there is an urgent need to reestablish Russia's position and influence within the European council...\""
+    joi_flavor_rus.22.a: "Terrifying!"
+
+    # Alexander II's Reforms: Failure
+    joi_flavor_rus.23.t: "Collapse of Government"
+    joi_flavor_rus.23.d: "Despite [ROOT.GetCountry.GetName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s earnest efforts, the reform plans ultimately turned into a pile of wastepaper."
+    joi_flavor_rus.23.f: "In international affairs, in the north, Sweden’s restorationism is on the rise; in the south, the weakened Turkish military could fight our Near East army to a draw; in the Far East, our troops could not inflict the slightest damage on the Chinese.\nDomestically, serfs on Ukrainian farms are calling for the liberation they've long demanded; government bureaucracy is rife with corruption; and the army, tasked with safeguarding national sovereignty, is indulging in drink, debauchery, and gambling...\nThe Slavic people cry out: When will our great motherland regain its former glory?!"
+    joi_flavor_rus.23.a: "Nothing to see here today..."
+
+    # Successful Noble Reforms
+    joi_flavor_rus.24.t: "First Duma Assembly"
+    joi_flavor_rus.24.d: "Through a series of reforms, [ROOT.GetCountry.GetName]'s legal system has finally aligned with advanced nations, establishing a brand-new political framework."
+    joi_flavor_rus.24.f: "\"Order! Order! Behind these issues lies this assembly's desire to implement power-sharing and administrative reforms—this assembly strongly supports this desire, which is why our party leaders recently convened discussions in Moscow...\"\n\"Mr. Speaker! We seek to restore the will of the assembly and the executive branch under [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s sanctioned intentions; therefore, we must now adhere to the primary legislation of the Constitutional Declaration—is this not correct?\"\n\"Sir, the political reality is that this will subject all of us to immense political pressure, not only internally within our country but externally...\"\n\"Do you agree, then, that the best way to protect our nation is to dismantle the institutions and the power-sharing?\"\n\"Your Excellency! I believe the government and assembly's principal responsibility does not lie in such rhetorical debates but should focus on legislative matters... If the assembly can function normally, wouldn't national affairs be resolved sooner?\""
+    joi_flavor_rus.24.a: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] will establish a loyal and reliable Duma!"
+    joi_flavor_rus.24.b: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] will authorize a constitutional Duma!"
+
+    # Decline of the Russian Threat
+    joi_flavor_rus.25.t: "Decline of the Russian Threat"
+    joi_flavor_rus.25.d: "With Russia's ambitions in South Asia suffering a devastating blow, the Great Game in South Asia has come to an end..."
+    joi_flavor_rus.25.f: "If the London government wields its power sincerely—helping Russia achieve all she rightfully expects—shaking hands with Persia—obtaining all possible compensation from Uzbek territories—compelling the Emir of Bukhara to be just towards our Afghan allies and other Uzbek states, including his own kingdom—then why continue?\nIn any case, you know my expanded viewpoint: their expediency, even their necessity, will be seen. We shall assume the lofty role that the world's first Christian nation ought to fulfill... Yet here we are, as before, snarling at each other, hating each other, but neither wanting war."
+    joi_flavor_rus.25.a: "Rule, Britannia!"
+
+    # Critique of the Exile System
+    joi_flavor_rus.26.t: "Critique of the Exile System"
+    joi_flavor_rus.26.d: "Criticism of the exile system's inhumanity, disseminated through publications, has influenced many [ROOT.GetCountry.GetName] citizens, stirring a wave of voices condemning the system's brutality."
+    joi_flavor_rus.26.f: "\"Outside the gates lies the bright, free world, where people live similar lives. But inside the walls, that world is imagined as an unattainable fairy tale.\"\n\"Here is the peculiar, extraordinarily grotesque world; here exist unique rules, clothing, customs, and lifeless dead houses, creating a way of life unseen elsewhere, inhabited by peculiar individuals. I aim to depict this unique corner...\"\n\"In summer, it is unbearably hot; in winter, unbearably cold. All the flooring is rotten, covered in two to three centimeters of filth, causing people to slip...\"\n\"The narrow, grease-smeared windows are covered in thick frost, rendering reading impossible at almost any time indoors. The window panes are coated with two to three centimeters of ice. The ceiling drips water, smoke fills the room. We are packed like sardines in a barrel...\""
+    joi_flavor_rus.26.a: "Arrest these agitators and exile them to Siberia!"
+    joi_flavor_rus.26.b: "The benevolent [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] does not shy away from criticism: the exile system indeed ought to be reformed."
+
+    # French Delegation Visit
+    joi_flavor_rus.27.t: "French Delegation Visit"
+    joi_flavor_rus.27.d: "Carrying the spirit of friendship, the diplomatic delegation from [SCOPE.sCountry('FRA_scope').GetName], acting under orders from the Parisian government, has arrived to visit our country."
+    joi_flavor_rus.27.f: "\"The evident renewal of the alliance and the situation it has caused in Europe, along with our country's potential adherence to the alliance's political objectives, prompts an exchange of views aimed at determining the most suitable stance for our respective governments, sincerely aspiring to support peace and ensure its most effective guarantee...\"\n\"In the case of either party facing an invasion threat, the two countries agree to immediately coordinate measures needed to address such a possibility simultaneously.\""
+    joi_flavor_rus.27.a: "Welcome our French friends!"
+
+    # German Affairs
+    joi_flavor_rus.28.t: "German Affairs"
+    joi_flavor_rus.28.d: "Proposals for resolving German affairs are pouring into the hands of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] like a tide."
+    joi_flavor_rus.28.f: "\"In political geography, there is no real Germany. There are kingdoms, grand duchies, duchies, and principalities inhabited by Germans, each individually ruled by sovereigns possessing all the machinery of state. However, there exists a natural undercurrent inclined toward national sentiment, favoring the unification of Germans into a great nation ruled by a common head as a single national entity.\"\n\"We cannot hide the fact: among these states, German life exhibits its positive and negative poles—in the former, all interests are national and reformist; in the latter, all interests are dynastic and destructive. The German question is not a constitutional issue but a power issue; the Prussian monarchy is now wholly German, whereas Austria cannot be.\""
+    joi_flavor_rus.28.a: "Hail the victor's crown!"
+    joi_flavor_rus.28.b: "Let us toast to friendship!"
+
+    # October Revolution
+    joi_flavor_rus.29.t: "Russian Civil War!"
+    joi_flavor_rus.29.d: "Years of terrifying political turmoil and economic chaos have finally engulfed Russia. On October 25th in the Julian calendar, the Bolshevik Party, hidden beneath the crown of the Tsar, launched an armed uprising in Saint Petersburg. The Red Guard seized the Winter Palace, the Tsar’s residence, abolished the monarchy, and reorganized Russia as a Soviet Republic."
+    joi_flavor_rus.29.f: "\"#bold Comrades!#! Look around, observe the countryside, the state of the army, and you will see that neither the peasants nor soldiers can endure any longer. Peasant uprisings flood across Russia like a mighty river because deceitful promises have delayed giving them land. The peasants can no longer tolerate it. The vile Tsar sends troops to crush the peasants, to defend the landowners. The Tsar conspires with noble generals and officers who bolster the landowners!\nIf power is held by the Soviets, landlords' estates will immediately be declared the property of the people!\nLook at what the Tsar and the government supported by the kulaks, capitalists, and landlords oppose!\nLook at whom they ask you to 'tolerate' for the benefit of—#bold for whose benefit#!?\nDo you agree to 'tolerate,' #bold allowing the Tsar to use force to suppress peasant uprisings for land#!?\nComrades! Remember, the Tsar promised to convene the Constituent Assembly but has deceived the people once already! He solemnly promised it within a month, but the result was nothing but betrayal of the people; #bold comrades! Anyone who trusts the Tsar’s government betrays their fellow peasants and soldiers—traitors!#!\n#bold Down with the Tsarist government, which exploits the laboring masses! All power to the Soviets!”#!"
+    joi_flavor_rus.29.a: "Long live the revolution!"
+
+    # White Army Surrender
+    joi_flavor_rus.30.t: "White Army Surrender"
+    joi_flavor_rus.30.d: "With the counter-revolutionary uprisings of the Siberian and South Russian provisional governments crushed, the anarchist coalition destroyed, the bourgeois independents in Central Asia defeated, and the monarchists ultimately surrendering to the Soviets on the Amur River."
+    joi_flavor_rus.30.f: "\"Comrades! [ROOT.GetCountry.GetName] has achieved peace, albeit an extremely harsh and precarious peace, enabling us for a time to concentrate our efforts on the most vital and challenging aspect of the socialist revolution. The principal task of the proletariat and the impoverished peasants it leads is to engage in active, or rather creative, work: establishing a highly intricate and precise new organizational system for the planned production and distribution of products vital to the survival of millions!\nThis revolution can only proceed smoothly under conditions where the majority of the population, especially the laboring masses, engage in independent historical creativity. Socialism's success is guaranteed only if the proletariat and poor peasants demonstrate full consciousness, intellectual strength, determination, and selflessness.\""
+    joi_flavor_rus.30.a: "Let them go and contribute to socialist construction."
+    joi_flavor_rus.30.b: "We must prioritize purging these traitors to solidify the Soviet dictatorship!"
+
+    # Ukrainian Famine
+    joi_flavor_rus.31.t: "Ukrainian Famine!"
+    joi_flavor_rus.31.d: "The harsh policy of collective agriculture's excess grain requisitioning combined with a sweeping drought across Russia devastated agricultural production in Ukraine, leading to a horrifying famine that especially ravaged the region."
+    joi_flavor_rus.31.f: "The terrible crop failures and severe famine have struck the most fertile black soil regions of [ROOT.GetCountry.GetName]. Starvation, cold, and terror grip the land while [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]'s Soviet government seems oblivious, continuing to requisition vast amounts of grain. Farmers' homes, livestock, poultry, and even household items like stoves, teapots, and buckets were nationalized. Armed requisition squads equipped with poison gas and machine guns suppressed any farmers unwilling to surrender their grain, branding them as 'anti-socialist kulaks.' Millions of tons of grain were transported away, cutting off Ukraine and the Don River region from the outside world. Any famine-stricken individuals attempting to leave Ukraine without permission were arrested as 'class enemies.' Ukrainian Soviets pleaded with Moscow to lower requisition quotas and leave farmers enough seed and food, but their appeals were mercilessly denied by [ROOT.GetCountry.GetName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]."
+    joi_flavor_rus.31.a: "What nonsense is this anti-Soviet rhetoric?!"
+
+    # Lenin in October
+    joi_flavor_rus.32.t: "Lenin in October"
+    joi_flavor_rus.32.d: "Vladimir Lenin, leader of the underground Bolshevik Party during the Tsarist era of the Russian Empire, returned to [ROOT.GetCountry.GetName] by rail from Germany following the Communist revolution and became the leader of the uprising."
+    joi_flavor_rus.32.f: "\"I received a slip of paper, comrades, and I shall read it aloud: 'Your government cannot last; your skin shall be made into drums.'\nI see this was not written by a worker’s hand. I doubt the author has the courage to stand here before us.\nComrades! I suspect they dare not try; comrades! When a revolution is underway—when an entire class is perishing—it is utterly unlike the death of one individual. #bold A corpse can be carried out after death, but when the old society dies, alas, the bourgeois corpse cannot simply be nailed into a coffin and buried!#!\nThe bourgeois corpse decays within us, spreading its toxic fumes, filling the air with its stench!\nTraitors judged by the people’s will must be mercilessly eradicated.\nLet the bourgeoisie go mad! Let those with hollow souls weep!\nComrades, our answer is this: triple our vigilance, remain steadfast and patient;\nhold your positions. Comrades, remember: #bold there is only one path—victory; the only alternative is death!#!"
+    joi_flavor_rus.32.a: "Death does not belong to the working class!"
+
+    # Abolition of the Mir System
+    joi_flavor_rus.33.t: "Abolition of the Mir System"
+    joi_flavor_rus.33.d: "The #variable mir system#! was abolished under the direction of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName]. Countless lands were reorganized, and the current government is already debating the question of new land ownership..."
+    joi_flavor_rus.33.f: "\"By the sweat of your brow you shall eat bread... until you return to the ground; for out of it you were taken... for dust you are, and to dust you shall return.\"\nThe decaying mir system once weighed heavily upon our people, leaving everyone gasping for air. No one believed it possible to eliminate this centuries-old institution, but we did it. Now [ROOT.GetCountry.GetName] has, like King David, utterly vanquished the giant obstructing our path.\n[ROOT.GetCountry.GetName]’s farmlands shall flourish once more. Impoverished farmers have gained their land. The government might encourage wealthy landowners in Eastern Europe to expand their holdings, utilizing advanced tools and fertilizers to extract tremendous wealth; or it might distribute these lands evenly at low prices to the impoverished farmers who once owned them."
+    joi_flavor_rus.33.a: "Let us resell the land to the peasants."
+    joi_flavor_rus.33.b: "Let us fully privatize the land!"
+    
+    # Mongolian Referendum
+    joi_flavor_rus.34.t: "Mongolian Referendum"
+    joi_flavor_rus.34.d: "The referendum ballots from the Mongolian administrative district have been delivered to [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName]. The world is watching this referendum closely, and [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] is also uncertain about Mongolia's fate."
+    joi_flavor_rus.34.f: "\"To be frank, [ROOT.GetCountry.GetName]'s desire for Outer Mongolia is entirely based on military strategic considerations for this region.\"\n\n\"Our citizens would certainly not forgive us under such circumstances, and they would rise against the government.\"\n\n\"If your country had the strength to defeat enemies on its own, I would not make such a demand; today, you do not possess this strength, and to make such statements is equivalent to nonsense!\"\n\n\"Given Outer Mongolia's repeated expression of its desire for independence, [SCOPE.sCountry('CHI_scope').GetName]'s government declares that if the citizens of Outer Mongolia confirm this desire through a referendum, [SCOPE.sCountry('CHI_scope').GetName]'s government will recognize Outer Mongolia's independence, using its current boundaries as its borders.\""
+    joi_flavor_rus.34.a: "The ballot in favor of joining [ROOT.GetCountry.GetName] won by a margin of 88.48%; Mongolia belongs to Russia!"
+    joi_flavor_rus.34.b: "The ballot in support of independence won by a margin of 97%; Mongolia will become an independent nation!"

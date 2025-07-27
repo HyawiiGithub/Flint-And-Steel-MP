@@ -1,0 +1,5 @@
+﻿l_braz_por:
+unit_navy_experience_gain_add: "Ganho de experiência naval por semana: $concept_unit_experience$"
+unit_navy_experience_gain_add_desc: "A marinha ganha $concept_unit_experience$ por semana para aumentar seu nível de $concept_veterancy_level$."
+unit_army_experience_gain_add: "Ganho de experiência do exército por semana: $concept_unit_experience$"
+unit_army_experience_gain_add_desc: "O exército ganha $concept_unit_experience$ por semana para aumentar seu nível de $concept_veterancy_level$."

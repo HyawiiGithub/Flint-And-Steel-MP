@@ -1,0 +1,254 @@
+#总参谋部
+general_staff_1_button = {#轮换军官
+	name = "general_staff_1_button"
+	desc = "general_staff_1_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 1 }
+
+	possible = {
+		custom_tooltip = {
+			text = general_staff_1_button_tt
+			NOT = {
+				has_variable = has_general_staff_1
+			}
+			var:pru_general_staff_var >= 25
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		change_variable = {
+			name = pru_general_staff_var
+			add = -25
+		}
+		set_variable = {
+			name = has_general_staff_1
+			years = 1
+		}
+			add_modifier = {
+				name = staff_officer
+				years = 1
+		}
+	}
+}
+
+general_staff_2_button = {#参谋计划
+	name = "general_staff_2_button"
+	desc = "general_staff_2_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 1 }
+
+	possible = {
+		custom_tooltip = {
+			text = general_staff_2_button_tt
+			NOT = {
+				has_variable = has_general_staff_2
+			}
+			var:pru_general_staff_var >= 50
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	effect = {
+		change_variable = {
+			name = pru_general_staff_var
+			add = -50
+		}
+		set_variable = {
+			name = has_general_staff_2
+			years = 1
+		}
+			add_modifier = {
+				name = staff_plan
+				years = 1
+		}
+	}
+}
+
+general_staff_3_button = {#坚定防御
+	name = "general_staff_3_button"
+	desc = "general_staff_3_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 1 }
+
+	possible = {
+		custom_tooltip = {
+			text = general_staff_3_button_tt
+			NOT = {
+				has_variable = has_general_staff_3
+			}
+			var:pru_general_staff_var >= 50
+		}
+		is_at_war = yes
+		has_technology_researched = field_works 
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_variable = {
+			name = pru_general_staff_var
+			add = -50
+		}
+		set_variable = {
+			name = has_general_staff_3
+			years = 1
+		}
+			add_modifier = {
+				name = staff_defense
+				years = 1
+		}
+	}
+}
+
+general_staff_4_button = {#强行进攻
+	name = "general_staff_4_button"
+	desc = "general_staff_4_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 1 }
+
+	possible = {
+		custom_tooltip = {
+			text = general_staff_4_button_tt
+			NOT = {
+				has_variable = has_general_staff_4
+			}
+			var:pru_general_staff_var >= 50
+		}
+		is_at_war = yes
+		has_technology_researched = breech_loading_artillery
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		change_variable = {
+			name = pru_general_staff_var
+			add = -50
+		}
+		set_variable = {
+			name = has_general_staff_4
+			years = 1
+		}
+			add_modifier = {
+				name = staff_offense
+				years = 1
+		}
+	}
+}
+
+general_staff_5_button = {#全国动员
+	name = "general_staff_5_button"
+	desc = "general_staff_5_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = general_staff_5_button_tt
+			NOT = {
+				has_variable = has_general_staff_5
+			}
+			var:pru_general_staff_var >= 50
+		}
+		custom_tooltip = {
+			text = general_staff_unlock_button_tt
+			has_variable = unlock_general_staff
+				}
+		is_at_war = yes
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_variable = {
+			name = pru_general_staff_var
+			add = -50
+		}
+		set_variable = {
+			name = has_general_staff_5
+			years = 5
+		}
+			add_modifier = {
+				name = staff_mobilize
+				years = 5
+		}
+	}
+}
+
+general_staff_6_button = {#全国动员
+	name = "general_staff_6_button"
+	desc = "general_staff_6_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = general_staff_6_button_tt
+			NOT = {
+				has_variable = has_general_staff_6
+			}
+			var:pru_general_staff_var >= 100
+		}
+		custom_tooltip = {
+			text = general_staff_unlock_button_tt
+			has_variable = unlock_general_staff
+				}
+		is_at_war = yes
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_variable = {
+			name = pru_general_staff_var
+			add = -100
+		}
+		set_variable = {
+			name = has_general_staff_6
+			years = 5
+		}
+			add_modifier = {
+				name = staff_power
+				years = 5
+		}
+	}
+}

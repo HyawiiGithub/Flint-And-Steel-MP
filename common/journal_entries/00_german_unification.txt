@@ -125,6 +125,10 @@ je_german_unification_idea = {
 			has_technology_researched = nationalism	
 			percent >= 0.75
 		}
+		custom_tooltip = {
+			text = deutsch_frankfurter_nationalversammlung_journal_has_finish
+			has_variable = deutsch_frankfurter_nationalversammlung_journal_has_finish_var
+		}
 	}
 
 	on_complete = {
@@ -243,6 +247,10 @@ je_german_unification_idea = {
 		trigger_event = { id = german_unification.5 } # German National Identity
 	}
 
+	invalid = {
+		exists = c:GER 
+	}
+
 	status_desc = {
 		first_valid = {
 			triggered_desc = { 
@@ -281,12 +289,6 @@ je_north_german_unification = {
 		}				
 	}
 
-	fail = {
-		NOT = {is_unification_candidate = GER}
-		c:PRU ?= this
-
-	}
-
 	on_monthly_pulse = {
 		events = {
 			german_unification.3 # Bismarck
@@ -305,75 +307,8 @@ je_north_german_unification = {
 		remove_variable = je_unification_progress
 	}
 
-	on_fail = {
-		add_journal_entry = { type = je_north_german_fed_pu} # North German Confederation By Customs Union
-		remove_variable = je_unification_progress
-		hidden_effect = { 
-			s:STATE_SAXONY = {
-				add_claim = ROOT
-			}
-			s:STATE_HESSE = {
-				add_claim = ROOT
-			}
-			s:STATE_HANNOVER = {
-				add_claim = ROOT
-			}
-			s:STATE_BRUNSWICK = {
-				add_claim = ROOT
-			}		
-			s:STATE_ELBE = {
-				add_claim = ROOT
-			}
-			s:STATE_HESSE = {
-				add_claim = ROOT
-			}
-			s:STATE_SCHLESWIG_HOLSTEIN = {
-				add_claim = ROOT
-			}
-			s:STATE_POMERANIA = {
-				add_claim = ROOT
-			}
-			s:STATE_MECKLENBURG = {
-				add_claim = ROOT 
-			}
-			s:STATE_BRANDENBURG = {
-				add_claim = ROOT
-			}
-			s:STATE_ANHALT = {
-				add_claim = ROOT
-			}
-			s:STATE_SAXONY = {
-				add_claim = ROOT
-			}
-			s:STATE_ANHALT = {
-				add_claim = ROOT
-			}
-			s:STATE_POSEN = {
-				add_claim = ROOT
-			}
-			s:STATE_SILESIA = {
-				add_claim = ROOT
-			}
-			s:STATE_WEST_PRUSSIA = {
-				add_claim = ROOT
-			}
-			s:STATE_NORTH_RHINE = {
-				add_claim = ROOT
-			}
-			s:STATE_WESTPHALIA = {
-				add_claim = ROOT
-			}		
-			s:STATE_RUHR = {
-				add_claim = ROOT
-			}
-			s:STATE_RHINELAND = {
-				add_claim = ROOT
-			}
-			s:STATE_EAST_PRUSSIA = {
-				add_claim = ROOT
-			}
-		}	
-		
+	invalid = {
+		exists = c:GER 
 	}
 
 	status_desc = {
@@ -426,20 +361,6 @@ je_south_german_unification = {
 	on_complete = {
 		trigger_event = { id = german_unification.1 } # South German Confederation
 		remove_variable = je_unification_progress
-		hidden_effect = { 
-			s:STATE_BAVARIA = {
-				add_claim = ROOT
-			}
-			s:STATE_FRANCONIA = {
-				add_claim = ROOT
-			}
-			s:STATE_WURTTEMBERG = {
-				add_claim = ROOT
-			}
-			s:STATE_BADEN = {
-				add_claim = ROOT
-			}
-		}		
 	}
 
 	status_desc = {
@@ -451,6 +372,10 @@ je_south_german_unification = {
 				}
 			}
 		}
+	}
+
+	invalid = {
+		exists = c:GER 
 	}
 
 	weight = 1000
@@ -498,80 +423,10 @@ je_german_unification = {
 	invalid = {
 		OR = {
 			country_has_primary_culture = cu:hungarian
-			c:HRE ?= THIS
+			c:HRE ?= THIS 
 		}
 	}
 
 	weight = 1000
-	should_be_pinned_by_default = yes
-}
-
-
-je_north_german_fed_pu = {
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-	
-	group = je_group_historical_content
-	
-	complete = {
-		owns_entire_state_region = STATE_SAXONY          
-		owns_entire_state_region = STATE_HESSE
-		owns_entire_state_region = STATE_HANNOVER
-		owns_entire_state_region = STATE_BRUNSWICK
-		owns_entire_state_region = STATE_ELBE
-		owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-		owns_entire_state_region = STATE_POMERANIA
-		owns_entire_state_region = STATE_MECKLENBURG
-		owns_entire_state_region = STATE_BRANDENBURG
-		owns_entire_state_region = STATE_ANHALT	
-		owns_entire_state_region = STATE_SAXONY
-		owns_entire_state_region = STATE_ANHALT	
-		owns_entire_state_region = STATE_POSEN
-		owns_entire_state_region = STATE_SILESIA	
-		owns_entire_state_region = STATE_WEST_PRUSSIA
-		owns_entire_state_region = STATE_EAST_PRUSSIA	
-		owns_entire_state_region = STATE_NORTH_RHINE
-		owns_entire_state_region = STATE_WESTPHALIA
-		owns_entire_state_region = STATE_RUHR	
-	}
-
-	on_monthly_pulse = {
-		random_events = {
-			150 = 0
-			50 = german_unification.6
-		}
-	}
-	
-	on_complete = {
-		change_tag = NGF
-		s:STATE_BAVARIA = {
-			add_claim = ROOT
-		}
-		s:STATE_FRANCONIA = {
-			add_claim = ROOT
-		}
-		s:STATE_WURTTEMBERG = {
-			add_claim = ROOT
-		}
-		s:STATE_BADEN = {
-			add_claim = ROOT
-		}
-	}
-
-	fail = {
-		custom_tooltip = {
-			text = owns_no_north_german_homelands_tt
-			NOT = {
-				any_scope_state = {
-					state_region = {
-						OR = {
-							is_homeland = cu:north_german
-						}
-					}
-				}
-			}
-		}
-	}
-
-
 	should_be_pinned_by_default = yes
 }

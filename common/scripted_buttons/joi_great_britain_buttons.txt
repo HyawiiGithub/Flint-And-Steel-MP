@@ -1,0 +1,1275 @@
+#皇冠上的明珠任务日志按钮
+british_empire_india_button = {
+	name = "british_empire_india_button"
+	desc = "british_empire_india_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { months = 6 }
+
+	possible = {
+		custom_tooltip = {
+			text = british_empire_india_button_tt
+			NOT = { 
+				has_variable = annex_indian_mission
+			}
+		}
+		OR = {
+			AND = {
+				any_subject_or_below = {
+				is_player = no
+				has_variable = princely_state
+				}
+			}
+			AND = {
+				c:BIC = {
+					any_subject_or_below = {
+					is_player = no
+					has_variable = princely_state
+					}
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	effect = {
+		set_variable = {
+			name = annex_indian_mission
+			months = 6
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:BIC }
+					any_subject_or_below = {
+					is_player = no
+					has_variable = princely_state
+				}
+			}
+			random_state = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					is_player = no
+					has_variable = princely_state
+				}
+			}
+			set_state_owner = ROOT
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:BIC
+				c:BIC = {
+					any_subject_or_below = {
+					is_player = no
+					has_variable = princely_state
+					}
+				}
+			}
+			random_state = {
+				limit = {
+					owner = {
+						is_subject_of = c:BIC
+						is_player = no
+						has_variable = princely_state
+						}
+					}
+				set_state_owner = c:BIC
+			}
+		}
+	}
+}
+
+#英美特殊关系
+anglo_investment_1_button = {#增加对美投资
+	name = "anglo_investment_1_button"
+	desc = "anglo_investment_1_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = anglo_investment_1_button_tt
+			NOT = {
+				has_variable = has_anglo_investment
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	effect = {
+		change_variable = {
+			name = investment_amount_var
+			add = 25
+		}
+		set_variable = {
+			name = has_anglo_investment
+			years = 5
+		}
+			change_relations = { 
+				country = c:USA 
+				value = 10
+			}
+			add_modifier = {
+				name = anglo_investment_gbr_1
+				years = 5
+			}
+			c:USA = {
+				add_modifier = {
+					name = anglo_investment_usa_1
+					years = 5
+			}
+		}
+	}
+}
+
+anglo_investment_2_button = {#在美撤资
+	name = "anglo_investment_2_button"
+	desc = "anglo_investment_2_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = anglo_investment_2_button_tt
+			NOT = { 
+				has_variable = has_anglo_investment
+			}
+		}
+		custom_tooltip = {
+		text = anglo_help_need_25_tt
+		var:investment_amount_var >= 25
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		change_variable = {
+			name = investment_amount_var
+			add = -25
+		}
+		set_variable = {
+			name = has_anglo_investment
+			years = 5
+		}
+			add_modifier = {
+				name = anglo_investment_gbr_2
+				years = 5
+		}
+	}
+}
+
+anglo_help_1_button = {#请求美国工业援助
+	name = "anglo_help_1_button"
+	desc = "anglo_help_1_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = anglo_help_1_button_tt
+			NOT = { 
+				has_variable = has_usa_help
+			}
+		}
+		custom_tooltip = {
+		text = anglo_help_need_50_tt
+		var:investment_amount_var >= 50
+		}
+	}
+
+	ai_chance = {
+		value = 20
+	}
+
+	effect = {
+		change_variable = {
+			name = investment_amount_var
+			add = -50
+		}
+		set_variable = {
+			name = has_usa_help
+			years = 5
+		}
+		add_modifier = {
+			name = usa_help_adm
+			years = 5
+		}
+	}
+}
+
+anglo_help_2_button = {#请求美国军备援助
+	name = "anglo_help_2_button"
+	desc = "anglo_help_2_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = anglo_help_2_button_tt
+			NOT = { 
+				has_variable = has_usa_help
+			}
+		}
+		custom_tooltip = {
+		text = anglo_help_need_50_tt
+		var:investment_amount_var >= 50
+		}
+		is_at_war = yes
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = { 
+				OR = {
+					is_at_war = yes
+					any_revolution_ongoing = yes
+				}
+			}
+			add = 100
+		}
+	}
+
+	effect = {
+		change_variable = {
+			name = investment_amount_var
+			add = -50
+		}
+		set_variable = {
+			name = has_usa_help
+			years = 5
+		}
+		add_modifier = {
+			name = usa_help_mil
+			years = 5
+		}
+	}
+}
+
+anglo_cash_1_button = {#贷款
+	name = "anglo_cash_1_button"
+	desc = "anglo_cash_1_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = anglo_cash_1_button_tt
+			NOT = { 
+				has_variable = has_cash
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = { 
+				has_healthy_economy = no
+			}
+			add = 100
+		}
+	}
+
+
+	effect = {
+		set_variable = {
+			name = has_cash
+			years = 5
+		}
+		c:USA = {
+		trigger_event = {
+			id = joi_flavor_gbr.23
+			}
+		}
+	}
+}
+
+anglo_help_3_button = {#《租借法案》
+	name = "anglo_help_3_button"
+	desc = "anglo_help_3_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 25 }
+
+	possible = {
+		custom_tooltip = {
+			text = anglo_help_3_button_tt
+			NOT = { 
+				has_variable = lend_lease_act
+			}
+		}
+		custom_tooltip = {
+		text = anglo_help_need_100_tt
+		var:investment_amount_var >= 100
+		}
+		is_at_war = yes
+		has_technology_researched = electric_telegraph
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+
+	effect = {
+		change_variable = {
+			name = investment_amount_var
+			add = -100
+		}
+		set_variable = {
+			name = lend_lease_act
+			months = 300
+		}
+		add_modifier = {
+				name = lend_lease_act
+				years = 5
+		}
+		add_modifier = {
+				name = lend_lease_act_left
+				years = 10
+		}
+		c:USA = {
+				add_modifier = {
+					name = lend_lease_act_usa
+					years = 10
+			}
+		}
+	}
+}
+
+#皇家海军
+oak_loyal_1_button = {#远洋演习
+	name = "oak_loyal_1_button"
+	desc = "oak_loyal_1_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 1 }
+
+	possible = {
+		custom_tooltip = {
+			text = loyal_navy_1_tt
+			NOT = { 
+				has_variable = navy_build_1
+			}
+		}
+		custom_tooltip = {
+			text = loyal_navy_cash_tt_25
+			var:gbr_royal_navy_var >= 25
+		}
+		has_technology_researched = power_of_the_purse
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+
+	effect = {
+		custom_tooltip = {
+			text = loyal_navy_25_tt
+		change_variable = {
+			name = gbr_royal_navy_var
+			add = -25
+		}
+	}
+		set_variable = {
+			name = navy_build_1
+			years = 1
+		}
+			add_modifier = {
+				name = oak_1
+				years = 1
+		}
+	}
+}
+
+oak_loyal_2_button = {#出海决战
+	name = "oak_loyal_2_button"
+	desc = "oak_loyal_2_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 1 }
+
+	possible = {
+		custom_tooltip = {
+			text = loyal_navy_2_tt
+			NOT = { 
+				has_variable = navy_build_2
+			}
+		}
+		custom_tooltip = {
+			text = loyal_navy_cash_tt_25
+			var:gbr_royal_navy_var >= 25
+		}
+		is_at_war = yes
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+
+	effect = {
+		custom_tooltip = {
+			text = loyal_navy_25_tt
+		change_variable = {
+			name = gbr_royal_navy_var
+			add = -25
+		}
+	}
+		set_variable = {
+			name = navy_build_2
+			years = 1
+		}
+			add_modifier = {
+				name = oak_2
+				years = 1
+		}
+	}
+}
+
+oak_loyal_3_button = {#更新换代
+	name = "oak_loyal_3_button"
+	desc = "oak_loyal_3_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = loyal_navy_3_tt
+			NOT = { 
+				has_variable = navy_build_3
+			}
+		}
+		custom_tooltip = {
+			text = loyal_navy_cash_tt_100
+			var:gbr_royal_navy_var >= 100
+		}
+		has_technology_researched = ironclad_tech
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = { 
+				OR = {
+					is_at_war = yes
+					any_revolution_ongoing = yes
+				}
+			}
+			add = 100
+		}
+	}
+
+
+	effect = {
+		custom_tooltip = {
+			text = loyal_navy_100_tt
+		change_variable = {
+			name = gbr_royal_navy_var
+			add = -100
+		}
+	}
+		set_variable = {
+			name = navy_build_3
+			years = 5
+		}
+			add_modifier = {
+				name = oak_3
+				years = 5
+		}
+	}
+}
+
+oak_loyal_4_button = {#两强标准
+	name = "oak_loyal_4_button"
+	desc = "oak_loyal_4_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = loyal_navy_4_tt
+			NOT = { 
+				has_variable = navy_build_4
+			}
+		}
+		custom_tooltip = {
+			text = loyal_navy_cash_tt_100
+			var:gbr_royal_navy_var >= 100
+		}
+		has_technology_researched = monitor_tech 
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+
+	effect = {
+		custom_tooltip = {
+			text = loyal_navy_100_tt
+		change_variable = {
+			name = gbr_royal_navy_var
+			add = -100
+		}
+	}
+		set_variable = {
+			name = navy_build_4
+			years = 10
+		}
+			add_modifier = {
+				name = oak_4
+				years = 5
+		}
+	}
+}
+
+
+oak_loyal_5_button = {#开造船厂
+	name = "oak_loyal_5_button"
+	desc = "oak_loyal_5_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = loyal_navy_5_tt
+			NOT = { 
+				has_variable = ship_yard
+			}
+		}
+		custom_tooltip = {
+		text = loyal_navy_cash_tt_50
+		var:gbr_royal_navy_var >= 50
+		}
+		NOT = { has_company = company_type:company_armstrong_whitworth }
+		owns_entire_state_region = STATE_WEST_COUNTRY
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+
+	effect = {
+		custom_tooltip = {
+			text = loyal_navy_50_tt
+		change_variable = {
+			name = gbr_royal_navy_var
+			add = -50
+		}
+	}
+		set_variable = {
+			name = ship_yard
+			years = 5
+		}
+		ROOT = { 
+			add_company = company_type:company_armstrong_whitworth 
+			company:company_armstrong_whitworth ?= {
+			set_company_state_region = s:STATE_WEST_COUNTRY
+			}
+		}
+		if = {
+			limit = { c:GBR ?= THIS }
+			s:STATE_WEST_COUNTRY = {
+			region_state:GBR = {
+			create_building = {
+				building = "building_military_shipyards"
+				add_ownership = {
+					company = {
+						type = company_armstrong_whitworth
+						country = "c:GBR"
+						levels = 5
+						}
+					}
+				reserves = 1
+					}
+				}
+			}
+		}
+		if = {
+			limit = { c:IMP ?= THIS }
+			s:STATE_WEST_COUNTRY = {
+			region_state:IMP = {
+			create_building = {
+				building = "building_military_shipyards"
+				add_ownership = {
+					company = {
+						type = company_armstrong_whitworth
+						country = "c:IMP"
+						levels = 5
+						}
+					}
+				reserves = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+oak_loyal_6_button = {#关造船厂
+	name = "oak_loyal_6_button"
+	desc = "oak_loyal_6_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = loyal_navy_6_tt
+			NOT = { 
+				has_variable = ship_yard
+			}
+		}
+		has_company = company_type:company_armstrong_whitworth
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+
+	effect = {
+		custom_tooltip = {
+			text = loyal_navy_earn_tt
+		change_variable = {
+			name = gbr_royal_navy_var
+			add = 25
+		}
+	}
+		set_variable = {
+			name = ship_yard
+			years = 5
+		}
+		remove_company = company_type:company_armstrong_whitworth
+	}
+}
+
+#印度事务部
+indian_office_1_button = {#增派行政官员
+	name = "indian_office_1_button"
+	desc = "indian_office_1_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 1 }
+
+	possible = {
+		custom_tooltip = {
+			text = indian_office_1_button_tt
+			NOT = { 
+				has_variable = add_indian_officer
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		set_variable = {
+			name = add_indian_officer
+			years = 1
+		}
+		change_variable = {
+            name = indian_adm_var
+            add = 10
+        }
+        add_modifier = {
+			name = indian_officer
+			years = 1
+		}
+	}
+}
+
+indian_office_2_button = {#镇压异见分子
+	name = "indian_office_2_button"
+	desc = "indian_office_2_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 2 }
+
+	possible = {
+		custom_tooltip = {
+			text = indian_office_2_button_tt
+			NOT = { 
+				has_variable = add_indian_officer_2
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		set_variable = {
+			name = add_indian_officer_2
+			months = 24
+		}
+		change_variable = {
+            name = indian_adm_var
+            add = 10
+        }
+        every_scope_state = {
+			limit = { 
+					OR = {
+						region = sr:region_bengal
+						region = sr:region_central_india
+						region = sr:region_punjab
+						region = sr:region_madras
+						region = sr:region_bombay
+						region = sr:region_punjab
+						state_region = s:STATE_KACHIN
+						state_region = s:STATE_SHAN_STATES
+						state_region = s:STATE_MANDALAY
+						state_region = s:STATE_PEGU
+						state_region = s:STATE_ARAKAN
+					}
+				}
+			add_modifier = {
+				name = kill_indian
+				years = 1
+			}
+			add_radicals = {
+			religion = rel:hindu
+			value = 0.05
+			}
+		}
+	}
+}
+
+indian_office_3_button = {#加征马哈瓦尔地税
+	name = "indian_office_3_button"
+	desc = "indian_office_3_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = indian_office_3_button_tt
+			NOT = { 
+				has_variable = add_indian_land_tax
+			}
+		}
+		custom_tooltip = {
+		text = indian_office_need_20_tt
+		var:indian_adm_var >= 20
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		set_variable = {
+			name = add_indian_land_tax
+			years = 5
+		}
+		change_variable = {
+            name = indian_adm_var
+            add = -20
+        }
+        every_scope_state = {
+			limit = { 
+					OR = {
+						region = sr:region_bengal
+						region = sr:region_central_india
+						region = sr:region_punjab
+						region = sr:region_madras
+						region = sr:region_bombay
+						region = sr:region_punjab
+						state_region = s:STATE_KACHIN
+						state_region = s:STATE_SHAN_STATES
+						state_region = s:STATE_MANDALAY
+						state_region = s:STATE_PEGU
+						state_region = s:STATE_ARAKAN
+					}
+				}
+			add_modifier = {
+				name = indian_land_tax
+				years = 5
+			}
+		}
+	}
+}
+
+indian_office_4_button = {#加征黑斯廷斯盐税
+	name = "indian_office_4_button"
+	desc = "indian_office_4_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = indian_office_4_button_tt
+			NOT = { 
+				has_variable = add_indian_salt_tax
+			}
+		}
+		custom_tooltip = {
+		text = indian_office_need_20_tt
+		var:indian_adm_var >= 20
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	effect = {
+		set_variable = {
+			name = add_indian_salt_tax
+			years = 5
+		}
+		change_variable = {
+            name = indian_adm_var
+            add = -20
+        }
+        every_scope_state = {
+			limit = { 
+					OR = {
+						region = sr:region_bengal
+						region = sr:region_central_india
+						region = sr:region_punjab
+						region = sr:region_madras
+						region = sr:region_bombay
+						region = sr:region_punjab
+						state_region = s:STATE_KACHIN
+						state_region = s:STATE_SHAN_STATES
+						state_region = s:STATE_MANDALAY
+						state_region = s:STATE_PEGU
+						state_region = s:STATE_ARAKAN
+					}
+				}
+			add_modifier = {
+				name = indian_salt_tax
+				years = 5
+			}
+		}
+	}
+}
+
+indian_office_5_button = {#要求土邦议会征税
+	name = "indian_office_5_button"
+	desc = "indian_office_5_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+			text = indian_office_5_button_tt
+			NOT = { 
+				has_variable = add_indian_tax
+			}
+		}
+		custom_tooltip = {
+		text = indian_office_need_20_tt
+		var:indian_adm_var >= 20
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	effect = {
+		set_variable = {
+			name = add_indian_tax
+			years = 5
+		}
+		change_variable = {
+            name = indian_adm_var
+            add = -20
+        }
+        every_scope_state = {
+			limit = { 
+					OR = {
+						region = sr:region_bengal
+						region = sr:region_central_india
+						region = sr:region_punjab
+						region = sr:region_madras
+						region = sr:region_bombay
+						region = sr:region_punjab
+						state_region = s:STATE_KACHIN
+						state_region = s:STATE_SHAN_STATES
+						state_region = s:STATE_MANDALAY
+						state_region = s:STATE_PEGU
+						state_region = s:STATE_ARAKAN
+					}
+				}
+			add_modifier = {
+				name = indian_tax
+				years = 5
+			}
+		}
+	}
+}
+
+indian_office_6_button = {#劝说土邦加入行省
+	name = "indian_office_6_button"
+	desc = "indian_office_6_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 1 }
+
+	possible = {
+		custom_tooltip = {
+			text = indian_office_6_button_tt
+			NOT = { 
+				has_variable = annex_indian_local
+			}
+		}
+		any_subject_or_below = {
+			is_player = no
+			has_variable = princely_state
+			}
+		custom_tooltip = {
+		text = indian_office_need_20_tt
+		var:indian_adm_var >= 20
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	effect = {
+		set_variable = {
+			name = annex_indian_local
+			months = 12
+		}
+		change_variable = {
+            name = indian_adm_var
+            add = -20
+        }
+        random_state = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					is_player = no
+					has_variable = princely_state
+				}
+			}
+			set_state_owner = ROOT
+		}
+	}
+}
+
+commonwealth_council_trade_button = {#强化帝国贸易
+	name = "commonwealth_council_trade_button"
+	desc = "commonwealth_council_trade_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+		text = has_imp_council_act_tt
+		NOT = { 
+			has_variable = has_imp_council_act
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 20
+	}
+
+	effect = {
+		set_variable = {
+			name = has_imp_council_act
+			years = 5
+		}
+		custom_tooltip = {
+		text = has_imp_council_trade_act_tt
+		set_variable = {
+			name = has_imp_council_act_trade
+			years = 5
+			}
+		}
+	}
+}
+
+commonwealth_council_health_button = {#强化帝国健康
+	name = "commonwealth_council_health_button"
+	desc = "commonwealth_council_health_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+		text = has_imp_council_act_tt
+		NOT = { 
+			has_variable = has_imp_council_act
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 20
+	}
+
+	effect = {
+		set_variable = {
+			name = has_imp_council_act
+			years = 5
+		}
+		custom_tooltip = {
+		text = has_imp_council_health_act_tt
+		set_variable = {
+			name = has_imp_council_act_health
+			years = 5
+			}
+		}
+	}
+}
+
+commonwealth_council_migration_button = {#强化帝国移民
+	name = "commonwealth_council_migration_button"
+	desc = "commonwealth_council_migration_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 5 }
+
+	possible = {
+		custom_tooltip = {
+		text = has_imp_council_act_tt
+		NOT = { 
+			has_variable = has_imp_council_act
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 20
+	}
+
+	effect = {
+		set_variable = {
+			name = has_imp_council_act
+			years = 5
+		}
+		custom_tooltip = {
+		text = has_imp_council_migrate_act_tt
+		set_variable = {
+			name = has_imp_council_act_migrate
+			years = 5
+			}
+		}
+	}
+}
+
+commonwealth_council_army_button = {#强化帝国征兵
+	name = "commonwealth_council_army_button"
+	desc = "commonwealth_council_army_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { years = 10 }
+
+	possible = {
+		custom_tooltip = {
+		text = has_imp_council_army_act_tt
+		NOT = { 
+			has_variable = has_imp_army_council_act
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 20
+	}
+
+	effect = {
+		set_variable = {
+			name = has_imp_army_council_act
+			years = 10
+		}
+		custom_tooltip = {
+		text = has_imp_council_conscription_act_tt
+		set_variable = {
+			name = has_imp_council_act_conscription
+			years = 5
+			}
+		}
+	}
+}
+
+british_empire_conqueror_punjab_button = {#在旁遮普执行无嗣失权
+	name = "british_empire_conqueror_punjab_button"
+	desc = "british_empire_conqueror_punjab_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		custom_tooltip = {
+        text = gbr_punjab_disappear_tt
+        NOT = { exists = c:PAN }
+        }
+        NOT = { has_global_variable = british_empire_conqueror_punjab_var }
+        exists = c:BIC
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		set_global_variable = british_empire_conqueror_punjab_var
+		if = {
+			limit = {
+				exists = c:GAR
+				exists = c:BIC
+			}
+			c:BIC = {
+				annex = c:GAR
+			} 
+		}
+		if = {
+			limit = {
+				exists = c:GAR
+				NOT = { exists = c:BIC }
+				THIS ?= c:GBR
+			}
+			ROOT = {
+				annex = c:GAR
+			} 
+		}
+		if = {
+			limit = {
+				exists = c:PTA
+				exists = c:BIC
+			}
+			c:BIC = {
+				annex = c:PTA
+			} 
+		}
+		if = {
+			limit = {
+				exists = c:PTA
+				NOT = { exists = c:BIC }
+				THIS ?= c:GBR
+			}
+			ROOT = {
+				annex = c:PTA
+			} 
+		}
+		if = {
+			limit = {
+				exists = c:BHW
+				exists = c:BIC
+			}
+			c:BIC = {
+				annex = c:BHW
+			}
+		}
+		if = {
+			limit = {
+				exists = c:BHW
+				NOT = { exists = c:BIC }
+				THIS ?= c:GBR
+			}
+			ROOT = {
+				annex = c:BHW
+			} 
+		}
+	}
+}
+

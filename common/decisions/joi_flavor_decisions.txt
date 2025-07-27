@@ -1,0 +1,345 @@
+﻿joi_disable_private_investment = {#禁用私人投资
+	is_shown = {
+		NOR = { 
+			has_modifier = modifier_joi_second_disable_private_investment 
+			has_modifier = modifier_joi_disable_private_investment
+		}
+		is_player = yes
+	}
+
+	possible = {
+		NOT = { has_modifier = modifier_joi_disable_private_investment }
+	}
+
+	when_taken = {
+		add_modifier = modifier_joi_disable_private_investment
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}
+
+joi_second_disable_private_investment = {#取消私人投资分配
+	is_shown = {
+		NOR = { 
+			has_modifier = modifier_joi_second_disable_private_investment 
+			has_modifier = modifier_joi_disable_private_investment
+		}
+		is_player = yes
+	}
+
+	possible = {
+		NOT = { has_modifier = modifier_joi_second_disable_private_investment }
+	}
+
+	when_taken = {
+		add_modifier = modifier_joi_second_disable_private_investment
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}
+
+joi_enable_private_investment = {#重新启用私人投资
+	is_shown = {
+		OR = { 
+			has_modifier = modifier_joi_second_disable_private_investment 
+			has_modifier = modifier_joi_disable_private_investment
+		}
+		is_player = yes
+	}
+
+	possible = {
+		OR = { 
+			has_modifier = modifier_joi_second_disable_private_investment 
+			has_modifier = modifier_joi_disable_private_investment
+		}
+	}
+
+	when_taken = {
+		if = {
+			limit = { has_modifier = modifier_joi_second_disable_private_investment }
+			remove_modifier = modifier_joi_second_disable_private_investment
+		}
+		if = {
+			limit = { has_modifier = modifier_joi_disable_private_investment }
+			remove_modifier = modifier_joi_disable_private_investment
+		}
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}
+
+joi_force_privatization = {#强制私有化
+	is_shown = {
+		NOT = {
+			has_modifier = modifier_joi_force_privatization
+		}
+		OR = {
+			has_law = law_type:law_interventionism
+			has_law = law_type:law_agrarianism
+			has_law = law_type:law_extraction_economy
+		}
+		is_player = yes
+	}
+
+	possible = {
+		NOT = {
+			has_modifier = modifier_joi_force_privatization
+		}
+	}
+
+	when_taken = {
+		add_modifier = modifier_joi_force_privatization
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}
+
+joi_stop_force_privatization = {#停止强制私有化
+	is_shown = {
+		has_modifier = modifier_joi_force_privatization
+		is_player = yes
+	}
+
+	possible = {
+		has_modifier = modifier_joi_force_privatization
+	}
+
+	when_taken = {
+		if = {
+			limit = { has_modifier = modifier_joi_force_privatization }
+			remove_modifier = modifier_joi_force_privatization
+		}
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}
+
+deutsch_abrogation_of_the_naval_treaty = {#重新谈判海军条约
+	is_shown = {
+		has_modifier = anglo_german_naval_treaty
+		c:GER = THIS
+		exists = c:GBR
+	}
+
+	possible = {
+		c:GBR.relations:root >= 60
+		NOT = { has_modifier = anglo_german_naval_treaty_time_modifier }
+		is_at_war = no
+		country_rank >= rank_value:great_power
+	}
+
+	when_taken = {
+		custom_tooltip = {
+		text = deutsch_abrogation_of_the_naval_treaty_tt
+		}
+		ROOT = {
+			set_owes_obligation_to = {
+				country = c:GBR
+				setting = yes
+			}
+		}
+		change_relations = {
+			country = c:GBR
+			value = 50
+		}
+		if = {
+			limit = { exists = c:GBR }
+			create_treaty = {
+			name = treaty_name_angro_german_naval_treaty
+			first_country = c:GER
+			second_country = c:GBR
+
+			is_draft = no
+			binding_period = { years = 99 }
+
+			articles_to_create = {
+				{ # 
+					article = defensive_pact
+				}
+				{ # 
+					article = trade_privilege
+					source_country = c:GER
+					target_country = c:GBR
+				}
+				{ #
+					article = trade_privilege
+					source_country = c:GBR
+					target_country = c:GER
+				}
+				}
+			}
+		}
+		ROOT = {
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 300
+			}
+		}
+		remove_modifier = anglo_german_naval_treaty
+	}
+
+	ai_chance = {
+		value = 25		
+	}
+}
+
+deutsch_abrogation_of_the_naval_treaty_single = {#废除海军军备条约
+	is_shown = {
+		has_modifier = anglo_german_naval_treaty
+		c:GER = THIS
+		OR = {
+			NOT = { exists = c:GBR }
+			c:GBR = {
+				country_rank < rank_value:great_power
+			}
+		}
+	}
+
+	possible = {
+		country_rank >= rank_value:great_power
+		NOT = { has_modifier = anglo_german_naval_treaty_time_modifier }
+		is_at_war = no
+	}
+
+	when_taken = {
+		custom_tooltip = {
+		text = deutsch_abrogation_of_the_naval_treaty_single_tt
+		}
+		if = {
+			limit = {
+				exists = c:GBR
+			}
+			change_relations = {
+			country = c:GBR
+			value = -50
+			}
+			create_bidirectional_truce = {
+			country = c:GBR
+			months = 60
+			}
+		}
+		change_infamy = 50
+		remove_modifier = anglo_german_naval_treaty
+	}
+
+	ai_chance = {
+		value = 25		
+	}
+}
+
+expand_deutsche_reich_states_to_poland = {#扩展帝国的波兰辖区
+	is_shown = {
+		has_modifier = paulskirchenverfassung_modifier
+		c:GER = THIS
+	}
+
+	possible = {
+		owns_entire_state_region = STATE_GREATER_POLAND
+		owns_entire_state_region = STATE_LESSER_POLAND
+		owns_entire_state_region = STATE_MAZOVIA
+		country_or_subject_owns_entire_state_region = STATE_WEST_GALICIA
+		bureaucracy >= 1000
+		NOR = {
+			has_law = law_type:law_ethnostate
+			has_law = law_type:law_national_supremacy
+		}
+		NOT = { has_variable = expand_deutsche_reich_states_to_poland_var }
+	}
+
+	when_taken = {
+		every_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_GREATER_POLAND
+					state_region = s:STATE_LESSER_POLAND
+					state_region = s:STATE_MAZOVIA
+					state_region = s:STATE_WEST_GALICIA
+				}
+				NOT = { has_modifier = deutsche_kaiserreich_states }
+			}
+			set_state_owner = ROOT
+			add_modifier = deutsche_kaiserreich_states
+			add_homeland = cu:north_german
+			set_state_type = incorporated 
+		}
+		change_infamy = 25
+		set_variable = expand_deutsche_reich_states_to_poland_var
+	}
+
+	ai_chance = {
+		value = 25		
+	}
+}
+
+expand_deutsche_reich_states_to_aus = {#扩展帝国辖区
+	is_shown = {
+		has_modifier = paulskirchenverfassung_modifier
+		c:GER = THIS
+		any_state = {
+			OR = {
+				region = sr:region_north_germany
+				region = sr:region_south_germany
+				state_region = s:STATE_POSEN
+				state_region = s:STATE_SILESIA
+				state_region = s:STATE_WEST_PRUSSIA
+				state_region = s:STATE_EAST_PRUSSIA
+				state_region = s:STATE_ALSACE_LORRAINE 
+				state_region = s:STATE_RHINELAND 
+				state_region = s:STATE_NORTH_RHINE 
+				state_region = s:STATE_WESTPHALIA 
+				state_region = s:STATE_RUHR
+				state_region = s:STATE_SOUTH_TYROL 
+				state_region = s:STATE_VENETIA 
+				state_region = s:STATE_ISTRIA
+				state_region = s:STATE_SLOVENIA  
+			}
+			NOT = { has_modifier = deutsche_kaiserreich_states }
+			owner = ROOT
+		}
+	}
+
+	possible = {
+		bureaucracy >= 1000
+	}
+
+	when_taken = {
+		every_scope_state = {
+			limit = {
+				OR = {
+					region = sr:region_north_germany
+					region = sr:region_south_germany
+					state_region = s:STATE_POSEN
+					state_region = s:STATE_SILESIA
+					state_region = s:STATE_WEST_PRUSSIA
+					state_region = s:STATE_EAST_PRUSSIA
+					state_region = s:STATE_ALSACE_LORRAINE 
+					state_region = s:STATE_RHINELAND 
+					state_region = s:STATE_NORTH_RHINE 
+					state_region = s:STATE_WESTPHALIA 
+					state_region = s:STATE_RUHR
+					state_region = s:STATE_SOUTH_TYROL 
+					state_region = s:STATE_VENETIA 
+					state_region = s:STATE_ISTRIA
+					state_region = s:STATE_SLOVENIA 
+				}
+				NOT = { has_modifier = deutsche_kaiserreich_states }
+			}
+			add_modifier = deutsche_kaiserreich_states
+			set_state_type = incorporated 
+		}
+	}
+
+	ai_chance = {
+		value = 25		
+	}
+}

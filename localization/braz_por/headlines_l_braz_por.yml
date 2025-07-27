@@ -1,0 +1,248 @@
+﻿l_braz_por:
+rule_headlines_minor_events: "@headlines_newsicon! #yellow Manchetes#! | Eventos Menores"
+setting_headlines_all_minor_events: "Todas as Manchetes Menores"
+setting_headlines_all_minor_events_desc: "Todas as manchetes serão mostradas."
+setting_headlines_relevant_minor_events: "Apenas Manchetes Menores Relevantes"
+setting_headlines_relevant_minor_events_desc: "Algumas manchetes menos importantes só serão mostradas se você tiver um [concept_interest] na região relevante. #lore Isso inclui eventos como o colapso da América Central ou a reconquista francesa da Argélia. #!"
+setting_headlines_no_minor_events: "Sem Manchetes Menores"
+setting_headlines_no_minor_events_desc: "Algumas manchetes menos importantes não serão mostradas. #lore Isso inclui eventos como o colapso da América Central ou a reconquista francesa da Argélia. #!"
+
+headlines_major_group: "@headlines_newsicon! #yellow Manchetes#! | Eventos Principais"
+headlines_minor_group: "@headlines_newsicon! #yellow Manchetes#! | Eventos Menores"
+headlines_constructions_group: "@headlines_newsicon! #yellow Manchetes#! | Construções"
+
+##Civil Wars##
+#ACW Begins
+notification_headlines_acw_begin_csa_tooltip:0 "#header $notification_headlines_acw_begin_csa_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_acw_begin_csa_desc$"
+notification_headlines_acw_begin_csa_name:0 "#b ESTADOS DO SUL PROMULGAM A SECESSÃO #!"
+notification_headlines_acw_begin_csa_desc:1 "Diante do crescente apoio à abolição da escravidão, os [SCOPE.sCountry('csa_scope').GetName] entraram em rebelião aberta. #lore Declarando sua saída unilateral da união, os estados secessionistas tomaram arsenais federais e convocaram suas milícias locais para lutar. As negociações do governo da União foram rejeitadas, disse o secretário... #!"
+
+notification_headlines_acw_begin_fsa_tooltip:0 "#header $notification_headlines_acw_begin_fsa_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_acw_begin_fsa_desc$"
+notification_headlines_acw_begin_fsa_name:0 "#b ESTADOS DO NORTE PROMULGAM A SECESSÃO #!"
+notification_headlines_acw_begin_fsa_desc:1 "Enfrentando um fervoroso pró-escravidão, os [SCOPE.sCountry('fsa_scope').GetName] entraram em rebelião aberta. #lore Declarando o governo federal como ilegítimo, os estados livres declararam emancipação para todos os escravos em seu território, incluindo aqueles que fogem dos estados escravagistas. O governo da União denunciou os rebeldes como traidores da Constituição e pediu por... #!"
+
+#ACW Ends
+notification_headlines_acw_end_slaver_tooltip:0 "#header $notification_headlines_acw_end_slaver_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_acw_end_slaver_desc$"
+notification_headlines_acw_end_slaver_name:0 "#b A ESCRAVIDÃO REINA NOS EUA #!"
+notification_headlines_acw_end_slaver_desc:1 "A Guerra Civil Americana terminou com a vitória da escravidão. #lore O presidente instou a reconciliação e a rápida reintegração dos estados beligerantes. Bolsões de forças abolicionistas continuam resistindo mesmo após... #!"
+
+notification_headlines_acw_end_emancipation_tooltip:0 "#header $notification_headlines_acw_end_emancipation_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_acw_end_emancipation_desc$"
+notification_headlines_acw_end_emancipation_name:0 "#b GUERRA CIVIL AMERICANA TERMINA #!"
+notification_headlines_acw_end_emancipation_desc:1 "A Guerra Civil Americana terminou a favor dos abolicionistas. #lore O presidente instou a reconciliação e a rápida reintegração dos estados beligerantes. Forças paramilitares pró-escravidão realizaram uma série de... #!"
+
+#ACW Ends (Stalemate)
+notification_headlines_acw_end_stalemate_tooltip:0 "#header $notification_headlines_acw_end_stalemate_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_acw_end_stalemate_desc$"
+notification_headlines_acw_end_stalemate_name:0 "#b OS ESTADOS DESUNIDOS #!"
+notification_headlines_acw_end_stalemate_desc:1 "A Guerra Civil Americana terminou em impasse, com os [SCOPE.sCountry('usa_scope').GetName] e [SCOPE.sCountry('acw_other_one_scope').GetName] aceitando relutantemente uma trégua. #lore A maioria dos observadores diz que a paz entre as duas Américas não pode durar. A turbulência abalou os estados fronteiriços enquanto ambos os lados buscam... #!"
+
+#Taiping Appears
+notification_headlines_taiping_appears_tooltip:0 "#header $notification_headlines_taiping_appears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_taiping_appears_desc$"
+notification_headlines_taiping_appears_name:0 "#b 'REINO CELESTIAL' DECLARADO NA CHINA #!"
+notification_headlines_taiping_appears_desc:1 "Um movimento cristão chinês formou o [SCOPE.sCountry('taiping_scope').GetName] e declarou guerra santa contra o [SCOPE.sCountry('china_scope').GetName]. #lore O grupo conhecido como Sociedade de Adoração a Deus é liderado pelo irmão de Jesus Cristo, com milhares se reunindo para...  #!"
+
+#Taiping Victory
+notification_headlines_taiping_victory_tooltip:0 "#header $notification_headlines_taiping_victory_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_taiping_victory_desc$"
+notification_headlines_taiping_victory_name:0 "#b O IMPÉRIO CHINÊS SAGRADO? #!"
+notification_headlines_taiping_victory_desc:1 "O [SCOPE.sCountry('taiping_scope').GetName] emergiu vitorioso e estabeleceu o domínio da Adoração a Deus sobre toda a China. #lore O conflito brutal deixou um número impressionante de mortos. [SCOPE.sCountry('taiping_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('taiping_scope').GetRuler.GetFirstName] já decretou uma ampla gama de reformas sociais, incluindo... #!"
+
+#Taiping Defeat
+notification_headlines_taiping_defeat_tooltip:0 "#header $notification_headlines_taiping_defeat_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_taiping_defeat_desc$"
+notification_headlines_taiping_defeat_name:0 "#b CRISTÃOS MASSACRADOS NA CHINA #!"
+notification_headlines_taiping_defeat_desc:1 "A [SCOPE.sCountry('china_scope').GetName] esmagou a rebelião da Sociedade de Adoração a Deus. #lore Relatos chocantes de massacres civis vazaram das províncias recapturadas, com um testemunha ocular afirmando que mais de 30.000 pessoas foram mortas em um único dia por... #!"
+
+
+
+##Collapses##
+#Colapso da Dinastia Qing
+notification_headlines_qing_collapse_tooltip:0 "#header $notification_headlines_qing_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_qing_collapse_desc$"
+notification_headlines_qing_collapse_name:0 "#b PEQUIM EM CAOS — EXÉRCITOS DESERTAM #!"
+notification_headlines_qing_collapse_desc:1 "Cercada por todos os lados, a autoridade da [SCOPE.sCountry('china_scope').GetName] parece ter colapsado totalmente. #lore Generais locais e bandidos ambiciosos assumiram o controle de províncias em toda a China, submetendo a população a privações incontáveis. Os ministérios estrangeiros de várias potências europeias emitiram declarações...#!"
+#Colapso da BIC
+notification_headlines_bic_collapse_tooltip:0 "#header $notification_headlines_bic_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_bic_collapse_desc$"
+notification_headlines_bic_collapse_name:0 "#b O FIM DA ÍNDIA BRITÂNICA? #!"
+notification_headlines_bic_collapse_desc:1 "A turbulência política encerrou o longo domínio britânico sobre a Índia, com os príncipes anteriormente sujeitos se reafirmando por todo o continente. #lore Os portos indianos estão lotados de ingleses buscando retorno às ilhas britânicas. O ministério das relações exteriores britânico deu total apoio à repatriação de...#!"
+
+#Colapso da DEI
+notification_headlines_dei_collapse_tooltip:0 "#header $notification_headlines_dei_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_dei_collapse_desc$"
+notification_headlines_dei_collapse_name:0 "#b RETIRADA HOLANDESA — ÍNDIAS EM FRANGALHOS #!"
+notification_headlines_dei_collapse_desc:1 "A administração colonial das Índias Orientais Holandesas recuou apressadamente das ilhas, deixando os nativos livres de seus antigos senhores. #lore O pânico tomou conta dos mercados em Amsterdã quando a notícia da catástrofe colonial chegou...#!"
+
+#Colapso da América Central
+notification_headlines_uca_collapse_tooltip:0 "#header $notification_headlines_uca_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_uca_collapse_desc$"
+notification_headlines_uca_collapse_name:0 "#b AMÉRICA CENTRAL VOTA PELA DISSOLUÇÃO #!"
+notification_headlines_uca_collapse_desc:1 "As antigas províncias da América Central se separaram oficialmente em estados independentes. #lore Praticamente inoperante desde o início deste ano, o congresso central da federação votou oficialmente pelo fim da união e reconheceu a soberania das províncias. Em uma cerimônia solene, a bandeira da federação foi baixada...#!"
+
+##Formações##
+#NGF Formado
+notification_headlines_ngf_formed_tooltip:0 "#header $notification_headlines_ngf_formed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_ngf_formed_desc$"
+notification_headlines_ngf_formed_name:0 "#b ESTADOS ALEMÃES DECLARAM FEDERAÇÃO #!"
+notification_headlines_ngf_formed_desc:1 "Impulsionados pela causa do nacionalismo, mais de uma dúzia de membros da Confederação Alemã se uniram na [SCOPE.sCountry('ngf_scope').GetName]. #lore Celebrações espontâneas irromperam em várias cidades em favor da nova federação. O sentimento comum é que a plena unificação da Alemanha agora é inevitável, com...#!"
+
+#SGF Formado
+notification_headlines_sgf_formed_tooltip:0 "#header $notification_headlines_sgf_formed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_sgf_formed_desc$"
+notification_headlines_sgf_formed_name:0 "#b SUL DA ALEMANHA SE FEDERA #!"
+notification_headlines_sgf_formed_desc:1 "Vários estados do sul da Alemanha se uniram na [SCOPE.sCountry('sgf_scope').GetName]. #lore Nacionalistas alemães de todos os cantos viajaram para [SCOPE.sCountry('sgf_scope').GetCapital.GetCityHubName] para a cerimônia inaugural. As implicações para a unificação alemã são amplamente debatidas, considerando...#!"
+
+#Alemanha Formada
+notification_headlines_ger_formed_tooltip:0 "#header $notification_headlines_ger_formed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_ger_formed_desc$"
+notification_headlines_ger_formed_name:0 "#b UNIFICAÇÃO ALEMÃ #!"
+notification_headlines_ger_formed_desc:1 "A [SCOPE.sCountry('germany_scope').GetName] foi oficialmente declarada em [SCOPE.sCountry('germany_scope').GetCapital.GetCityHubName] hoje, unindo o mosaico de principados alemães em um único estado. #lore Multidões de pessoas de toda a Alemanha desfilaram pelas ruas carregando a bandeira da Alemanha recém-unida. Já os governos da França e da Áustria enviaram seus cumprimentos cautelosos a...#!"
+
+#Itália Formada
+notification_headlines_italy_formed_tooltip:0 "#header $notification_headlines_italy_formed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_italy_formed_desc$"
+notification_headlines_italy_formed_name:0 "#b UNIFICAÇÃO ITALIANA #!"
+notification_headlines_italy_formed_desc:1 "O nacionalismo italiano prevaleceu na península com a formação da [SCOPE.sCountry('italy_scope').GetName]. #lore O novo governo italiano foi inaugurado em [SCOPE.sCountry('italy_scope').GetCapital.GetCityHubName] em meio a multidões aplaudindo e agitando tricolores. Diplomatas de várias outras nações europeias presentes deram seus...#!"
+
+#Europa Central Formada
+notification_headlines_central_europe_formed_tooltip:0 "#header $notification_headlines_central_europe_formed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_central_europe_formed_desc$"
+notification_headlines_central_europe_formed_name:0 "#b UMA EUROPA UNIDA #!"
+notification_headlines_central_europe_formed_desc:1 "Um momento histórico na Europa e no mundo hoje, com a inauguração da [SCOPE.sCountry('hre_scope').GetName]. #lore Multidões de pessoas de toda a Europa lotaram as ruas para marcar a ocasião. As negociações sobre os idiomas oficiais a serem usados pelo estado pan-europeu ainda estão em andamento, pois...#!"
+
+#Escandinávia Formada
+notification_headlines_scandinavia_formed_tooltip:0 "#header $notification_headlines_scandinavia_formed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_scandinavia_formed_desc$"
+notification_headlines_scandinavia_formed_name:0 "#b ESCANDINÁVIA DECLARA UNIÃO #!"
+notification_headlines_scandinavia_formed_desc:1 "Os países do norte da [SCOPE.sCountry('scandinavia_scope').GetName] formaram um governo unido. #lore A nova bandeira da Escandinávia unida foi revelada e erguida ao lado das bandeiras de cada uma das nações constituintes. O novo primeiro-ministro fez um brinde multilíngue em homenagem a...#!"
+
+#Iugoslávia Formada
+notification_headlines_yugoslavia_formed_tooltip:0 "#header $notification_headlines_yugoslavia_formed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_yugoslavia_formed_desc$"
+notification_headlines_yugoslavia_formed_name:0 "#b FEDERAÇÃO IUGOSLAVA DECLARADA #!"
+notification_headlines_yugoslavia_formed_desc:1 "Os Bálcãs ocidentais foram unidos sob [SCOPE.sCountry('yugoslavia_scope').GetName]. #lore Os embaixadores do novo estado iugoslavo foram formalmente reconhecidos pelos outros países europeus em um congresso diplomático. Por muito tempo sob os jugos austríaco e otomano, os povos eslavos devem agora...#!"
+
+##Mudanças de Regime##
+#República Britânica
+notification_headlines_british_republic_tooltip:0 "#header $notification_headlines_british_republic_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_british_republic_desc$"
+notification_headlines_british_republic_name:0 "#b TRICOLOR SOBRE LONDRES #!"
+notification_headlines_british_republic_desc:1 "O sol se pôs sobre o Reino Unido hoje, pois o [SCOPE.sCountry('britain_scope').GetName] foi oficialmente declarado pelo parlamento. #lore A família real foi autorizada a se aposentar em suas propriedades, mas foi proibida de ocupar qualquer cargo governamental. A cena foi agitada do lado de fora de Westminster, com manifestantes anti-republicanos...#!"
+
+####
+#República do Conselho Britânico
+notification_headlines_british_council_republic_tooltip:0 "#header $notification_headlines_british_council_republic_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_british_council_republic_desc$"
+notification_headlines_british_council_republic_name:0 "#b LONDRES VERMELHA  #!"
+notification_headlines_british_council_republic_desc:1 "Um governo de conselhos de trabalhadores assumiu o controle do [SCOPE.sCountry('britain_scope').GetName]. #lore Propriedades em todo o país foram invadidas e saqueadas por multidões de revolucionários frenéticos. O status da família real permanece incerto...#!"
+
+#Domínio Britânico na Índia
+notification_headlines_british_raj_tooltip:0 "#header $notification_headlines_british_raj_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_british_raj_desc$"
+notification_headlines_british_raj_name:0 "#b FIM DO DOMÍNIO DA COMPANHIA NA ÍNDIA #!"
+notification_headlines_british_raj_desc:1 "Após uma série de falhas da administração colonial, toda a Companhia das Índias Orientais foi dissolvida por ato do parlamento. #lore Todos os ativos da empresa foram apreendidos pela coroa, e suas possessões na Índia foram reorganizadas para o [SCOPE.sCountry('raj_scope').GetName]. O recém-nomeado Governador-Geral da Índia fez uma declaração ao chegar em...#!"
+
+#Restauração do Japão
+notification_headlines_japan_restoration_tooltip:0 "#header $notification_headlines_japan_restoration_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_japan_restoration_desc$"
+notification_headlines_japan_restoration_name:0 "#b IMPERADOR ASSUME O PODER NO JAPÃO #!"
+notification_headlines_japan_restoration_desc:1 "O xogunato que dominou [SCOPE.sCountry('japan_scope').GetName] por séculos foi dissolvido, e o poder político restaurado para [SCOPE.sCountry('japan_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('japan_scope').GetRuler.GetFirstName]. #lore A nova administração já anunciou reformas abrangentes, buscando modernizar e industrializar a nação insular. Vários grupos de samurais descontentes entraram em confronto com as forças governamentais...#!"
+
+#Tricolores sobre Roma
+notification_headlines_roman_republic_tooltip:0 "#header $notification_headlines_roman_republic_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_roman_republic_desc$"
+notification_headlines_roman_republic_name:0 "#b PAPA EXPULSO DE ROMA #!"
+notification_headlines_roman_republic_desc:1 "Radicalmente republicanos tomaram a Cidade Eterna e proclamaram a [SCOPE.sCountry('rome_scope').GetName]. #lore Sua Santidade teria sido retirada do Vaticano disfarçada antes da tomada. As novas eleições foram boicotadas pelos devotos...#!"
+
+#Comuna Francesa
+notification_headlines_french_commune_tooltip:0 "#header $notification_headlines_french_commune_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_french_commune_desc$"
+notification_headlines_french_commune_name:0 "#b COMUNISTAS TOMAM O CONTROLE DA FRANÇA #!"
+notification_headlines_french_commune_desc:1 "Comunistas franceses assumiram o controle do governo e declararam a [SCOPE.sCountry('france_scope').GetName]. #lore Bandeiras vermelhas alinharam as ruas de Paris em celebração ao novo regime. Aristocratas despossuídos fugiram por todo o continente, aparecendo em portos estrangeiros de entrada...  #!"
+
+#Restauração Legitimista Francesa
+notification_headlines_french_legitimist_tooltip:0 "#header $notification_headlines_french_legitimist_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_french_legitimist_desc$"
+notification_headlines_french_legitimist_name:0 "#b BORBÔNIA RESTAURADA AO PODER #!"
+notification_headlines_french_legitimist_desc:1 "A facção Legitimista restaurou [SCOPE.sCountry('france_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('france_scope').GetRuler.GetFirstName] ao trono [SCOPE.sCountry('france_scope').GetAdjective] . #lore A administração ultra-realista conservadora prometeu um retorno aos dias antes da revolução. Agitadores republicanos interromperam os procedimentos na capital...#!"
+
+#Restauração Monárquica Francesa (novamente)
+notification_headlines_french_monarchy_returns_tooltip:0 "#header $notification_headlines_french_monarchy_returns_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_french_monarchy_returns_desc$"
+notification_headlines_french_monarchy_returns_name:0 "#b A FRANÇA RETORNA À MONARQUIA #!"
+notification_headlines_french_monarchy_returns_desc:1 "[SCOPE.sCountry('france_scope').GetName] mais uma vez restaurou a monarquia com a coroação de [SCOPE.sCountry('france_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('france_scope').GetRuler.GetFirstName]. #lore O novo [SCOPE.sCountry('france_scope').GetRuler.GetPrimaryRoleTitle] prometeu restaurar a prosperidade e a estabilidade à nação. Atividades partidárias continuam...#!"
+
+#República Francesa Restaurada
+notification_headlines_french_republic_tooltip:0 "#header $notification_headlines_french_republic_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_french_republic_desc$"
+notification_headlines_french_republic_name:0 "#b REPÚBLICA FRANCESA RESTAURADA #!"
+notification_headlines_french_republic_desc:1 "A [SCOPE.sCountry('france_scope').GetName] anteriormente abolida voltou ao poder. #lore Champanhe e cocares tricolores marcaram a ocasião enquanto forças republicanas triunfantes desfilavam por Paris. 'Liberté, égalité, fraternité!' foram as palavras do dia entre os...#!"
+
+#Império Francês Restaurado
+notification_headlines_french_empire_tooltip:0 "#header $notification_headlines_french_empire_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_french_empire_desc$"
+notification_headlines_french_empire_name:0 "#b UM NOVO NAPOLEÃO? #!"
+notification_headlines_french_empire_desc:1 "[SCOPE.sCountry('france_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('france_scope').GetRuler.GetFirstName] devolveu a casa de Bonaparte ao poder e proclamou a [SCOPE.sCountry('france_scope').GetName]. #lore Apoiado pelas forças armadas, a nova administração imperial busca restaurar a posição da França no cenário mundial. Diplomatas europeus estavam ansiosos para ouvir os intentos específicos do novo imperador...#!"
+
+## Other Events
+#PIB de Bilhões
+notification_headlines_billion_gdp_tooltip:0 "#header $notification_headlines_billion_gdp_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_billion_gdp_desc$"
+notification_headlines_billion_gdp_name:0 "#b NOVOS PATAMARES ECONÔMICOS — 1 BILHÃO EM PIB #!"
+notification_headlines_billion_gdp_desc:1 "O último relatório econômico confirma que o produto interno bruto total de [SCOPE.sCountry('billionare_country').GetName] ultrapassou #yellow @money! 1 Bilhão #!. #lore Analistas de mercado preveem um crescimento sem precedentes continuando, com os mais otimistas prevendo dobrar novamente a atividade total até...#!"
+
+#Falha do Tanzimat
+notification_headlines_tanzimat_fail_tooltip:0 "#header $notification_headlines_tanzimat_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_tanzimat_fail_desc$"
+notification_headlines_tanzimat_fail_name:0 "#b SULTÃO OTOMANO ABDICA #!"
+notification_headlines_tanzimat_fail_desc:1 "Uma paralisia política tomou conta do [SCOPE.sCountry('ottoman_scope').GetName] na esteira da abdicação repentina do sultão do trono. #lore Enfrentando revoltas de seus inúmeros súditos e governadores locais, a administração da Porta Sublime foi esticada ao máximo nos últimos anos. O embaixador britânico em Istambul disse...#!"
+
+#Argélia Francesa
+notification_headlines_french_algeria_tooltip:0 "#header $notification_headlines_french_algeria_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_french_algeria_desc$"
+notification_headlines_french_algeria_name:0 "#b FRANÇA RETOMA A ARGÉLIA #!"
+notification_headlines_french_algeria_desc:1 "[SCOPE.sCountry('france_scope').GetName] reafirmou seu controle sobre a Argélia após um conflito sangrento contra as forças de resistência locais. #lore Com os custos aumentando diante de táticas não convencionais, o exército francês adotou uma campanha brutal de terra arrasada contra o interior de...#!"
+
+#Polo Sul Alcançado
+notification_headlines_south_pole_tooltip:0 "#header $notification_headlines_south_pole_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_south_pole_desc$"
+notification_headlines_south_pole_name:0 "#b [SCOPE.sCountry('south_pole_country').GetAdjective] ATINGE O POLO SUL #!"
+notification_headlines_south_pole_desc:1 "Uma expedição patrocinada por [SCOPE.sCountry('south_pole_country').GetName] alcançou com sucesso o Polo Sul e retornou. #lore Os exploradores atravessaram a selvageria antártica e ergueram a bandeira [SCOPE.sCountry('south_pole_country').GetAdjectiveNoFormatting]. Após seu retorno, mensagens de congratulação foram enviadas...#!"
+
+#Primeiro Estado Ateísta
+notification_headlines_state_atheism_tooltip:0 "#header $notification_headlines_state_atheism_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_state_atheism_desc$"
+notification_headlines_state_atheism_name:0 "#b DEUS PROIBIDO — IGREJAS SAQUEADAS #!"
+notification_headlines_state_atheism_desc:1 "[SCOPE.sCountry('atheist_country').GetName] promulgou uma política de Ateísmo de Estado, proibindo a religião da vida pública. #lore Igrejas em toda [SCOPE.sCountry('atheist_country').GetCapital.GetCityHubName] foram despojadas de seus bens e fechadas. Relatos abundam de escrituras sendo queimadas na rua, com clérigos sendo...#!"
+
+#Coroação de Victoria
+notification_headlines_victoria_coronation_tooltip:0 "#header $notification_headlines_victoria_coronation_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_victoria_coronation_desc$"
+notification_headlines_victoria_coronation_name:0 "#b COROAÇÃO DA RAINHA VITÓRIA #!"
+notification_headlines_victoria_coronation_desc:1 "[SCOPE.sCharacter('queen_victoria').GetFirstName] foi coroada [SCOPE.sCharacter('queen_victoria').GetPrimaryRoleTitle] de [SCOPE.sCountry('britain_scope').GetName] aos [SCOPE.sCharacter('queen_victoria').GetAge] anos de idade. #lore O evento foi marcado por vários contratempos, incluindo a queda dramática de um lorde idoso nos degraus da plataforma da Rainha. A nova Rainha, para seu crédito, prestou ajuda ao Lorde ao...#!"
+
+#Funeral de Victoria
+notification_headlines_victoria_funeral_tooltip:0 "#header $notification_headlines_victoria_funeral_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_victoria_funeral_desc$"
+notification_headlines_victoria_funeral_name:0 "#b FUNERAL DA RAINHA VITÓRIA #!"
+notification_headlines_victoria_funeral_desc:1 "A Rainha Vitória morreu e foi sucedida por [SCOPE.sCharacter('new_british_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('new_british_monarch').GetFirstName].  #lore Dignitários e nobres viajaram de toda a Europa para comparecer ao funeral da Rainha. Serviços especiais foram realizados por todo o país em memória de...#!"
+
+#Canal de Suez Construído
+notification_headlines_suez_canal_tooltip:0 "#header $notification_headlines_suez_canal_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_suez_canal_desc$"
+notification_headlines_suez_canal_name:0 "#b CANAL DE SUEZ CONCLUÍDO #!"
+notification_headlines_suez_canal_desc:1 "[SCOPE.sCountry('suez_owner_scope').GetName] concluiu o [SCOPE.sBuilding('suez_canal_scope').GetName] ligando o Mediterrâneo ao Mar Vermelho. #lore Anos de pesquisas e construção culminaram em uma grande cerimônia de abertura marcada por banquetes e fogos de artifício. O primeiro navio a navegar pelo canal...#!"
+
+#Canal do Panamá Construído
+notification_headlines_panama_canal_tooltip:0 "#header $notification_headlines_panama_canal_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_panama_canal_desc$"
+notification_headlines_panama_canal_name:0 "#b CANAL DO PANAMÁ ABERTO AO MUNDO #!"
+notification_headlines_panama_canal_desc:1 "O [SCOPE.sBuilding('panama_canal_scope').GetName] foi construído por [SCOPE.sCountry('panama_owner_scope').GetName], conectando os oceanos Atlântico e Pacífico. #lore O projeto foi assolado por atrasos na construção e problemas no local de trabalho. Pedágios para a travessia foram...#!"
+
+#Cristo Redentor
+notification_headlines_cristo_redentor_tooltip:0 "#header $notification_headlines_cristo_redentor_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_cristo_redentor_desc$"
+notification_headlines_cristo_redentor_name:0 "#b MAIOR JESUS DO MUNDO #!"
+notification_headlines_cristo_redentor_desc:1 "[SCOPE.sBuilding('cristo_redentor_scope').GetName] foi concluído com vista para [SCOPE.sState('rio_scope').GetCityHubName]. #lore Com quase 100 pés de altura, a estátua apresenta um símbolo impressionante do alcance mundial do cristianismo. Na noite da cerimônia de abertura, a grande figura foi iluminada por...#!"
+
+#Estátua da Liberdade Construída
+notification_headlines_statue_of_liberty_tooltip:0 "#header $notification_headlines_statue_of_liberty_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_statue_of_liberty_desc$"
+notification_headlines_statue_of_liberty_name:0 "#b A LUZ DA LIBERDADE SOBRE NOVA YORK #!"
+notification_headlines_statue_of_liberty_desc:1 "A [SCOPE.sBuilding('statue_of_liberty_scope').GetName] agora se ergue sobre o Porto de [SCOPE.sState('new_york_scope').GetCityHubName], dando as boas-vindas aos novos chegados ao continente. #lore O grande símbolo da liberdade foi projetado e montado na França como um presente para o povo americano. Esforços para garantir financiamento para a estátua foram liderados por...#!"
+
+#Big Ben
+notification_headlines_big_ben_tooltip:0 "#header $notification_headlines_big_ben_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_big_ben_desc$"
+notification_headlines_big_ben_name:0 "#b NOVA TORRE DE SINO DE LONDRES #!"
+notification_headlines_big_ben_desc:1 "[SCOPE.sBuilding('big_ben_scope').GetName] foi concluído em [SCOPE.sState('home_counties_scope').GetCityHubName]. #lore O enorme Grande Sino foi puxado pelas ruas por dezesseis cavalos e levou um dia inteiro para ser içado na torre. Seus quatro grandes mostradores de relógio foram calibrados precisamente...#!"
+
+#Mesquita de Djenné Restaurada
+notification_headlines_mosque_of_djenne_tooltip:0 "#header $notification_headlines_mosque_of_djenne_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_mosque_of_djenne_desc$"
+notification_headlines_mosque_of_djenne_name:0 "#b GRANDE MESQUITA DE DJENNE RESTAURADA #!"
+notification_headlines_mosque_of_djenne_desc:1 "Após décadas de negligência, a [SCOPE.sBuilding('mosque_of_djenne_scope').GetName] em [SCOPE.sState('djenne_scope').GetName] foi restaurada. #lore Remontando pelo menos aos anos 1300, a grande estrutura de tijolo de barro foi totalmente reconstruída no local original. A reabertura da mesquita inspirou um grande festival que atraiu...#!"
+
+#Torre Eiffel
+notification_headlines_eiffel_tower_tooltip:0 "#header $notification_headlines_eiffel_tower_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_eiffel_tower_desc$"
+notification_headlines_eiffel_tower_name:0 "#b NOVA TORRE DE PARIS MAIS ALTA DO MUNDO #!"
+notification_headlines_eiffel_tower_desc:1 "A [SCOPE.sBuilding('eiffel_tower_scope').GetName] agora domina o horizonte de [SCOPE.sState('eiffel_state').GetCityHubName]. #lore Construída usando técnicas pioneiras de metalurgia e engenharia, a torre tem mais de 1000 pés de altura. Controvérsia continua cercando o design da torre, que...  #!"
+
+#Primeiro Arranha-céu
+notification_headlines_first_skyscraper_tooltip:0 "#header $notification_headlines_first_skyscraper_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_first_skyscraper_desc$"
+notification_headlines_first_skyscraper_name:0 "#b 'ARRANHA-CÉU' ALCANÇA NOVOS PATAMARES #!"
+notification_headlines_first_skyscraper_desc:1 "[SCOPE.sCountry('first_skyscraper_country').GetName] construiu o primeiro prédio de escritórios 'arranha-céu' do mundo em [SCOPE.sState('first_skyscraper_state').GetCityHubName]. #lore O incrível novo edifício foi construído usando os mais recentes materiais e técnicas de construção, totalmente suportado por uma estrutura de aço. O novo design causou alguma preocupação para inspetores governamentais, que...  #!"
+
+## Dinâmico
+#Guerra das Grandes Potências
+notification_headlines_gp_war_tooltip:0 "#header $notification_headlines_gp_war_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_gp_war_desc$"
+notification_headlines_gp_war_name:0 "#b GRANDES POTÊNCIAS EM GUERRA #!"
+notification_headlines_gp_war_desc:1 "Um estado oficial de guerra foi declarado entre [SCOPE.sCountry('great_power_scope_1').GetName] e [SCOPE.sCountry('great_power_scope_2').GetName]. #lore Os ministérios estrangeiros de ambos os países emitiram justificativas e denúncias contra o outro lado. Já se podem ver correntes de refugiados em pânico fugindo das linhas de frente, pois...#!"
+
+#Falência Importante
+notification_headlines_notable_bankrupt_tooltip:0 "#header $notification_headlines_notable_bankrupt_name$#!\n$TOOLTIP_DELIMITER$\n$notification_headlines_notable_bankrupt_desc$"
+notification_headlines_notable_bankrupt_name:0 "#b [SCOPE.sCountry('bankrupt_country').GetName] DECLARA FALÊNCIA! #!"
+notification_headlines_notable_bankrupt_desc:1 "O governo de [SCOPE.sCountry('bankrupt_country').GetName] declarou oficialmente falência esta manhã, devastando a economia e a posição internacional da nação. #lore Distúrbios eclodiram fora de bancos regionais enquanto cidadãos em pânico tentavam...  #!"

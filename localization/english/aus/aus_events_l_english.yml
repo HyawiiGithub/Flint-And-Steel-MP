@@ -1,0 +1,119 @@
+﻿l_english:
+    #Hungarian Rebellion
+    joi_flavor_aus.1.t: "#bold The Hungarian Revolt#!"
+    joi_flavor_aus.1.d: "Imperial troops have entered #bold Budapest#! to enforce Vienna's decrees, sparking open rebellion. Hungarian nobles rally their #v $aristocrats$#! at the #bold Diet of 1848#!, while radical students arm themselves from the #bold Honvéd arsenals#!." 
+    joi_flavor_aus.1.f: "\"By the #bold Golden Bull#! of 1222, our rights are sacred! The Habsburgs swore to uphold our ancient constitution - shall [ROOT.GetCountry.GetRuler.GetFirstName] be the first to break this oath?\"\n\n- #bold Count Lajos Batthyány#!, Hungarian Palatine\n\n\"These so-called 'ancient rights' are but feudal relics! The #bold March Laws#! you extracted from a weak emperor have no force before God or cannon.\"\n\n- #bold Prince Windisch-Grätz#!, Imperial Commander\n\n\"Then let the #bold Danube run red#! with Magyar blood before we yield! The spirit of #bold Matthias Corvinus#! lives in every Hungarian heart!\"\n\n- #bold Lajos Kossuth#!, at the Pest Assembly"
+    joi_flavor_aus.1.a: "#bold Deploy the Imperial Artillery#!\n(Order Radetzky's veterans to bombard the rebel positions)"
+
+    #The Februar Patent
+    joi_flavor_aus.2.t: "#bold The February Patent#!"
+    joi_flavor_aus.2.d: "After months of deliberation in the #bold Hofburg#!, [ROOT.GetCountry.GetName] has issued revolutionary reforms - abolishing ethnic discrimination and establishing constitutional rights for all crownlands."
+    joi_flavor_aus.2.f: "The #bold 1861 February Constitution#! marks a watershed moment:\n\n• #bold Hungarian#! delegates regain seats in the Reichsrat\n• #bold Czech#! becomes an administrative language in Bohemia\n• #bold Italian#! regions gain cultural autonomy\n\n'This is not weakness,' declares [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], 'but the strength of an empire that embraces all its peoples under the #bold Habsburg crown#!.'\n\nThe [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant] cheers these changes, though some #v $aristocrats$#! grumble about 'surrendering to mob rule'."
+    joi_flavor_aus.2.a: "#bold Justice Strengthens the Crown#!"
+
+    #Austro-Hungarian Compromise
+    joi_flavor_aus.3.t: "#bold The Ausgleich#!"
+    joi_flavor_aus.3.d: "The historic #bold 1867 Compromise#! transforms our realm into the #bold Austro-Hungarian Dual Monarchy#!, granting Budapest equal status with Vienna."
+    joi_flavor_aus.3.f: "After secret negotiations with #bold Ferenc Deák#!, Hungary now enjoys:\n• Its own #bold parliament#! in Budapest\n• Control over #bold domestic affairs#!\n• A #bold separate army#! (the Honvédség)\n\nIn exchange, they accept:\n• #bold Habsburg#! rule as Kings of Hungary\n• Joint #bold foreign policy#! and military\n• The #bold customs union#!\n\n'Better half an empire than none at all,' remarks a satisfied #bold Count Andrássy#!."
+    joi_flavor_aus.3.a: "#bold Long Live the Dual Monarchy#!"
+
+    #Hungary Submits
+    joi_flavor_aus.4.t: "#bold The Crown Triumphant#!"
+    joi_flavor_aus.4.d: "Hungary's autonomy lies shattered - [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] now rules Budapest as an imperial province, not a partner."
+    joi_flavor_aus.4.f: "The #bold Equestrian Statue#! of Maria Theresa gazes sternly over a pacified Hungary. But at what cost?\n\nOption A: Preserve Hungarian identity but risk future separatism\n• Maintain #bold county system#! (Comitats)\n• Allow #bold Magyar language#! in schools\n• Keep #bold noble privileges#!\n\nOption B: Enforce #bold Germanization#!\n• Abolish the #bold Diet of Budapest#!\n• Impose #bold German administration#!\n• Redraw #bold provincial borders#!\n\nThe [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] stands ready to suppress any rebellion."
+    joi_flavor_aus.4.a: "#bold Hungary as Junior Partner#!"
+    joi_flavor_aus.4.b: "#bold One Empire, One People#!"
+
+    #Polish Magnates
+    joi_flavor_aus.5.t: "#bold The Fall of the Magnates#!"
+    joi_flavor_aus.5.d: "After the failed rebellion, Vienna has abolished the #bold ancient privileges#! of Hungary's nobility from the [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] chancellery."
+    joi_flavor_aus.5.f: "The #bold Diet of 1848#! lies in ruins, its leaders exiled or imprisoned. Now we face a crucial decision:\n\n#bold Option A: Revolutionary Justice#!\n• Confiscate all noble estates\n• Abolish the #bold Comitat system#!\n• Try rebel leaders for treason\n\n#bold Option B: Conciliatory Measures#!\n• Preserve ceremonial titles\n• Maintain county administrations\n• Reintegrate loyal families\n\nThe [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant] watches anxiously as we decide Hungary's future."
+    joi_flavor_aus.5.a: "#bold Crush the Aristocracy#!"
+    joi_flavor_aus.5.b: "#bold Preserve the Old Order#!"
+    
+    #Budapest
+    joi_flavor_aus.6.t: "#bold Budapest Occupied#!"
+    joi_flavor_aus.6.d: "Imperial forces under #bold General Haynau#! have stormed Budapest, ending the Hungarian revolt after fierce street fighting."
+    joi_flavor_aus.6.f: "The #bold Chain Bridge#! bears scars of cannon fire as Habsburg eagles replace the Hungarian tricolor."
+    joi_flavor_aus.6.a: "#bold Hungary Will Remember This Day#!"
+
+    #Bohemia
+    joi_flavor_aus.7.t: "#bold The Bohemian Crown Direct#!"
+    joi_flavor_aus.7.d: "The #bold Lands of the Crown of Saint Wenceslaus#! now answer directly to [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s ministers in Vienna."
+    joi_flavor_aus.7.a: "#bold Prague Shall Keep Its Voice#!"
+    joi_flavor_aus.7.b: "#bold Germanization Program#!"
+
+    #Galicia
+    joi_flavor_aus.8.t: "#bold Galicia Incorporated#!"
+    joi_flavor_aus.8.d: "The #bold Kingdom of Galicia and Lodomeria#! loses its special status, becoming another crownland under Vienna's direct rule."
+    joi_flavor_aus.8.a: "#bold Respect Polish Traditions#!"
+    joi_flavor_aus.8.b: "#bold Divide and Rule#!"
+
+    #Illyria Submits
+    joi_flavor_aus.9.t: "#bold Illyria Subdued#!"
+    joi_flavor_aus.9.d: "The #bold Military Frontier#! is dissolved as all Balkan territories come under unified imperial administration."
+    joi_flavor_aus.9.a: "#bold South Slavic Autonomy#!"
+    joi_flavor_aus.9.b: "#bold Centralized Control#!"
+    joi_flavor_aus.10.t: "#bold Lombardy Reclaimed#!"
+    joi_flavor_aus.10.d: "Milan's #bold Palazzo Reale#! flies the Habsburg banner once more after the suppression of Italian rebels."
+    joi_flavor_aus.10.a: "#bold Venetian Exception#!"
+    joi_flavor_aus.10.b: "#bold German Order#!"
+
+    #Venice Submits
+    joi_flavor_aus.11.t: "#bold The Lion of Saint Mark Tamed#!"
+    joi_flavor_aus.11.d: "The last #bold Maggior Consiglio#! of Venice has dissolved, its ancient republican institutions replaced by direct Habsburg governance from [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]."
+    joi_flavor_aus.11.f: "The last Venetian doge's corno hat gathers dust as Habsburg bureaucrats occupy the Doge's Palace. Now we face Venice's future: either preserve its unique mercantile character by maintaining Italian-language courts and the historic maritime codes, or fully integrate the lagoon city by imposing German administration and redirecting its trade through Trieste. The [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant] merchants whisper of republican nostalgia in the shadow of Saint Mark's Campanile."
+    joi_flavor_aus.11.a: "Let Venice keep its ancient ways"
+    joi_flavor_aus.11.b: "Make Venice another German city"
+
+    #Völkermanifest
+    joi_flavor_aus.12.t: "#bold The Völkermanifest Realized#!"
+    joi_flavor_aus.12.d: "Delegates from all crownlands assemble in #bold Vienna's Hofburg#! to inaugurate the empire's new federal structure under [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s sacred authority."
+    joi_flavor_aus.12.f: "As the #bold Imperial Anthem#! echoes through the Hofburg's marble halls, a sea of regional banners ripples in the candlelight - Bohemia's silver lion beside Hungary's double cross, with Dalmatia's three crowns floating above Croatian chequy. The Emperor raises the new constitution aloft: 'Let this #bold United States of Greater Austria#! stand as God's will made manifest - one empire of many nations, united under our eternal crown!'\n
+    In the galleries, the [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant] weeps with joy at seeing their federalist dreams realized, while old conservative magnates finger their rosaries and whisper prayers for the empire's survival. Venetian delegates in their silk robes stand stiffly beside Prussian-clad German nationalists, all united momentarily under the Habsburg eagles."
+    joi_flavor_aus.12.a: "#bold Gott erhalte unseren Kaiser [ROOT.GetCountry.GetRuler.GetFirstName]#!"
+
+    # Winds of Liberalism Event
+    joi_flavor_aus.13.t: "#bold Revolution in the Hofburg#!"
+    joi_flavor_aus.13.d: "The #bold Springtime of Nations#! has reached [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName], where radical students and workers now control the palace district while [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] flees to Innsbruck."
+    joi_flavor_aus.13.f: "The scene at #bold St. Stephen's Cathedral#! encapsulates the chaos: National Guard units in mismatched uniforms drill beside barricades built from overturned trams, while inside the occupied Hofburg, revolutionary committees debate utopian constitutions as imperial portraits watch from the walls.\n\nBeyond the city gates, #bold Field Marshal Windisch-Grätz#! marshals 70,000 troops - their cannon barrels gleaming in the May sunlight, their loyalty unquestioned. Yet the order to storm the capital goes unsigned, as the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant] pleads for compromise while the [GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant] demands bread and land reform.\n\n'We can still save the monarchy,' whispers a pale-faced minister, 'if only we act before the mob remembers where the arsenal keys are kept.'"
+    joi_flavor_aus.13.a: "#bold The Chancellor Must Flee#!"
+    joi_flavor_aus.13.b: "#bold Unleash the Imperial Artillery#!"
+
+    # Pillersdorf Constitution
+    joi_flavor_aus.14.t: "#bold The April Laws#!"
+    joi_flavor_aus.14.d: "Liberal reformers in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] have forced through constitutional concessions during the #bold 1848 Revolutions#!, drafting radical reforms in [ROOT.GetCountry.GetRuler.GetFirstName]'s name."
+    joi_flavor_aus.14.f: "The #bold Pillersdorf Constitution#! lies open on the Emperor's desk - its pages promising:\n• Abolition of #bold feudal obligations#!\n• Creation of a #bold representative Reichstag#!\n• Guarantees of #bold press freedom#!\n\nThe [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant] cheers in the streets while the [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant] storms the Hofburg in protest. 'We must choose,' whispers Chancellor Pillersdorf, 'between controlled reform now or revolution tomorrow.'"
+    joi_flavor_aus.14.a: "#bold Sign with Shaking Hand#!"
+    joi_flavor_aus.14.b: "#bold Tear the Document#!"
+
+    # Hungarian Rebellion!
+    joi_flavor_aus.15.t: "#bold Kossuth's Declaration#!"
+    joi_flavor_aus.15.d: "The #bold Diet of Pressburg#! has transformed into a revolutionary parliament, with #bold Lajos Kossuth#! proclaiming complete Hungarian independence from Habsburg rule."
+    joi_flavor_aus.15.f: "In the #bold Great Church of Debrecen#!, Kossuth holds aloft the sacred #bold Holy Crown#! as he reads the indictment:\n\n'#bold The Habsburgs#! have broken their coronation oath through:\n1. Violating Hungary's #bold ancient constitution#!\n2. Imposing #bold German-language decrees#!\n3. Sending #bold foreign troops#! to our lands\n\nTherefore we declare the #bold dethronement#! of this perfidious dynasty!' \n\nThe [GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant] cheers while imperial officers burn their Hungarian commissions."
+    joi_flavor_aus.15.a: "#bold Send the Artillery#!"
+
+    # Federal Parliament
+    joi_flavor_aus.16.t: "#bold The Völkermanifest Realized#!"
+    joi_flavor_aus.16.d: "Today in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName], delegates from all crownlands ratified the #bold Federal Constitution#!, transforming [ROOT.GetCountry.GetName] into a multinational parliamentary monarchy."
+    joi_flavor_aus.16.f: "The #bold Hofburg's#! great hall echoes with a dozen languages as the Emperor proclaims:\n\n'From this day, all peoples of our realm - German, Magyar, Czech, Pole, Ruthene, Slovene, Croat, Serb, Romanian and Italian - stand equal before the law and throne. Each shall keep its language and traditions, while united under our eternal crown.'\n\nThe constitution establishes:\n- A #bold bicameral Reichsrat#! with regional delegations\n- #bold Cultural autonomy#! for historical crownlands\n- #bold Shared defense#! and foreign policy\n- #bold Federal taxation#! authority\n\nThe [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant] sings the imperial anthem while the [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant] grumbles about lost privileges."
+    joi_flavor_aus.16.a: "#bold Unity Through Diversity#!"
+
+    #Dissolution of the Empire
+    joi_flavor_aus.17.t: "#bold Fall Of The Double Eagle#!"
+    joi_flavor_aus.17.d: "With the abolition of the [GetLawType('law_monarchy').GetName], the Habsburg realm fractures along ethnic lines as crownlands declare independence."
+    joi_flavor_aus.17.f: "In Vienna's empty #bold Michaelertrakt#!, the last imperial officials burn documents while distant cannon fire echoes. Budapest proclaims a republic, Prague crowns a Slovak king, and Lviv's Rada declares West Ukrainian sovereignty. Only the alpine heartland remains loyal to the rump state.\n\nThe [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] dissolves into competing national units, while the [GetInterestGroupVariant('ig_industrialists',GetPlayer).GetNameWithCountryVariant] frantically moves capital abroad. 'The Danubian world we knew is gone,' whispers a weeping archduke, watching mobs topple the #bold Joseph II monument#!."
+    joi_flavor_aus.17.a: "#bold Finis Austriae#!"
+
+    # Character Flavor
+    joi_flavor_aus.18.t: "#bold The Lion of Aspern Departs#!"
+    joi_flavor_aus.18.d: "The empire mourns #bold Archduke Charles Louis#!, the only commander to defeat Napoleon in open battle, who died peacefully at 76 in Vienna."
+    joi_flavor_aus.18.f: "The #bold Augustinerkirche#! echoes with the Kaiserjäger's funeral march as [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] delivers the eulogy:\n\n'When history remembers #bold Aspern-Essling#!, it will recall how my uncle stood like a rock against the French tide - his white charger galloping through grapeshot to rally the #bold Hoch-und-Deutschmeister Regiment#! when all seemed lost. That day in 1809, he proved Habsburg arms could humble even Bonaparte!'\n\nThe coffin lies draped with the #bold Military Order of Maria Theresa#! as veterans of Wagram and Leipzig weep. Outside, the #bold Volksgarten#! fills with citizens honoring the architect of Austria's modern army."
+    joi_flavor_aus.18.a: "#bold Present Arms for the Last Time#!"
+
+    # Princess Sissi
+    joi_flavor_aus.19.t: "#bold A Fateful Meeting in Bad Ischl#!"
+    joi_flavor_aus.19.d: "During summer retreat, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has become enchanted by his cousin #bold Elisabeth of Bavaria#!, the wild-spirited 'Sissi' of Possenhofen."
+    joi_flavor_aus.19.f: "The imperial hunting lodge buzzes with scandal - the 23-year-old Emperor has fallen for a girl who:\n• Escapes tutors to #bold ride bareback#! through Alpine meadows\n• Writes #bold romantic poetry#! in secret diaries\n• Defies court protocol with her #bold unruly chestnut curls#!\n\nArchduchess Sophie scowls at this unsuitable match, while the [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant] worries about Bavarian influence. Yet [ROOT.GetCountry.GetRuler.GetFirstName] sees only her laughing eyes across the waltz floor at the #bold Kurhaus ball#!."
+    joi_flavor_aus.19.a: "#bold Let the Wild Bird Fly Free#!"
+    joi_flavor_aus.19.b: "#bold Make Her Our Empress#!"
