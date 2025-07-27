@@ -2217,22 +2217,7 @@ reform_obshchina = {#改革村社制
 
 	complete = {
     NOT = { has_law = law_type:law_serfdom }
-    any_scope_state = {    
-        state_region = s:STATE_KIEV
-        has_building = building_railway
-    }
-    any_scope_state = {    
-        state_region = s:STATE_CHERSON
-        has_building = building_railway
-    }
-    any_scope_state = {    
-        state_region = s:STATE_KHARKOV
-        has_building = building_railway
-    }
-    any_scope_state = {    
-        state_region = s:STATE_KURSK
-        has_building = building_railway
-    }
+   
 }
 	fail = {
 		NOT = { has_law = law_type:law_monarchy }
