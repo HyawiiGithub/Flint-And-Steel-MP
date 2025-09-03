@@ -68,6 +68,34 @@ headlines_taiping_defeat = {
 	days = 28
 	color = neutral
 }
+#Sepoy Mutiny
+headlines_sepoy_mutiny = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
+#Sepoy Mutiny Success
+headlines_sepoy_mutiny_success = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
+#Sepoy Mutiny Failure
+headlines_sepoy_mutiny_crushed = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
+
 ##Collapses
 #Qing Collapse
 headlines_qing_collapse = {
@@ -179,7 +207,15 @@ headlines_yugoslavia_formed = {
 	days = 28
 	color = neutral
 }
-
+#India Formed
+headlines_india_formed = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 ##Regime Changes
 #BEI into Raj
 headlines_british_raj = {
@@ -221,7 +257,7 @@ headlines_british_council_republic = {
 headlines_victoria_coronation = {
 	type = country
 	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
+	group = "headlines_minor_group"
 	notification_type = feed
 	days = 28
 	color = neutral
@@ -230,7 +266,7 @@ headlines_victoria_coronation = {
 headlines_victoria_funeral = {
 	type = country
 	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
+	group = "headlines_minor_group"
 	notification_type = feed
 	days = 28
 	color = neutral
@@ -281,13 +317,41 @@ headlines_french_empire = {
 	color = neutral
 }
 #Communist Germany
-
+headlines_communist_germany = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 #Communist US
-
+headlines_communist_usa = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 #Monarchy US
-
+headlines_monarchy_usa = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 #Technocracy US
-
+headlines_technocracy_usa = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 #Tricolors over Rome
 headlines_roman_republic = {
 	type = country
@@ -298,17 +362,50 @@ headlines_roman_republic = {
 	color = neutral
 }
 #Austria-Hungary Dual Monarchy
-
+headlines_austria_hungary = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 #Democratic Russia
-
+headlines_democratic_russia = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 #Soviet Russia
-
-#Brazil Coup
-
+headlines_soviet_russia = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 #Brazil President Pedro
-
+headlines_pedro_president = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 #Brazil Pedro Dies
-
+headlines_pedro_death = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/news.dds"
+	group = "headlines_major_group"
+	notification_type = feed
+	days = 28
+	color = neutral
+}
 ##Constructions
 #Suez Canal Built
 headlines_suez_canal = {
@@ -454,373 +551,4 @@ headlines_state_atheism = {
 	days = 28
 	color = neutral
 }
-#帝国联邦的崛起：英国
-headlines_rise_of_imp = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#卡尔大公的葬礼：奥地利
-headlines_funeral_of_archduke_karl = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#美国宣告昭昭天命
-headlines_usa_declares_manifest_destiny = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#美国废除了第二银行
-headlines_sbus_was_abolished = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#美国民权运动大获全胜
-headlines_civil_rights_victory = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#英美同盟
-headlines_us_uk_special_relations = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#北京条约
-headlines_treaty_of_peking_signed_now = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#收复君士坦丁堡
-headlines_constantinople_conquerored_by_russians = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#亚历山大二世即位
-headlines_alexander_reform_start = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#征服中亚
-headlines_c_asia_conquerored_by_russians = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#彼得大帝的遗嘱
-headlines_headlines_peter_instruction_victory = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#乌克兰大饥荒
-headlines_ukriane_great_famine_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#法俄同盟签署
-headlines_rus_fra_alliance = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#奥地利二元化
-headlines_aus_reich_start_to_reform = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#奥地利首相出逃
-headlines_wind_of_liberalism_happen = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#奥地利联邦化
-headlines_aus_has_finish_fedration_reform = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#德奥签署同盟
-headlines_dip_zweibund_trust = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#法兰克福议会召开
-headlines_frankfurter_filter = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#法兰克福议会胜利
-headlines_deutsch_frankfurter_nationalversammlung_victory_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#法兰克福议会失败
-headlines_deutsch_frankfurter_nationalversammlung_fail_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#公海舰队
-headlines_deutsch_hochseeflotte_plab_declared = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#第一节帝国会议
-headlines_first_emp_meeting_news_happen = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#威斯敏斯特法令
-headlines_act_of_westminister_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#爱尔兰大饥荒
-headlines_irish_great_famine_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#赛艇
-headlines_rowing_of_united_kingdom_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#洋务运动
-headlines_western_affairs_movement_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#辛亥革命
-headlines_xinhai_revolution = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#北伐
-headlines_northern_expedition_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#法属非洲联邦化
-headlines_communaute_union_france = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#法国进军叙利亚
-headlines_partant_pour_la_syrie_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#印度统一次大陆
-headlines_unified_subcontinent_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#印度兵变
-headlines_sepoy_mutiny_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#印度自治
-headlines_indian_home_rule = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_minor_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#印度独立
-headlines_bic_indepedence_become_bht = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#英法协约
-headlines_entente_cordiale_headline = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#巴黎公社
-headlines_paris_commune_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
-#第八次反法同盟
-headlines_napoleonic_wars_news = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/news.dds"
-	group = "headlines_major_group"
-	notification_type = feed
-	days = 28
-	color = neutral
-}
-
+#Grand Exhibition

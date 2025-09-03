@@ -1,6 +1,0 @@
-﻿l_simp_chinese:
- #Trade Policy group
- law_kyushu_system:0 "长崎开港"
- law_kyushu_system_desc:0 "一种$law_isolationism$的变体，仅允许在一个沿海地区开展贸易。"
- kyushu_system_trade_center_trigger_tt:0 "在[GetLawType('law_kyushu_system').GetName][concept_law]下，贸易中心只能在#v $STATE_KYUSHU$#!建造最多#v 50#!级"
- 

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:GBR = {
+	c:GBR ?= {
 		set_next_election_date = 1836.2.1
 		
 		ig:ig_intelligentsia = {
@@ -9,26 +9,22 @@
 		ig:ig_petty_bourgeoisie = {
 			add_ruling_interest_group = yes
 		}
-
-		ig:ig_rural_folk = {
-			add_ruling_interest_group = yes
-		}
 		
 		set_import_tariff_level = { 
 			goods = g:grain 
 			level = high_tariffs
 		}
-		set_export_tariff_level = { 
+		set_import_tariff_level = { 
 			goods = g:fabric
-			level = low_tariffs
+			level = no_tariffs_or_subventions
 		}	
 		set_export_tariff_level = { 
 			goods = g:opium
-			level = high_subventions
+			level = low_subventions
 		}
 		
 		effect_starting_technology_tier_1_tech = yes
-
+		
 		add_technology_researched = labor_movement # A relevant labour movement already existed prior to 1836
 		add_technology_researched = joint_stock_companies
 
@@ -39,16 +35,6 @@
 		add_taxed_goods = g:luxury_furniture
 		add_taxed_goods = g:tea
 
-		set_variable = {#防止英美报错
-            name = investment_amount_var
-            value = 0
-        }
-		# Was historically around, but we've scrapped it so we can have the slots free for the big boys
-		# add_company = company_type:company_gwr
-		# company:company_gwr = {
-		# 	set_company_establishment_date = 1833.1.21
-		# 	set_company_state_region = s:STATE_HOME_COUNTIES
-		# }
 		# Laws 
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_wealth_voting
@@ -68,6 +54,7 @@
 		activate_law = law_type:law_dedicated_police
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_tenant_farmers # enclosure acts
+		activate_law = law_type:law_migration_controls
 		
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
@@ -76,7 +63,7 @@
 		
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 3
+			level = 2	# 3
 		}
 
 		set_institution_investment_level = {
@@ -84,36 +71,7 @@
 			level = 1
 		}
 
-		add_journal_entry = { 
-			type = je_victoria 
-		}
-		add_journal_entry = { 
-			type = ireland_food_problem 
-		}
-		add_journal_entry = { 
-			type = stabilize_british_empire
-		}
-		add_journal_entry = { 
-			type = oak_loyal
-		}
-		add_journal_entry = { 
-			type = her_majestys_government
-		}
-		add_journal_entry = {
-			type = belgium_interest
-		}
-		add_journal_entry = {
-			type = rowing_of_united_kingdom
-		}
-		add_journal_entry = {
-			type = england_industrialize
-		}
-		add_journal_entry = {
-			type = company_equity
-		}
-		add_journal_entry = {
-			type = law_of_railway
-		}
+		add_journal_entry = { type = je_victoria }
 		if = {
 			limit = {
 				has_dlc_feature = rp1_content
@@ -125,26 +83,13 @@
 			name = brazilian_slave_trade_modifier
 			months = 600 # 50 Years
 		}
-		add_modifier = {
-			name = civil_service_system
-			months = -1
-		}
-		add_modifier = {
-			name = catholic_emancipation_act
-			years = 3
-			is_decaying = yes
-		}
 
-		every_scope_state = {
-			limit = {
-				state_region = s:STATE_HOME_COUNTIES
-			}
-			add_modifier = royal_society_of_london_modifier
-		}
-		
-		trigger_event = { 
-			id = joi_flavor_gbr.1 
-		}
+		# Was historically around, but we've scrapped it so we can have the slots free for the big boys
+		# add_company = company_type:company_gwr
+		# company:company_gwr = {
+		# 	set_company_establishment_date = 1833.1.21
+		# 	set_company_state_region = s:STATE_HOME_COUNTIES
+		# }
 
 		add_company = company_type:company_hbc
 		company:company_hbc = {
@@ -158,5 +103,6 @@
 			set_company_state_region = s:STATE_HOME_COUNTIES
 			add_owned_country = c:BIC #links the country to this company
 		}
+
 	}
 }

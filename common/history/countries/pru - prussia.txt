@@ -1,20 +1,15 @@
 ﻿COUNTRIES = {
-	c:PRU = {
+	c:PRU ?= {
 		effect_starting_technology_tier_1_tech = yes
 		effect_starting_politics_conservative = yes
-        # add_technology_researched = shell_gun
+
+        	# add_technology_researched = shell_gun
 		add_technology_researched = field_works
+
 		add_taxed_goods = g:liquor
 		add_taxed_goods = g:luxury_furniture
 		add_taxed_goods = g:wine
-
-		set_variable = { name = deutsch_reich_expand value = 0 }
-
-		set_variable = {#防止德奥报错
-            name = dip_zweibund_trust_var
-            value = 0
-        }
-		
+			
 		# Laws 
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_autocracy 
@@ -31,9 +26,10 @@
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_censorship
 
+		
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 3
+			level = 2
 		}
 
 		set_institution_investment_level = {
@@ -47,38 +43,6 @@
 
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
-		}
-
-		add_journal_entry = { 
-			type = general_staff
-		}
-		add_journal_entry = {
-			type = holy_league
-		}
-		add_journal_entry = {
-			type = deutsch_bundestag
-		}
-		add_journal_entry = {
-			type = belgium_interest
-		}
-		add_journal_entry = {
-			type = peussia_education
-		}
-
-		add_modifier = {
-				name = prussia_education_system
-				months = -1
-			}
-		add_modifier = {
-				name = prussia_strong_army
-				months = -1
-			}
-
-		every_scope_state = {
-			limit = {
-				state_region = s:STATE_BRANDENBURG
-			}
-			add_modifier = akademie_der_wissenschaften_modifier
 		}
 
 		add_company = company_type:company_krupp

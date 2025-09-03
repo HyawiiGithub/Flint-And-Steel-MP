@@ -1,9 +1,8 @@
 ﻿COUNTRIES = {
 	c:NET ?= {
 		effect_starting_technology_tier_2_tech = yes
-		effect_starting_politics_liberal = yes
-
-        		# --- Buffs ---	
+		
+		# --- Buffs ---	
 		add_technology_researched = atmospheric_engine
 		add_technology_researched = mechanical_tools
 		add_technology_researched = screw_frigate
@@ -12,7 +11,7 @@
 		add_technology_researched = egalitarianism
 		# -------------
 		
-
+		effect_starting_politics_liberal = yes
 
 		ig:ig_petty_bourgeoisie = {
 			add_ruling_interest_group = yes
@@ -23,7 +22,6 @@
 		}
 
 		set_tax_level = medium
-		
 		add_taxed_goods = g:tobacco
 		add_taxed_goods = g:luxury_clothes
 		
@@ -47,13 +45,6 @@
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
 			level = 1
-		}
-
-		every_scope_state = {
-			limit = {
-				state_region = s:STATE_HOLLAND
-			}
-			add_modifier = royal_netherlands_academy_modifier
 		}
 	}
 }

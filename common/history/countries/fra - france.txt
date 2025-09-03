@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:FRA = {
+	c:FRA ?= {
 		set_next_election_date = 1837.11.4
 		
 		effect_starting_technology_tier_1_tech = yes
@@ -8,7 +8,7 @@
 		
 		add_taxed_goods = g:wine
 		add_taxed_goods = g:liquor
-
+		
 		set_import_tariff_level = { 
 			goods = g:engines
 			level = low_subventions
@@ -34,7 +34,7 @@
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_tenant_farmers
 
-
+			
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 2
@@ -58,26 +58,8 @@
 			add_ruling_interest_group = yes
 		}
 
-		set_variable = {
-            name = fra_alliance_var
-            value = 0
-        }
-
 		add_modifier = {
 			name = modifier_haitian_independence_payments_4
-		}
-		add_modifier = {
-			name = july_revolution
-			years = 6
-			is_decaying = yes
-		}
-		add_modifier = { name = battle_of_alg weeks = 1 }
-
-		every_scope_state = {
-			limit = {
-				state_region = s:STATE_ILE_DE_FRANCE
-			}
-			add_modifier = institut_de_france_modifier
 		}
 
 		set_variable = {
@@ -87,26 +69,6 @@
 			name = fra_republic_counter
 			value = 1
 		}
-		set_variable = { name = fra_leading_party_progress value = 0 }#设定国民议会防止报错
-		set_variable = { name = radicals_seat value = 0 }
-		set_variable = { name = conservative_seat value = 0 }
-		set_variable = { name = communist_seat value = 0 }
-		set_variable = { name = socialist_seat value = 0 }
-		add_journal_entry = {
-				type = fra_conqueror_alg
-			}
-		add_journal_entry = {
-				type = paris_politic 
-			}
-		add_journal_entry = {
-			type = france_company_cgv_character
-		}
-		add_journal_entry = {
-				type = french_birthrate
-			}
-		add_journal_entry = {
-			type = belgium_interest
-		}
 		if = {
 			limit = {
 				has_dlc_feature = voice_of_the_people_content
@@ -115,7 +77,7 @@
 				type = je_divided_monarchists
 			}
 		}
-
+		
 		add_company = company_type:company_dmc
 		company:company_dmc = {
 			set_company_establishment_date = 1746.1.1

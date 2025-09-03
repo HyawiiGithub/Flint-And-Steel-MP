@@ -445,6 +445,7 @@ principle_defensive_cooperation_2 = {
 
 		# Swaying members to join your side costs 50% less maneuvers if the inviting country is on the target's side
 		power_bloc_target_sway_cost_mult = -0.5
+		unit_army_defense_mult = 0.05
 	}
 
 	leader_modifier = {
@@ -470,6 +471,7 @@ principle_defensive_cooperation_3 = {
 		# Modifiers from previous level(s)
 		power_bloc_disallow_war_bool = yes
 		power_bloc_target_sway_cost_mult = -0.5
+		unit_army_defense_mult = 0.1
 	}
 
 	ai_weight = {
@@ -531,6 +533,7 @@ principle_aggressive_coordination_2 = {
 
 		# Reduces war exhaustion from casualties, propaganda!
 		country_war_exhaustion_casualties_mult = -0.15
+		unit_army_offense_mult = 0.05
 	}
 
 	ai_weight = {
@@ -550,11 +553,12 @@ principle_aggressive_coordination_3 = {
 	member_modifier = {
 		# Modifiers from previous level(s)
 		country_initiator_war_goal_maneuver_cost_mult = -0.3
+		unit_army_offense_mult = 0.1
 		country_war_exhaustion_casualties_mult = -0.15
 
 		# Countries forced to join diplomatic plays of members, other countries are not happy about this threat
 		country_join_power_bloc_member_in_plays_bool = yes
-		country_infamy_generation_mult = 0.15
+		# country_infamy_generation_mult = 0.15
 	}
 
 	ai_weight = {
@@ -773,6 +777,8 @@ principle_police_coordination_2 = {
 
 	institution = institution_police
 	institution_modifier = {
+		# Police institution adds authority
+		country_authority_add = 25
 		# Police institution reduces radicalism of political movements
 		political_movement_radicalism_add = -0.05
 	}
@@ -1003,6 +1009,12 @@ principle_colonial_offices_1 = {
 		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes
 	}
 
+	institution = institution_colonial_affairs
+	institution_modifier = {
+		# Members get higher colony growth for each level of institution
+		state_colony_growth_creation_factor = 0.1
+	}
+
 	ai_weight = {
 		value = 200 # High base weight if the leader has colonies
 
@@ -1038,7 +1050,8 @@ principle_colonial_offices_2 = {
 	institution = institution_colonial_affairs
 	institution_modifier = {
 		# Members get higher colony growth for each level of institution
-		state_colony_growth_creation_factor = 0.05
+		state_colony_growth_creation_factor = 0.1
+		country_infamy_generation_against_unrecognized_mult = -0.05
 	}
 
 	ai_weight = {
@@ -1054,7 +1067,11 @@ principle_colonial_offices_3 = {
 		# Cheaper and faster colonial institution
 		country_institution_size_change_speed_institution_colonial_affairs_mult = 0.5
 		country_institution_cost_institution_colonial_affairs_mult = -0.5
-		country_disallow_law_no_colonial_affairs_bool = yes
+		country_disallow_law_no_colonial_affairs_bool = yes		
+		building_group_bg_plantations_unincorporated_throughput_add = 0.2
+		building_group_bg_rubber_unincorporated_throughput_add = 0.2
+		building_group_bg_logging_unincorporated_throughput_add = 0.2
+		building_group_bg_mining_unincorporated_throughput_add = 0.2
 	}
 
 	leader_modifier = {
@@ -1063,8 +1080,8 @@ principle_colonial_offices_3 = {
 
 	institution = institution_colonial_affairs
 	institution_modifier = {
-		# Modifiers from previous level(s)
-		state_colony_growth_creation_factor = 0.05
+		# Members get higher colony growth for each level of institution
+		state_colony_growth_creation_factor = 0.1
 		country_infamy_generation_against_unrecognized_mult = -0.05
 	}
 
@@ -1086,6 +1103,10 @@ principle_foreign_investment_1 = {
 	member_modifier = {
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
+		
+		state_aristocrats_investment_pool_efficiency_mult = 0.05
+		state_farmers_investment_pool_efficiency_mult = 0.05
+		state_capitalists_investment_pool_efficiency_mult = 0.05
 	}
 
 	ai_weight = {
@@ -1116,6 +1137,9 @@ principle_foreign_investment_2 = {
 		# Members get reduced nationalization cost for assets of non-members
 		country_nationalization_cost_non_members_mult = -0.5
 
+		state_aristocrats_investment_pool_efficiency_mult = 0.1
+		state_farmers_investment_pool_efficiency_mult = 0.1
+		state_capitalists_investment_pool_efficiency_mult = 0.1
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
 	}
@@ -1133,10 +1157,13 @@ principle_foreign_investment_3 = {
 	# Does not generate a tooltip, so a dummy modifier is required to show this effect
 	allows_foreign_investment_in_lower_rank = yes
 
+
 	member_modifier = {
 		# Modifiers from previous level(s)
 		country_nationalization_cost_non_members_mult = -0.5
-
+		state_aristocrats_investment_pool_efficiency_mult = 0.15
+		state_farmers_investment_pool_efficiency_mult = 0.15
+		state_capitalists_investment_pool_efficiency_mult = 0.15
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
 	}
@@ -1185,6 +1212,7 @@ principle_creative_legislature_2 = {
 	member_modifier = {
 		# Modifiers from previous level(s)
 		country_law_enactment_stall_mult = -0.33
+		country_legitimacy_base_add = 5
 
 		# Political Movements are happier about enactments they approve of, and less angry about enactments they disapprove of
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
@@ -1203,6 +1231,7 @@ principle_creative_legislature_3 = {
 	member_modifier = {
 		# Modifiers from previous level(s)
 		country_law_enactment_stall_mult = -0.33
+		country_legitimacy_base_add = 10
 
 		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
 		political_movement_radicalism_from_enactment_approval_mult = 0.25

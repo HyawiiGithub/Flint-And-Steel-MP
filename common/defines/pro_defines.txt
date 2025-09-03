@@ -9,19 +9,21 @@ NPolitics = {
 }
 
 NEconomy = {
-	MIN_CONSTRUCTION_EFFICIENCY = 0.05			# Vanilla = 0.05; Construction efficiency cannot go below this amount
+	MIN_CONSTRUCTION_EFFICIENCY = 0.15			# Vanilla = 0.05; Construction efficiency cannot go below this amount
 	
 	DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS = 7	# 10		# How many years does it take for penalties from declaring bankruptcy to fully decay
 
 	GOODS_LEADERBOARD_SIZE = 20					# How many spots there are on each goods leaderboard, default: 10
 	
-	REINVESTMENT_EFFICIENCY_MAX = 3.0			# 3.0	# Maximum conversion of reinvestment to investment pool
-	REINVESTMENT_BASE_EFFICIENCY_THRESHOLD = 50000000	# 50000000 # Below this amount of GDP, increase reinvestment multiplier on a linear scale up to REINVESTMENT_EFFICIENCY_MAX at 0
-    REINVESTMENT_SUBSISTENCE_FRACTION_REDUCTION = 0.5	# Reinvestment from pops in ownership buildings is multiplied by ( 1 - this * the share of levels owned that are subsistence buildings
-    
-	COMPANY_PROSPERITY_POPULARITY_MULTIPLIER = 0.2	# 0.2				# Companies gain this much target prosperity, scaled by the popularity of its executive
+	REINVESTMENT_EFFICIENCY_MAX = 2.0			# 3.0	# Maximum conversion of reinvestment to investment pool
+	REINVESTMENT_BASE_EFFICIENCY_THRESHOLD = 30000000	# 50000000 # Below this amount of GDP, increase reinvestment multiplier on a linear scale up to REINVESTMENT_EFFICIENCY_MAX at 0
+	# REINVESTMENT_SUBSISTENCE_FRACTION_REDUCTION = 0.5	# Reinvestment from pops in ownership buildings is multiplied by ( 1 - this * the share of levels owned that are subsistence buildings
 
-	PRESTIGE_GOODS_INPUT_THROUGHPUT_BONUS = 0.2	# 0.2		# Bonus to throughput, scaled against proportion of input goods base value that is prestige goods
+	COMPANY_PROSPERITY_POPULARITY_MULTIPLIER = 0.1	# 0.2				# Companies gain this much target prosperity, scaled by the popularity of its executive
+
+	PRESTIGE_GOODS_INPUT_THROUGHPUT_BONUS = 0.1	# 0.2		# Bonus to throughput, scaled against proportion of input goods base value that is prestige goods
+
+	OVERSEAS_INFRASTRUCTURE_CONVOY_COST_MULTIPLIER = 1.8 # 2    # Convoy cost for each infrastructure usage in overseas state for port connection shipping lanes
 }
 
 NMilitary = {
@@ -29,18 +31,7 @@ NMilitary = {
 	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX = 0.06	# 0.12 	# The maximum percentage of manpower a unit can lose each week due to attrition
 
 
-	#CONVOY_RAIDING_STRENGTH_MULT = 0.3						# How strong each Convoy raiding point is ( num flotillas * ce offense )
-	#CONVOY_RAIDING_COOLDOWN_DAYS_MIN = 10					# Min days until the next convoy raiding in the sea node
-	#CONVOY_RAIDING_COOLDOWN_DAYS_MAX = 30					# Max days until the next convoy raiding in the sea node
-	#CONVOY_RAIDING_DAMAGE_MIN_RANDOM_FACTOR = 0.5			# Actual convoy raiding damage is scaled between CONVOY_RAIDING_DAMAGE_MIN_RANDOM_FACTOR and CONVOY_RAIDING_DAMAGE_MAX_RANDOM_FACTOR to provide some random variability
-	#CONVOY_RAIDING_DAMAGE_MAX_RANDOM_FACTOR = 1.0			# Actual convoy raiding damage is scaled between CONVOY_RAIDING_DAMAGE_MIN_RANDOM_FACTOR and CONVOY_RAIDING_DAMAGE_MAX_RANDOM_FACTOR to provide some random variability
-	CONVOY_RAIDING_DEFENSE_MULT = 0.3 #0.15					# How much is Convoy raiding strength reduced by patrolling flotillas  ( num flotillas * ce defense )
-	CONVOY_RAIDING_MAX_DEFENSE = 0.95						# Example: the defender can never block more than 90% of the convoy damage they're currently taking
-
-	## Convoy recovery rate after being raided is based on a global and a local rate, using whichever is lower
-	CONVOY_RAIDING_GLOBAL_RECOVERY_RATE = 0.004 #0.001		# The rate at which damaged convoys are replaced each day, relative to total number of produced convoys in the raided country
-	CONVOY_RAIDING_LOCAL_RECOVERY_RATE = 0.02 #0.01			# The rate at which damaged convoys are replaced each day, relative to total number of convoys passing through the sea node
-	#CONVOY_RAIDING_RECOVERY_RATE_PEACETIME_FACTOR = 4		# While a country is at peace, convoys will be restored this much faster
+	BLOCKADE_TARGET_STRENGTH_PER_TRADED_UNIT = 0.5	#1			# Each unit of imports/exports in the market area increases required blockade strength by this (only for world market hubs)
 																																			  
 }	
 
