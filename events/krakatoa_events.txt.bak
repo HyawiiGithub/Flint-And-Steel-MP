@@ -154,22 +154,6 @@ krakatoa.5 = { #krakatoa erupts but youre not the owner
 
 	duration = 3
 
-	immediate = {
-		add_journal_entry = {
-			type = je_krakatoa
-		}
-		je:je_krakatoa ?= {
-			add_progress = {
-				value = {
-					value = global_var:krakatoa_temperature_drop
-					multiply = 100
-					multiply = -1
-				}
-				name = je_krakatoa_thermometer_progress_bar
-			}
-		}
-	}
-
 	option = { #send some humaritarian help
 		name = krakatoa.5.a
 		change_relations = {
@@ -215,28 +199,6 @@ krakatoa.2 = { #global tsunamis
 	title = krakatoa.2.t
 	desc = krakatoa.2.d
 	flavor = krakatoa.2.f
-
-	immediate = {
-		random_scope_state = {
-			limit = {
-				is_coastal = yes
-				OR = {
-					region = sr:region_ethiopia
-					region = sr:region_indochina
-					region = sr:region_indonesia
-					region = sr:region_south_china
-					region = sr:region_japan
-					region = sr:region_oceania
-					region = sr:region_zanj
-					region = sr:region_southern_africa
-					region = sr:region_bombay
-					region = sr:region_madras
-					region = sr:region_bengal
-				}
-			}
-			save_scope_as = tsunami_state
-		}
-	}
 
 	duration = 3
 
