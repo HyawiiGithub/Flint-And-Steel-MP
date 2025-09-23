@@ -1,0 +1,35 @@
+namespace = unemployment
+
+country_event = {
+    id = unemployment.1
+    title = unemployment.1.t
+    desc = unemployment.1.d
+    trigger = {
+        unemployment_above_5 = yes
+    }
+    immediate = { }
+    option = {
+        name = unemployment.1.a
+        add_modifier = {
+            name = unemployment_crisis_5
+            duration = 365
+        }
+    }
+}
+
+country_event = {
+    id = unemployment.2
+    title = unemployment.2.t
+    desc = unemployment.2.d
+    trigger = {
+        unemployment_above_10 = yes
+    }
+    immediate = { }
+    option = {
+        name = unemployment.2.a
+        add_modifier = {
+            name = unemployment_crisis_10
+            duration = 365
+        }
+    }
+}

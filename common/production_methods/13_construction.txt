@@ -47,10 +47,10 @@ pm_iron_frame_buildings = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_wood_add = 40
-			goods_input_fabric_add = 25	# 20
-			goods_input_iron_add = 50
-			goods_input_tools_add = 10
+			goods_input_wood_add = 60 # 40
+			goods_input_fabric_add = 40	# 20
+			goods_input_iron_add = 75 # 50
+			goods_input_tools_add = 15	# 10
 		}
 
 		level_scaled = {
@@ -86,11 +86,11 @@ pm_steel_frame_buildings = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_wood_add = 20
-			goods_input_fabric_add = 10
-			goods_input_steel_add = 50
+			goods_input_wood_add = 40 # 20
+			goods_input_fabric_add = 25 # 10
+			goods_input_steel_add = 70 # 50
 			goods_input_glass_add = 35	# 40
-			goods_input_explosives_add = 10
+			goods_input_explosives_add = 15 # 10
 			goods_input_tools_add = 15	# 20
 		}
 

@@ -1,0 +1,11 @@
+unemployment_above_5 = {
+    value = (num_unemployed_pops / num_total_pops)
+    comparison = >
+    threshold = 0.05
+}
+
+unemployment_above_10 = {
+    value = (num_unemployed_pops / num_total_pops)
+    comparison = >
+    threshold = 0.10
+}

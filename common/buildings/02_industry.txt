@@ -5,7 +5,7 @@
 	levels_per_mesh = 5
 	
 	unlocking_technologies = {
-		aniline
+		oil_turbine
 	}
 	
 	production_method_groups = {
@@ -24,7 +24,7 @@ building_synthetic_rubber_plants = {
 	levels_per_mesh = 5
 	
 	unlocking_technologies = {
-		plastics
+		oil_turbine
 	}
 	
 	production_method_groups = {

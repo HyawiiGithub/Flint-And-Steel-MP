@@ -37,7 +37,35 @@
 				years = 20
 			}
 		}
-
+		limit = {
+				has_dlc_feature = ip3_content
+			}
+			custom_tooltip = {
+				text = eastern_crisis_consequence_tt
+				set_variable = failed_sick_man_main
+			}
+		}
+		if = { #failure immediately triggers eastern_crisis
+			limit = {
+				c:TUR ?= this
+				has_dlc_feature = ip3_content
+				NOT = {
+					has_variable = eastern_crisis_happened
+				}
+			}
+			add_journal_entry = {
+				type = je_great_eastern_crisis
+			}
+		}
+		cu:albanian = {
+			remove_tradition_trait = tradition_rumelian
+		}
+		cu:bosniak = {
+			remove_tradition_trait = tradition_rumelian
+		}
+		cu:sephardic = {
+			remove_tradition_trait = tradition_rumelian
+		}
 	}
 
 	current_value = {
@@ -342,6 +370,21 @@ je_sick_man_separatism = {
 		highest_secession_progress > 0.5
 	}
 
+	on_fail = {
+		set_variable = failed_sick_man_separatism
+		if = { #failure immediately triggers eastern_crisis
+			limit = {
+				c:TUR ?= this
+				has_dlc_feature = ip3_content
+				NOT = {
+					has_variable = eastern_crisis_happened
+				}
+			}
+			add_journal_entry = {
+				type = je_great_eastern_crisis
+			}
+		}
+	}
 	current_value = {
 		value = var:sick_man_separatist_var
 	}

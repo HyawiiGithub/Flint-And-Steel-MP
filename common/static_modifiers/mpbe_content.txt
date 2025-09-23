@@ -210,6 +210,7 @@ modifier_india_company_rule = {
 	country_legitimacy_headofstate_add = 60	# 65
 	country_tech_spread_mult = -0.30	# -0.25
 	building_throughput_add = -0.1	# -0.5
+	liberty_desire_from_taxes_mult = 0.5
 }
 
 modifier_india_company_rule_upgraded = {
