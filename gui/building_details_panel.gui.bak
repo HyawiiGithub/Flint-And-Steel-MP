@@ -4203,18 +4203,6 @@ types building_panels
 			tooltip = "OWNERSHIP_SHARE_CHART_REMAINDER_TOOLTIP_LONG"
 		}
 
-		blockoverride "barchart_item_margins" {
-			margin = { 0 0 }
-		}
-
-		blockoverride "barchart_item_background" {
-			background = {
-				texture = "gfx/interface/tooltip/stacked_barchart_small_item.dds"
-				color = "[BuildingOwnership.GetOwnershipTypeColor]"
-				spriteType = Corneredstretched
-				spriteborder = { 3 3 }
-			}
-		}
 	}
 
 
