@@ -292,15 +292,15 @@ STATE_SLOVAKIA = {
     }
 }
 
-STATE_RUTHENIA = {
+STATE_EAST_SLOVAKIA = {
     id = 169
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x359378" "x69BAC7" "xA0531B" "xC85CD0" "xD0E061" }
-    city = "xA0531B"
-    farm = "xA0531B"
-    mine = "x69BAC7"
-    wood = "x69BAC7"
-    arable_land = 70
+    provinces = { "x02CE3A" "x20C000" "x359378" "x51E061" "x69BAC7" "x7DE5D3" "xA0531B" "xB23DA0" "xC54074" "xC85CD0" }
+    city = "x7DE5D3"
+    farm = "xC85CD0"
+    mine = "xA0531B"
+    wood = "x02CE3A"
+    arable_land = 90	# 70
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_coal_mining = 92
@@ -348,10 +348,10 @@ STATE_NORTHERN_TRANSYLVANIA = {
 STATE_MOLDAVIA = {
     id = 172
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0983EE" "x0D8A56" "x30E0A0" "x35CE84" "x3CE97E" "x556DE7" "x56839F" "x734EFF" "x80D8F3" "x946A66" "xB0A0E0" "xEF2060" "xF40045" "xFF2F40" }
+    provinces = { "x00A7F4" "x067DF0" "x0983EE" "x0D8A56" "x30E0A0" "x31A0A0" "x35CE84" "x3CE97E" "x556DE7" "x56839F" "x734EFF" "x7E6263" "x80D8F3" "x946A66" "xB0A0E0" "xEF2060" "xF40045" "xFF2F40" "xFFCCDA" }
     city = "x946A66"
     farm = "x30E0A0"
-    mine = "x35CE84"
+    mine = "xFFCCDA"
     wood = "x0D8A56"
     arable_land = 120	# 100
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" "bg_vineyard_plantations" }
@@ -364,23 +364,6 @@ STATE_MOLDAVIA = {
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 80	# 50
-    }
-}
-
-STATE_BUKOVINA = {
-    id = 922
-    subsistence_building = "building_subsistence_farms"
-    provinces = { "x00A7F4" "x067DF0" "x31A0A0" "x7E6263" "xFFCCDA" }
-    city = "x00A7F4"
-    farm = "x00A7F4"
-    mine = "x00A7F4"
-    wood = "x00A7F4"
-    arable_land = 100
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
-    capped_resources = {
-        bg_iron_mining = 4
-        bg_coal_mining = 2
-        bg_logging = 7
     }
 }
 
