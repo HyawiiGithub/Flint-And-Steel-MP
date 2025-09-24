@@ -1,0 +1,83 @@
+on_monthly_pulse = {
+	events = {
+		# 1860 Escalation
+		vast_empire.2
+	}
+	
+	trigger = {
+		any_country = {
+			tag = GBR
+			has_country_modifier = vast_empire_GBR_base
+			date = 1860.1.1  # Fires on or after Jan 1, 1860
+		}
+	}
+}
+
+# Event for 1860 escalation (in events/vast_empire_events.txt)
+country_event = {
+	id = vast_empire.2
+	title = "The Empire Expands Further"
+	desc = "By 1860, the strains of our vast empire have intensified, raising military costs even higher."
+	
+	trigger = {
+		tag = GBR
+		has_country_modifier = vast_empire_GBR_base
+		NOT = { has_country_modifier = vast_empire_GBR_1860 }
+		date >= 1860.1.1
+	}
+	
+	immediate = {
+		# Remove old modifier
+		remove_country_modifier = vast_empire_GBR_base
+		# The hidden one stays
+	}
+	
+	option = {
+		name = "The burden grows..."
+		add_country_modifier = {
+			name = vast_empire_GBR_1860
+			days = -1
+		}
+	}
+}
+
+# 1880 Escalation (similar structure)
+on_monthly_pulse = {
+	events = {
+		vast_empire.3
+	}
+	
+	trigger = {
+		any_country = {
+			tag = GBR
+			has_country_modifier = vast_empire_GBR_1860
+			date = 1880.1.1
+		}
+	}
+}
+
+# Event for 1880 escalation (in events/vast_empire_events.txt)
+country_event = {
+	id = vast_empire.3
+	title = "The Pinnacle of Imperial Overreach"
+	desc = "In 1880, our empire's vastness reaches its peak, with military goods now even more expensive to maintain."
+	
+	trigger = {
+		tag = GBR
+		has_country_modifier = vast_empire_GBR_1860
+		NOT = { has_country_modifier = vast_empire_GBR_1880 }
+		date >= 1880.1.1
+	}
+	
+	immediate = {
+		remove_country_modifier = vast_empire_GBR_1860
+	}
+	
+	option = {
+		name = "An empire without end..."
+		add_country_modifier = {
+			name = vast_empire_GBR_1880
+			days = -1
+		}
+	}
+}

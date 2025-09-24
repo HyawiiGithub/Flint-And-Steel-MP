@@ -1,0 +1,29 @@
+namespace = vast_empire
+
+country_event = {
+	id = vast_empire.1
+	title = "The Vast Empire's Burden"
+	desc = "Our sprawling empire comes at a great cost to our military logistics."
+	
+	trigger = {
+		tag = GBR
+		date =  1836.1.1 # Or use is_start_date for exact game start
+		NOT = { has_country_modifier = vast_empire_GBR_base }
+	}
+	
+	mean_time_to_happen = {
+		months = 1  # Fires almost immediately
+	}
+	
+	option = {
+		name = "So it begins..."
+		add_country_modifier = {
+			name = vast_empire_GBR_base
+			days = -1  # Permanent
+		}
+		add_country_modifier = {
+			name = vast_empire_hidden_migration
+			days = -1  # Permanent (or until empire changes)
+		}
+	}
+}

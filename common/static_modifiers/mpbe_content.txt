@@ -240,3 +240,40 @@ modifier_has_annexed_another_subject = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_liberty_desire_add = 0.1	# 0.2
 }
+
+
+
+
+modifier_british_raj_over_expansion = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_liberty_desire_add = 0.35
+	political_movement_radicalism_add = 0.10
+	political_movement_pop_attraction_mult = 0.10
+	state_revolt_risk_add = 0.1
+    unit_army_defense_mult = 0.10
+}
+
+
+modifier_vast_empire_GBR_base = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	military_goods_cost_add = 0.20
+	# Note: Hidden migration effect applied separately below
+}
+
+modifier_vast_empire_GBR_1860 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	military_goods_cost_add = 0.25
+	# Hidden migration effect applied separately
+}
+
+modifier_vast_empire_GBR_1880 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	military_goods_cost_add = 0.30
+	# Hidden migration effect applied separately
+}
+
+# Hidden migration modifier (applies to all versions; define once and add to country via history or event)
+modifier_vast_empire_hidden_migration = {
+	hidden = yes  # This hides it from tooltips (Vic3-specific)
+	migration_attraction_mult = -0.10
+}
