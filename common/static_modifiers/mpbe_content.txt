@@ -246,11 +246,10 @@ modifier_has_annexed_another_subject = {
 
 modifier_british_raj_over_expansion = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_liberty_desire_add = 0.35
-	political_movement_radicalism_add = 0.10
+	country_liberty_desire_add = 0.15
+	political_movement_radicalism_add = 0.15 #actvisim
 	political_movement_pop_attraction_mult = 0.10
 	state_revolt_risk_add = 0.1
-    unit_army_defense_mult = 0.10
 }
 
 
