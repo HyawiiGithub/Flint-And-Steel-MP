@@ -1,4 +1,4 @@
-﻿default_building_subsistence_farms = {
+default_building_subsistence_farms = {
 	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
 
 	building_modifiers = {
@@ -10,7 +10,7 @@
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 4700
+			building_employment_peasants_add = 4800
 		}
 	}
 }
@@ -133,7 +133,7 @@ default_building_subsistence_orchards = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 4700
+			building_employment_peasants_add = 4800
 		}
 	}
 }
@@ -197,7 +197,7 @@ default_building_subsistence_pastures = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 4700
+			building_employment_peasants_add = 4800
 		}
 	}
 }
@@ -260,7 +260,7 @@ default_building_subsistence_fishing_villages = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 4700
+			building_employment_peasants_add = 4800
 		}
 	}
 }
