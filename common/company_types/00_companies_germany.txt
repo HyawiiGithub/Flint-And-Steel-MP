@@ -156,6 +156,7 @@ company_rheinmetall = {
 		unit_combat_unit_type_siege_artillery_offense_mult = 0.1
 		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.1
 		unit_army_defense_mult = 0.05
+		killrate_add = 0.1
 	}
 
 	ai_will_do = {
