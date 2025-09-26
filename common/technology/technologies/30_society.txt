@@ -604,6 +604,7 @@ joint_stock_companies = {
 	modifier = {
 		country_max_companies_add = 1
 		state_urbanization_per_level_mult = -0.1
+		
 	}
 
 	unlocking_technologies = {
@@ -1140,6 +1141,8 @@ mutual_funds = {
 		country_minting_mult = 0.1
 		country_loan_interest_rate_add = -0.02
 		state_max_trade_advantage_from_capacity_add = 0.05
+		country_company_construction_efficiency_bonus_add = 0.05
+		country_company_throughput_bonus_add = 0.05
 	}
 
 	unlocking_technologies = {
@@ -1402,6 +1405,8 @@ corporate_management = {
 	modifier = {
 		country_max_companies_add = 1
 		state_urbanization_per_level_mult = -0.25
+		country_company_construction_efficiency_bonus_add = 0.1
+		country_company_throughput_bonus_add = 0.05
 	}
 
 	unlocking_technologies = {
