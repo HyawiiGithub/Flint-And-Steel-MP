@@ -51,6 +51,7 @@ company_krupp = {
 
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.1
+		building_steel_mills_throughput_add = 0.1
 	}
 
 	ai_will_do = {
