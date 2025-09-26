@@ -453,6 +453,7 @@ company_john_hughes = {
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.1
 		interest_group_ig_industrialists_approval_add = 2
+		building_iron_mine_throughput_add = 0.1
 	}
 
 	ai_will_do = {

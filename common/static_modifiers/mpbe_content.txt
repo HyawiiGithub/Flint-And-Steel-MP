@@ -255,7 +255,7 @@ modifier_british_raj_over_expansion = {
 
 modifier_vast_empire_GBR_base = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	military_goods_cost_add = 0.20
+	country_military_goods_cost_mult = 0.20
 	# Note: Hidden migration effect applied separately below
 }
 
@@ -263,5 +263,5 @@ modifier_vast_empire_GBR_base = {
 # Hidden migration modifier (applies to all versions; define once and add to country via history or event)
 modifier_vast_empire_hidden_migration = {
 	hidden = yes  # This hides it from tooltips (Vic3-specific)
-	migration_attraction_mult = -0.10
+	country_mass_migration_attraction_mult	= -0.10
 }
