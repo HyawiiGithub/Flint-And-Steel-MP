@@ -259,17 +259,6 @@ modifier_vast_empire_GBR_base = {
 	# Note: Hidden migration effect applied separately below
 }
 
-modifier_vast_empire_GBR_1860 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	military_goods_cost_add = 0.25
-	# Hidden migration effect applied separately
-}
-
-modifier_vast_empire_GBR_1880 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	military_goods_cost_add = 0.30
-	# Hidden migration effect applied separately
-}
 
 # Hidden migration modifier (applies to all versions; define once and add to country via history or event)
 modifier_vast_empire_hidden_migration = {

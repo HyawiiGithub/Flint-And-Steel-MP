@@ -85,6 +85,9 @@
 			months = 600 # 50 Years
 		}
 
+add_modifier = modifier_vast_empire_GBR_base
+add_modifier = modifier_vast_empire_hidden_migration
+
 		# Was historically around, but we've scrapped it so we can have the slots free for the big boys
 		# add_company = company_type:company_gwr
 		# company:company_gwr = {
