@@ -415,6 +415,11 @@ decree_promote_national_values = {
 	}
 	modifier = {
 		state_assimilation_mult = 0.5
+		state_conversion_mult = 0.5
+		state_allow_assimilation_in_homeland_bool = yes
+		state_radicalism_increases_violent_hostility_mult = 0.5
+		state_radicalism_increases_cultural_erasure_mult = 0.4
+		state_radicalism_increases_open_prejudice_mult = 0.3
 	}
 	cost = 75
 	
@@ -428,6 +433,8 @@ decree_promote_national_values = {
 						has_strategy = ai_strategy_maintain_mandate_of_heaven
 					}
 				}
+				primary_cultures_percent_state <= 0.9
+			}
 
 			if = { # Colonies
 				limit = {
