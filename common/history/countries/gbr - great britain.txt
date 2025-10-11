@@ -71,13 +71,20 @@
 			institution = institution_police
 			level = 1
 		}
-
+       add_journal_entry = {
+		type = je_declining_population
+	   }
 		add_journal_entry = { type = je_victoria }
 		if = {
 			limit = {
 				has_dlc_feature = rp1_content
 			}
 			add_journal_entry = { type = je_aberdeen_act }
+		}
+         
+        add_modifier = {
+			name = modifier_Declining_Population1
+			months = -1
 		}
 
 		add_modifier = {

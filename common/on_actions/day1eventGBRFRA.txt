@@ -1,0 +1,4 @@
+on_game_start = {
+    add_journal_entry = { type = je_napoleon_code }
+    add_journal_entry = { type = je_declining_population }
+}

@@ -59,7 +59,9 @@
 		ig:ig_industrialists = {
 			add_ruling_interest_group = yes
 		}
-
+        add_modifier = {
+			name = modifier_Legacy_of_the_Code_Napoléon1
+			months = -1}
 		add_modifier = {
 			name = modifier_haitian_independence_payments_4
 		}
@@ -71,11 +73,15 @@
 			name = fra_republic_counter
 			value = 1
 		}
+		add_journal_entry = {
+			type = je_napoleon_code
+		}
 		if = {
 			limit = {
 				has_dlc_feature = voice_of_the_people_content
 			}
 			add_journal_entry = {
+				
 				type = je_divided_monarchists
 			}
 		}
