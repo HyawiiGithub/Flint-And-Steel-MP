@@ -82,10 +82,7 @@
 			add_journal_entry = { type = je_aberdeen_act }
 		}
          
-        add_modifier = {
-			name = modifier_Declining_Population1
-			months = -1
-		}
+ 
 
 		add_modifier = {
 			name = brazilian_slave_trade_modifier

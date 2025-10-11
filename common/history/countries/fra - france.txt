@@ -60,7 +60,7 @@
 			add_ruling_interest_group = yes
 		}
         add_modifier = {
-			name = modifier_Legacy_of_the_Code_Napoléon1
+			name = modifier_Legacy_of_the_Code_Napoléon2
 			months = -1}
 		add_modifier = {
 			name = modifier_haitian_independence_payments_4

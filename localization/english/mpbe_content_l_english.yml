@@ -84,3 +84,6 @@ modifier_Declining_Population4:0 "Declining Population"
 modifier_Declining_Population3:0 "Declining Population"
 modifier_Declining_Population2:0 "Declining Population"
 modifier_Declining_Population1:0 "Declining Population"
+
+je_napoleon_code_status_desc:0 "Napoleon Code stage %1 of 10. Next reform in %2 years."
+je_declining_population_status_desc:0 "Population decline stage %1 of 10. Next decrease in %2 years."

@@ -272,7 +272,7 @@ modifier_Legacy_of_the_Code_Napoléon1 = {
 }
 modifier_Legacy_of_the_Code_Napoléon2 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.02
+    state_birth_rate_mult = -0.025
 }
 modifier_Legacy_of_the_Code_Napoléon3 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
@@ -313,7 +313,7 @@ modifier_Declining_Population1 = {
 }
 modifier_Declining_Population2 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.02
+	state_birth_rate_mult = -0.025
 }
 modifier_Declining_Population3 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
