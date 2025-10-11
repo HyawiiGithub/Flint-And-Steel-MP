@@ -1,0 +1,165 @@
+# Napoleon’s Legal Legacy for France
+journal_entry = {
+    key = je_napoleon_code
+    country = c:FRA
+    icon = generic_reform
+    desc = je_napoleon_code_desc
+
+    trigger = {
+        tag = c:FRA
+    }
+
+    on_start = {
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon1
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon2
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon3
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon4
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon5
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon6
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon7
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon8
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon9
+        remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon10
+
+        add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon1 months = -1 }
+    }
+
+    progress = {
+        trigger = { always = yes }
+        interval = { years = 10 }
+        effect = {
+            if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon1 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon1
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon2 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon2 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon2
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon3 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon3 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon3
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon4 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon4 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon4
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon5 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon5 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon5
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon6 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon6 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon6
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon7 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon7 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon7
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon8 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon8 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon8
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon9 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Legacy_of_the_Code_Napoléon9 }
+                remove_country_modifier = modifier_Legacy_of_the_Code_Napoléon9
+                add_country_modifier = { name = modifier_Legacy_of_the_Code_Napoléon10 months = -1 }
+            }
+        }
+    }
+
+    complete = {
+        has_country_modifier = modifier_Legacy_of_the_Code_Napoléon10
+    }
+}
+
+# Declining Population for Great Britain
+journal_entry = {
+    key = je_declining_population
+    country = c:GBR
+    icon = generic_population
+    desc = je_declining_population_desc
+
+    trigger = {
+        tag = c:GBR
+    }
+
+    on_start = {
+        remove_country_modifier = modifier_Declining_Population1
+        remove_country_modifier = modifier_Declining_Population2
+        remove_country_modifier = modifier_Declining_Population3
+        remove_country_modifier = modifier_Declining_Population4
+        remove_country_modifier = modifier_Declining_Population5
+        remove_country_modifier = modifier_Declining_Population6
+        remove_country_modifier = modifier_Declining_Population7
+        remove_country_modifier = modifier_Declining_Population8
+        remove_country_modifier = modifier_Declining_Population9
+        remove_country_modifier = modifier_Declining_Population10
+
+        add_country_modifier = { name = modifier_Declining_Population1 months = -1 }
+    }
+
+    progress = {
+        trigger = { always = yes }
+        interval = { years = 10 }
+        effect = {
+            if = {
+                limit = { has_country_modifier = modifier_Declining_Population1 }
+                remove_country_modifier = modifier_Declining_Population1
+                add_country_modifier = { name = modifier_Declining_Population2 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Declining_Population2 }
+                remove_country_modifier = modifier_Declining_Population2
+                add_country_modifier = { name = modifier_Declining_Population3 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Declining_Population3 }
+                remove_country_modifier = modifier_Declining_Population3
+                add_country_modifier = { name = modifier_Declining_Population4 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Declining_Population4 }
+                remove_country_modifier = modifier_Declining_Population4
+                add_country_modifier = { name = modifier_Declining_Population5 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Declining_Population5 }
+                remove_country_modifier = modifier_Declining_Population5
+                add_country_modifier = { name = modifier_Declining_Population6 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Declining_Population6 }
+                remove_country_modifier = modifier_Declining_Population6
+                add_country_modifier = { name = modifier_Declining_Population7 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Declining_Population7 }
+                remove_country_modifier = modifier_Declining_Population7
+                add_country_modifier = { name = modifier_Declining_Population8 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Declining_Population8 }
+                remove_country_modifier = modifier_Declining_Population8
+                add_country_modifier = { name = modifier_Declining_Population9 months = -1 }
+            }
+            else_if = {
+                limit = { has_country_modifier = modifier_Declining_Population9 }
+                remove_country_modifier = modifier_Declining_Population9
+                add_country_modifier = { name = modifier_Declining_Population10 months = -1 }
+            }
+        }
+    }
+
+    complete = {
+        has_country_modifier = modifier_Declining_Population10
+    }
+}

@@ -415,6 +415,11 @@ decree_promote_national_values = {
 	}
 	modifier = {
 		state_assimilation_mult = 0.5
+		state_conversion_mult = 0.5
+		state_allow_assimilation_in_homeland_bool = yes
+		state_radicalism_increases_violent_hostility_mult = 0.5
+		state_radicalism_increases_cultural_erasure_mult = 0.4
+		state_radicalism_increases_open_prejudice_mult = 0.3
 	}
 	cost = 75
 	
@@ -428,69 +433,6 @@ decree_promote_national_values = {
 						has_strategy = ai_strategy_maintain_mandate_of_heaven
 					}
 				}
-
-			if = { # Colonies
-				limit = {
-					scope:country = {
-						country_is_in_europe = no
-						any_primary_culture = {
-							has_discrimination_trait_group = heritage_group_european
-						}
-						NOR = {
-							has_government_type = gov_chartered_company
-							c:BIC ?= this
-							c:DEI ?= this
-						}
-					}
-				}
-				add = 300
-			}
-			else_if = {
-				limit = {
-					scope:country = {
-						OR = {
-							has_strategy = ai_strategy_reactionary_agenda
-							has_strategy = ai_strategy_conservative_agenda
-							has_strategy = ai_strategy_maintain_mandate_of_heaven
-						}
-					}
-				}
-				add = 100
-			}
-			else_if = {
-				limit = {
-					scope:country = {
-						has_strategy = ai_strategy_nationalist_agenda
-					}
-				}
-				add = 200
-			}
-
-
-			if = {
-				limit = {
-					primary_cultures_percent_state <= 0.1
-				}
-				multiply = 5.0
-			}
-			else_if = {
-				limit = {
-					primary_cultures_percent_state <= 0.3
-				}
-				multiply = 3.0
-			}
-			else_if = {
-				limit = {
-					primary_cultures_percent_state <= 0.5
-				}
-				multiply = 2.0
-			}
-
-			if = {
-				limit = {
-					is_homeland_of_country_cultures = scope:country
-				}
-				multiply = 5.0
 			}
 			add = 100
 		}
@@ -499,70 +441,9 @@ decree_promote_national_values = {
 				scope:country = {
 					has_strategy = ai_strategy_nationalist_agenda
 				}
-				religion_percent_state = {
-					target = scope:country.religion
-					value <= 0.9
-				}
 			}
-
-			if = {
-				limit = {
-					scope:country = {
-						has_strategy = ai_strategy_conservative_agenda
-					}
-				}
-				add = 50
-			}
-			else_if = {
-				limit = {
-					scope:country = {
-						has_strategy = ai_strategy_reactionary_agenda
-					}
-				}
-				add = 100
-			}
-
-			if = {
-				limit = {
-					scope:country = {
-						OR = {
-							has_law_or_variant = law_type:law_state_religion
-							has_law_or_variant = law_type:law_state_atheism
-						}
-					}
-				}
-				add = 50
-			}
-
-			if = {
-				limit = {
-					religion_percent_state = {
-						target = scope:country.religion
-						value <= 0.1
-					}
-				}
-				multiply = 5.0
-			}
-			else_if = {
-				limit = {
-					religion_percent_state = {
-						target = scope:country.religion
-						value <= 0.3
-					}
-				}
-				multiply = 3.0
-			}
-			else_if = {
-				limit = {
-					religion_percent_state = {
-						target = scope:country.religion
-						value <= 0.5
-					}
-				}
-				multiply = 2.0
-			}
-		}
-
+			add = 200
+		}		
 		if = {
 			limit = {
 				state_population < 100000
@@ -1015,8 +896,8 @@ decree_promote_health = {
 		pharmaceuticals
 	}		
 	modifier = { 
-		state_mortality_mult = -0.05 
-		state_birth_rate_mult = 0.02
+		state_mortality_mult = -0.1 
+		state_birth_rate_mult = 0.05 
 		state_pollution_reduction_health_mult = -0.2
 		building_working_conditions_mult = -0.1
 	}

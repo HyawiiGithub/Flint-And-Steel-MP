@@ -1,0 +1,7 @@
+on_game_start = {
+    # fire the France & GBR chains 1 day after game start so their country events run
+    events = {
+        napoleon_events.napoleon.start = { days = 1 }
+        napoleon_events.declining.start = { days = 1 }
+    }
+}
