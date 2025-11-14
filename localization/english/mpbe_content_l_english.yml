@@ -57,21 +57,13 @@
 
     pm_improved_steam_engines:0 "Improved Steam Engines"
 
-   modifier_vast_empire_hidden_migration:0 "The British Racism Is Real"
-   modifier_vast_empire_GBR_base:0 "The Vast Empire of Britain Is costly...."
+   modifier_vast_empire_hidden_migration:0 "The British Industrial Society"
+   modifier_vast_empire_GBR_base:0 "Policing the Empire"
    modifier_british_raj_over_expansion:0 "Indian Resistance"
    prestige_good_krupp_steel:0 "Krupp Steel"
    prestige_good_krupp_steel_desc:0 "A prestigious grade of steel produced by the Krupp company, known for its exceptional quality and strength. It is highly sought after for military applications and industrial uses."
 modifier_Legacy_of_the_Code_Napoléon1:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon2:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon3:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon4:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon5:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon6:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon7:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon8:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon9:0 "Legacy of Code Napoléon"
-modifier_Legacy_of_the_Code_Napoléon10:0 "Legacy of Code Napoléon"
+modifier_temp_usa_birthrate:0 "United States Migration Boom"
 
 
 modifier_Declining_Population10:0 "Declining Population"

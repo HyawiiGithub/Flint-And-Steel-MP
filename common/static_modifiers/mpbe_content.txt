@@ -262,88 +262,23 @@ modifier_vast_empire_GBR_base = {
 
 # Hidden migration modifier (applies to all versions; define once and add to country via history or event)
 modifier_vast_empire_hidden_migration = {
-	hidden = yes  # This hides it from tooltips (Vic3-specific)
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	state_birth_rate_mult = -0.05
 	country_mass_migration_attraction_mult	= -0.10
 }
 # french shit
 modifier_Legacy_of_the_Code_Napoléon1 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.01
+    state_birth_rate_mult = -0.075
 }
-modifier_Legacy_of_the_Code_Napoléon2 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.025
+
+modifier_temp_usa_birthrate = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_birth_rate_mult = 0.05
 }
-modifier_Legacy_of_the_Code_Napoléon3 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.03
-}
-modifier_Legacy_of_the_Code_Napoléon4 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.04
-}
-modifier_Legacy_of_the_Code_Napoléon5 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.05
-}
-modifier_Legacy_of_the_Code_Napoléon6 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.06
-}
-modifier_Legacy_of_the_Code_Napoléon7 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.07
-}
-modifier_Legacy_of_the_Code_Napoléon8 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.08
-}
-modifier_Legacy_of_the_Code_Napoléon9 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.09
-}
-modifier_Legacy_of_the_Code_Napoléon10 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_birth_rate_mult = -0.1
+
+modifier_german_baby_boom = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_birth_rate_mult = 0.25
 }
 # british shit
-modifier_Declining_Population1 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.01
-}
-modifier_Declining_Population2 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.025
-}
-modifier_Declining_Population3 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.03
-}
-modifier_Declining_Population4 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.04
-}
-modifier_Declining_Population5 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.05
-}
-modifier_Declining_Population6 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.06
-}
-modifier_Declining_Population7 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.07
-}
-modifier_Declining_Population8 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.08
-}
-modifier_Declining_Population9 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.09
-}
-modifier_Declining_Population10 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-	state_birth_rate_mult = -0.1
-}

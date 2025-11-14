@@ -205,7 +205,7 @@ pm_steam_donkey_building_coal_mine = {
 			}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1500
 		}
 	}
 }
@@ -412,7 +412,7 @@ pm_steam_donkey_mine = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -1500
 		}
 	}
 }

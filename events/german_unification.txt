@@ -377,6 +377,11 @@ immediate = {
 		name = german_unification.4.a
 		default_option = yes
 		give_claims_on_germany = yes
+			add_modifier = {
+			name = modifier_german_baby_boom
+			is_decaying = yes
+			months = 300
+		}
 		ruler = {
 			add_modifier = {
 				name = german_unifier_ruler
@@ -386,6 +391,11 @@ immediate = {
 	option = {
 		name = german_unification.4.b
 		give_claims_on_germany = yes
+		add_modifier = {
+			name = modifier_german_baby_boom
+			is_decaying = yes
+			months = 300
+		}
 		add_loyalists = {
 			value = 0.1
 			culture = cu:north_german

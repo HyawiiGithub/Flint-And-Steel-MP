@@ -1,0 +1,24 @@
+# On-Action for German Formation
+# Fires when a country forms or changes to the GER tag
+
+ger_on_country_tag_change = {
+	effect = {
+		# Check if this country is now Germany (GER)
+		if = {
+			limit = {
+				tag = GER
+				# Make sure we haven't already applied the modifier
+				NOT = { has_modifier = ger_formation_modifier }
+			}
+			# Apply the formation modifier
+			ger_apply_formation_modifier = yes
+		}
+	}
+}
+
+# Register the on_action to fire when country tag changes
+on_country_tag_change = {
+	on_actions = {
+		ger_on_country_tag_change
+	}
+}
