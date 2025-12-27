@@ -364,6 +364,17 @@ SCO = {
 	capital = STATE_LOWLANDS
 }
 
+ALA = {
+	color = { 0 140 230 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { scottish_gaelic }
+	capital = STATE_HIGHLANDS
+}
+
 ENG = {
 	color = { 180 99 58 }
 
@@ -408,19 +419,23 @@ NAV = {
 	tier = kingdom
 
 	cultures = { basque }
-	capital = STATE_NAVARRA
+	capital = STATE_BASQUE_COUNTRY
 	is_named_from_capital = yes
 }
 
 SPA = {
 	color = hsv360{ 38  97  83 }
 
+	primary_unit_color = "blue"
+	secondary_unit_color  = "white"
+	tertiary_unit_color = "black"
+
 	country_type = recognized
 
 	tier = kingdom
 
 	cultures = { spanish }
-	capital = STATE_TOLEDO
+	capital = STATE_NEW_CASTILE
 }
 
 WLL = {
@@ -2043,7 +2058,7 @@ CUB = {
 	tier = principality
 
 	cultures = { caribeno }
-	capital = STATE_CUBA
+	capital = STATE_WESTERN_CUBA
 	is_named_from_capital = yes
 }
 
@@ -2114,6 +2129,17 @@ HAI = {
 
 	cultures = { afro_antillean }
 	capital = STATE_HAITI
+}
+
+ATL = {
+	color = { 115  236  250 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { caribeno afro_caribeno }
+	capital = STATE_SANTO_DOMINGO
 }
 
 MEX = {
@@ -2593,8 +2619,8 @@ IBE = {
 
 	tier = empire
 
-	cultures = { spanish catalan portuguese basque galician }
-	capital = STATE_TOLEDO
+	cultures = { spanish portuguese }
+	capital = STATE_NEW_CASTILE
 }
 
 ORG = {
@@ -2733,7 +2759,7 @@ BAH = {
 PCO = {
 	color = { 104  92  87 }
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -2784,7 +2810,7 @@ ANL = {
 	tier = principality
 
 	cultures = { spanish }
-	capital = STATE_ANDALUSIA
+	capital = STATE_LOWER_ANDALUSIA
 	is_named_from_capital = yes
 }
 
@@ -2796,7 +2822,7 @@ CAS = {
 	tier = kingdom
 
 	cultures = { spanish }
-	capital = STATE_TOLEDO
+	capital = STATE_NEW_CASTILE
 	is_named_from_capital = yes
 }
 
@@ -5075,4 +5101,113 @@ BNT = {
 
 	cultures = { south_german serb }
 	capital = STATE_DELVIDEK
+}
+
+# Eden
+EDE = {
+	color = { 226 194 106 }
+
+	country_type = unrecognized
+
+	religion = atheist
+
+	tier = principality
+
+	cultures = { promethean }
+	capital = STATE_BAVARIA
+}
+
+SPC = {
+	color = { 217 23 26 }
+
+	# Based on the colours of the Guias de Navarra, originally these troops employed grey cloaks but by 1836 they had switched to blue
+	primary_unit_color = "blue"
+	secondary_unit_color  = "red"
+	tertiary_unit_color = "red"
+
+	country_type = recognized
+
+	religion = catholic
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_BASQUE_COUNTRY
+}
+
+ARN = {
+	color = { 166 68 72 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { aragonese }
+	capital = STATE_ARAGON
+}
+
+LEO = {
+	color = { 99 14 87 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { asturleonese }
+	capital = STATE_LEON
+}
+
+ASU = {
+	color = { 104 173 230 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { asturleonese }
+	capital = STATE_ASTURIAS
+}
+
+SC1 = { # New Spain
+	color = { 247 231 124 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_MEXICO
+}
+
+SC2 = { # New Grenada
+	color = { 199 184 84 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_CUNDINAMARCA
+}
+
+SC3 = { # Peru
+	color = { 235 207 23 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_LIMA
+}
+
+SC4 = { # River Plate
+	color = { 195 179 75 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { spanish }
+	capital = STATE_BUENOS_AIRES
 }

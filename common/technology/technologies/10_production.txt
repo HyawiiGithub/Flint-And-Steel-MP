@@ -690,7 +690,7 @@ shift_work = {
 	category = production
 
 	modifier = {
-		building_economy_of_scale_level_cap_add = 15	# 20
+		building_economy_of_scale_level_cap_add = 20
 	}
 
 	unlocking_technologies = {

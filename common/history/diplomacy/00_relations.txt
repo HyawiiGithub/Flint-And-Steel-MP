@@ -324,4 +324,43 @@
 		set_relations = { country = c:RUS value = 10 }
 		set_relations = { country = c:HER value = -20 }
 	}
+
+	c:WTU ?= {
+		set_relations = { country = c:OMA value = -30 }
+		set_relations = { country = c:GLD value = 40 }
+	}
+
+	c:MBS ?= {
+		set_relations = { country = c:OMA value = -30 }
+	}
+
+	c:SAF ?= {
+		set_relations = { country = c:TRN value = -10 }
+		set_relations = { country = c:ORA value = 10 }
+		set_relations = { country = c:WBL value = 20 }
+		set_relations = { country = c:PHL value = 20 }
+		set_relations = { country = c:BST value = 10 }
+		set_relations = { country = c:ZUL value = -25 }
+		set_relations = { country = c:SWZ value = -10 }
+	}
+
+	c:ORA ?= {
+		set_relations = { country = c:TRN value = 50 }
+		set_relations = { country = c:BST value = 25 }
+		set_relations = { country = c:ZUL value = 10 }
+		set_relations = { country = c:WBL value = 20 }
+		set_relations = { country = c:PHL value = 20 }
+	}
+
+	c:ZUL ?= {
+		set_relations = { country = c:SWZ value = -25 }
+		set_relations = { country = c:BST value = -25 }
+		set_relations = { country = c:GZA value = -25 }
+	}
+
+	c:TRN ?= {
+		set_relations = { country = c:SWZ value = -25 }
+		set_relations = { country = c:SWZ value = -10 }
+		set_relations = { country = c:GZA value = -25 }
+	}
 }

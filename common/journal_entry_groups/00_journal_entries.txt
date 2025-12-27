@@ -6,6 +6,26 @@
 
 ## Place flavour content above generic groups
 
+# context = none/country
+# }
+
+je_group_global_test = {
+	context = none
+}
+
+# Global groups
+
+je_group_global_international_situations = {
+	context = none
+}
+
+je_group_iberia = {
+	context = none
+}
+je_group_spa_economic_regeneration = {
+	context = country
+}
+
 je_group_britain = {}
 je_group_france = {}
 

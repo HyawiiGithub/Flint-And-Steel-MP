@@ -87,14 +87,16 @@ company_hanyang_arsenal = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chinese_hanyang_arsenal.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_EASTERN_HUBEI }
 
 	building_types = {
 		building_arms_industry
-		building_artillery_foundries
-		building_munition_plants
+		building_artillery_foundry
+		building_munition_plant
 	}
 
 	extension_building_types = {
@@ -168,17 +170,19 @@ company_foochow_arsenal = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chinese_foochow_arsenal.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
+	category = bureaucrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_FUJIAN }
 
 	building_types = {
-		building_shipyards
-		building_military_shipyards
+		building_shipyard
+		building_military_shipyard
 	}
 
 	extension_building_types = {
-		building_steel_mills
+		building_steel_mill
 		building_logging_camp
 	}
 
@@ -201,7 +205,7 @@ company_foochow_arsenal = {
 			state_region = s:STATE_FUJIAN
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_military_shipyards
+				is_building_type = building_military_shipyard
 				level >= 5
 			}
 		}
@@ -222,7 +226,7 @@ company_foochow_arsenal = {
 	}
 
 	ai_construction_targets = {
-		building_military_shipyards = {
+		building_military_shipyard = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_FUJIAN

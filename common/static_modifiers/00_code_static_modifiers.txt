@@ -98,7 +98,13 @@ working_conditions = {
 	building_group_bg_mining_machinists_mortality_mult = 0.05
 	building_group_bg_mining_engineers_mortality_mult = 0.02
 	building_group_bg_mining_slaves_mortality_mult = 0.2
-	
+
+	##Plantations and rubber
+	building_group_bg_plantations_laborers_mortality_mult = 0.05
+	building_group_bg_plantations_slaves_mortality_mult = 0.1
+	building_group_bg_rubber_laborers_mortality_mult = 0.05
+	building_group_bg_rubber_slaves_mortality_mult = 0.1
+
 	building_group_bg_logging_laborers_mortality_mult = 0.1
 	building_group_bg_logging_machinists_mortality_mult = 0.05
 	building_group_bg_logging_engineers_mortality_mult = 0.02
@@ -114,7 +120,11 @@ working_conditions = {
 	building_group_bg_heavy_industry_laborers_mortality_mult = 0.1
 	building_group_bg_heavy_industry_machinists_mortality_mult = 0.05
 	building_group_bg_heavy_industry_engineers_mortality_mult = 0.02
-	
+
+	building_group_bg_military_industry_laborers_mortality_mult = 0.1
+	building_group_bg_military_industry_machinists_mortality_mult = 0.05
+	building_group_bg_military_industry_engineers_mortality_mult = 0.02
+
 	building_group_bg_infrastructure_laborers_mortality_mult = 0.1
 	building_group_bg_infrastructure_machinists_mortality_mult = 0.05
 	building_group_bg_infrastructure_engineers_mortality_mult = 0.02
@@ -391,9 +401,32 @@ ruler_left_interest_group = {
 	interest_group_approval_add = -5
 }
 
+# Unscaled modifier applied to all insurrectionary countries
+uprising = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	building_training_rate_mult = 2.0
+}
+
+# Scaled modifier for insurrectionary country conscription rate, based on CIVIL_WAR_CONSCRIPTION_RATE defines
 uprising_conscription = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	state_conscription_rate_add = 1.0
+}
+
+# Below modifiers generate sell orders of military goods in insurrectionary capitals, based on pre-civil war market conditions
+uprising_arms_cache_small_arms = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_sell_orders_small_arms_add = 1
+}
+
+uprising_arms_cache_ammunition = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_sell_orders_ammunition_add = 1
+}
+
+uprising_arms_cache_artillery = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_sell_orders_artillery_add = 1
 }
 
 revolution_lost_ig = {
@@ -857,6 +890,14 @@ forced_regime_change = {
 	interest_group_in_government_approval_add = 5
 	country_legitimacy_base_add = 25
 	country_prestige_mult = -0.25
+}
+
+# The effects of this is scaled by both the amount of 'missing' electoral confidence and the country_electoral_confidence_impact_mult modifier
+low_electoral_confidence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -50
+	country_voting_power_mult = -0.5
+	state_political_strength_from_wealth_mult = 0.5
 }
 
 weak_power_bloc = {

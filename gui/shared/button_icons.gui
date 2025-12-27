@@ -414,6 +414,14 @@ types default_button_icons
 		}
 		tooltip = "RESET"
 	}
+
+	type button_icon_random = button_icon_round_action
+	{
+		blockoverride "icon" {
+			texture = "gfx/interface/buttons/button_icons/reset.dds"
+		}
+		tooltip = "RULER_RANDOMIZE_BUTTON"
+	}
 	
 	type button_icon_edit = button_icon_round
 	{

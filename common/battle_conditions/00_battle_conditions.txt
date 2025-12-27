@@ -801,6 +801,85 @@ battle_condition_good_visibility = { #defender only
 	}
 }
 
+battle_condition_guerilla_skirmish = {
+	icon = "gfx/interface/icons/battle_conditions/battle_condition_careful_maneuver.dds"
+
+	modifier = {
+		battle_casualties_mult = -0.9
+		unit_morale_loss_mult = 0.5
+		unit_morale_damage_mult = 0.5
+	}
+
+	possible = {
+		scope:character ?= {
+			has_role = general
+			owner ?= {
+				is_in_guerilla_war = yes
+			}
+		}
+	}
+
+	weight = {
+		value = 100
+	}
+}
+
+battle_condition_guerilla_ambush = {
+	icon = "gfx/interface/icons/battle_conditions/battle_condition_aggressive_maneuver.dds"
+
+	modifier = {
+		battle_casualties_mult = -0.9
+		unit_morale_loss_mult = 0.25
+		unit_morale_damage_mult = 1.5
+	}
+
+	possible = {
+		scope:character ?= {
+			has_role = general
+			owner ?= {
+				is_in_guerilla_war = yes
+			}
+		}
+	}
+
+	weight = {
+		value = 25
+
+		multiply = {
+			value = 1
+			scope:character ?= {
+				add = modifier:character_battle_condition_guerilla_ambush_mult
+			}
+			min = 0
+		}
+	}
+}
+
+battle_condition_guerilla_disarray = {
+	icon = "gfx/interface/icons/battle_conditions/battle_condition_broken_supply_line.dds"
+
+	modifier = {
+		battle_casualties_mult = -0.9
+		unit_morale_loss_mult = 0.75
+		unit_morale_damage_mult = 0.25
+	}
+
+	possible = {
+		scope:character ?= {
+			has_role = general
+			owner ?= {
+				is_in_guerilla_war = yes
+			}
+		}
+	}
+
+	weight = {
+		value = 50
+	}
+}
+
+# Navy
+
 battle_condition_rough_waters = {
 	icon = "gfx/interface/icons/battle_conditions/battle_condition_rough_waters.dds"
 

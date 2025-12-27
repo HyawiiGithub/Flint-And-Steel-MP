@@ -1,6 +1,6 @@
 ﻿############ GOVERNMENT BUILDINGS
 
-building_university = {
+REPLACE:building_university = {
 
 	building_group = bg_technology
 

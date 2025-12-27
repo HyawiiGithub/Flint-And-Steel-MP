@@ -19,6 +19,7 @@
 		ideology_bonapartist
 		ideology_legitimist
 		ideology_sovereignist_leader
+		ideology_despotic_utopian
 	}
 
 	enable = {
@@ -77,7 +78,18 @@
 			}
 			else_if = {
 				limit = {
-					owner = { 
+					c:POR ?= owner
+				}
+				remove_ideology = ideology_meritocratic
+				add_ideology = ideology_cartist
+
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_middle_managers
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			}
+			else_if = {
+				limit = {
+					owner = {
 						OR = {
 							c:BIC ?= this
 							any_primary_culture = {
@@ -157,6 +169,32 @@
 			}
 			cultures = {
 				swahili gujarati
+			}
+		}
+		rule = {
+			trigger = {
+				c:PHI ?= this
+				NOT = { has_variable = je_philippines_main_reliance_happened }
+				NOT = { any_primary_culture = { cu:filipino = this } }
+				NOT = { any_primary_culture = { cu:filipino_hispanophone = this } }
+				any_primary_culture = { cu:spanish = this }
+			}
+			cultures = {
+				spanish filipino_mestizo
+			}
+		}
+		rule = {
+			trigger = {
+				c:PHI ?= this
+				any_primary_culture = {
+					AND = {
+						cu:spanish = this
+						cu:filipino_hispanophone = this
+					}
+				}
+			}
+			cultures = {
+				spanish filipino_hispanophone
 			}
 		}
 	}
