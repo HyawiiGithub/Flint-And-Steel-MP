@@ -92,8 +92,8 @@ principle_internal_trade_1 = {
 		if = {
 			limit = {
 				OR = {
-					has_law_or_variant = law_type:law_mercantilism
-					has_law_or_variant = law_type:law_command_economy
+					has_law = law_type:law_mercantilism
+					has_law = law_type:law_command_economy
 				}
 			}
 			add = 100
@@ -584,7 +584,7 @@ principle_external_trade_1 = {
 		value = 100
 
 		if = {
-			limit = { has_law_or_variant = law_type:law_free_trade }
+			limit = { has_law = law_type:law_free_trade }
 			add = 100
 		}
 
@@ -908,8 +908,8 @@ principle_military_industry_1 = {
 		# Members get increased military industry throughput
 		building_automotive_industry_throughput_add = 0.1
 		building_arms_industry_throughput_add = 0.1
-		building_artillery_foundry_throughput_add = 0.1
-		building_military_shipyard_throughput_add = 0.1
+		building_artillery_foundries_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
 	}
 
 	ai_weight = {
@@ -953,8 +953,8 @@ principle_military_industry_2 = {
 		# Modifiers from previous level(s)
 		building_automotive_industry_throughput_add = 0.1
 		building_arms_industry_throughput_add = 0.1
-		building_artillery_foundry_throughput_add = 0.1
-		building_military_shipyard_throughput_add = 0.1
+		building_artillery_foundries_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
 
 		# Members get reduced military goods cost
 		country_military_goods_cost_mult = -0.15
@@ -973,8 +973,8 @@ principle_military_industry_3 = {
 		# Modifiers from previous level(s)
 		building_automotive_industry_throughput_add = 0.1
 		building_arms_industry_throughput_add = 0.1
-		building_artillery_foundry_throughput_add = 0.1
-		building_military_shipyard_throughput_add = 0.1
+		building_artillery_foundries_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
 		country_military_goods_cost_mult = -0.15
 
 		# Supply routes use less convoys
@@ -1256,7 +1256,7 @@ principle_freedom_of_movement_1 = {
 	}
 
 	possible = {
-		NOT = { has_law_or_variant = law_type:law_closed_borders }
+		NOT = { has_law = law_type:law_closed_borders }
 	}
 
 	member_modifier = {
@@ -1277,9 +1277,9 @@ principle_freedom_of_movement_1 = {
 		if = {
 			limit = {
 				OR = {
-					is_in_geographic_region = geographic_region_north_america
-					is_in_geographic_region = geographic_region_central_america
-					is_in_geographic_region = geographic_region_south_america
+					country_is_in_north_america = yes
+					country_is_in_central_america = yes
+					country_is_in_south_america = yes
 				}
 			}
 			add = 100
@@ -1287,7 +1287,7 @@ principle_freedom_of_movement_1 = {
 
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_migration_controls
+				has_law = law_type:law_migration_controls
 			}
 			multiply = 0.5
 		}
@@ -1569,7 +1569,7 @@ principle_sacred_civics_1 = {
 				power_bloc ?= { NOT = { has_identity = identity:identity_religious } }
 				# State Atheist Ideology bloc wants the power to enforce atheism
 				NAND = {
-					has_law_or_variant = law_type:law_state_atheism
+					has_law = law_type:law_state_atheism
 					power_bloc ?= { has_identity = identity:identity_ideological_union }
 				}
 			}

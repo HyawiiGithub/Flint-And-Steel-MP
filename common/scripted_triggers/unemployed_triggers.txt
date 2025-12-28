@@ -1,5 +1,0 @@
-on_game_start = {
-    # activate both Journal Entries for FRA and GBR
-    activate_journal_entry = je_napoleon_code
-    activate_journal_entry = je_declining_population
-}

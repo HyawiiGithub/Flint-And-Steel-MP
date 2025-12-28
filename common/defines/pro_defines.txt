@@ -58,9 +58,9 @@ NDiplomacy = {
 	PRESTIGE_FROM_COUNTRY_GDP = 6							# 3 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP
 	PRESTIGE_FROM_SUBJECT_GDP = 0.5							# 1.5 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP in subjects
 	PRESTIGE_FROM_ARMY_POWER_PROJECTION = 0.03 				# Per point of power projection from army combat power
-	PRESTIGE_FROM_NAVY_POWER_PROJECTION = 0.066				# 0.10 # Per point of power projection from navy combat power
-	PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION = 0.0005 	# Per point of power projection from army combat power in subjects
-	PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION = 0.005 	# 0.01 # Per point of power projection from navy combat power in subjects
+	PRESTIGE_FROM_NAVY_POWER_PROJECTION = 0.055				# 0.10 # Per point of power projection from navy combat power
+	PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION = 0.001 	# Per point of power projection from army combat power in subjects
+	PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION = 0.01 	# 0.01 # Per point of power projection from navy combat power in subjects
 	PRESTIGE_MIN_NUM_COUNTRIES = 100 # If there's less countries using prestige than this in the game, we add some filler countries to adjust average prestige levels
 	FILLER_COUNTRY_PRESTIGE = 15
 	
@@ -102,7 +102,13 @@ NPops = {
 	LOW_POP_THRESHOLD = 7500	# 5000				# If a state has less than this amount of pops per arable land, apply the low pop modifier
 	HIGH_POP_THRESHOLD = 100000					# If a state has more than this amount of pops per arable land, apply the high pop modifier
 
-##### MIGRATION #####
+
+
+
+##### Dependants #####
+    WORKING_ADULT_RATIO_BASE = 0.25	# Base ratio of working adults to dependents, this can be overridden by pop type definition and country modifiers.
+    WORKING_ADULT_RATIO_SKEW_MAXIMUM = 2.0	# When the ratio of working adults to dependents is skewed, it tends to correct itself, this value clamps the maximum effect of this
+    ##### MIGRATION #####
 
 	# UX/UI Labeling #
 	MIGRATION_PULL_HIGH_THRESHOLD = 1.2	#1.25									# State must have a migration pull of at least market average * this to get market immigration
