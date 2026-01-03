@@ -1,4 +1,4 @@
-﻿REPLACE:building_railway = {
+﻿building_railway = {
 	building_group = bg_private_infrastructure
 	icon = "gfx/interface/icons/building_icons/building_railway.dds"
 

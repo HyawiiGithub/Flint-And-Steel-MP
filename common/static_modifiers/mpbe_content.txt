@@ -290,6 +290,22 @@ modifier_russian_iliteracy = {
     building_group_bg_ranching_throughput_add    = 0.20
     building_group_bg_plantations_throughput_add = 0.20
 	building_bg_manufacturing_throughput_add = -0.15
-	country_weekly_innovation_max_add = -20
+	country_weekly_innovation_max_add = -30
+	country_prestige_mult = -0.30
+	country_tech_spread_add = -30
 }
 # british shit
+modifier_one_of_the_first_industrial_nations = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_manufacturing_throughput_add = 0.15
+	building_group_bg_mining_throughput_add = 0.05
+	country_prestige_mult = 0.20
+}
+
+# french
+
+modifier_humiliation_of_the_napoleonic_wars = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_mult = -0.25
+	country_influence_mult = -0.25
+}

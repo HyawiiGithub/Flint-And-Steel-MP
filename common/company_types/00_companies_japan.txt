@@ -14,8 +14,6 @@ company_mitsui = {
 	}
 
 	extension_building_types = {
-		building_shipyard
-		building_port
 		building_chemical_plant
 		building_iron_mine
 	}
@@ -82,6 +80,90 @@ company_mitsui = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
+
+
+# Kure Naval Arsenal
+company_kure_naval_arsenal = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/kure_naval_arsenal.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_KANSAI }
+
+	building_types = {
+		building_shipyard
+		building_military_shipyard
+		building_steel_mill
+	}
+
+	extension_building_types = {
+		building_port
+	}
+
+	possible_prestige_goods = {
+		# gotta make one
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_KANSAI
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = hydraulic_cranes
+		custom_tooltip = {
+			text = is_meiji_japan
+			has_variable = meiji_restoration_complete
+		}
+		any_scope_state = {
+			state_region = s:STATE_KANSAI
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_military_shipyard
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		unit_navy_capital_ship_offense_mult = 0.15
+		unit_navy_defense_mult = 0.05
+	}
+
+	ai_will_do = {
+		has_technology_researched = hydraulic_cranes
+		custom_tooltip = {
+			text = is_meiji_japan
+			has_variable = meiji_restoration_complete
+		}
+		any_scope_state = {
+			state_region = s:STATE_KANSAI
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_textile_mill = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_KANSAI
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
 
 # South Manchuria Railway
 company_mantetsu = {

@@ -5,7 +5,7 @@
 		add_technology_researched = stock_exchange
 		add_technology_researched = corporate_charters
 		
-		set_tax_level = low # pre-Kankrin reform tax system
+		set_tax_level = medium # pre-Kankrin reform tax system
 		
 		# --- Buffs ---
 		add_technology_researched = mass_communication
@@ -26,6 +26,58 @@
 		activate_law = law_type:law_women_own_property
 		
 		add_taxed_goods = g:liquor
+		#great game journal entries
+        add_journal_entry = {
+			type = je_great_game_control
+		}
+		add_journal_entry = {
+			type = je_secure_persian_border
+		}
+		add_journal_entry = {
+			type = je_pacify_kazakh_steppes
+		}
+		add_journal_entry = {
+			type = je_codify_chinese_border
+		}
+		add_journal_entry = {
+			type = je_consolidate_central_asia
+		}
+		add_journal_entry = {
+			type = je_chinese_concessions
+		}
+		add_journal_entry = {
+			type = je_acquire_korean_protectorate
+		}
+
+		# GP objectives
+		add_journal_entry = {
+			type = je_maintain_afghan_protectorate
+		}
+		add_journal_entry = {
+			type = je_consolidate_afghanistan_objective
+		}
+		add_journal_entry = {
+			type = je_secure_influence_over_persia
+		}
+
+
+
+		# minor objectives
+		add_journal_entry = {
+			type = je_unify_afghanistan_objective
+		}
+		add_journal_entry = {
+			type = je_consolidate_persia
+		}
+		add_journal_entry = {
+			type = je_achieve_sovereignty
+		}
+	
+
+
+
+
+
 
 		if = {
 			limit = {
@@ -35,7 +87,7 @@
 		}
         add_modifier = {
 		 name = modifier_russian_iliteracy
-		 months = 99999
+		 months = 260
 		}
 		add_modifier = {
 			name = modifier_polish_organic_statute

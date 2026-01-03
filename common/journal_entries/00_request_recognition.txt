@@ -17,6 +17,7 @@
 	}
 
 	possible = {
+        
 		is_country_type = unrecognized
 		has_technology_researched = colonization
 		OR = {
@@ -28,6 +29,7 @@
 	}
 
 	complete = {
+
 		any_country = {
 			country_rank >= rank_value:great_power
 			relations:root >= relations_threshold:amicable

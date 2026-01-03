@@ -80,3 +80,8 @@ modifier_Declining_Population1:0 "Declining Population"
 
 je_napoleon_code_status_desc:0 "Napoleon Code stage %1 of 10. Next reform in %2 years."
 je_declining_population_status_desc:0 "Population decline stage %1 of 10. Next decrease in %2 years."
+
+
+modifier_humiliation_of_the_napoleonic_wars:0 "Humiliation of the Napoleonic Wars"
+
+modifier_one_of_the_first_industrial_nations:0 "Worlds First Industrial Nation"

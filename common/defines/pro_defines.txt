@@ -50,17 +50,16 @@ NDiplomacy = {
 	OBLIGATION_MONTHS = 60				# 120
 
 	MAKE_WARGOAL_PRIMARY_DEMAND_MANEUVERS_COST = 0.2 			#0.5 Fraction of the wargoal's base maneuver cost that it costs to turn it into a primary demand
-	MAKE_WARGOAL_PRIMARY_DEMAND_INFAMY_AMOUNT = 0.2				#0.5 Fraction of the wargoal's base infamy that is accured when you turn it into a primary demand
-	
+	MAKE_WARGOAL_PRIMARY_DEMAND_INFAMY_AMOUNT = 0.2	
 	WAR_GOAL_INFAMY_RETURN_STATE = 1.25	# 2.0
 		
 	PRESTIGE_FROM_COUNTRY_GDP_DIVISOR = 1000000
 	PRESTIGE_FROM_COUNTRY_GDP = 6							# 3 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP
-	PRESTIGE_FROM_SUBJECT_GDP = 0.5							# 1.5 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP in subjects
+	PRESTIGE_FROM_SUBJECT_GDP = 1							# 1.5 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP in subjects
 	PRESTIGE_FROM_ARMY_POWER_PROJECTION = 0.03 				# Per point of power projection from army combat power
 	PRESTIGE_FROM_NAVY_POWER_PROJECTION = 0.055				# 0.10 # Per point of power projection from navy combat power
-	PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION = 0.001 	# Per point of power projection from army combat power in subjects
-	PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION = 0.01 	# 0.01 # Per point of power projection from navy combat power in subjects
+	PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION = 0.003 	# Per point of power projection from army combat power in subjects
+	PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION = 0.03 	# 0.01 # Per point of power projection from navy combat power in subjects
 	PRESTIGE_MIN_NUM_COUNTRIES = 100 # If there's less countries using prestige than this in the game, we add some filler countries to adjust average prestige levels
 	FILLER_COUNTRY_PRESTIGE = 15
 	

@@ -82,13 +82,58 @@
 			add_journal_entry = { type = je_aberdeen_act }
 		}
          
- 
+		#great game journal entries
+        add_journal_entry = {
+			type = je_great_game_control
+		}
+		add_journal_entry = {
+			type = je_disrupt_russian_caucasus
+		}
+		add_journal_entry = {
+			type = je_counter_russian_pacific_influence
+		}
+		add_journal_entry = {
+			type = je_consolidate_british_india
+		}
+		add_journal_entry = {
+			type = je_pamir_expedition_objective
+		}
+
+		# GP objectives
+		add_journal_entry = {
+			type = je_maintain_afghan_protectorate
+		}
+		add_journal_entry = {
+			type = je_consolidate_afghanistan_objective
+		}
+		add_journal_entry = {
+			type = je_secure_influence_over_persia
+		}
+
+
+
+		# minor objectives
+		add_journal_entry = {
+			type = je_unify_afghanistan_objective
+		}
+		add_journal_entry = {
+			type = je_consolidate_persia
+		}
+		add_journal_entry = {
+			type = je_achieve_sovereignty
+		}
+	
+
 
 		add_modifier = {
 			name = brazilian_slave_trade_modifier
 			months = 600 # 50 Years
 		}
-
+		add_modifier = {
+			name = modifier_one_of_the_first_industrial_nations
+			months = 200
+			is_decaying = yes
+		}
 add_modifier = modifier_vast_empire_GBR_base
 add_modifier = modifier_vast_empire_hidden_migration
 
