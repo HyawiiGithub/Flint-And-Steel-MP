@@ -309,3 +309,9 @@ modifier_humiliation_of_the_napoleonic_wars = {
 	country_prestige_mult = -0.25
 	country_influence_mult = -0.25
 }
+
+
+modifier_japaneese_economic_struggle = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	building_group_bg_manufacturing_throughput_add = -0.20
+}

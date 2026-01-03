@@ -53,6 +53,11 @@
 			name = hokkaido_colonization_modifier
 			days = very_long_modifier_time
 		}
+		add_modifier = {
+			name = modifier_japaneese_economic_struggle
+			months = 260
+		}
+
 
 	}
 }

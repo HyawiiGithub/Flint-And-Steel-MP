@@ -135,8 +135,8 @@ company_kure_naval_arsenal = {
 	}
 
 	prosperity_modifier = {
-		unit_navy_attack_mult = 0.05
-		unit_navy_defense_mult = 0.05
+	    
+		unit_navy_attack_mult = 0.10
 	}
 
 	ai_will_do = {
