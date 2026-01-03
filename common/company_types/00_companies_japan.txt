@@ -118,6 +118,7 @@ company_kure_naval_arsenal = {
 	}
 
 	possible = {
+		has_technology_researched = open_hearth_process
 		has_technology_researched = hydraulic_cranes
 		custom_tooltip = {
 			text = is_meiji_japan
