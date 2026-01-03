@@ -1,5 +1,11 @@
 ﻿# prestige_goods types
 
+prestige_good_kuru_arsenals = {
+	base_good = ironclads
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/armstrong_ships_prestige.dds"
+}
+
 prestige_good_krupp_guns = {
 	base_good = artillery
 	prestige_bonus = 0.1

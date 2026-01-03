@@ -102,7 +102,7 @@ company_kure_naval_arsenal = {
 	}
 
 	possible_prestige_goods = {
-		# gotta make one
+		prestige_good_kuru_arsenals
 	}
 
 	potential = {
