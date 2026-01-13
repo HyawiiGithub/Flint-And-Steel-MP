@@ -1,0 +1,13 @@
+﻿
+STATE_CHINEESE_INNER_MONGOLIA = {
+    id = 1234
+    provinces = { "xb28d24" "x56bacb" "x9b3d7f" "x35f8b6" "x78e67b" "xa05101" "x4c9d47" "x6885b9" "x4dc0a9" "x4d9365" "x47b534" "xb1199e" "x48b165" "x084245" "x697f3f" "x72508b" "x765c76" "xdd248c" "x4f0969" "x52517a" "x7d03d7" "xea991e" "x13d9cc" "x3925c6" "xf7ea9d" "xe6c4c4" "x6953f3" "x0ed964" "x499327" "x09bdb5" "x20446f" "xd8d89f" "x604c22" "xb4b7cd" "xa74d78" "x43c3ce" "x9bb42f" "x6fcde9" "x9b9aef" "xc9fe6c" "x189764" "xdd18dc" "xd5e9b3" "x6ff702" "xbf4f34" "xaaa387" "xf789d7" "x54f824" "x6265e6" "xae752d" "xb018d2" "x789ebe" "xf992bd" "x5ddc82" "x21b375" "x3591df" "xc3effd" "x74b481" "xbf0e96" "x4d9fbe" "xf700db" "x0e4a9e" "x509bf7" "x52bba8" "x686682" "x212b44" "xdf1557" "x946285" }
+    subsistence_building = "building_subsistence_farm"
+	city = "x56bacb"
+	farm = "x56bacb"
+	mine = "x56bacb"
+	wood = "x56bacb"
+    arable_land = 42
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+    capped_resources = { "bg_lead_mining" 5 "bg_iron_mining" 5 "bg_logging" 10 }
+}

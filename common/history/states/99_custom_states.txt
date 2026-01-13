@@ -1,0 +1,8 @@
+﻿STATES = {
+	s:STATE_CHINEESE_INNER_MONGOLIA = {
+	
+	create_state = {
+		country = c:CHI
+		owned_provinces = { "x084245" "x09bdb5" "x0e4a9e" "x0ed964" "x13d9cc" "x189764" "x20446f" "x212b44" "x21b375" "x3591df" "x35f8b6" "x3925c6" "x43c3ce" "x47b534" "x48b165" "x499327" "x4c9d47" "x4d9365" "x4d9fbe" "x4dc0a9" "x4f0969" "x509bf7" "x52517a" "x52bba8" "x54f824" "x56bacb" "x5ddc82" "x604c22" "x6265e6" "x686682" "x6885b9" "x6953f3" "x697f3f" "x6fcde9" "x6ff702" "x72508b" "x74b481" "x765c76" "x789ebe" "x78e67b" "x7d03d7" "x946285" "x9b3d7f" "x9b9aef" "x9bb42f" "xa05101" "xa74d78" "xaaa387" "xae752d" "xb018d2" "xb1199e" "xb28d24" "xb4b7cd" "xbf0e96" "xbf4f34" "xc3effd" "xc9fe6c" "xd5e9b3" "xd8d89f" "xdd18dc" "xdd248c" "xdf1557" "xe6c4c4" "xea991e" "xf700db" "xf789d7" "xf7ea9d" "xf992bd" }
+	}}
+}
